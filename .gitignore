@@ -1,3 +1,7 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -17,31 +21,12 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# =========================
-# Operating System Files
-# =========================
+images/
+errors/
+doc/
+Pages images/
 
-# OSX
-# =========================
+js/
+js/vendor/
 
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+.htaccess

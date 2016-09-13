@@ -1,0 +1,1884 @@
+
+
+@mixin borderRaduis( $radius... ) {
+      -webkit-border-radius: $radius;
+      -moz-border-radius: $radius;
+      -o-border-radius: $radius;
+      border-radius: $radius;
+}
+
+@mixin TransformTrans( $radius... ) {
+      -webkit-border-radius: $radius;
+      -moz-border-radius: $radius;
+      -o-border-radius: $radius;
+      border-radius: $radius;
+}
+
+@mixin gradient($baseColor, $toColor){
+  background-color:$baseColor;
+  background-image: -moz-linear-gradient(top, $baseColor, $toColor); /* FF3.6 */
+  background-image: -webkit-gradient(linear,left top,left bottom, color-stop(0, $baseColor),color-stop(1, $toColor));  /* Saf4+, Chrome */
+  background-image: linear-gradient(top,$baseColor, $toColor);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');   /* IE6â��IE9 */
+}
+
+
+@mixin TranSition( $TranSition... ) {
+  -webkit-transition: $TranSition;
+  -moz-transition: $TranSition;
+  -o-transition: $TranSition;
+  transition: $TranSition;
+}
+
+
+html, button, input, select, textarea {   color: #222;}
+html {  font-size: 1em;   line-height: 1.4;}
+
+::-moz-selection {   background: #b3d4fc;   text-shadow: none;}
+
+::selection {   background: #b3d4fc;   text-shadow: none;}
+
+hr { display: block;  height: 1px;   border: 0;  border-top: 1px solid #ccc;   margin: 1em 0; padding: 0;}
+
+audio,canvas,img,svg, video {  vertical-align: middle;}
+
+fieldset { border: 0;   margin: 0;    padding: 0;}
+textarea { resize: vertical;}
+
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+.browsehappy {   margin: 0.2em 0;   background: #ccc;   color: #000;   padding: 0.2em 0;}
+
+a{text-decoration:none;-webkit-transition:all 0.2s linear;-moz-transition:all 0.2s linear;-o-transition:all 0.2s linear; transition:all 0.2s linear;}
+
+a:hover{-webkit-transform:scale(1.00);-moz-transform:scale(1.00);-ms-transform:scale(1.00);-o-transform:scale(1.00); transform:scale(1.00);}
+
+h1, h2, h3{display:block;}
+
+img{width:100%; height:100%;}
+
+body{ margin:0px;	padding:0px; font-size:100%; line-height:1;	}
+
+
+#wrapper{	
+	width:72%;	
+	margin:auto;
+  
+  .clearfix{display:block;clear:both;}
+  /*
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+
+  .clearfix:before, .clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+
+  .clearfix:after {
+    clear: both;
+  }
+	
+	header{	
+		width:100%;	
+		height:117px;
+    background-color:#f7f7f7;
+		#logo{height:77px; width:250px; margin:0px;  }
+
+    .contact{ 
+      width:160px; 
+      height:auto;  
+      float:right; 
+      margin:5px 0px 0px 0px; 
+      color:#fff; 
+      font-size:1em;
+      display:block;
+	  
+	  span{ 
+		  img.tele{ margin:0 9% 0 0; width: 11%;}
+	  }
+	  
+      span:nth-child(1) { 
+		  background-color:#175480; 
+		  padding:0 3%;
+		  display:block; 
+		  line-height:28px; 
+		  letter-spacing:0.01em;
+		  		
+		}
+      span:nth-child(2) { display:block; line-height:20px; color:#000; font-size:0.8em; text-align:left; text-indent:0; text-align:center;}
+    }/*contact end*/
+
+    nav { 
+      width:100%; 
+      height:40px; 
+      margin-bottom:0px; 
+      
+      li{list-style:none; display:inline-block; width:13.570684%; float:left; padding:0px 5px 5px 0px; height:35px; }
+      a{text-decoration:none; width:100%; font-size:0.9em; text-align:center; height:40px; line-height:40px; color:#fff; @include gradient(#4aa8f0, #1180c5); @include TranSition( all 0.2s linear ease-in-out); display: block;}
+      a:hover{text-decoration:none; width:100%; font-size:0.90em; text-align:center; height:40px; line-height:40px;  color:#fff; @include gradient(#1180c5,#4aa8f0 ); font-weight:bold;}
+      a:active{  @include gradient(#f6f6f6,#f1f1f1  ); color:#c90;}
+      a:visited{  @include gradient(#f6f6f6,#f1f1f1 ); color:#c90;}
+    }/*nav end*/
+
+	}/*header end*/
+
+  
+  #leftside{ 
+    width:30%; 
+    height:auto; 
+    float:left; 
+    padding-top:1%;
+
+    .leftsidebox{
+      width:96%;  
+      height:auto;  
+      margin-bottom:1%; 
+      padding:0; 
+      border:solid 3px #ebece7;
+      @include borderRaduis(5px);
+      a{text-decoration:none; margin-left:10px; display:block; height: 30px; line-height: 30px; color:blue;}
+      a:hover{text-decoration:none; height: 30px; line-height: 30px; }
+      h1{font-size:1.2em; @include borderRaduis(2px 2px 0px 0px); text-align:left; margin:0px; color:#0e4d7c; padding: 0 ; height:40px; background-color:#ebece7; text-indent:2%; line-height:40px; width:100%;}
+      
+      #search_form{
+        width:100%; 
+        margin-top:5px;
+        label{width:96%; color:#000;height:25px; line-height:25px; padding:0;float:left; margin:0; font-size:0.9em; font-weight:bold;}
+        ul{
+          margin:0; 
+          padding:0; 
+          width:96%; 
+          margin:auto;
+          
+          li{  
+            list-style:none; 
+            margin:0px; 
+            height:70px;
+            #destination1{ width:100%; height:35px; line-height: 35px;}
+            #time_1{ width:27.1%; height:35px; display:inline-block; float:left; margin:1% 1% 1% 0;}
+            #time_2{ width:43%; height:35px; display:inline-block; float:none; margin:1% 0;}
+          }
+          .misc_inner{ 
+            width:50%; 
+            
+            float:left;
+            .misc { width:98%; height:35px; display:block; }
+            label{width:96%; height:25px; line-height:25px; font-size:0.8em; margin:0; padding:0;}
+          }
+       
+        }
+
+        #searchbtn{@include gradient(#f4810a, #f99f3e); @include TranSition( all 0.2s linear ease-in-out); clear:left; @include borderRaduis(5px); margin:5% auto; width:50%; color:#fff; height:30px;  border: 0; display:block;}
+        #searchbtn:hover{color:#fff; border: 0;@include gradient(#f99f3e, #f4810a); font-weight:bold; }
+      }/*#searchform end*/
+
+      div.destinations{
+        width:91%; 
+        height:auto; 
+        background-color:#ebebe9; 
+        margin:5px auto; 
+        padding:2.5%;
+        display:block;
+        figure{
+          float:left; 
+          margin-right:2%;
+          width: 43%;
+
+        }
+
+        figcaption{
+          width:50%;
+          float: left;
+          display: inline-block;
+
+          h3{color:#288fce; font-size: 1em; font-weight:bold; width:100%; height: 30px; margin:0; padding:0;line-height: 30px;}
+
+          p{ font-size:0.75em; width:100%; float:none; height:auto; margin:0px; padding:0px; display:inline-block; color:#000; line-height:20px;}
+          
+
+        }
+        
+        
+        
+      }/*.destinations end*/
+
+    }/*.leftsidebox end*/
+
+  }/*#leftside end*/
+
+
+  #leftside2{ 
+    width:20%; 
+    height:auto; 
+    float:left; 
+    margin-top:1%;
+    background-color:#ededeb;
+    
+    
+    h1{width:100%;  text-indent:5%; color:#1e4b6c; display:block; font-size:0.85em; line-height:20px; margin: 0 auto; }
+
+    ul{
+      height:auto;
+      width:90%;
+      padding:2%;
+      margin:0 auto;
+      
+      li{ 
+        display:block;
+        width:100%;
+        height:25px;
+        margin:0 0 2% 0;
+
+        a{display:block; height:100%; font-size:0.8em; @include TranSition( all 0.2s linear ease-in-out); width:100%; @include gradient(#fafafa, #ededeb); line-height:25px; color:#1485c9; letter-spacing:0.02em;}
+        a::before{content: "<   ";}
+        a:hover{ height:100%; font-weight:bold; font-size:0.80em; width:100%; @include gradient(#ededeb,#fafafa); line-height:25px;}
+
+
+      }
+    }
+  }
+
+  #leftside3{ 
+    width:20%; 
+    height:auto; 
+    float:left; 
+    margin-top:1%;
+	  
+  #contact-details{
+    
+    display:block;
+    width:96%;
+    height:auto;
+    border:4px #ecebe6 solid;
+    margin: 0;
+    padding: 10% 0;
+    list-style: none;
+    font-size:0.75em;
+    @include borderRaduis(5px);
+
+  	li{
+      width:100%;
+      line-height:20px;
+      height:80px; 
+      color:#9e9fa1;
+      &:first-line{color:#164d6b; font-weight:bold;}
+      
+	    span{ 
+			height:100%; 
+			float: left; 
+			width:25%; 
+			display:inline-block; 
+			background-color:#fff;
+			img{width:50%; height:30%; display:block; margin:auto;}
+		
+		}
+  	   	
+  			
+  	  a{ display:block; line-height:20px; font-size: 0.90em;}
+  	  
+	  }
+
+  }
+
+    figure{
+      margin:0;
+
+      figcaption{
+        position:relative;
+        z-index:999;
+        left:0;
+        top: -518px;
+        padding:5%;
+        h1{ text-indent:0; width:100%; color:#fff; display:block; font-size:1.5em; margin: 0 auto; text-transform: uppercase; }
+    
+        p{color:#fff; font-size:0.9em; line-height:1.6em; margin:0 0 5% 0;}
+      }
+    }
+  }
+
+  #content{ 
+    width:70%; 
+    height:1070px;  
+    float:left; 
+    margin:1% 0;
+    h1{color:#0e4d7c; font-weight:bold;}
+
+    #banner{
+      width:100%; 
+      height:430px; 
+      margin:0; 
+
+      img {width:100%;}
+    }/*banner end*/
+
+    #offers{  
+      width:100%; 
+      height:540px;
+      h1{ font-size:1.2em; color:#0e4d7c; margin:0px; height:60px; line-height:65px; text-indent:20px;letter-spacing:0.05em;} 
+
+      div.offerbox{  
+
+        float:left; 
+        padding:0; 
+        margin:0px 0px 20px 5px; 
+        border: 4px #ebece7 solid; 
+        height:auto; 
+        width: 31.4%;
+        @include borderRaduis(5px);
+        figure{
+          display:block;
+          width:92%;
+          margin:2% auto;
+        }
+        figcaption{
+          padding: 7% 0;
+          display:block;
+          p{  font-size:0.8em; line-height:25px; text-align:center; margin:0; height:25px; line-height:25px;}
+          p:nth-of-type(2){ 
+            color:#288fce; 
+            font-weight:bold;
+            span{color:#f66c00;}
+          }
+        }
+
+      }/*offerboxend*/
+    }/*offer end*/
+   
+  }/*content end*/
+ 
+  label.error{font-size:1em; position:absolute; background-color:#c90; left: 1000px; index:2; border:1px solid black; padding:1%; text-align:1.5em;}
+  
+  #menu-1 { 
+    width:77%; 
+    height:auto;  
+    float:left; 
+    margin-bottom:10px; 
+    padding-left:1%; 
+    line-height:1.5em;
+    h1{font-size:1.5em; color:#0e4d7c; font-weight:bold; width:80%;  margin: 0;  padding: 0;  height: 40px;}
+    h2{font-size:1.2em; color:#0e4d7c; font-weight:bold; width:80%;  margin: 0;  padding: 0;  height: 40px;}
+    h3{font-size:1em; color:#0e4d7c; font-weight:bold; width:80%;  margin: 0;  padding: 0;  height: 40px;}
+    p{ font-size:0.8em;line-height: 40px;}
+
+    #contactform { 
+      width:90%; 
+      margin:auto; 
+      list-style: none;
+      ul{
+        list-style: none;
+        li{ 
+          margin:5px 0 10px 0;
+          label {float:left; width:20%; height:30px; font-weight:bold; line-height:1.5em;}
+          input{ width:65%;height:30px;}
+          textarea{ width:65%;}
+          #contactbtn{width:20%; margin-left:20%; height:30px; background-color:#ff6d00; border: 0;}
+          #contactbtn:hover{color:#ff6d00; border: 0; background-color:#fff;border:solid 1px #ff6d00;}
+        }
+      }
+    }
+
+    .holiday_details{ 
+      height:180px;   
+      border: 4px #eaeaec solid;  
+      margin:5px 0 0 0;   
+      padding:1%;
+      @include borderRaduis(5px);
+      h1{ margin:0px; height:30px; line-height:30px; font-size:98%; color:#288FCE;}
+      figure{
+        float:left; 
+        margin-right:10px;
+      }
+      figcaption{
+
+        p{ font-size:0.80em; width: 100%; margin:0px; color:#9e9e9e; line-height:1.6em;}
+        p:first-child{  font-size:1em; position:absolute; z-index:-1; margin-left:42%;}
+        p:first-child .holidayprice{ display:inline-block; color:#ff6d00; font-weight:bold;}
+        p:nth-of-type(2){ margin-bottom:20px;}
+        a{  width:60px; height:35px; background-color:#ff6d00;  text-align:center; color:#fff; font-size:100%; text-decoration:none;   padding:1%; margin:0; @include TranSition( all 0.2s linear ease-in-out); }
+        a:hover{    color:#ff6d00;  text-align:center; background-color:#fff;      font-size:1em;    padding:1%; margin:0; border:solid 1px #ff6d00;}   
+
+
+      }
+      
+    }
+
+    .holiday_details_small{
+      width:46%;
+      height:130px;
+      border: 4px #ebece7 solid;  
+      margin:5px 0 0 5px;
+      padding:1% 1% 0 1%;
+      float:left;  
+      display:block;
+      h3{ margin:0px 0px 5px 50px; height:20px; line-height:20px; font-size:0.75em; color:#288FCE;  font-weight:bold; }
+      img{ margin-right:5px; width:45%; height:90%; float:left;}
+      p{ font-size:0.8em; width: 100%; margin:0px;  margin-bottom:5px; color:#9e9e9e;}
+      p .holidayprice{ display:inline-block; color:#ff6d00; font-weight:bold;}
+      a{ width:60px; height:35px; background-color:#ff6d00; @include TranSition( all 0.2s linear ease-in-out); text-align:center; color:#fff;  font-size:95%;  text-decoration:none;padding:1%;margin:0;}
+      a:hover{ width:60px; height:35px; color:#ff6d00;  text-align:center; background-color:#fff;  font-size:95%;  padding:1%;margin:0; border:solid 1px #ff6d00 ;}
+    }
+
+    .servicebox{  
+      width:31%;  
+      height:330px;   
+      border: 4px #ebece7 solid;  
+      margin:5px 0 0 5px; 
+      padding:0 ; 
+      float:left;
+      display:inline-block;
+      h2{font-size:0.75em; height:30px; margin:0; width:100%; background-color:#ebece7 ; line-height:1.9em; color:#4facf4;}
+      img{margin:1% 0 1% 6%; }
+      p{ font-size:0.75em; margin:2%; width:96%;}
+      a{ font-size:0.75em; text-decoration:none; margin-left:2%;}
+    }
+  }/*menu-1 end*/
+
+  #content2 { 
+    width:79%; 
+    height:auto;  
+    float:left; 
+    margin-bottom:10px; 
+    padding-left:1%; 
+    line-height:1.5em;
+    h1{font-size:1.5em; color:#0e4d7c; width:100%; margin:0; font-weight:bold; padding: 0;  height: 40px;   line-height: 54px;}
+    h2{font-size:1.2em; color:#0e4d7c; margin:0; width:100%; font-weight: normal; padding: 0;  height: 40px;   line-height: 54px;}
+    h3{font-size:1em; color:#0e4d7c; margin:0; width:100%; font-weight: normal; padding: 0;  height: 40px;   line-height: 54px;}
+    p{ font-size:0.8em; margin: 0;}
+
+    #contactform { 
+      width:100%; 
+      margin:auto; 
+      list-style: none;
+      ul{
+        list-style: none;
+
+        li{ 
+          margin:5px 0 10px 0;
+          label {float:left; width:16%; height:35px; font-weight:bold; line-height:35px; font-size:0.9em; }
+          input{ width:65%; height:35px; padding:0; margin:0; line-height:35px;}
+          textarea{ width:65%; line-height:1.5em; }
+          #contactbtn{width:20%; margin-left:16%; height:30px; @include TranSition( all 0.2s linear ease-in-out); line-height:30px; @include gradient(#EE2A26, #FC7D3C); border: 0;}
+          #contactbtn:hover{color:#fff; border: 0; @include gradient(#FC7D3C,#EE2A26);}
+        }
+      }
+    }/*end of contact form*/
+
+    .holiday_details{ 
+       
+      border: 4px #eaeaec solid;  
+      margin:5px 0 0 0; 
+      padding:1%;
+      @include borderRaduis(5px);
+
+      h1{ margin:0px; width: 50%; line-height:40px; font-size:1.1em; color:#1485c9;}
+
+      span.holidayprice{ 
+        font-size:0.95em; 
+        position:absolute; 
+        z-index:-1; 
+        left: 76%;
+        color:#9e9e9e;
+        .offerbox-price{ display:inline-block; color:#ff6d00; font-weight:bold;}
+      }
+
+      figure{
+        width: 27%;
+        float:left; 
+        margin-right:10px; 
+        display:inline-block;
+      }/*figure end*/
+
+      figcaption{
+        height:auto;
+        width: 64%;
+        float: left;
+        display:inline-block;
+        margin-bottom: 1%;
+        p{ font-size:0.80em; margin:0 0 1% 0; width: 100%; color:#9e9e9e; line-height:2em;}
+             
+        a{width:100px; @include borderRaduis(5px); height:35px;  text-align:center; color:#fff; height: 25px; font-size:0.9em; text-decoration:none; padding: 1% 2%; margin:0; @include gradient(#EE2A26, #FC7D3C);}
+        a:hover{color:#fff; text-align:center; font-size:0.9em; @include gradient(#FC7D3C,#EE2A26);}
+
+      }/*figcaption end*/
+      
+    }  /*Holiday details packages page end*/ 
+
+    .holiday_details_small{
+      width:46.3%;
+      
+      border: 4px #ebece7 solid;  
+      margin:5px 0 0 5px; 
+      padding:1% 1% 0 1%;
+      float:left;  
+      display:block;
+
+      h1{ margin:0px ; line-height:20px; height:20px; font-size:0.80em; display:block; color:#288FCE; font-weight:bold; width:100%; }
+
+      span.holidayprice{ 
+        display:inline-block; 
+        color:#9e9e9e; 
+        font-weight:bold;
+        font-size:0.80em;
+        .offerbox-price{ display:inline-block; color:#ff6d00; font-weight:bold;}
+      }
+
+      figure{
+        margin-right:5px; 
+        width:45%; 
+        height:90%; 
+        float:left;
+        display:block;
+      }
+      
+      figcaption{
+        width:52%;
+        float:left;
+        display:inline-block;
+        margin-bottom: 2%;
+      
+        p{ font-size:0.8em; width: 100%; margin:0px; line-height:2em; color:#9e9e9e;}
+        a{width:100px; @include borderRaduis(5px); height:35px; background-color:#ff6d00;  text-align:center; color:#fff; height: 25px; font-size:0.8em; text-decoration:none; padding:3% 3%; margin:0; @include gradient(#EE2A26, #FC7D3C);}
+        a:hover{color:#fff; text-align:center; background-color:#fff;  font-size:0.8em; @include gradient(#FC7D3C,#EE2A26);}
+      }
+     
+    }/*Holiday details Best deals page end*/
+
+    .servicebox{  
+      width:31%;  
+      height:auto;
+      border: 4px #ebece7 solid;  
+      margin:5px 0 0 5px; 
+      padding:0 ; 
+      float:left;
+      display:inline-block;
+
+      h1{font-size:0.75em; height:30px; margin:0; width:100%; background-color:#ebece7 ; color:#4facf4; text-indent:1%; line-height: 30px;}
+      figure{
+
+        width:90%;
+        margin:1% auto;
+
+      }
+
+      figcaption{
+        p{ font-size:0.75em; margin:2%; width:96%;}
+        a{ font-size:0.75em; display: block; text-decoration:none; margin-left:2%;}
+        a:hover{ font-size:0.85em; color:blue;}
+      }
+  
+    }
+  }/*content2 end*/
+
+    
+}/*wrapper end*/
+
+footer{ 
+    width:75%; 
+    height:40px;  
+    color:#fff; 
+    clear:both; 
+    display:block;
+    margin:0 auto;
+    ul{ 
+      margin:0; 
+      padding:0;
+      display:block;
+      li {
+        list-style:none; 
+        float:left; 
+        padding:0;  
+        height:40px;
+        width:13.570684%;
+        display:inline-block;
+        a{text-decoration:none; width:100%;  font-size:0.8em; text-align:center; height:100%; line-height:40px; color:#000; display:block; }
+        a:hover{text-decoration:none; width:100%;  font-size:0.8em; text-align:center; line-height:40px; color:#d85f24;}
+        a:active{text-decoration:none; width:100%; font-size:0.8em; text-align:center;  line-height:40px; background-color:#fff; color:#d85f24;}
+      }
+    }
+  }/*footer end*/
+
+
+@media (max-width: 1024px){
+
+#wrapper {
+
+  width: 82%;
+  margin: auto;
+
+  header {
+    
+    height: 117px;
+
+    nav {
+      
+      height: 40px;
+
+      li {
+                
+        width: 14.570684%;
+        padding: 0px 5px 5px 0px;
+        a {font-size: 0.75em; }
+        a:hover {font-size: 0.75em; }
+        
+      }
+    }
+
+    .contact {
+
+      span:nth-child(1) {font-size:0.8em;}
+      span:nth-child(2) {font-size:0.75em;}
+
+    }
+
+  }/*header end*/
+
+  #leftside {
+
+
+    .leftsidebox {
+
+      h1 {font-size: 1.1em;}
+
+      a { font-size:0.9em;}
+
+      div.destinations {
+
+        figure {
+            
+            width: 46%;
+        }
+
+        figcaption {
+
+          h3 {font-size: 0.9em;}
+          p { font-size: 0.70em;}
+
+          }
+        
+        }
+
+
+      #search_form {
+
+        ul {
+
+          .misc_inner {
+            label {font-size:0.75em;}
+            .misc {font-size:0.9em;}
+
+          }
+
+          li {
+              
+              #destination1 {font-size:0.9em; }
+              #time_1 {font-size:0.9em;}
+              #time_2 {font-size:0.9em;}
+          }
+
+          #searchbtn {font-size:0.9em;}
+
+        }
+
+        label {font-size: 0.80em;}
+
+        }
+
+    }/*.leftsidebox end*/
+  }/*#leftside end*/
+
+  #leftside2 {
+
+    h1 {font-size: 0.8em;}
+
+    ul {
+
+      li {
+
+        a {font-size: 0.7em;}
+        a:hover {font-size: 0.75em;}
+
+      }
+    }
+  }/*#leftside2 end*/ 
+
+  #leftside3 {
+
+    #contact-details{
+          
+      font-size:0.75em;
+     
+      li{
+        
+        &:first-line{color:#164d6b; font-weight:bold;}
+        
+        span{ 
+			width:25%;
+			img{width:50%; height:30%; }
+		}
+          
+          
+        a{  line-height:20px; font-size: 0.85em;}
+        
+      }
+
+    }
+
+        
+    figure{
+      margin:0;
+
+      figcaption{
+       
+        top: -448px;
+        
+        h1{font-size:1.3em; margin: 0 auto;  }
+    
+        p{font-size:0.75em; line-height:2em; }
+      }
+    }
+   
+  }/*#leftside2 end*/ 
+
+  #content {
+
+    #offers {
+
+      h1 { font-size: 1.1em;}
+
+      div.offerbox {
+        width: 31%;
+
+        figcaption {
+
+          p {font-size: 0.7em; }
+          p:nth-of-type(2) {font-size: 0.75em;}
+
+        } 
+
+      }
+
+    }
+
+    #banner {
+      
+      height: 325px;
+      
+    }/*#banner end*/
+  }/*#content end*/
+
+  #content2 {
+
+    h1 {font-size: 1.3em;}
+    h2 { font-size: 1.1em;}
+
+    p{font-size:0.75em; line-height: 1.9em;}
+
+    .holiday_details {
+
+      h1 {font-size: 1em; height:35px; line-height:35px;}
+
+      span.holidayprice {
+        font-size: 0.85em;
+        left: 78%;
+
+      }
+
+      figure { width: 32%;}
+
+      figcaption {
+        width: 64%;
+        p {  font-size: 0.8em; }
+
+      }
+    }/*.holiday details end*/
+
+    .holiday_details_small {
+      width: 46%;
+      
+      h1 {font-size: 0.70em;}
+      figure { width: 42%;}
+
+      figcaption{
+        width: 56%;
+        span.holidayprice {font-size: 0.8em;}
+        p {   font-size: 0.7em;}
+        a {padding: 3% 4%; font-size: 0.75em;}
+        a:hover {font-size: 0.75em;}
+
+      }
+      
+
+    }/*.holiday details small end*/
+
+  }/*#content2 end*/
+
+}/*wrapper end*/
+
+footer {
+  width: 82%;
+
+}
+
+}
+
+
+@media (max-width: 980px){
+
+#wrapper {
+
+  width: 82%;
+  margin: auto;
+
+  header {
+    
+    height: 117px;
+
+    nav {
+      
+      height: 40px;
+
+      li {
+                
+        width: 14.570684%;
+        padding: 0px 5px 5px 0px;
+        a {font-size: 0.75em; }
+        a:hover {font-size: 0.75em; }
+        
+      }
+      
+    }
+
+  }/*header end*/
+
+  #leftside {
+
+
+    .leftsidebox {
+
+      h1 {font-size: 1.1em;}
+      a { font-size:0.8em;}
+
+      div.destinations {
+
+        figure {
+            
+            width: 46%;
+        }
+
+        figcaption {
+
+          h3 {font-size: 0.9em;}
+          p { font-size: 0.70em;}
+
+          }
+        
+        }
+
+
+      #search_form {
+
+        ul {
+
+          .misc_inner {
+
+            .misc {font-size:0.9em;}
+
+          }
+
+          li {
+              
+              #destination1 {font-size:0.9em; }
+              #time_1 {font-size:0.9em;}
+              #time_2 {font-size:0.9em;}
+
+          }
+
+        }
+
+        label {font-size: 0.80em;}
+
+        }
+
+    }/*.leftsidebox end*/
+  }/*#leftside end*/
+
+  #leftside2 {
+
+    h1 {font-size: 0.8em;}
+   
+    ul {
+
+      li {
+
+        a {font-size: 0.7em;}
+        a:hover {font-size: 0.70em;}
+
+      }
+    }
+  }/*#leftside2 end*/ 
+
+  #leftside3 {
+
+    h1 {font-size: 0.8em;}
+
+    #contact-details{
+          
+      font-size:0.70em;
+     
+      li{
+        height:75px;
+        
+        &:first-line{color:#164d6b; font-weight:bold;}
+        
+        span{   
+		width:25%;
+		img{width:50%; height:30%;}
+		}
+          
+          
+        a{  line-height:20px; font-size: 0.85em;}
+        
+      }
+
+    }
+
+    figure{
+      margin:0;
+
+      figcaption{
+        
+        top: -431px;
+       
+        h1{font-size:1.2em;  }
+    
+        p{ font-size:0.75em; }
+      }
+    }
+  
+  }/*#leftside2 end*/
+
+
+  #content {
+
+    #offers {
+
+      h1 { font-size: 1.1em;}
+
+      div.offerbox {
+        width: 31%;
+
+        figcaption {
+
+          p {font-size: 0.7em; }
+          p:nth-of-type(2) {font-size: 0.75em;}
+
+        } 
+
+      }
+
+    }
+
+    #banner {
+      
+      height: 325px;
+      
+    }/*#banner end*/
+  }/*#content end*/
+
+  #content2 {
+
+    h1 {font-size: 1.15em;}
+    h2 { font-size: 1.05em;}
+
+    .holiday_details {
+
+      h1 {font-size: 1em; height:35px; line-height:35px;}
+
+      span.holidayprice {
+        font-size: 0.85em;
+        left: 78%;
+
+      }
+
+      figure { width: 31%;}
+
+      figcaption {
+        width: 64%;
+        p {  font-size: 0.75em; }
+
+      }
+    }/*.holiday details end*/
+
+    .holiday_details_small {
+      width: 45.89%;
+      
+      h1 {font-size: 0.70em;}
+      figure { width: 42%;}
+
+      figcaption{
+        width: 56%;
+        span.holidayprice {font-size: 0.8em;}
+        p {   font-size: 0.7em;}
+        a {padding: 4% 4%;}
+
+      }
+      
+
+    }/*.holiday details small end*/
+
+  }/*#content2 end*/
+
+}/*wrapper end*/
+
+footer {
+  width: 82%;
+
+}
+
+  
+
+}
+
+
+@media (max-width: 800px){
+
+#wrapper {
+
+  width: 92%;
+  margin: auto;
+
+  header {
+    
+    height: 117px;
+
+    nav {
+      
+      height: 40px;
+
+      li {
+               
+        width: 15.880684%;
+        padding: 0px 5px 5px 0px;
+        a {font-size: 0.70em; }
+        a:hover {font-size: 0.70em; }
+        
+      }
+      
+    }
+
+  }/*header end*/
+
+  #leftside {
+
+
+    .leftsidebox {
+
+      h1 {font-size: 1em;}
+
+      div.destinations {
+
+        figure {
+            
+            width: 46%;
+        }
+
+        figcaption {
+
+          h3 {font-size: 0.8em;}
+          p { font-size: 0.70em;}
+
+          }
+        
+        }
+
+
+      #search_form {
+
+
+
+        ul {
+
+          .misc_inner {
+
+            .misc {font-size:0.8em;}
+
+          }
+
+          li {
+              
+              #destination1 {font-size:0.8em; }
+              #time_1 {font-size:0.8em;}
+              #time_2 {font-size:0.8em;}
+
+          }
+
+        }
+
+        label {font-size: 0.75em;}
+        #searchbtn {font-size:0.75em;}
+
+        }
+
+    }/*.leftsidebox end*/
+  }/*#leftside end*/
+
+  #leftside2 {
+
+    h1 {font-size: 0.75em;}
+ 
+    ul {
+
+      li {
+
+        a {font-size: 0.7em;}
+        a:hover {font-size: 0.7em;}
+
+      }
+    }
+  }/*#leftside2 end*/ 
+
+   #leftside3 {
+
+    h1 {font-size: 0.75em;}
+
+    #contact-details{
+
+      width: 95%;
+
+          
+      font-size:0.65em;
+     
+      li{
+        height:70px;
+        
+        &:first-line{color:#164d6b; font-weight:bold;}
+        
+        span{ 
+			width:25%;
+			img{width:50%; height:30%;}
+		  
+		}
+          
+          
+        a{  line-height:20px; font-size: 0.85em;}
+        
+      }
+
+    }
+
+    figure{
+      margin:0;
+
+      figcaption{
+        top: -397px;
+        
+        h1{ font-size:1.1em;  }
+    
+        p{font-size:0.70em; line-height: 1.9em; }
+      }
+    }
+  }/*#leftside2 end*/ 
+
+
+
+  #content {
+
+    #offers {
+
+      h1 { font-size: 1.1em;}
+
+      div.offerbox {
+        width: 31%;
+        margin: 0px 0px 20px 2px;
+
+        figcaption {
+
+          p {font-size: 0.7em; }
+          p:nth-of-type(2) {font-size: 0.75em;}
+
+        } 
+
+      }
+
+    }
+
+    #banner {
+      
+      height: 325px;
+      
+    }/*#banner end*/
+  }/*#content end*/
+
+  #content2 {
+
+    h1 {font-size: 1.1em;}
+    p {   font-size: 0.75em; line-height: 2em;}
+
+    .servicebox {
+      h1 {line-height: 20px; height: 45px; text-indent:0;}
+      figcaption {
+
+        p {font-size: 0.70em;}
+
+      }
+
+    }
+
+    .holiday_details {
+
+      h1 {font-size: 1em; height:35px; line-height:35px;}
+
+      span.holidayprice {
+        font-size: 0.80em;
+        left: 81%;
+
+      }
+
+      figure { width: 32%;}
+
+      figcaption {
+        width: 64%;
+        p {  font-size: 0.75em; }
+
+      }
+    }/*.holiday details end*/
+
+    .holiday_details_small {
+
+      width: 45%;
+      
+      h1 {font-size: 0.65em;}
+      figure { width: 42%;}
+
+      figcaption{
+        width: 56%;
+        span.holidayprice {font-size: 0.75em;}
+        p {   font-size: 0.7em;}
+        a {padding: 4% 4%;}
+      }
+      
+
+    }/*.holiday details small end*/
+
+
+
+  }/*#content2 end*/
+
+}/*wrapper end*/
+
+footer {
+  width: 92%;
+  ul {
+    li {width: 14.570684%;}
+    a {font-size: 0.75em;}
+    a:hover {font-size: 0.75em;}
+  }
+
+}
+  
+
+}
+
+
+@media (max-width: 768px){
+
+#wrapper {
+
+  width: 92%;
+  margin: auto;
+
+  header {
+    
+    height: 117px;
+
+    nav {
+      
+      height: 40px;
+
+      li {
+               
+        width: 15.880684%;
+        padding: 0px 5px 5px 0px;
+        a {font-size: 0.70em; }
+        a:hover {font-size: 0.70em; }
+        
+      }
+      
+    }
+
+  }/*header end*/
+
+  #leftside {
+
+
+    .leftsidebox {
+
+      h1 {font-size: 1em;}
+
+      div.destinations {
+
+        figure {
+            
+            width: 46%;
+        }
+
+        figcaption {
+
+          h3 {font-size: 0.8em;}
+          p { font-size: 0.70em;}
+
+          }
+        
+        }
+
+
+      #search_form {
+
+
+
+        ul {
+
+          .misc_inner {
+
+            .misc {font-size:0.8em;}
+
+          }
+
+          li {
+              
+              #destination1 {font-size:0.8em; }
+              #time_1 {font-size:0.8em;}
+              #time_2 {font-size:0.8em;}
+
+          }
+
+        }
+
+        label {font-size: 0.75em;}
+        #searchbtn {font-size:0.75em;}
+
+        }
+
+    }/*.leftsidebox end*/
+  }/*#leftside end*/
+
+  #leftside2 {
+
+    h1 {font-size: 0.75em;}
+
+    ul {
+
+      li {
+
+        a {font-size: 0.7em;}
+        a:hover {font-size: 0.75em;}
+
+      }
+    }
+
+  }/*#leftside2 end*/ 
+
+  #leftside3 {
+
+    h1 {font-size: 0.75em;}
+
+    #contact-details{
+
+      width: 96%;
+
+          
+      font-size:0.60em;
+     
+      li{
+        height:70px;
+        
+        &:first-line{color:#164d6b; font-weight:bold;}
+        
+        span{ 
+			width:25%;
+			img{width:50%; height:30%;}
+		  
+		}
+          
+          
+        a{  line-height:20px; font-size: 0.90em;}
+        
+      }
+
+    }
+
+    figure{
+      margin:0;
+
+      figcaption{
+        top: -405px;
+        
+        h1{ font-size:1.15em;  }
+    
+        p{font-size: 0.65em; line-height:1.6em;}
+      }
+    }
+ 
+  }/*#leftside2 end*/ 
+
+
+  #content {
+
+    #offers {
+
+      h1 { font-size: 1.1em;}
+
+      div.offerbox {
+        width: 31%;
+        margin: 0px 0px 20px 2px;
+
+        figcaption {
+
+          p {font-size: 0.7em; }
+          p:nth-of-type(2) {font-size: 0.70em;}
+
+        } 
+
+      }
+
+    }
+
+    #banner {
+      
+      height: 325px;
+    
+    }/*#banner end*/
+  }/*#content end*/
+
+  #content2 {
+
+    h1 {font-size: 1.1em;}
+    p {   font-size: 0.75em;}
+
+    .servicebox {
+      h1 {line-height: 20px; height: 45px; text-indent:0;}
+      figcaption {
+
+        p {font-size: 0.70em;}
+
+      }
+
+    }
+
+    .holiday_details {
+
+      h1 {font-size: 1em; height:35px; line-height:35px;}
+
+      span.holidayprice {
+        font-size: 0.80em;
+        left: 81%;
+
+      }
+
+      figure { width: 32%;}
+
+      figcaption {
+        width: 64%;
+        p {  font-size: 0.70em; }
+
+      }
+    }/*.holiday details end*/
+
+    .holiday_details_small {
+      
+      h1 {font-size: 0.65em;}
+      figure { width: 42%;}
+
+      figcaption{
+        width: 56%;
+        span.holidayprice {font-size: 0.75em;}
+        p {   font-size: 0.7em;}
+        a {padding: 2% 3%;}
+      }
+      
+
+    }/*.holiday details small end*/
+  }/*#content2 end*/
+}/*wrapper end*/
+
+footer {
+  width: 92%;
+  ul {
+    li {
+      width: 14.570684%;
+      a {font-size: 0.7em;}
+      a:hover {font-size: 0.7em;}
+    }
+  }
+}
+
+
+}
+
+
+@media (max-width: 667px){
+
+#wrapper {
+
+  width: 97%;
+  margin: 0 auto;
+
+  header {
+    
+    height: 117px;
+
+    nav {
+      
+      height: 40px;
+
+      li {
+               
+        width: 15.880684%;
+        padding: 0px 5px 5px 0px;
+        a {font-size: 0.70em; }
+        a:hover {font-size: 0.70em; }
+        
+      }
+      
+    }
+
+  }/*header end*/
+
+  #leftside {
+
+    display:none;
+
+    .leftsidebox {
+
+      h1 {font-size: 1em;}
+
+      div.destinations {
+
+        figure {
+            
+            width: 46%;
+        }
+
+        figcaption {
+
+          h3 {font-size: 0.8em;}
+          p { font-size: 0.70em;}
+
+          }
+        
+        }
+
+
+      #search_form {
+
+
+
+        ul {
+
+          .misc_inner {
+
+            .misc {font-size:0.8em;}
+
+          }
+
+          li {
+              
+              #destination1 {font-size:0.8em; }
+              #time_1 {font-size:0.8em;}
+              #time_2 {font-size:0.8em;}
+
+          }
+
+        }
+
+        label {font-size: 0.75em;}
+        #searchbtn {font-size:0.75em;}
+
+        }
+
+    }/*.leftsidebox end*/
+  }/*#leftside end*/
+
+  #leftside2 {
+
+    display:none;
+
+    h1 {font-size: 0.75em;}
+
+    ul {
+
+      li {
+
+        a {font-size: 0.7em;}
+        a:hover {font-size: 0.75em;}
+
+      }
+    }
+  }/*#leftside2 end*/ 
+
+  #leftside3 {
+
+    display:none;
+
+    h1 {font-size: 0.75em;}
+
+    figure{
+      margin:0;
+
+      figcaption{
+        top: -405px;
+        
+        h1{ font-size:1.15em;  }
+    
+        p{font-size: 0.65em; line-height:1.5em;}
+      }
+    }
+  }/*#leftside2 end*/ 
+
+
+  #content {
+    width: 100%;
+
+    #offers {
+
+      h1 { font-size: 1.1em;}
+
+      div.offerbox {
+        width: 31.5%;
+        margin: 0px 0px 15px 2px;
+
+        figcaption {
+
+          p {font-size: 0.85em; }
+          p:nth-of-type(2) {font-size: 0.85em;}
+
+        } 
+
+      }
+
+    }
+
+    #banner {
+      
+      height: 325px;
+    
+    }/*#banner end*/
+  }/*#content end*/
+
+  #content2 {
+    width:98%;
+
+    h1 {font-size: 1.1em;}
+    p {   font-size: 0.75em;}
+
+    .servicebox {
+      h1 {line-height: 30px; height: 30px; text-indent:0;}
+      figcaption {
+
+        p {font-size: 0.70em;}
+
+      }
+
+    }
+
+    .holiday_details {
+
+      h1 {font-size: 1em; height:35px; line-height:35px;}
+
+      span.holidayprice {
+        font-size: 0.80em;
+        left: 81%;
+
+      }
+
+      figure { width: 32%;}
+
+      figcaption {
+        width: 64%;
+        p {  font-size: 0.70em; }
+
+      }
+    }/*.holiday details end*/
+
+    .holiday_details_small {
+      
+      h1 {font-size: 0.65em;}
+      figure { width: 42%;}
+
+      figcaption{
+        width: 56%;
+        span.holidayprice {font-size: 0.75em;}
+        p {   font-size: 0.7em;}
+        a {padding: 2% 3%;}
+      }
+      
+
+    }/*.holiday details small end*/
+  }/*#content2 end*/
+}/*wrapper end*/
+
+footer {
+  width: 92%;
+  ul {
+    li {
+      width: 14.570684%;
+      a {font-size: 0.7em;}
+      a:hover {font-size: 0.7em;}
+    }
+  }
+}
+
+
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+/* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
