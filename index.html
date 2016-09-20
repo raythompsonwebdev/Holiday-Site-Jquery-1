@@ -4,14 +4,16 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Travel-Agency-Home-Page</title>
+
 <meta name="description" content="">
+<meta name="keywords" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/main.css">
-
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet"> 
 <!--[if lt IE 8]> 
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -40,7 +42,7 @@
 
 
 <div id="logo">
-<img src="images/TravelAgencyLogo.png" />
+<img src="images/travel-agency-website-logo.png" alt="travel-agency-website-logo"/>
 </div>
 
 <!---Logo end-->
@@ -48,11 +50,11 @@
 <nav>
 <ul>
 <li><a href="index.html">Home</a></li>
-<li><a href="TravelAgency-HolidayPackages_page.html">Holiday Packages</a></li>
-<li><a href="TravelAgency-BestDeals_page.html">Best Deals</a></li>
-<li><a href="TravelAgency-Services_page.html">Service</a></li>
-<li><a href="TravelAgency-AboutUs_page.html">About us</a></li>
-<li><a href="TravelAgency-ContactUs_page.html">Contact us</a></li>
+<li><a href="holiday-packages-travel-agency-website.html">Holiday Packages</a></li>
+<li><a href="best-deals-travel-agency-website.html">Best Deals</a></li>
+<li><a href="services-travel-agency-website.html">Service</a></li>
+<li><a href="about-us-travel-agency-website.html">About us</a></li>
+<li><a href="contact-us-travel-agency-website.html">Contact us</a></li>
 </ul>
 </nav>
 <!---primary navigation end-->	
@@ -64,13 +66,14 @@
 
 <!---Search form-->			
 <section class="leftsidebox">
-<h1>Holiday Search</h1>
 
-<form action="" id="search_form">
+<h2>Holiday Search</h2>
+
+<form id="search_form">
 	<ul>
 	<li>
 	<label>Where are you going?</label>
-	<select name="destination" id="destination1">
+	<select name="destination" class="destination1">
 	<option value="Antigua">Antigua</option>
 	<option value="Belgium">Belgium</option>
 	<option value="United Kingdom">United Kingdom</option>
@@ -81,7 +84,7 @@
 
 	<li class="time">
 	<label >When are you going?</label> 
-	<select name="date" id="time_1">
+	<select name="date" class="time_1">
 	<option value="1">1</option>
 	<option value="2">2</option>
 	<option value="3">3</option>
@@ -97,7 +100,7 @@
 	<option value="May">May</option>
 	</select>
 
-	<select name="year" id="time_1">
+	<select name="year" class="time_1">
 	<option value="2014">2014</option>
 	<option value="2015">2015</option>
 	<option value="2016">2016</option>
@@ -106,7 +109,7 @@
 
 	<li>
 	<label> Duration</label>
-	<select name="duration" id="destination1">
+	<select name="duration" class="destination1">
 	<option value="One Day">One Day</option>
 	<option value="One Week">One Week</option>
 	<option value="One Month">One Month</option>
@@ -156,67 +159,74 @@
 	<option value="">18</option>
 	</select>
 	</li>
-
-	<input type="submit" value="Find Holiday" id="searchbtn">
-
-
 	</ul>
+	<input type="submit" value="Find Holiday" id="searchbtn">
 </form>
 
 </section>
 
 <!--Destinations-->
 <section class="leftsidebox">
-<h1>Top Destinations</h1>
+<h2>Top Destinations</h2>
 
 <div class="destinations">
-<figure><img src="images/page1_27.jpg" alt="eiffel tower" ></figure>
+<figure>
+	<img src="images/travel-agency-website-eiffel-tower-image.jpg" alt="travel-agency-website-eiffel-tower-image" >
 <figcaption>
 <h3>Paris</h3>
 <p>France</p>
 <p>1,399 Hotels</p>
 </figcaption>
-<div class="clearfix"></div>
+
+</figure>
 </div>
 
 <div class="destinations">
-<figure><img src="images/page1_27.jpg" alt="eiffel tower" ></figure>
+<figure>
+	<img src="images/travel-agency-website-tower-of-london-image.jpg" alt="travel-agency-website-tower-of-london-image" >
 <figcaption>
 <h3>London</h3>
 <p>England</p>
 <p>1,912 Hotels</p>
 </figcaption>
-<div class="clearfix"></div>
+
+</figure>
 </div>
 
 <div class="destinations">
-<figure><img src="images/page1_27.jpg" alt="eiffel tower" ></figure>
+<figure>
+	<img src="images/travel-agency-website-bangkok-image.jpg" alt="travel-agency-website-bangkok-image" >
 <figcaption>
 <h3>Bangkok</h3>
 <p>	Thailand</p>
 <p>1,542 Hotels</p>
-</figcaption>
-<div class="clearfix"></div>
+</figcaption>	
+
+</figure>
 </div>
 
 <div class="destinations">
-<figure><img src="images/page1_27.jpg" alt="eiffel tower" ></figure>
+<figure>
+	<img src="images/travel-agency-website-istanbul-image.jpg" alt="travel-agency-website-istanbul-image" >
 <figcaption>
 <h3>Istanbul</h3>
 <p>Turkey</p>
 <p>504 Hotels</p>
 </figcaption>
-<div class="clearfix"></div>
+
+</figure>
 </div>
 
 <div class="destinations">
-<figure><img src="images/page1_27.jpg" alt="eiffel tower" ></figure>
+<figure>
+	<img src="images/travel-agency-website-hong-kong-image.jpg" alt="travel-agency-website-hong-kong-image" >
 <figcaption>
 <h3>Hong Kong</h3>
 <p>China</p>
 <p>504 Hotels</p>
 </figcaption>
-<div class="clearfix"></div>
+	
+</figure>
 </div>
 
 <a href="">View All</a>
@@ -228,65 +238,80 @@
 <br/>
 </aside>
 
-<section id="content">
+<div id="content">
 
 <figure id="banner">
-<img src="images/page1_18.jpg" alt="banner image">
+<img src="images/travel-agency-website-banner-image.jpg" alt="travel-agency-website-banner-image">
 </figure>
 
 <section id="offers">
 
-<h1>Featured Holiday Package</h1>
+<h2>Featured Holiday Package</h2>
 
 <div class="offerbox">
-	<figure><img src="images/page1_33.jpg" alt="" /></figure>
-<figcaption>	
-	<p>Lorem Ipsum Dolen sit.</p>
-	<p>from only <span class="offerbox-price">&pound;339</span> per person</p>
-</figcaption>
+	<figure>
+		<img src="images/travel-agency-website-spanish-villa-image.jpg" alt="travel-agency-website-spanish-villa-image" />
+	<figcaption>	
+		<p>Lorem Ipsum Dolen sit.</p>
+		<p>from only <span class="offerbox-price">&pound;339</span> per person</p>
+	</figcaption>	
+
+	</figure>
 </div >
-
 <div class="offerbox">
-	<figure><img src="images/page1_30.jpg" alt="" /></figure>
+	<figure>
+		<img src="images/travel-agency-website-taj-mahal-image.jpg" alt="travel-agency-website-taj-mahal-image" />
 	<figcaption>
 	<p>Lorem Ipsum Dolen sit.</p>
 	<p>from only <span class="offerbox-price">&pound;339</span> per person</p>
 	</figcaption>
+	</figure>
 </div >
 <div class="offerbox">
-	<figure><img src="images/page1_36.jpg" alt="" /></figure>
+	<figure>
+		<img src="images/travel-agency-website-gold-coast-image.jpg" alt="travel-agency-website-gold-coast-image" />
 	<figcaption>
 	<p>Lorem Ipsum Dolen sit.</p>
 	<p>from only <span class="offerbox-price">&pound;339</span> per person</p>
 	</figcaption>
+	</figure>
+	
 	<div class="clearfix"></div>
 </div >
 <div class="offerbox">
-	<figure><img src="images/page1_47.jpg" alt="" /></figure>
+	<figure>
+		<img src="images/travel-agency-website-dubai-image.jpg" alt="travel-agency-website-dubai-image" />
 	<figcaption>
 	<p>Lorem Ipsum Dolen sit.</p>
 	<p>from only <span class="offerbox-price">&pound;339</span> per person</p>
 	</figcaption>
+	</figure>
 </div >
 <div class="offerbox">
-	<figure><img src="images/page1_45.jpg" alt="" /></figure>
+	<figure>
+		<img src="images/travel-agency-website-singapore-image.jpg" alt="travel-agency-website-singapore-image" />
 	<figcaption>
 	<p>Lorem Ipsum Dolen sit.</p>
 	<p>from only <span class="offerbox-price">&pound;339</span> per person</p>
 	</figcaption>
+	</figure>
 </div >
+
 <div class="offerbox">
-	<figure><img src="images/page1_48.jpg" alt="" /></figure>
+	<figure>
+		<img src="images/travel-agency-website-toronto-image.jpg" alt="travel-agency-website-toronto-image" />
 	<figcaption>
 	<p>Lorem Ipsum Dolen sit.</p>
 	<p>from only <span class="offerbox-price">&pound;339</span> per person</p>
-	</figcaption>
-</div >
+	</figcaption>	
+	</figure>
+</div>
 
 </section>
 
 
-</section>
+</div>
+
 <div class="clearfix"></div>
 
 </div>	
@@ -303,8 +328,9 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
 <script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+<!--<script src="js/main.js"></script>-->
 <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </body>
 </html>
