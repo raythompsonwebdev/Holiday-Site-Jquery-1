@@ -1,15 +1,14 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: jQuery,Bootstrap
+  Software: Sublime, Git, Sass
+  
+  
+/* TEAM */
+                            
+Your title: Raymond Thompson.
+                            
+Site: raymond.thompson@raythompsonwebdev.co.uk
+                            
+Twitter: @RaythompWeb
 
-# TEAM
-
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
-
-# TECHNOLOGY COLOPHON
-
-    HTML5, CSS3
-    Normalize.css, jQuery, Modernizr

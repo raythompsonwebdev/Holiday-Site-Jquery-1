@@ -32,3 +32,6 @@ js/vendor/
 .htaccess
 
 fonts/
+nbproject/
+css/.sass-cache/
+css/main.css.map
