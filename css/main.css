@@ -4,6 +4,18 @@
   src: font-url("../fonts/pt-sans.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+/*html {
+background-image: url(ballet-background.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+color: #fff;
+background-color: #000;
+}*/
 html, button, input, select, textarea {
   color: #222; }
 
@@ -90,7 +102,7 @@ textarea {
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
-  color: #000;
+  color: #000000;
   padding: 0.2em 0; }
 
 a {
@@ -101,36 +113,36 @@ a {
   transition: all 0.2s linear; }
 
 a:hover {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
+  -webkit--transform: scale(1);
+  -moz--transform: scale(1);
+  -o--transform: scale(1);
+  -ms--transform: scale(1);
   transform: scale(1); }
 
 h1, h2, h3 {
   display: block;
-  font-family: 'PT Sans', sans-serif; }
+  font-family: "PT Sans", Arial, sans-serif; }
 
 img {
   width: 100%;
   height: 100%; }
 
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   margin: 0px;
   background-color: #5fa5e7;
   padding: 0px;
   font-size: 100%;
   line-height: 1;
   background: url("../images/images/travel-agency-website-bg.png") no-repeat left bottom #5fa5e7;
-  font-family: 'Myriad Pro' , sans-serif; }
+  font-family: "Myriad Pro", sans-serif; }
 
 #wrapper {
   width: 72%;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #f7f7f7;
   padding: 0 2%;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   /*
    * Clearfix: contain floats
    *
@@ -145,105 +157,6 @@ body {
   /*header end*/
   /*#leftside end*/
   /*content end*/
- /* #menu-1 { 
-    width:77%; 
-    height:auto;  
-    float:left; 
-    margin-bottom:10px; 
-    padding-left:1%; 
-    line-height:1.5em;
-    h1{font-size:1.5em; color:#0e4d7c; font-weight:bold; width:80%;  margin: 0;  padding: 0;  height: 40px;}
-    h2{font-size:1.2em; color:#0e4d7c; font-weight:bold; width:80%;  margin: 0;  padding: 0;  height: 40px;}
-    h3{font-size:1em; color:#0e4d7c; font-weight:bold; width:80%;  margin: 0;  padding: 0;  height: 40px;}
-    p{ font-size:0.8em;line-height: 40px;}
-
-    #contactform { 
-      width:90%; 
-      margin:auto; 
-      list-style: none;
-      ul{
-        list-style: none;
-        li{ 
-          margin:5px 0 10px 0;
-          label {float:left; width:20%; height:30px; font-weight:bold; line-height:1.5em;}
-          input{ width:65%;height:30px;}
-          textarea{ width:65%;}
-          #contactbtn{width:20%; margin-left:20%; height:30px; background-color:#ff6d00; border: 0;}
-          #contactbtn:hover{color:#ff6d00; border: 0; background-color:#fff;border:solid 1px #ff6d00;}
-        }
-      }
-    }
-
-    .holiday_details{ 
-      height:180px;   
-      border: 4px #eaeaec solid;  
-      padding:1%;
-      @include borderRaduis(5px);
-      h1{ margin:0px; height:30px; line-height:30px; font-size:98%; color:#288FCE;}
-      figure{
-        width:100%;
-        float:left; 
-        margin-right:10px;
-        figcaption{
-
-          p{ font-size:0.80em; width: 100%; margin:0px; color:#9e9e9e; line-height:1.6em;}
-          p:first-child{  font-size:1em; position:absolute; z-index:-1; margin-left:42%;}
-          p:first-child .holidayprice{ display:inline-block; color:#ff6d00; font-weight:bold;}
-          p:nth-of-type(2){ margin-bottom:20px;}
-          a{  width:60px; height:35px; background-color:#ff6d00;  text-align:center; color:#fff; font-size:100%; text-decoration:none;   padding:1%; margin:0; @include TranSition( all 0.2s linear ease-in-out); }
-          a:hover{    color:#ff6d00;  text-align:center; background-color:#fff;      font-size:1em;    padding:1%; margin:0; border:solid 1px #ff6d00;}   
-
-
-        }
-      }
-     
-    }
-
-    .holiday_details_small{
-      width:46%;
-      height:130px;
-      border: 4px #ebece7 solid;  
-      margin:5px 0 0 5px;
-      padding:1% 1% 0 1%;
-      float:left;  
-      display:block;
-      h3{ margin:0px 0px 5px 50px; height:20px; line-height:20px; font-size:0.75em; color:#288FCE;  font-weight:bold; }
-
-      figure{
-        width:100%;           
-        img{width:43%;  margin:0 3% 0 0;}
-
-        figcaption{
-          width:49%;
-          display:inline-block;
-          margin-bottom: 2%;
-          span.holidayprice {font-size: 0.75em;}
-          p{ font-size: 0.7em;}
-          a{ padding:2% 3%; margin:0; }
-          a:hover{color:#fff; text-align:center;  font-weight:bold;font-size: 0.75em; }
-        }
-      }
-     
-      p{ font-size:0.8em; width: 100%; margin:0px;  margin-bottom:5px; color:#9e9e9e;}
-      p .holidayprice{ display:inline-block; color:#ff6d00; font-weight:bold;}
-      a{ width:60px; height:35px; background-color:#ff6d00; @include TranSition( all 0.2s linear ease-in-out); text-align:center; color:#fff;  font-size:95%;  text-decoration:none;padding:1%;margin:0;}
-      a:hover{ width:60px; height:35px; color:#ff6d00;  text-align:center; background-color:#fff;  font-size:95%;  padding:1%;margin:0; border:solid 1px #ff6d00 ;}
-    }
-
-    .servicebox{  
-      width:31%;  
-      height:330px;   
-      border: 4px #ebece7 solid;  
-      margin:5px 0 0 5px; 
-      padding:0 ; 
-      float:left;
-      display:inline-block;
-      h2{font-size:0.75em; height:30px; margin:0; width:100%; background-color:#ebece7 ; line-height:1.9em; color:#4facf4;}
-      img{margin:1% 0 1% 6%; }
-      p{ font-size:0.75em; margin:2%; width:96%;}
-      a{ font-size:0.75em; text-decoration:none; margin-left:2%;}
-    }
-  }/*menu-1 end*/
   /*content2 end*/ }
   #wrapper .clearfix {
     display: block;
@@ -259,6 +172,7 @@ body {
     width: 100%;
     height: 117px;
     background-color: #f7f7f7;
+    border-bottom: 1px solid #175480;
     /*contact end*/
     /*nav end*/ }
     #wrapper header #logo {
@@ -270,29 +184,33 @@ body {
       height: auto;
       float: right;
       margin: 5px 0px 0px 0px;
-      color: #fff;
+      color: #f7f7f7;
       font-size: 1em;
       display: block; }
       #wrapper header .contact span:nth-child(1) {
         background-color: #175480;
-        padding: 0 3%;
+        padding: 0;
         display: block;
-        line-height: 31px;
+        line-height: 30px;
         letter-spacing: 0.01em;
         font-weight: bold;
-        font-size: 1.1em; }
+        font-size: 1em;
+        text-shadow: 1px 1px 1px #000; }
         #wrapper header .contact span:nth-child(1) img.tele {
-          margin: 0 4% 0 0;
-          width: 12%;
-          clear: both; }
+          margin: 1.7% 4.5%;
+          width: 11.5%;
+          float: left;
+          display: block; }
       #wrapper header .contact span:nth-child(2) {
         display: block;
         line-height: 20px;
-        color: #000;
+        color: #000000;
         font-size: 0.90em;
+        text-transform: uppercase;
         text-align: left;
         text-indent: 0;
-        text-align: center; }
+        text-align: center;
+        color: #9e9fa1; }
     #wrapper header nav {
       width: 100%;
       height: 40px;
@@ -304,11 +222,14 @@ body {
         padding: 0;
         display: -webkit-flex;
         display: -ms-flexbox;
-        display: flex; }
+        display: flex;
+        -webkit-align-items: center;
+        -ms-flex-pack: center;
+        align-items: center; }
         #wrapper header nav ul li {
           list-style: none;
           display: inline-block;
-          width: 13.91%;
+          width: 13.71%;
           float: left;
           padding: 0px;
           height: 40px;
@@ -317,16 +238,13 @@ body {
           -o-border-radius: 5px 5px 0px 0px;
           border-radius: 5px 5px 0px 0px;
           margin-right: 0.2%;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-align-items: center;
-          -ms-flex-pack: center;
-          align-items: center; }
+          -webkit-flex: 0 1 13.71%;
+          -ms-flex: 0 1 13.71%;
+          flex: 0 1 13.71%; }
           #wrapper header nav ul li a {
             text-decoration: none;
             width: 100%;
-            font-size: 0.78em;
+            font-size: 0.85em;
             text-align: center;
             -webkit-border-radius: 5px 5px 0px 0px;
             -moz-border-radius: 5px 5px 0px 0px;
@@ -348,24 +266,29 @@ body {
             -o-transition: all 0.2s linear ease-in-out;
             transition: all 0.2s linear ease-in-out;
             display: block;
-            text-transform: uppercase;
-            font-weight: bold; }
+            font-weight: bold;
+            text-shadow: 1px 1px 1px #000; }
           #wrapper header nav ul li a:hover {
             text-decoration: none;
             width: 100%;
             text-align: center;
             height: 40px;
             line-height: 40px;
-            color: #fff;
-            background-color: #1180c5;
-            background-image: -moz-linear-gradient(top, #1180c5, #4aa8f0);
+            -webkit-box-shadow: 1px 1px 0px #000;
+            -moz-box-shadow: 1px 1px 0px #000;
+            -o-box-shadow: 1px 1px 0px #000;
+            box-shadow: 1px 1px 0px #000;
+            color: #EE2A26;
+            background-color: #ffffff;
+            background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
             /* FF3.6 */
-            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1180c5), color-stop(1, #4aa8f0));
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #ffffff));
             /* Saf4+, Chrome */
-            background-image: linear-gradient(top, #1180c5, #4aa8f0);
+            background-image: linear-gradient(top, #ffffff, #ffffff);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
             /* IE6├ó´┐¢´┐¢IE9 */
-            font-weight: bold; }
+            font-weight: bold;
+            background-color: #ffffff; }
           #wrapper header nav ul li a:visited {
             background-color: #ffffff;
             background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
@@ -375,7 +298,7 @@ body {
             background-image: linear-gradient(top, #ffffff, #ffffff);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
             /* IE6├ó´┐¢´┐¢IE9 */
-            color: #c90; }
+            color: #d85f24; }
           #wrapper header nav ul li a:focus {
             background-color: #ffffff;
             background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
@@ -385,7 +308,7 @@ body {
             background-image: linear-gradient(top, #ffffff, #ffffff);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
             /* IE6├ó´┐¢´┐¢IE9 */
-            color: #c90; }
+            color: #d85f24; }
           #wrapper header nav ul li a:active {
             background-color: #ffffff;
             background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
@@ -395,7 +318,7 @@ body {
             background-image: linear-gradient(top, #ffffff, #ffffff);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
             /* IE6├ó´┐¢´┐¢IE9 */
-            color: #c90; }
+            color: #d85f24; }
   #wrapper #leftside {
     width: 30%;
     height: auto;
@@ -420,13 +343,13 @@ body {
         display: block;
         height: 30px;
         line-height: 30px;
-        color: blue; }
+        color: #288fce; }
       #wrapper #leftside .leftsidebox a:hover {
         text-decoration: none;
         height: 30px;
         line-height: 30px; }
       #wrapper #leftside .leftsidebox h2 {
-        font-size: 1.2em;
+        font-size: 1.15em;
         -webkit-border-radius: 2px 2px 0px 0px;
         -moz-border-radius: 2px 2px 0px 0px;
         -o-border-radius: 2px 2px 0px 0px;
@@ -445,7 +368,7 @@ body {
         margin-top: 5px; }
         #wrapper #leftside .leftsidebox #search_form label {
           width: 96%;
-          color: #000;
+          color: #000000;
           height: 25px;
           line-height: 25px;
           padding: 0;
@@ -512,12 +435,12 @@ body {
           border-radius: 5px;
           margin: 5% auto;
           width: 50%;
-          color: #fff;
+          color: #ffffff;
           height: 30px;
           border: 0;
           display: block; }
         #wrapper #leftside .leftsidebox #search_form #searchbtn:hover {
-          color: #fff;
+          color: #ffffff;
           border: 0;
           background-color: #f99f3e;
           background-image: -moz-linear-gradient(top, #f99f3e, #f4810a);
@@ -563,7 +486,7 @@ body {
               margin: 0px;
               padding: 0px;
               display: inline-block;
-              color: #000;
+              color: #000000;
               line-height: 20px; }
   #wrapper #leftside2 {
     width: 20%;
@@ -654,14 +577,14 @@ body {
         #wrapper #leftside3 #contact-details li span {
           height: 100%;
           float: left;
-          width: 25%;
+          width: 22%;
           display: inline-block;
-          background-color: #fff; }
+          background-color: #ffffff; }
           #wrapper #leftside3 #contact-details li span img {
             width: 41%;
-            height: 25%;
+            height: auto;
             display: block;
-            margin: auto; }
+            margin: 10% auto; }
         #wrapper #leftside3 #contact-details li a {
           display: block;
           line-height: 20px;
@@ -677,14 +600,15 @@ body {
         #wrapper #leftside3 figure figcaption h1 {
           text-indent: 0;
           width: 100%;
-          color: #fff;
+          color: #ffffff;
           display: block;
-          font-size: 1.5em;
+          font-size: 1.28em;
           margin: 0 auto;
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          line-height: 1.5em; }
         #wrapper #leftside3 figure figcaption p {
-          color: #fff;
-          font-size: 0.9em;
+          color: #ffffff;
+          font-size: 0.85em;
           line-height: 1.7em;
           margin: 0 0 5% 0; }
   #wrapper #content {
@@ -698,9 +622,10 @@ body {
       color: #0e4d7c;
       font-weight: bold; }
     #wrapper #content #banner {
-      width: 100%;
-      height: 430px;
-      margin: 0; }
+      width: 96%;
+      height: 412px;
+      margin: 0 auto;
+      display: block; }
       #wrapper #content #banner img {
         width: 100%; }
     #wrapper #content #offers {
@@ -763,21 +688,21 @@ body {
     height: auto;
     float: left;
     margin-bottom: 10px;
-    background-color: #fff;
+    background-color: #ffffff;
     padding-left: 1%;
     line-height: 1.5em;
     /*end of contact form*/
     /*Holiday details packages page end*/
     /*Holiday details Best deals page end*/ }
     #wrapper #content2 h1 {
-      font-size: 1.5em;
+      font-size: 1.4em;
       color: #0e4d7c;
       width: 100%;
       margin: 0;
       font-weight: bold;
       padding: 0;
       height: 40px;
-      line-height: 54px;
+      line-height: 40px;
       display: block; }
     #wrapper #content2 h2 {
       font-size: 1.2em;
@@ -787,17 +712,17 @@ body {
       font-weight: normal;
       padding: 0;
       height: 40px;
-      line-height: 54px;
+      line-height: 40px;
       display: block; }
     #wrapper #content2 h3 {
-      font-size: 1em;
+      font-size: 1.0em;
       color: #0e4d7c;
       margin: 0;
       width: 100%;
       font-weight: normal;
       padding: 0;
       height: 40px;
-      line-height: 54px;
+      line-height: 40px;
       display: block; }
     #wrapper #content2 p {
       font-size: 0.8em;
@@ -845,7 +770,7 @@ body {
             /* IE6├ó´┐¢´┐¢IE9 */
             border: 0; }
           #wrapper #content2 #contactform ul li #contactbtn:hover {
-            color: #fff;
+            color: #ffffff;
             border: 0;
             background-color: #FC7D3C;
             background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26);
@@ -921,7 +846,7 @@ body {
             /* IE6├ó´┐¢´┐¢IE9 */
             display: block; }
           #wrapper #content2 .holiday_details figure figcaption a:hover {
-            color: #fff;
+            color: #ffffff;
             text-align: center;
             padding: 1% 2%;
             font-weight: bold;
@@ -934,9 +859,9 @@ body {
             filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
             /* IE6├ó´┐¢´┐¢IE9 */ }
     #wrapper #content2 .holiday_details_small {
-      width: 44%;
+      width: 45%;
       border: 4px #ebece7 solid;
-      margin: 1% 0.5%;
+      margin: 0.5%;
       padding: 0 1% 1% 1%;
       float: left;
       display: inline-block; }
@@ -946,7 +871,7 @@ body {
         height: 30px;
         font-size: 0.85em;
         display: block;
-        color: #288FCE;
+        color: #288fce;
         font-weight: bold;
         width: 100%; }
       #wrapper #content2 .holiday_details_small figure {
@@ -968,7 +893,7 @@ body {
             color: #ff6d00;
             font-weight: bold; }
         #wrapper #content2 .holiday_details_small figure figcaption {
-          width: 50%;
+          width: 54%;
           display: inline-block;
           margin-bottom: 2%; }
           #wrapper #content2 .holiday_details_small figure figcaption p {
@@ -999,7 +924,7 @@ body {
             filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
             /* IE6├ó´┐¢´┐¢IE9 */ }
           #wrapper #content2 .holiday_details_small figure figcaption a:hover {
-            color: #fff;
+            color: #ffffff;
             text-align: center;
             font-weight: bold;
             background-color: #FC7D3C;
@@ -1047,7 +972,7 @@ body {
 footer {
   width: 75%;
   height: 40px;
-  color: #fff;
+  color: #ffffff;
   clear: both;
   display: block;
   margin: 0 auto; }
@@ -1069,7 +994,7 @@ footer {
         text-align: center;
         height: 100%;
         line-height: 40px;
-        color: #000;
+        color: #000000;
         display: block; }
       footer ul li a:hover {
         text-decoration: none;
@@ -1084,10 +1009,109 @@ footer {
         font-size: 0.8em;
         text-align: center;
         line-height: 40px;
-        background-color: #fff;
+        background-color: #ffffff;
         color: #d85f24; }
 
 /*footer end*/
+/*  #menu-1 { 
+    width:77%; 
+    height:auto;  
+    float:left; 
+    margin-bottom:10px; 
+    padding-left:1%; 
+    line-height:1.5em;
+    h1{font-size:1.5em; color:#0e4d7c; font-weight:bold; width:80%;  margin: 0;  padding: 0;  height: 40px;}
+    h2{font-size:1.2em; color:#0e4d7c; font-weight:bold; width:80%;  margin: 0;  padding: 0;  height: 40px;}
+    h3{font-size:1em; color:#0e4d7c; font-weight:bold; width:80%;  margin: 0;  padding: 0;  height: 40px;}
+    p{ font-size:0.8em;line-height: 40px;}
+
+    #contactform { 
+        width:90%; 
+        margin:auto; 
+        list-style: none;
+        ul{
+            list-style: none;
+            li{ 
+                margin:5px 0 10px 0;
+                label {float:left; width:20%; height:30px; font-weight:bold; line-height:1.5em;}
+                input{ width:65%;height:30px;}
+                textarea{ width:65%;}
+                #contactbtn{width:20%; margin-left:20%; height:30px; background-color:#ff6d00; border: 0;}
+                #contactbtn:hover{color:#ff6d00; border: 0; background-color:#fff;border:solid 1px #ff6d00;}
+            }
+        }
+    }
+
+    .holiday_details{ 
+        height:180px;   
+        border: 4px #eaeaec solid;  
+        padding:1%;
+        @include borderRaduis(5px);
+        h1{ margin:0px; height:30px; line-height:30px; font-size:98%; color:#288FCE;}
+        figure{
+            width:100%;
+            float:left; 
+            margin-right:10px;
+            figcaption{
+
+                p{ font-size:0.80em; width: 100%; margin:0px; color:#9e9e9e; line-height:1.6em;}
+                p:first-child{  font-size:1em; position:absolute; z-index:-1; margin-left:42%;}
+                p:first-child .holidayprice{ display:inline-block; color:#ff6d00; font-weight:bold;}
+                p:nth-of-type(2){ margin-bottom:20px;}
+                a{  width:60px; height:35px; background-color:#ff6d00;  text-align:center; color:#fff; font-size:100%; text-decoration:none;   padding:1%; margin:0; @include TranSition( all 0.2s linear ease-in-out); }
+                a:hover{    color:#ff6d00;  text-align:center; background-color:#fff;      font-size:1em;    padding:1%; margin:0; border:solid 1px #ff6d00;}   
+
+
+            }
+        }
+
+    }
+
+    .holiday_details_small{
+        width:46%;
+        height:130px;
+        border: 4px #ebece7 solid;  
+        margin:5px 0 0 5px;
+        padding:1% 1% 0 1%;
+        float:left;  
+        display:block;
+        h3{ margin:0px 0px 5px 50px; height:20px; line-height:20px; font-size:0.75em; color:#288FCE;  font-weight:bold; }
+
+        figure{
+            width:100%;           
+            img{width:43%;  margin:0 3% 0 0;}
+
+            figcaption{
+                width:49%;
+                display:inline-block;
+                margin-bottom: 2%;
+                span.holidayprice {font-size: 0.75em;}
+                p{ font-size: 0.7em;}
+                a{ padding:2% 3%; margin:0; }
+                a:hover{color:#fff; text-align:center;  font-weight:bold;font-size: 0.75em; }
+            }
+        }
+
+        p{ font-size:0.8em; width: 100%; margin:0px;  margin-bottom:5px; color:#9e9e9e;}
+        p .holidayprice{ display:inline-block; color:#ff6d00; font-weight:bold;}
+        a{ width:60px; height:35px; background-color:#ff6d00; @include TranSition( all 0.2s linear ease-in-out); text-align:center; color:#fff;  font-size:95%;  text-decoration:none;padding:1%;margin:0;}
+        a:hover{ width:60px; height:35px; color:#ff6d00;  text-align:center; background-color:#fff;  font-size:95%;  padding:1%;margin:0; border:solid 1px #ff6d00 ;}
+    }
+
+    .servicebox{  
+        width:31%;  
+        height:330px;   
+        border: 4px #ebece7 solid;  
+        margin:5px 0 0 5px; 
+        padding:0 ; 
+        float:left;
+        display:inline-block;
+        h2{font-size:0.75em; height:30px; margin:0; width:100%; background-color:#ebece7 ; line-height:1.9em; color:#4facf4;}
+        img{margin:1% 0 1% 6%; }
+        p{ font-size:0.75em; margin:2%; width:96%;}
+        a{ font-size:0.75em; text-decoration:none; margin-left:2%;}
+    }
+}/*menu-1 end*/
 @media (max-width: 1024px) {
   #wrapper {
     width: 82%;
@@ -1103,24 +1127,24 @@ footer {
       #wrapper header .contact span:nth-child(1) {
         line-height: 34px; }
         #wrapper header .contact span:nth-child(1) img.tele {
-          margin: 0 7% 0 0;
           width: 12%; }
       #wrapper header nav {
         height: 40px; }
         #wrapper header nav ul li {
-          width: 13.870684%; }
+          -webkit-flex: 0 1 13.71%;
+          -ms-flex: 0 1 13.71%;
+          flex: 0 1 13.71%;
+          width: 13.71%; }
           #wrapper header nav ul li a {
-            font-size: 0.70em; }
+            font-size: 0.75em; }
           #wrapper header nav ul li a:hover {
-            font-size: 0.70em; }
+            font-size: 0.75em; }
       #wrapper header .contact {
         width: 130px; }
         #wrapper header .contact span:nth-child(1) {
           font-size: 0.9em; }
           #wrapper header .contact span:nth-child(1) img.tele {
-            margin: 0 4% 0 0;
-            width: 12%;
-            clear: both; }
+            width: 12%; }
         #wrapper header .contact span:nth-child(2) {
           font-size: 0.75em; }
     #wrapper #leftside {
@@ -1255,7 +1279,7 @@ footer {
             #wrapper #content2 .holiday_details figure figcaption a:hover {
               font-size: 0.9em; }
       #wrapper #content2 .holiday_details_small {
-        width: 46%; }
+        width: 45%; }
         #wrapper #content2 .holiday_details_small h1 {
           font-size: 0.80em; }
         #wrapper #content2 .holiday_details_small figure img {
@@ -1947,7 +1971,7 @@ footer {
       #wrapper #content2 .servicebox h1 {
         line-height: 30px;
         height: 30px;
-        text-indent: 0; }
+        text-align: center; }
       #wrapper #content2 .servicebox figcaption p {
         font-size: 0.70em; }
       #wrapper #content2 .holiday_details {

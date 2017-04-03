@@ -1,34 +1,8 @@
 
+@import "partials/variables";
+//@import "partials/normalize";
+@import "partials/mixins";
 
-@mixin borderRaduis( $radius... ) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -o-border-radius: $radius;
-  border-radius: $radius;
-}
-
-@mixin TransformTrans( $radius... ) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -o-border-radius: $radius;
-  border-radius: $radius;
-}
-
-@mixin gradient($baseColor, $toColor){
-  background-color:$baseColor;
-  background-image: -moz-linear-gradient(top, $baseColor, $toColor); /* FF3.6 */
-  background-image: -webkit-gradient(linear,left top,left bottom, color-stop(0, $baseColor),color-stop(1, $toColor));  /* Saf4+, Chrome */
-  background-image: linear-gradient(top,$baseColor, $toColor);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');   /* IE6â��IE9 */
-}
-
-
-@mixin TranSition( $TranSition... ) {
-  -webkit-transition: $TranSition;
-  -moz-transition: $TranSition;
-  -o-transition: $TranSition;
-  transition: $TranSition;
-}
 
 @font-face {
     font-family:'pt-sans';
@@ -38,13 +12,26 @@
 
 }
 
+/*html {
+background-image: url(ballet-background.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+color: #fff;
+background-color: #000;
+}*/
+
 
 html, button, input, select, textarea {   color: #222;}
 html {  font-size: 1em;   line-height: 1.4;}
 
-::-moz-selection {   background: #b3d4fc;   text-shadow: none;}
+::-moz-selection {   background: $color;   text-shadow: none;}
 
-::selection {   background: #b3d4fc;   text-shadow: none;}
+::selection {   background: $color;   text-shadow: none;}
 
 hr { display: block;  height: 1px;   border: 0;  border-top: 1px solid #ccc;   margin: 1em 0; padding: 0;}
 
@@ -54,16 +41,16 @@ fieldset { border: 0;   margin: 0;    padding: 0;}
 textarea { resize: vertical;}
 
 .ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
 }
 
 .ir:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 150%;
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
 }
 
 /*
@@ -71,8 +58,8 @@ textarea { resize: vertical;}
  */
 
 .hidden {
-  display: none !important;
-  visibility: hidden;
+    display: none !important;
+    visibility: hidden;
 }
 
 /*
@@ -80,14 +67,14 @@ textarea { resize: vertical;}
  */
 
 .visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 /*
@@ -96,12 +83,12 @@ textarea { resize: vertical;}
  */
 
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
 }
 
 /*
@@ -109,341 +96,514 @@ textarea { resize: vertical;}
  */
 
 .invisible {
-  visibility: hidden;
+    visibility: hidden;
 }
 
-.browsehappy {   margin: 0.2em 0;   background: #ccc;   color: #000;   padding: 0.2em 0;}
+.browsehappy {   
+    margin: 0.2em 0;   
+    background: #ccc;   
+    color: $colorblk;   
+    padding: 0.2em 0;
+}
 
-a{text-decoration:none;-webkit-transition:all 0.2s linear;-moz-transition:all 0.2s linear;-o-transition:all 0.2s linear; transition:all 0.2s linear;}
+a{text-decoration:none;@include TranSition(all 0.2s linear); }
 
-a:hover{-webkit-transform:scale(1.00);-moz-transform:scale(1.00);-ms-transform:scale(1.00);-o-transform:scale(1.00); transform:scale(1.00);}
+a:hover{@include TransScale(scale(1.00)); }
 
 
 
-h1, h2, h3{display:block; font-family: 'PT Sans', sans-serif;}
+h1, h2, h3{display:block; font-family: $font-style;}
 
 img{width:100%; height:100%;}
 
-body{font-family: 'PT Sans', sans-serif; margin:0px; background-color:#5fa5e7;	padding:0px; font-size:100%; line-height:1;	background: url("../images/images/travel-agency-website-bg.png") no-repeat left bottom #5fa5e7; font-family:'Myriad Pro' , sans-serif; }
+body{font-family: $font-style; margin:0px; background-color:$color2;	padding:0px; font-size:100%; line-height:1;	background: url("../images/images/travel-agency-website-bg.png") no-repeat left bottom $color2; font-family:$font-style1; }
 
 
 #wrapper{	
-	width: 72%;	
-	margin:0 auto;
-  background-color:#fff;
-  padding: 0 2%;
-  font-family: 'PT Sans', sans-serif;
-  
-  .clearfix{display:block;clear:both;}
-  /*
-   * Clearfix: contain floats
-   *
-   * For modern browsers
-   * 1. The space content is one way to avoid an Opera bug when the
-   *    `contenteditable` attribute is included anywhere else in the document.
-   *    Otherwise it causes space to appear at the top and bottom of elements
-   *    that receive the `clearfix` class.
-   * 2. The use of `table` rather than `block` is only necessary if using
-   *    `:before` to contain the top-margins of child elements.
-   */
+    width: 72%;	
+    margin:0 auto;
+    background-color:$color3;
+    padding: 0 2%;
+    font-family: $font-style;
 
-  .clearfix:before, .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-  }
+    .clearfix{display:block;clear:both;}
+    /*
+     * Clearfix: contain floats
+     *
+     * For modern browsers
+     * 1. The space content is one way to avoid an Opera bug when the
+     *    `contenteditable` attribute is included anywhere else in the document.
+     *    Otherwise it causes space to appear at the top and bottom of elements
+     *    that receive the `clearfix` class.
+     * 2. The use of `table` rather than `block` is only necessary if using
+     *    `:before` to contain the top-margins of child elements.
+     */
 
-  .clearfix:after {
-    clear: both;
-  }
-	
-	header{	
-		width:100%;	
-		height:117px;
-    	background-color:#f7f7f7;
-		#logo{height:77px; width:250px; margin:0px;  }
-
-    .contact{ 
-      width:160px; 
-      height:auto;  
-      float:right; 
-      margin:5px 0px 0px 0px; 
-      color:#fff; 
-      font-size:1em;
-      display:block;
-	  
-	  
-    span:nth-child(1) { 
-		  background-color:#175480; 
-		  padding:0 3%;
-		  display:block; 
-		  line-height:31px; 
-		  letter-spacing:0.01em;
-	    font-weight:bold;	
-      font-size: 1.1em;
-      img.tele{ margin:0 4% 0 0; width: 12%; clear:both;}
-		}
-      span:nth-child(2) { display:block; line-height:20px; color:#000; font-size: 0.90em; text-align:left; text-indent:0; text-align:center;}
-    }/*contact end*/
-
-    nav { 
-      width:100%; 
-      height:40px; 
-      margin-bottom:0px; 
-  	  ul{	
-        height:100%;
-        display:block;
-        margin:0;
-        padding:0;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-  		  li{
-          list-style:none; 
-          display:inline-block; 
-          width:13.91%; 
-          float:left; 
-          padding:0px; 
-          height:40px; 
-          @include borderRaduis(5px 5px 0px 0px); 
-          margin-right:0.2%;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-align-items: center;
-          -ms-flex-pack: center;
-          align-items: center;
-          a{text-decoration:none; width:100%; font-size:0.78em; text-align:center;@include borderRaduis(5px 5px 0px 0px); height:40px; line-height:40px; color:#fff; @include gradient(#4aa8f0, #1180c5); @include TranSition( all 0.2s linear ease-in-out); display: block; text-transform:uppercase;font-weight:bold;}
-          a:hover{text-decoration:none; width:100%;  text-align:center; height:40px; line-height:40px;  color:#fff; @include gradient(#1180c5,#4aa8f0 ); font-weight:bold;}
-          a:visited{  @include gradient(#ffffff, #ffffff); color:#c90;}
-          a:focus{  @include gradient(#ffffff, #ffffff); color:#c90;}
-          
-          a:active{  @include gradient(#ffffff, #ffffff);  color:#c90;}
-        }
-  	  }
-    }/*nav end*/
-
-	}/*header end*/
-
-  
-  #leftside{ 
-    width:30%; 
-    height:auto; 
-    float:left; 
-    padding-top:1%;
-
-    .leftsidebox{
-      width:96%;  
-      height:auto;  
-      margin-bottom:1%; 
-      padding:0; 
-      border:solid 3px #ebece7;
-      @include borderRaduis(5px);
-      a{text-decoration:none; margin-left:10px; display:block; height: 30px; line-height: 30px; color:blue;}
-      a:hover{text-decoration:none; height: 30px; line-height: 30px; }
-      h2{font-size:1.2em; @include borderRaduis(2px 2px 0px 0px); text-align:left; margin:0px; color:#0e4d7c; padding: 0 ; height:40px; background-color:#ebece7; text-indent:2%; line-height:40px; width:100%;}
-      
-      #search_form{
-        width:100%; 
-        margin-top:5px;
-        label{width:96%; color:#000;height:25px; line-height:25px; padding:0;float:left; margin:0; font-size:0.9em; font-weight:bold;}
-        ul{
-          margin:0; 
-          padding:0; 
-          width:96%; 
-          margin:auto;
-          
-          li{  
-            list-style:none; 
-            margin:0px; 
-            height:70px;
-            .destination1{ width:100%; height:35px; line-height: 35px;}
-            .time_1{ width:27.1%; height:35px; display:inline-block; float:left; margin:1% 1% 1% 0;}
-            #time_2{ width:43%; height:35px; display:inline-block; float:none; margin:1% 0;}
-          }
-          .misc_inner{ 
-            width:50%; 
-            
-            float:left;
-            .misc { width:98%; height:35px; display:block; }
-            label{width:96%; height:25px; line-height:25px; font-size:0.8em; margin:0; padding:0;}
-          }
-       
-        }
-
-        #searchbtn{@include gradient(#f4810a, #f99f3e); @include TranSition( all 0.2s linear ease-in-out); clear:left; @include borderRaduis(5px); margin:5% auto; width:50%; color:#fff; height:30px;  border: 0; display:block;}
-        #searchbtn:hover{color:#fff; border: 0;@include gradient(#f99f3e, #f4810a); font-weight:bold; }
-      }/*#searchform end*/
-
-      div.destinations{
-        width:91%; 
-        height:auto; 
-        background-color:#ebebe9; 
-        margin:5px auto; 
-        padding:2.5%;
-        display:block;
-        figure{
-          margin-right:2%;
-          width: 100%;
-          img{width:42%; float:left; display:inline-block; margin-right:1%;}
-          figcaption{
-            width:50%;
-            display: inline-block;
-            h3{color:#288fce; font-size: 0.95em; font-weight:bold; width:100%; height: 30px; margin:0; padding:0;line-height: 30px;}
-            p{ font-size:0.75em; width:100%; float:none; height:auto; margin:0px; padding:0px; display:inline-block; color:#000; line-height:20px;}
-          }
-
-        }
-      }/*.destinations end*/
-
-    }/*.leftsidebox end*/
-
-  }/*#leftside end*/
-
-
-  #leftside2{ 
-    width:20%; 
-    height:auto; 
-    float:left; 
-    margin-top:1%;
-    background-color:#ededeb;
-    
-    
-    h1{width:100%;  text-indent:5%; color:#1e4b6c; display:block; font-size:0.85em; line-height:20px; margin: 0 auto; }
-
-    ul{
-      height:auto;
-      width:90%;
-      padding:2%;
-      margin:0 auto;
-      
-      li{ 
-        display:block;
-        width:100%;
-        height:25px;
-        margin:0 0 2% 0;
-
-        a{display:block; height:100%; font-size:0.8em; @include TranSition( all 0.2s linear ease-in-out); width:100%; @include gradient(#fafafa, #ededeb); line-height:25px; color:#1485c9; letter-spacing:0.02em;}
-        a::before{content: "<   ";}
-        a:hover{ height:100%; font-weight:bold; font-size:0.80em; width:100%; @include gradient(#ededeb,#fafafa); line-height:25px;}
-
-
-      }
-    }
-  }
-
-  #leftside3{ 
-    width:20%; 
-    height:auto; 
-    float:left; 
-    margin-top:1%;
-	  
-    #contact-details{
-      
-      display:block;
-      width:96%;
-      height:auto;
-      border:4px #ecebe6 solid;
-      margin: 0;
-      padding: 10% 0;
-      list-style: none;
-      font-size:0.70em;
-      @include borderRaduis(5px);
-
-    	li{
-        width:100%;
-        line-height:20px;
-        height:80px; 
-        color:#9e9fa1;
-        &:first-line{color:#164d6b; font-weight:bold;}
-        
-  	    span{ 
-    			height:100%; 
-    			float: left; 
-    			width:25%; 
-    			display:inline-block; 
-    			background-color:#fff;
-    			img{width:41%; height:25%; display:block; margin:auto;}
-    		
-    		}
-    	   	
-    			
-    	  a{ display:block; line-height:20px; font-size: 0.90em;}
-    	  
-  	  }
-
+    .clearfix:before, .clearfix:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
     }
 
-    figure{
-      margin:0;
-
-      figcaption{
-        position:relative;
-        z-index:999;
-        left:0;
-        top: -524px;
-        padding:5%;
-        h1{ text-indent:0; width:100%; color:#fff; display:block; font-size:1.5em; margin: 0 auto; text-transform: uppercase; }
-    
-        p{color:#fff; font-size:0.9em; line-height:1.7em; margin:0 0 5% 0;}
-      }
+    .clearfix:after {
+        clear: both;
     }
-  }
 
-  #content{ 
-    width:70%; 
-    height:1070px;  
-    float:left; 
-    margin:1% 0;
-    h1{color:#0e4d7c; font-weight:bold;}
+    header{	
+        width:100%;	
+        height:117px;
+        background-color:$color3;
+        border-bottom: 1px solid $colorbg;
+        #logo{height:77px; width:250px; margin:0px;  }
 
-    #banner{
-      width:100%; 
-      height:430px; 
-      margin:0; 
-
-      img {width:100%;}
-    }/*banner end*/
-
-    #offers{  
-      width:100%; 
-      height:540px;
-      h2{ font-size:1.2em; color:#0e4d7c; margin:0px; height:60px; line-height:65px; text-indent:20px;letter-spacing:0.05em;} 
-
-      div.offerbox{  
-
-        float:left; 
-        padding:0; 
-        margin:0px 0px 20px 5px; 
-        border: 4px #ebece7 solid; 
-        height:auto; 
-        width: 31.4%;
-        @include borderRaduis(5px);
-        figure{
-          display:block;
-          width:100%;
-          margin:2% 0;
-          img {width:80%; margin:0 auto; display:block;}
-          figcaption{
-            padding: 7% 0;
+        .contact{ 
+            width:160px; 
+            height:auto;  
+            float:right; 
+            margin:5px 0px 0px 0px; 
+            color:$color3; 
+            font-size:1em;
             display:block;
-            p{  font-size:0.8em; line-height:25px; text-align:center; margin:0; height:25px; line-height:25px;}
-            p:nth-of-type(2){ 
-              color:#288fce; 
-              font-weight:bold;
-              span{color:#f66c00;}
-            }
-          }
-        }
-     
+            
 
-      }/*offerboxend*/
-    }/*offer end*/
-   
-  }/*content end*/
- 
-  label.error{font-size:1em; position:absolute; background-color:#c90; left: 1000px; index:2; border:1px solid black; padding:1%; text-align:1.5em;}
-  
- /* #menu-1 { 
+            span:nth-child(1) { 
+                background-color:$colorbg; 
+                padding:0;
+                display:block; 
+                line-height:30px; 
+                letter-spacing:0.01em;
+                font-weight:bold;	
+                font-size: 1em;
+                text-shadow:1px 1px 1px #000;
+                img.tele{ margin: 1.7% 4.5%; width: 11.5%; float:left; display:block;}
+            }
+            span:nth-child(2) { display:block; line-height:20px; color:$colorblk; font-size: 0.90em; text-transform:uppercase; text-align:left; text-indent:0; text-align:center; color:$colorgry;}
+        }/*contact end*/
+
+        nav { 
+            width:100%; 
+            height:40px; 
+            margin-bottom:0px; 
+            ul{	
+                height:100%;
+                display:block;
+                margin:0;
+                padding:0;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: center;
+                -ms-flex-pack: center;
+                align-items: center;
+                li{
+                    list-style:none; 
+                    display:inline-block; 
+                    width:13.71%; 
+                    float:left; 
+                    padding:0px; 
+                    height:40px; 
+                    @include borderRaduis(5px 5px 0px 0px); 
+                    margin-right:0.2%;
+                    -webkit-flex: 0 1 13.71%;
+                    -ms-flex: 0 1 13.71%;
+                    flex: 0 1 13.71%;
+                    
+                    a{text-decoration:none; width:100%; font-size:0.85em; text-align:center;@include borderRaduis(5px 5px 0px 0px); height:40px; line-height:40px; color:#fff; @include gradient($colorblue1, $colorpw1); @include TranSition( all 0.2s linear ease-in-out); display: block; font-weight:bold;text-shadow:1px 1px 1px #000;}
+                    a:hover{text-decoration:none; width:100%;  text-align:center; height:40px; line-height:40px; @include boxShadow (1px 1px 0px #000); color:$colorbtn2; @include gradient($colorpw,$colorpw ); font-weight:bold; background-color:$colorpw; }
+                    a:visited{  @include gradient($colorpw,$colorpw ); color:$colorbtn5;}
+                    a:focus{  @include gradient($colorpw,$colorpw ); color:$colorbtn5;}
+
+                    a:active{  @include gradient($colorpw,$colorpw );  color:$colorbtn5;}
+                }
+            }
+        }/*nav end*/
+
+    }/*header end*/
+
+    #leftside{ 
+        width:30%; 
+        height:auto; 
+        float:left; 
+        padding-top:1%;
+
+        .leftsidebox{
+            width:96%;  
+            height:auto;  
+            margin-bottom:1%; 
+            padding:0; 
+            border:solid 3px $sideboxborder;
+            @include borderRaduis(5px);
+            a{text-decoration:none; margin-left:10px; display:block; height: 30px; line-height: 30px; color:$heading;}
+            a:hover{text-decoration:none; height: 30px; line-height: 30px; }
+            h2{font-size:1.15em; @include borderRaduis(2px 2px 0px 0px); text-align:left; margin:0px; color:$sideboxcolor1; padding: 0 ; height:40px; background-color:$sideboxborder; text-indent:2%; line-height:40px; width:100%;}
+
+            #search_form{
+                width:100%; 
+                margin-top:5px;
+                label{width:96%; color:$colorblk;height:25px; line-height:25px; padding:0;float:left; margin:0; font-size:0.9em; font-weight:bold;}
+                ul{
+                    margin:0; 
+                    padding:0; 
+                    width:96%; 
+                    margin:auto;
+
+                    li{  
+                        list-style:none; 
+                        margin:0px; 
+                        height:70px;
+                        .destination1{ width:100%; height:35px; line-height: 35px;}
+                        .time_1{ width:27.1%; height:35px; display:inline-block; float:left; margin:1% 1% 1% 0;}
+                        #time_2{ width:43%; height:35px; display:inline-block; float:none; margin:1% 0;}
+                    }
+                    .misc_inner{ 
+                        width:50%; 
+
+                        float:left;
+                        .misc { width:98%; height:35px; display:block; }
+                        label{width:96%; height:25px; line-height:25px; font-size:0.8em; margin:0; padding:0;}
+                    }
+
+                }
+
+                #searchbtn{@include gradient($colorsearchbtn, $colorsearchbtnroll); @include TranSition( all 0.2s linear ease-in-out); clear:left; @include borderRaduis(5px); margin:5% auto; width:50%; color:$colorpw; height:30px;  border: 0; display:block;}
+                #searchbtn:hover{color:$colorpw; border: 0;@include gradient($colorsearchbtnroll, $colorsearchbtn); font-weight:bold; }
+            }/*#searchform end*/
+
+            div.destinations{
+                width:91%; 
+                height:auto; 
+                background-color:$sideboxbg; 
+                margin:5px auto; 
+                padding:2.5%;
+                display:block;
+                figure{
+                    margin-right:2%;
+                    width: 100%;
+                    img{width:42%; float:left; display:inline-block; margin-right:1%;}
+                    figcaption{
+                        width:50%;
+                        display: inline-block;
+                        h3{color:$heading; font-size: 0.95em; font-weight:bold; width:100%; height: 30px; margin:0; padding:0;line-height: 30px;}
+                        p{ font-size:0.75em; width:100%; float:none; height:auto; margin:0px; padding:0px; display:inline-block; color:$colorblk; line-height:20px;}
+                    }
+
+                }
+            }/*.destinations end*/
+
+        }/*.leftsidebox end*/
+
+    }/*#leftside end*/
+
+    #leftside2{ 
+        width:20%; 
+        height:auto; 
+        float:left; 
+        margin-top:1%;
+        background-color:$sideboxbordercolvar;
+
+
+        h1{width:100%;  text-indent:5%; color:$colorbgvar; display:block; font-size:0.85em; line-height:20px; margin: 0 auto; }
+
+        ul{
+            height:auto;
+            width:90%;
+            padding:2%;
+            margin:0 auto;
+
+            li{ 
+                display:block;
+                width:100%;
+                height:25px;
+                margin:0 0 2% 0;
+
+                a{display:block; height:100%; font-size:0.8em; @include TranSition( all 0.2s linear ease-in-out); width:100%; @include gradient($colorpw2, $sideboxbordercolvar); line-height:25px; color:$colorpw1a; letter-spacing:0.02em;}
+                a::before{content: "<   ";}
+                a:hover{ height:100%; font-weight:bold; font-size:0.80em; width:100%; @include gradient($sideboxbordercolvar,$colorpw2); line-height:25px;}
+
+
+            }
+        }
+    }
+
+    #leftside3{ 
+        width:20%; 
+        height:auto; 
+        float:left; 
+        margin-top:1%;
+
+        #contact-details{
+
+            display:block;
+            width:96%;
+            height:auto;
+            border:4px $sideboxbg1 solid;
+            margin: 0;
+            padding: 10% 0;
+            list-style: none;
+            font-size:0.70em;
+            @include borderRaduis(5px);
+
+            li{
+                width:100%;
+                line-height:20px;
+                height:80px; 
+                color:$colorgry;
+                &:first-line{color:$sideboxcolor1a; font-weight:bold;}
+
+                span{ 
+                    height:100%; 
+                    float: left; 
+                    width:22%; 
+                    display:inline-block; 
+                    background-color:$colorpw;
+                    img{width:41%; height:auto; display:block; margin:10% auto;}
+
+                }
+
+
+                a{ display:block; line-height:20px; font-size: 0.90em;}
+
+            }
+
+        }
+
+        figure{
+            margin:0;
+
+            figcaption{
+                position:relative;
+                z-index:999;
+                left:0;
+                top: -524px;
+                padding:5%;
+                h1{ text-indent:0; width:100%; color:$colorpw; display:block; font-size: 1.28em; margin: 0 auto; text-transform: uppercase;line-height: 1.5em; }
+
+                p{color:$colorpw; font-size:0.85em; line-height:1.7em; margin:0 0 5% 0;}
+            }
+        }
+    }
+
+    #content{ 
+        width:70%; 
+        height:1070px;  
+        float:left; 
+        margin:1% 0;
+        h1{color:$sideboxcolor1; font-weight:bold;}
+
+        #banner{
+            width: 96%;
+            height: 412px;
+            margin: 0 auto;
+            display: block; 
+
+            img {width:100%;}
+        }/*banner end*/
+
+        #offers{  
+            width:100%; 
+            height:540px;
+            h2{ font-size:1.2em; color:$sideboxcolor1; margin:0px; height:60px; line-height:65px; text-indent:20px;letter-spacing:0.05em;} 
+
+            div.offerbox{  
+
+                float:left; 
+                padding:0; 
+                margin:0px 0px 20px 5px; 
+                border: 4px $sideboxborder solid; 
+                height:auto; 
+                width: 31.4%;
+                @include borderRaduis(5px);
+                figure{
+                    display:block;
+                    width:100%;
+                    margin:2% 0;
+                    img {width:80%; margin:0 auto; display:block;}
+                    figcaption{
+                        padding: 7% 0;
+                        display:block;
+                        p{  font-size:0.8em; line-height:25px; text-align:center; margin:0; height:25px; line-height:25px;}
+                        p:nth-of-type(2){ 
+                            color:$heading; 
+                            font-weight:bold;
+                            span{color:$colorbtn1;}
+                        }
+                    }
+                }
+
+
+            }/*offerboxend*/
+        }/*offer end*/
+
+    }/*content end*/
+
+    label.error{font-size:1em; position:absolute; background-color:$colorbtn; left: 1000px; index:2; border:1px solid black; padding:1%; text-align:1.5em;}
+
+    #content2 { 
+        width:79%; 
+        height:auto;  
+        float:left; 
+        margin-bottom:10px;
+        background-color:$colorpw;
+        padding-left:1%; 
+        line-height:1.5em;
+        //display: -webkit-flex;
+        //display: -ms-flexbox;
+        //display: flex;
+
+        //-webkit-flex-flow: row wrap;
+        //-ms-flex-flow: row wrap;
+        //flex-flow: row wrap;
+
+        h1{font-size:1.4em; color:$sideboxcolor1; width:100%; margin:0; font-weight:bold; padding: 0;  height: 40px;   line-height: 40px; display:block;}
+        h2{font-size:1.2em; color:$sideboxcolor1; margin:0; width:100%; font-weight: normal; padding: 0;  height: 40px;   line-height: 40px; display:block;}
+        h3{font-size:1.0em; color:$sideboxcolor1; margin:0; width:100%; font-weight: normal; padding: 0;  height: 40px;   line-height: 40px; display:block;}
+        p{ font-size:0.8em; margin: 0;}
+
+        #contactform { 
+            width:100%; 
+            margin:auto; 
+            list-style: none;
+            ul{
+                list-style: none;
+
+                li{ 
+                    margin:5px 0 10px 0;
+                    label {float:left; width:16%; height:35px; font-weight:bold; line-height:35px; font-size:0.9em; }
+                    input{ width:65%; height:35px; padding:0; margin:0; line-height:35px;}
+                    textarea{ width:65%; line-height:1.5em; }
+                    #contactbtn{width:20%; margin-left:16%; height:30px; @include TranSition( all 0.2s linear ease-in-out); line-height:30px; @include gradient($colorbtn2, $colorbtn3); border: 0;}
+                    #contactbtn:hover{color:$colorpw; border: 0; @include gradient($colorbtn3,$colorbtn2);}
+                }
+            }
+        }/*end of contact form*/
+
+        .holiday_details{ 
+            border: 4px #eaeaec solid;  
+            margin:1% 0 0 0; 
+            padding:1%;
+            @include borderRaduis(5px);
+            width: 96%;
+
+
+
+            h1{ margin:0px; width: 70%; line-height:40px; font-size:1.1em; color:#1485c9;}
+
+            span.holidayprice{ 
+                font-size:0.95em; 
+                position:absolute; 
+                z-index:2; 
+                left: 76%;
+                color:$colorgry2;
+                .offerbox-price{ display:inline-block; color:$colorbtn4; font-weight:bold;}
+            }
+
+            figure{
+                width: 100%;
+
+                img{width:21%; display:inline-block; float:left; margin:0 2% 0 0;}
+                figcaption{
+                    width: 64%;
+                    margin-bottom: 1%;
+                    display:inline-block;
+                    p{ font-size:0.80em; margin:0 0 1% 0; line-height:2em; color:#9e9e9e;}
+
+                    a{width:20%; @include borderRaduis(5px); text-align:center; color:#fff; height: 25px; font-size:0.9em; text-decoration:none; padding:1% 2%; margin:0; @include gradient($colorbtn2, $colorbtn3); display:block;}
+                    a:hover{color:$colorpw; text-align:center; padding:1% 2%; font-weight:bold; @include gradient($colorbtn3,$colorbtn2);}
+
+                }/*figcaption end*/
+            }/*figure end*/
+
+        }  /*Holiday details packages page end*/ 
+
+        .holiday_details_small{
+            width:45%;
+            border: 4px $sideboxborder solid;  
+            margin:0.5%; 
+            padding: 0 1% 1% 1%;
+            float:left;  
+            display:inline-block;
+
+            h1{ margin:0px ; line-height:30px; height:30px; font-size:0.85em; display:block; color:$heading; font-weight:bold; width:100%; }
+
+            figure{
+                width: 100%;
+                margin-right:10px; 
+                display:inline-block;
+                img{width:43%; display:inline-block; float:left; margin:0 3% 0 0;}
+                span.holidayprice{ 
+                    display:inline-block; 
+                    color:$colorgry2; 
+                    font-weight:bold;
+                    font-size:0.80em;
+                    .offerbox-price{ display:inline-block; color:$colorbtn4; font-weight:bold;}
+                }
+
+                figcaption{
+                    width:54%;
+                    display:inline-block;
+                    margin-bottom: 2%;
+
+                    p{ font-size:0.8em; width: 100%; margin: 0 0 2% 0; line-height:1.8em; color:$colorgry2;}
+                    a{width: 48%; @include borderRaduis(5px); display:block; text-align:center; color:#fff;  font-size:0.8em; text-decoration:none; padding:2% 3%; margin:0; @include gradient($colorbtn2, $colorbtn3);}
+                    a:hover{color:$colorpw; text-align:center;  font-weight:bold; @include gradient($colorbtn3,$colorbtn2);}
+                }
+            }
+
+        }/*Holiday details Best deals page end*/
+        .servicebox{  
+            width:31%;  
+            height:auto;
+            border: 4px $sideboxborder solid;  
+            margin:5px 0 0 5px; 
+            padding:0 ; 
+            float:left;
+            display:inline-block;
+
+            h1{font-size:0.75em; height:30px; margin:0; width:100%; background-color:#ebece7 ; color:$colorblue2; text-indent:1%; line-height: 30px;}
+            figure{
+
+                width:90%;
+                margin:1% auto;
+
+            }
+
+            figcaption{
+                p{ font-size:0.75em; margin:2%; width:96%;}
+                a{ font-size:0.75em; display: block; text-decoration:none; margin-left:2%;}
+                a:hover{ font-size:0.85em; color:blue;}
+            }
+
+        }
+    }/*content2 end*/
+
+
+}/*wrapper end*/
+
+footer{ 
+    width:75%; 
+    height:40px;  
+    color:$colorpw; 
+    clear:both; 
+    display:block;
+    margin:0 auto;
+    ul{ 
+        margin:0; 
+        padding:0;
+        display:block;
+        li {
+            list-style:none; 
+            float:left; 
+            padding:0;  
+            height:40px;
+            width:13.570684%;
+            display:inline-block;
+            a{text-decoration:none; width:100%;  font-size:0.8em; text-align:center; height:100%; line-height:40px; color:$colorblk; display:block; }
+            a:hover{text-decoration:none; width:100%;  font-size:0.8em; text-align:center; line-height:40px; color:$colorbtn5;}
+            a:active{text-decoration:none; width:100%; font-size:0.8em; text-align:center;  line-height:40px; background-color:$colorpw; color:$colorbtn5;}
+        }
+    }
+}/*footer end*/
+
+/*  #menu-1 { 
     width:77%; 
     height:auto;  
     float:left; 
@@ -456,3361 +616,3189 @@ body{font-family: 'PT Sans', sans-serif; margin:0px; background-color:#5fa5e7;	p
     p{ font-size:0.8em;line-height: 40px;}
 
     #contactform { 
-      width:90%; 
-      margin:auto; 
-      list-style: none;
-      ul{
+        width:90%; 
+        margin:auto; 
         list-style: none;
-        li{ 
-          margin:5px 0 10px 0;
-          label {float:left; width:20%; height:30px; font-weight:bold; line-height:1.5em;}
-          input{ width:65%;height:30px;}
-          textarea{ width:65%;}
-          #contactbtn{width:20%; margin-left:20%; height:30px; background-color:#ff6d00; border: 0;}
-          #contactbtn:hover{color:#ff6d00; border: 0; background-color:#fff;border:solid 1px #ff6d00;}
+        ul{
+            list-style: none;
+            li{ 
+                margin:5px 0 10px 0;
+                label {float:left; width:20%; height:30px; font-weight:bold; line-height:1.5em;}
+                input{ width:65%;height:30px;}
+                textarea{ width:65%;}
+                #contactbtn{width:20%; margin-left:20%; height:30px; background-color:#ff6d00; border: 0;}
+                #contactbtn:hover{color:#ff6d00; border: 0; background-color:#fff;border:solid 1px #ff6d00;}
+            }
         }
-      }
     }
 
     .holiday_details{ 
-      height:180px;   
-      border: 4px #eaeaec solid;  
-      padding:1%;
-      @include borderRaduis(5px);
-      h1{ margin:0px; height:30px; line-height:30px; font-size:98%; color:#288FCE;}
-      figure{
-        width:100%;
-        float:left; 
-        margin-right:10px;
-        figcaption{
+        height:180px;   
+        border: 4px #eaeaec solid;  
+        padding:1%;
+        @include borderRaduis(5px);
+        h1{ margin:0px; height:30px; line-height:30px; font-size:98%; color:#288FCE;}
+        figure{
+            width:100%;
+            float:left; 
+            margin-right:10px;
+            figcaption{
 
-          p{ font-size:0.80em; width: 100%; margin:0px; color:#9e9e9e; line-height:1.6em;}
-          p:first-child{  font-size:1em; position:absolute; z-index:-1; margin-left:42%;}
-          p:first-child .holidayprice{ display:inline-block; color:#ff6d00; font-weight:bold;}
-          p:nth-of-type(2){ margin-bottom:20px;}
-          a{  width:60px; height:35px; background-color:#ff6d00;  text-align:center; color:#fff; font-size:100%; text-decoration:none;   padding:1%; margin:0; @include TranSition( all 0.2s linear ease-in-out); }
-          a:hover{    color:#ff6d00;  text-align:center; background-color:#fff;      font-size:1em;    padding:1%; margin:0; border:solid 1px #ff6d00;}   
+                p{ font-size:0.80em; width: 100%; margin:0px; color:#9e9e9e; line-height:1.6em;}
+                p:first-child{  font-size:1em; position:absolute; z-index:-1; margin-left:42%;}
+                p:first-child .holidayprice{ display:inline-block; color:#ff6d00; font-weight:bold;}
+                p:nth-of-type(2){ margin-bottom:20px;}
+                a{  width:60px; height:35px; background-color:#ff6d00;  text-align:center; color:#fff; font-size:100%; text-decoration:none;   padding:1%; margin:0; @include TranSition( all 0.2s linear ease-in-out); }
+                a:hover{    color:#ff6d00;  text-align:center; background-color:#fff;      font-size:1em;    padding:1%; margin:0; border:solid 1px #ff6d00;}   
 
 
+            }
         }
-      }
-     
+
     }
 
     .holiday_details_small{
-      width:46%;
-      height:130px;
-      border: 4px #ebece7 solid;  
-      margin:5px 0 0 5px;
-      padding:1% 1% 0 1%;
-      float:left;  
-      display:block;
-      h3{ margin:0px 0px 5px 50px; height:20px; line-height:20px; font-size:0.75em; color:#288FCE;  font-weight:bold; }
+        width:46%;
+        height:130px;
+        border: 4px #ebece7 solid;  
+        margin:5px 0 0 5px;
+        padding:1% 1% 0 1%;
+        float:left;  
+        display:block;
+        h3{ margin:0px 0px 5px 50px; height:20px; line-height:20px; font-size:0.75em; color:#288FCE;  font-weight:bold; }
 
-      figure{
-        width:100%;           
-        img{width:43%;  margin:0 3% 0 0;}
+        figure{
+            width:100%;           
+            img{width:43%;  margin:0 3% 0 0;}
 
-        figcaption{
-          width:49%;
-          display:inline-block;
-          margin-bottom: 2%;
-          span.holidayprice {font-size: 0.75em;}
-          p{ font-size: 0.7em;}
-          a{ padding:2% 3%; margin:0; }
-          a:hover{color:#fff; text-align:center;  font-weight:bold;font-size: 0.75em; }
+            figcaption{
+                width:49%;
+                display:inline-block;
+                margin-bottom: 2%;
+                span.holidayprice {font-size: 0.75em;}
+                p{ font-size: 0.7em;}
+                a{ padding:2% 3%; margin:0; }
+                a:hover{color:#fff; text-align:center;  font-weight:bold;font-size: 0.75em; }
+            }
         }
-      }
-     
-      p{ font-size:0.8em; width: 100%; margin:0px;  margin-bottom:5px; color:#9e9e9e;}
-      p .holidayprice{ display:inline-block; color:#ff6d00; font-weight:bold;}
-      a{ width:60px; height:35px; background-color:#ff6d00; @include TranSition( all 0.2s linear ease-in-out); text-align:center; color:#fff;  font-size:95%;  text-decoration:none;padding:1%;margin:0;}
-      a:hover{ width:60px; height:35px; color:#ff6d00;  text-align:center; background-color:#fff;  font-size:95%;  padding:1%;margin:0; border:solid 1px #ff6d00 ;}
+
+        p{ font-size:0.8em; width: 100%; margin:0px;  margin-bottom:5px; color:#9e9e9e;}
+        p .holidayprice{ display:inline-block; color:#ff6d00; font-weight:bold;}
+        a{ width:60px; height:35px; background-color:#ff6d00; @include TranSition( all 0.2s linear ease-in-out); text-align:center; color:#fff;  font-size:95%;  text-decoration:none;padding:1%;margin:0;}
+        a:hover{ width:60px; height:35px; color:#ff6d00;  text-align:center; background-color:#fff;  font-size:95%;  padding:1%;margin:0; border:solid 1px #ff6d00 ;}
     }
 
     .servicebox{  
-      width:31%;  
-      height:330px;   
-      border: 4px #ebece7 solid;  
-      margin:5px 0 0 5px; 
-      padding:0 ; 
-      float:left;
-      display:inline-block;
-      h2{font-size:0.75em; height:30px; margin:0; width:100%; background-color:#ebece7 ; line-height:1.9em; color:#4facf4;}
-      img{margin:1% 0 1% 6%; }
-      p{ font-size:0.75em; margin:2%; width:96%;}
-      a{ font-size:0.75em; text-decoration:none; margin-left:2%;}
-    }
-  }/*menu-1 end*/
-
-  #content2 { 
-    width:79%; 
-    height:auto;  
-    float:left; 
-    margin-bottom:10px;
-    background-color:#fff;
-    padding-left:1%; 
-    line-height:1.5em;
-    //display: -webkit-flex;
-    //display: -ms-flexbox;
-    //display: flex;
-
-    //-webkit-flex-flow: row wrap;
-    //-ms-flex-flow: row wrap;
-    //flex-flow: row wrap;
-    
-    
-    
-    h1{font-size:1.5em; color:#0e4d7c; width:100%; margin:0; font-weight:bold; padding: 0;  height: 40px;   line-height: 54px; display:block;}
-    h2{font-size:1.2em; color:#0e4d7c; margin:0; width:100%; font-weight: normal; padding: 0;  height: 40px;   line-height: 54px; display:block;}
-    h3{font-size:1em; color:#0e4d7c; margin:0; width:100%; font-weight: normal; padding: 0;  height: 40px;   line-height: 54px; display:block;}
-    p{ font-size:0.8em; margin: 0;}
-
-    #contactform { 
-      width:100%; 
-      margin:auto; 
-      list-style: none;
-      ul{
-        list-style: none;
-
-        li{ 
-          margin:5px 0 10px 0;
-          label {float:left; width:16%; height:35px; font-weight:bold; line-height:35px; font-size:0.9em; }
-          input{ width:65%; height:35px; padding:0; margin:0; line-height:35px;}
-          textarea{ width:65%; line-height:1.5em; }
-          #contactbtn{width:20%; margin-left:16%; height:30px; @include TranSition( all 0.2s linear ease-in-out); line-height:30px; @include gradient(#EE2A26, #FC7D3C); border: 0;}
-          #contactbtn:hover{color:#fff; border: 0; @include gradient(#FC7D3C,#EE2A26);}
-        }
-      }
-    }/*end of contact form*/
-
-    .holiday_details{ 
-      border: 4px #eaeaec solid;  
-      margin:1% 0 0 0; 
-      padding:1%;
-      @include borderRaduis(5px);
-      width: 96%;
-      
-      
-
-      h1{ margin:0px; width: 70%; line-height:40px; font-size:1.1em; color:#1485c9;}
-
-      span.holidayprice{ 
-        font-size:0.95em; 
-        position:absolute; 
-        z-index:2; 
-        left: 76%;
-        color:#9e9e9e;
-        .offerbox-price{ display:inline-block; color:#ff6d00; font-weight:bold;}
-      }
-
-      figure{
-        width: 100%;
-                
-        img{width:21%; display:inline-block; float:left; margin:0 2% 0 0;}
-        figcaption{
-          width: 64%;
-          margin-bottom: 1%;
-          display:inline-block;
-          p{ font-size:0.80em; margin:0 0 1% 0; line-height:2em; color:#9e9e9e;}
-               
-          a{width:20%; @include borderRaduis(5px); text-align:center; color:#fff; height: 25px; font-size:0.9em; text-decoration:none; padding:1% 2%; margin:0; @include gradient(#EE2A26, #FC7D3C); display:block;}
-          a:hover{color:#fff; text-align:center; padding:1% 2%; font-weight:bold; @include gradient(#FC7D3C,#EE2A26);}
-
-        }/*figcaption end*/
-      }/*figure end*/
-      
-    }  /*Holiday details packages page end*/ 
-
-    .holiday_details_small{
-      width:44%;
-      
-      border: 4px #ebece7 solid;  
-      margin:1% 0.5%; 
-      padding: 0 1% 1% 1%;
-      float:left;  
-      display:inline-block;
-
-      h1{ margin:0px ; line-height:30px; height:30px; font-size:0.85em; display:block; color:#288FCE; font-weight:bold; width:100%; }
-
-      figure{
-        width: 100%;
-        margin-right:10px; 
+        width:31%;  
+        height:330px;   
+        border: 4px #ebece7 solid;  
+        margin:5px 0 0 5px; 
+        padding:0 ; 
+        float:left;
         display:inline-block;
-        img{width:43%; display:inline-block; float:left; margin:0 3% 0 0;}
-        span.holidayprice{ 
-          display:inline-block; 
-          color:#9e9e9e; 
-          font-weight:bold;
-          font-size:0.80em;
-          .offerbox-price{ display:inline-block; color:#ff6d00; font-weight:bold;}
-        }
-
-        figcaption{
-          width:50%;
-          display:inline-block;
-          margin-bottom: 2%;
-        
-          p{ font-size:0.8em; width: 100%; margin: 0 0 2% 0; line-height:1.8em; color:#9e9e9e;}
-          a{width: 48%; @include borderRaduis(5px); display:block; text-align:center; color:#fff;  font-size:0.8em; text-decoration:none; padding:2% 3%; margin:0; @include gradient(#EE2A26, #FC7D3C);}
-          a:hover{color:#fff; text-align:center;  font-weight:bold; @include gradient(#FC7D3C,#EE2A26);}
-        }
-      }
-      
-    }/*Holiday details Best deals page end*/
-
-    .servicebox{  
-      width:31%;  
-      height:auto;
-      border: 4px #ebece7 solid;  
-      margin:5px 0 0 5px; 
-      padding:0 ; 
-      float:left;
-      display:inline-block;
-
-      h1{font-size:0.75em; height:30px; margin:0; width:100%; background-color:#ebece7 ; color:#4facf4; text-indent:1%; line-height: 30px;}
-      figure{
-
-        width:90%;
-        margin:1% auto;
-
-      }
-
-      figcaption{
+        h2{font-size:0.75em; height:30px; margin:0; width:100%; background-color:#ebece7 ; line-height:1.9em; color:#4facf4;}
+        img{margin:1% 0 1% 6%; }
         p{ font-size:0.75em; margin:2%; width:96%;}
-        a{ font-size:0.75em; display: block; text-decoration:none; margin-left:2%;}
-        a:hover{ font-size:0.85em; color:blue;}
-      }
-  
+        a{ font-size:0.75em; text-decoration:none; margin-left:2%;}
     }
-  }/*content2 end*/
-
-    
-}/*wrapper end*/
-
-footer{ 
-    width:75%; 
-    height:40px;  
-    color:#fff; 
-    clear:both; 
-    display:block;
-    margin:0 auto;
-    ul{ 
-      margin:0; 
-      padding:0;
-      display:block;
-      li {
-        list-style:none; 
-        float:left; 
-        padding:0;  
-        height:40px;
-        width:13.570684%;
-        display:inline-block;
-        a{text-decoration:none; width:100%;  font-size:0.8em; text-align:center; height:100%; line-height:40px; color:#000; display:block; }
-        a:hover{text-decoration:none; width:100%;  font-size:0.8em; text-align:center; line-height:40px; color:#d85f24;}
-        a:active{text-decoration:none; width:100%; font-size:0.8em; text-align:center;  line-height:40px; background-color:#fff; color:#d85f24;}
-      }
-    }
-  }/*footer end*/
+}/*menu-1 end*/
 
 
 @media (max-width: 1024px){
 
-#wrapper {
+    #wrapper {
 
-  width: 82%;
-  margin: auto;
+        width: 82%;
+        margin: auto;
 
-  header {
-    
-    height: 117px;
+        header {
 
-    .contact {
+            height: 117px;
 
-      span:nth-child(1) {
+            .contact {
 
-        line-height: 34px;
-        img.tele { margin: 0 7% 0 0; width: 12%;}
+                span:nth-child(1) {
 
-      }
+                    line-height: 34px;
+                    img.tele { width: 12%;}
 
-    }
+                }
 
-    nav {
-      
-      height: 40px;
-
-      
-  	  ul{	
- 
-    	  li {
-
-    		width: 13.870684%;
-    		a {font-size: 0.70em; }
-    		a:hover {font-size: 0.70em; }
-
-    	  }
-  	  }
-    }
-
-
-
-    .contact {
-      width:130px;
-
-      span:nth-child(1) {
-        font-size:0.9em;
-        img.tele{ margin:0 4% 0 0; width: 12%; clear:both;}
-
-      }
-      span:nth-child(2) {font-size:0.75em;}
-
-    }
-
-  }/*header end*/
-
-  #leftside {
-
-    
-    .leftsidebox {
-
-      h2 {font-size: 1.1em;}
-
-      a { font-size:0.9em;}
-
-      
-      div.destinations{
-        width:91%; 
-       
-        figure{
-          
-          width: 100%;
-          img{width:47%; float:left; display:inline-block; margin-right:1%;}
-          figcaption{
-            width:50%;
-            display: inline-block;
-            h3{font-size: 0.9em;}
-            p{ font-size: 0.70em;}
-          }
-
-        }
-      }/*.destinations end*/
-
-      #search_form {
-
-        ul {
-
-          .misc_inner {
-            label {font-size:0.75em;}
-            .misc {font-size:0.9em;}
-
-          }
-
-          li {
-              
-              .destination1 {font-size:0.9em; }
-              .time_1 {font-size:0.9em;}
-              #time_2 {font-size:0.9em;}
-          }
-
-          #searchbtn {font-size:0.9em;}
-
-        }
-
-        label {font-size: 0.80em;}
-
-      }
-
-    }/*.leftsidebox end*/
-  }/*#leftside end*/
-
-  #leftside2 {
-
-    h1 {font-size: 0.8em;}
-
-    ul {
-
-      li {
-
-        a {font-size: 0.7em;}
-        a:hover {font-size: 0.75em;}
-
-      }
-    }
-  }/*#leftside2 end*/ 
-
-  #leftside3 {
-
-    #contact-details{
-          
-      font-size:0.75em;
-     
-      li{
-        
-        &:first-line{color:#164d6b; font-weight:bold;}
-        
-        span{ 
-			width:25%;
-			img{width:41%; height:25%; }
-		}
-          
-          
-        a{  line-height:20px; font-size: 0.85em;}
-        
-      }
-
-    }
-
-        
-    figure{
-      margin:0;
-
-      figcaption{
-       
-        top: -448px;
-        
-        h1{font-size:1.3em; margin: 0 auto;  }
-    
-        p{font-size:0.75em; line-height:1.6em; }
-      }
-    }
-   
-  }/*#leftside2 end*/ 
-
-  #content {
-
-    #offers {
-
-      h1 { font-size: 1.1em;}
-
-       div.offerbox{  
-
-       
-        width: 31%;
-        @include borderRaduis(5px);
-        figure{
-          
-          img {width:80%; margin:0 auto; display:block;}
-          figcaption{
-            padding: 7% 0;
-            display:block;
-            p{  font-size:0.7em; }
-            p:nth-of-type(2){ 
-              
-              font-size: 0.75em; 
-             
-              span{color:#f66c00;}
             }
-          }
-        }
-      }/*offerboxend*/
 
-     
+            nav {
+
+                height: 40px;
+
+
+                ul{	
+
+                    li {
+                        -webkit-flex: 0 1 13.71%;
+                        -ms-flex: 0 1 13.71%;
+                        flex: 0 1 13.71%;
+
+                        width: 13.71%;
+                        a {font-size: 0.75em; }
+                        a:hover {font-size: 0.75em; }
+
+                    }
+                }
+            }
+
+
+
+            .contact {
+                width:130px;
+
+                span:nth-child(1) {
+                    font-size:0.9em;
+                    img.tele{ width: 12%; }
+
+                }
+                span:nth-child(2) {font-size:0.75em;}
+
+            }
+
+        }/*header end*/
+
+        #leftside {
+
+
+            .leftsidebox {
+
+                h2 {font-size: 1.1em;}
+
+                a { font-size:0.9em;}
+
+
+                div.destinations{
+                    width:91%; 
+
+                    figure{
+
+                        width: 100%;
+                        img{width:47%; float:left; display:inline-block; margin-right:1%;}
+                        figcaption{
+                            width:50%;
+                            display: inline-block;
+                            h3{font-size: 0.9em;}
+                            p{ font-size: 0.70em;}
+                        }
+
+                    }
+                }/*.destinations end*/
+
+                #search_form {
+
+                    ul {
+
+                        .misc_inner {
+                            label {font-size:0.75em;}
+                            .misc {font-size:0.9em;}
+
+                        }
+
+                        li {
+
+                            .destination1 {font-size:0.9em; }
+                            .time_1 {font-size:0.9em;}
+                            #time_2 {font-size:0.9em;}
+                        }
+
+                        #searchbtn {font-size:0.9em;}
+
+                    }
+
+                    label {font-size: 0.80em;}
+
+                }
+
+            }/*.leftsidebox end*/
+        }/*#leftside end*/
+
+        #leftside2 {
+
+            h1 {font-size: 0.8em;}
+
+            ul {
+
+                li {
+
+                    a {font-size: 0.7em;}
+                    a:hover {font-size: 0.75em;}
+
+                }
+            }
+        }/*#leftside2 end*/ 
+
+        #leftside3 {
+
+            #contact-details{
+
+                font-size:0.75em;
+
+                li{
+
+                    &:first-line{color:#164d6b; font-weight:bold;}
+
+                    span{ 
+                        width:25%;
+                        img{width:41%; height:25%; }
+                    }
+
+
+                    a{  line-height:20px; font-size: 0.85em;}
+
+                }
+
+            }
+
+
+            figure{
+                margin:0;
+
+                figcaption{
+
+                    top: -448px;
+
+                    h1{font-size:1.3em; margin: 0 auto;  }
+
+                    p{font-size:0.75em; line-height:1.6em; }
+                }
+            }
+
+        }/*#leftside2 end*/ 
+
+        #content {
+
+            #offers {
+
+                h1 { font-size: 1.1em;}
+
+                div.offerbox{  
+
+
+                    width: 31%;
+                    @include borderRaduis(5px);
+                    figure{
+
+                        img {width:80%; margin:0 auto; display:block;}
+                        figcaption{
+                            padding: 7% 0;
+                            display:block;
+                            p{  font-size:0.7em; }
+                            p:nth-of-type(2){ 
+
+                                font-size: 0.75em; 
+
+                                span{color:#f66c00;}
+                            }
+                        }
+                    }
+                }/*offerboxend*/
+
+
+            }
+
+            #banner {
+
+                height: 325px;
+
+            }/*#banner end*/
+        }/*#content end*/
+
+        #content2 {
+
+            h1 {font-size: 1.3em;}
+            h2 { font-size: 1.1em;}
+
+            p{font-size:0.75em; line-height: 1.9em;}
+
+            .holiday_details {
+
+                h1 {font-size: 1em; height:35px; line-height:35px;}
+
+                span.holidayprice {
+                    font-size: 0.85em;
+                    left: 78%;
+
+                }
+
+                figure{
+                    width: 100%;
+
+                    img{width:25%;  }
+                    figcaption{
+
+                        width: 64%;
+                        margin-bottom: 1%;
+                        p{ font-size:0.80em; margin:0 0 1% 0; line-height:2em;}
+
+                        a{ font-size:0.9em;  padding: 1% 2%; margin:1% 0; }
+                        a:hover{ font-size:0.9em; }
+
+                    }/*figcaption end*/
+                }/*figure end*/
+
+            }/*.holiday details end*/
+
+            .holiday_details_small {
+                width: 45%;
+
+                h1 {font-size: 0.80em;}
+
+                figure{
+
+
+                    img{width:47%;  margin:0 3% 0 0;}
+                    figcaption{
+                        width:50%;
+                        display:inline-block;
+                        margin-bottom: 2%;
+                        span.holidayprice {font-size: 0.8em;}
+                        p{ font-size:0.75em;  margin: 0 0 1% 0;  }
+                        a{ width: 55%; font-size: 0.75em;  padding:2% 3%; margin:0; }
+                        a:hover{font-size: 0.75em; width: 55%; }
+                    }
+                }
+
+            }/*.holiday details small end*/
+
+        }/*#content2 end*/
+
+    }/*wrapper end*/
+
+    footer {
+        width: 82%;
+
     }
 
-    #banner {
-      
-      height: 325px;
-      
-    }/*#banner end*/
-  }/*#content end*/
-
-  #content2 {
-
-    h1 {font-size: 1.3em;}
-    h2 { font-size: 1.1em;}
-
-    p{font-size:0.75em; line-height: 1.9em;}
-
-    .holiday_details {
-
-      h1 {font-size: 1em; height:35px; line-height:35px;}
-
-      span.holidayprice {
-        font-size: 0.85em;
-        left: 78%;
-
-      }
-
-     figure{
-      width: 100%;
-              
-      img{width:25%;  }
-      figcaption{
-        
-        width: 64%;
-        margin-bottom: 1%;
-        p{ font-size:0.80em; margin:0 0 1% 0; line-height:2em;}
-             
-        a{ font-size:0.9em;  padding: 1% 2%; margin:1% 0; }
-        a:hover{ font-size:0.9em; }
-
-      }/*figcaption end*/
-      }/*figure end*/
-     
-    }/*.holiday details end*/
-
-    .holiday_details_small {
-      width: 46%;
-      
-      h1 {font-size: 0.80em;}
-
-      figure{
-        
-                
-        img{width:47%;  margin:0 3% 0 0;}
-        figcaption{
-          width:50%;
-          display:inline-block;
-          margin-bottom: 2%;
-          span.holidayprice {font-size: 0.8em;}
-          p{ font-size:0.75em;  margin: 0 0 1% 0;  }
-          a{ width: 55%; font-size: 0.75em;  padding:2% 3%; margin:0; }
-          a:hover{font-size: 0.75em; width: 55%; }
-        }
-      }
-      
-    }/*.holiday details small end*/
-
-  }/*#content2 end*/
-
-}/*wrapper end*/
-
-footer {
-  width: 82%;
-
 }
-
-}
-
 
 @media (max-width: 980px){
 
-#wrapper {
+    #wrapper {
 
-  width: 82%;
-  margin: auto;
+        width: 82%;
+        margin: auto;
 
-  header {
-    
-    height: 117px;
+        header {
 
-
-    .contact {
-
-      span:nth-child(1) {
-        font-size:0.85em;
-        img.tele{ margin:0 5% 0 0; width: 13%; clear:both;}
-
-      }
-      span:nth-child(2) {font-size:0.70em;}
-
-    }
-
-    nav {
-      
-      height: 40px;
-      ul{
-
-        li {
-                
-          width: 13.970684%;
-          a {font-size: 0.65em; }
-          a:hover {font-size: 0.65em; }
-          
-        }
-
-      }
-      
-    }/*Nav end*/
-
-  }/*header end*/
-
-  #leftside {
+            height: 117px;
 
 
-    .leftsidebox {
+            .contact {
 
-      h1 {font-size: 1.1em;}
-      a { font-size:0.8em;}
+                span:nth-child(1) {
+                    font-size:0.85em;
+                    img.tele{ margin:0 5% 0 0; width: 13%; clear:both;}
 
-      div.destinations{
-        width:91%; 
-       
-        figure{
-          
-          width: 100%;
-          img{width:47%; margin-right:1%;}
-          figcaption{
-            width:50%;
-            display: inline-block;
-            h3{font-size: 0.9em;}
-            p{ font-size: 0.70em;}
-          }
+                }
+                span:nth-child(2) {font-size:0.70em;}
 
-        }
-      }/*.destinations end*/
-
-      #search_form {
-
-        ul {
-
-          .misc_inner {
-
-            .misc {font-size:0.9em;}
-        
-          }
-
-          li {
-                
-            .destination1 {font-size:0.85em; }
-            .time_1 {font-size:0.85em;}
-            #time_2 {font-size:0.85em;}
-             label {font-size: 0.80em;}
-
-          }
-        }
-      }
-
-
-    }/*.leftsidebox end*/
-  }/*#leftside end*/
-
-  #leftside2 {
-
-    h1 {font-size: 0.8em;}
-   
-    ul {
-
-      li {
-
-        a {font-size: 0.7em;}
-        a:hover {font-size: 0.70em;}
-
-      }
-    }
-  }/*#leftside2 end*/ 
-
-  #leftside3 {
-
-    h1 {font-size: 0.8em;}
-
-    #contact-details{
-          
-      font-size:0.70em;
-     
-      li{
-        height:75px;
-        
-        &:first-line{color:#164d6b; font-weight:bold;}
-        
-        span{   
-		width:25%;
-		img{width:41%; height:25%;}
-		}
-          
-          
-        a{  line-height:20px; font-size: 0.85em;}
-        
-      }
-
-    }
-
-    figure{
-      margin:0;
-
-      figcaption{
-        
-        top: -431px;
-       
-        h1{font-size:1.2em;  }
-    
-        p{ font-size:0.75em; }
-      }
-    }
-  
-  }/*#leftside2 end*/
-
-
-  #content {
-
-    #offers {
-
-      h1 { font-size: 1.1em;}
-
-      div.offerbox{  
-
-       
-        width: 31%;
-        @include borderRaduis(5px);
-        figure{
-          
-          img {width:80%; margin:0 auto; display:block;}
-          figcaption{
-            padding: 7% 0;
-            display:block;
-            p{  font-size:0.7em; }
-            p:nth-of-type(2){ 
-              
-              font-size: 0.75em; 
-             
-              span{color:#f66c00;}
             }
-          }
-        }
-      }/*offerboxend*/
+
+            nav {
+
+                height: 40px;
+                ul{
+
+                    li {
+
+                        width: 13.970684%;
+                        a {font-size: 0.65em; }
+                        a:hover {font-size: 0.65em; }
+
+                    }
+
+                }
+
+            }/*Nav end*/
+
+        }/*header end*/
+
+        #leftside {
+
+
+            .leftsidebox {
+
+                h1 {font-size: 1.1em;}
+                a { font-size:0.8em;}
+
+                div.destinations{
+                    width:91%; 
+
+                    figure{
+
+                        width: 100%;
+                        img{width:47%; margin-right:1%;}
+                        figcaption{
+                            width:50%;
+                            display: inline-block;
+                            h3{font-size: 0.9em;}
+                            p{ font-size: 0.70em;}
+                        }
+
+                    }
+                }/*.destinations end*/
+
+                #search_form {
+
+                    ul {
+
+                        .misc_inner {
+
+                            .misc {font-size:0.9em;}
+
+                        }
+
+                        li {
+
+                            .destination1 {font-size:0.85em; }
+                            .time_1 {font-size:0.85em;}
+                            #time_2 {font-size:0.85em;}
+                            label {font-size: 0.80em;}
+
+                        }
+                    }
+                }
+
+
+            }/*.leftsidebox end*/
+        }/*#leftside end*/
+
+        #leftside2 {
+
+            h1 {font-size: 0.8em;}
+
+            ul {
+
+                li {
+
+                    a {font-size: 0.7em;}
+                    a:hover {font-size: 0.70em;}
+
+                }
+            }
+        }/*#leftside2 end*/ 
+
+        #leftside3 {
+
+            h1 {font-size: 0.8em;}
+
+            #contact-details{
+
+                font-size:0.70em;
+
+                li{
+                    height:75px;
+
+                    &:first-line{color:#164d6b; font-weight:bold;}
+
+                    span{   
+                        width:25%;
+                        img{width:41%; height:25%;}
+                    }
+
+
+                    a{  line-height:20px; font-size: 0.85em;}
+
+                }
+
+            }
+
+            figure{
+                margin:0;
+
+                figcaption{
+
+                    top: -431px;
+
+                    h1{font-size:1.2em;  }
+
+                    p{ font-size:0.75em; }
+                }
+            }
+
+        }/*#leftside2 end*/
+
+
+        #content {
+
+            #offers {
+
+                h1 { font-size: 1.1em;}
+
+                div.offerbox{  
+
+
+                    width: 31%;
+                    @include borderRaduis(5px);
+                    figure{
+
+                        img {width:80%; margin:0 auto; display:block;}
+                        figcaption{
+                            padding: 7% 0;
+                            display:block;
+                            p{  font-size:0.7em; }
+                            p:nth-of-type(2){ 
+
+                                font-size: 0.75em; 
+
+                                span{color:#f66c00;}
+                            }
+                        }
+                    }
+                }/*offerboxend*/
+            }
+
+            #banner {
+
+                height: 325px;
+
+            }/*#banner end*/
+        }/*#content end*/
+
+        #content2 {
+
+            h1 {font-size: 1.15em;}
+            h2 { font-size: 1.05em;}
+
+            .holiday_details {
+
+                h1 {font-size: 1em; height:35px; line-height:35px;}
+
+                span.holidayprice {
+                    font-size: 0.85em;
+                    left: 78%;
+
+                }
+                figure{
+                    width: 100%;
+
+                    img{width:26%; display:inline-block; float:left; }
+                    figcaption{
+
+                        width: 64%;
+                        margin-bottom: 1%;
+                        p{ font-size: 0.75em; }
+
+                        a{height:35px;  height: 25px; font-size:0.9em;  padding: 1% 2%; margin:1% 0;width: 25%; }
+                        a:hover{ font-size:0.9em;width: 25%; }
+
+                    }/*figcaption end*/
+                }/*figure end*/
+
+            }/*.holiday details end*/
+
+            .holiday_details_small {
+                width: 45.70%;
+
+                h1 {font-size: 0.80em;}
+
+                figure{
+
+                    img{width:47%;  margin:0 3% 0 0;}
+
+                    figcaption{
+                        width:49%;
+                        display:inline-block;
+                        margin-bottom: 2%;
+                        span.holidayprice {font-size: 0.8em;}
+                        p{ font-size: 0.7em; }
+                        a{width: 60%;  font-size: 0.75em;  padding:2% 3%; margin:0; }
+                        a:hover{ font-size: 0.75em; width: 60%;}
+                    }
+                }
+
+
+            }/*.holiday details small end*/
+
+        }/*#content2 end*/
+
+    }/*wrapper end*/
+
+    footer {
+        width: 82%;
+
     }
 
-    #banner {
-      
-      height: 325px;
-      
-    }/*#banner end*/
-  }/*#content end*/
 
-  #content2 {
-
-    h1 {font-size: 1.15em;}
-    h2 { font-size: 1.05em;}
-
-    .holiday_details {
-
-      h1 {font-size: 1em; height:35px; line-height:35px;}
-
-      span.holidayprice {
-        font-size: 0.85em;
-        left: 78%;
-
-      }
-       figure{
-        width: 100%;
-                
-        img{width:26%; display:inline-block; float:left; }
-        figcaption{
-          
-          width: 64%;
-          margin-bottom: 1%;
-          p{ font-size: 0.75em; }
-               
-          a{height:35px;  height: 25px; font-size:0.9em;  padding: 1% 2%; margin:1% 0;width: 25%; }
-          a:hover{ font-size:0.9em;width: 25%; }
-
-        }/*figcaption end*/
-      }/*figure end*/
-
-    }/*.holiday details end*/
-
-    .holiday_details_small {
-      width: 45.70%;
-      
-      h1 {font-size: 0.80em;}
-
-      figure{
-                
-        img{width:47%;  margin:0 3% 0 0;}
-
-        figcaption{
-          width:49%;
-          display:inline-block;
-          margin-bottom: 2%;
-          span.holidayprice {font-size: 0.8em;}
-          p{ font-size: 0.7em; }
-          a{width: 60%;  font-size: 0.75em;  padding:2% 3%; margin:0; }
-          a:hover{ font-size: 0.75em; width: 60%;}
-        }
-      }
-         
-
-    }/*.holiday details small end*/
-
-  }/*#content2 end*/
-
-}/*wrapper end*/
-
-footer {
-  width: 82%;
 
 }
-
-  
-
-}
-
 
 @media (max-width: 800px){
 
-#wrapper {
+    #wrapper {
 
-  width: 92%;
-  margin: auto;
+        width: 92%;
+        margin: auto;
 
-  header {
-    
-    height: 117px;
+        header {
 
-    .contact {
+            height: 117px;
 
-      span:nth-child(1) {
-        font-size:0.85em;
-        img.tele{ width: 13%; }
+            .contact {
 
-      }
-      span:nth-child(2) {font-size:0.70em;}
+                span:nth-child(1) {
+                    font-size:0.85em;
+                    img.tele{ width: 13%; }
 
-    }
+                }
+                span:nth-child(2) {font-size:0.70em;}
 
-    nav {
-      
-      height: 40px;
-
-      ul{
-
-        li {
-               
-          width: 16.4%;
-          a {font-size: 0.65em; }
-          a:hover {font-size: 0.65em; }
-          
-        }
-      }
-    }
-
-
-  }/*header end*/
-
-  #leftside {
-
-
-    .leftsidebox {
-
-      h1 {font-size: 1em;}
-
-      div.destinations{
-        width:91%; 
-       
-        figure{
-          
-          width: 100%;
-          img{width:46%; margin-right:1%;}
-          figcaption{
-            width:50%;
-            display: inline-block;
-            h3{font-size: 0.85em;}
-            p{ font-size: 0.70em;}
-          }
-
-        }
-      }/*.destinations end*/
-
-      
-      #search_form {
-
-        ul {
-
-          .misc_inner {
-
-            .misc {font-size:0.8em;}
-
-          }
-
-          li {
-              
-            .destination1 {font-size:0.8em; }
-            .time_1 {font-size:0.8em;}
-            #time_2 {font-size:0.8em;}
-            label {font-size: 0.75em;}
-
-          }
-
-        }
-       
-        #searchbtn {font-size:0.75em;}
-
-      }
-
-    }/*.leftsidebox end*/
-  }/*#leftside end*/
-
-  #leftside2 {
-
-    h1 {font-size: 0.75em;}
- 
-    ul {
-
-      li {
-
-        a {font-size: 0.7em;}
-        a:hover {font-size: 0.7em;}
-
-      }
-    }
-  }/*#leftside2 end*/ 
-
-   #leftside3 {
-
-    h1 {font-size: 0.75em;}
-
-    #contact-details{
-
-      width: 95%;
-
-          
-      font-size:0.65em;
-     
-      li{
-        height:70px;
-        
-        &:first-line{color:#164d6b; font-weight:bold;}
-        
-        span{ 
-			width:25%;
-			img{width:41%; height:25%;}
-		  
-		}
-          
-          
-        a{  line-height:20px; font-size: 0.85em;}
-        
-      }
-
-    }
-
-    figure{
-      margin:0;
-
-      figcaption{
-        top: -397px;
-        
-        h1{ font-size:1.1em;  }
-    
-        p{font-size:0.70em; line-height: 1.9em; }
-      }
-    }
-  }/*#leftside2 end*/ 
-
-
-
-  #content {
-
-    #offers {
-
-      h1 { font-size: 1.1em;}
-
-      div.offerbox{  
-
-       margin: 0px 0px 20px 2px;
-        width: 31%;
-       
-        figure{
-          
-          img {width:80%; }
-          figcaption{
-            padding: 7% 0;
-            display:block;
-            p{  font-size:0.7em; }
-            p:nth-of-type(2){ 
-              
-              font-size: 0.75em; 
-             
-              span{color:#f66c00;}
             }
-          }
+
+            nav {
+
+                height: 40px;
+
+                ul{
+
+                    li {
+
+                        width: 16.4%;
+                        a {font-size: 0.65em; }
+                        a:hover {font-size: 0.65em; }
+
+                    }
+                }
+            }
+
+
+        }/*header end*/
+
+        #leftside {
+
+
+            .leftsidebox {
+
+                h1 {font-size: 1em;}
+
+                div.destinations{
+                    width:91%; 
+
+                    figure{
+
+                        width: 100%;
+                        img{width:46%; margin-right:1%;}
+                        figcaption{
+                            width:50%;
+                            display: inline-block;
+                            h3{font-size: 0.85em;}
+                            p{ font-size: 0.70em;}
+                        }
+
+                    }
+                }/*.destinations end*/
+
+
+                #search_form {
+
+                    ul {
+
+                        .misc_inner {
+
+                            .misc {font-size:0.8em;}
+
+                        }
+
+                        li {
+
+                            .destination1 {font-size:0.8em; }
+                            .time_1 {font-size:0.8em;}
+                            #time_2 {font-size:0.8em;}
+                            label {font-size: 0.75em;}
+
+                        }
+
+                    }
+
+                    #searchbtn {font-size:0.75em;}
+
+                }
+
+            }/*.leftsidebox end*/
+        }/*#leftside end*/
+
+        #leftside2 {
+
+            h1 {font-size: 0.75em;}
+
+            ul {
+
+                li {
+
+                    a {font-size: 0.7em;}
+                    a:hover {font-size: 0.7em;}
+
+                }
+            }
+        }/*#leftside2 end*/ 
+
+        #leftside3 {
+
+            h1 {font-size: 0.75em;}
+
+            #contact-details{
+
+                width: 95%;
+
+
+                font-size:0.65em;
+
+                li{
+                    height:70px;
+
+                    &:first-line{color:#164d6b; font-weight:bold;}
+
+                    span{ 
+                        width:25%;
+                        img{width:41%; height:25%;}
+
+                    }
+
+
+                    a{  line-height:20px; font-size: 0.85em;}
+
+                }
+
+            }
+
+            figure{
+                margin:0;
+
+                figcaption{
+                    top: -397px;
+
+                    h1{ font-size:1.1em;  }
+
+                    p{font-size:0.70em; line-height: 1.9em; }
+                }
+            }
+        }/*#leftside2 end*/ 
+
+
+
+        #content {
+
+            #offers {
+
+                h1 { font-size: 1.1em;}
+
+                div.offerbox{  
+
+                    margin: 0px 0px 20px 2px;
+                    width: 31%;
+
+                    figure{
+
+                        img {width:80%; }
+                        figcaption{
+                            padding: 7% 0;
+                            display:block;
+                            p{  font-size:0.7em; }
+                            p:nth-of-type(2){ 
+
+                                font-size: 0.75em; 
+
+                                span{color:#f66c00;}
+                            }
+                        }
+                    }
+                }/*offerboxend*/
+
+            }
+
+            #banner {
+
+                height: 325px;
+
+            }/*#banner end*/
+        }/*#content end*/
+
+        #content2 {
+
+            h1 {font-size: 1.1em;}
+            p {   font-size: 0.75em; line-height: 2em;}
+
+            .servicebox {
+                h1 {line-height: 20px; height: 45px; text-indent:0;}
+                figcaption {
+
+                    p {font-size: 0.70em;}
+
+                }
+
+            }
+
+            .holiday_details {
+
+                h1 {font-size: 1em; height:35px; line-height:35px;}
+
+                span.holidayprice {
+                    font-size: 0.80em;
+                    left: 81%;
+
+                }
+
+                figure{
+                    width: 100%;
+
+                    img{width:28%; display:inline-block; float:left; }
+                    figcaption{
+
+                        width: 64%;
+                        margin-bottom: 1%;
+                        p{ font-size: 0.75em; }
+
+                        a{height:35px;  height: 25px; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
+                        a:hover{ font-weight:bold; }
+
+                    }/*figcaption end*/
+                }/*figure end*/
+
+            }/*.holiday details end*/
+
+            .holiday_details_small {
+
+                width: 45%;
+
+                h1 {font-size: 0.75em;}
+
+                figure{
+
+                    img{width:47%;  margin:0 3% 0 0;}
+
+                    figcaption{
+                        width:49%;
+                        display:inline-block;
+                        margin-bottom: 2%;
+                        span.holidayprice {font-size: 0.75em;}
+                        p{ font-size: 0.7em; margin: 0 0 2% 0;}
+                        a{width: 70%;  font-size: 0.75em;  padding:2% 3%; margin:0; }
+                        a:hover{ font-size: 0.75em; width: 70%; }
+                    }
+                }
+            }/*.holiday details small end*/
+
+
+
+        }/*#content2 end*/
+
+    }/*wrapper end*/
+
+    footer {
+        width: 92%;
+        ul {
+            li {width: 14.570684%;}
+            a {font-size: 0.75em;}
+            a:hover {font-size: 0.75em;}
         }
-      }/*offerboxend*/
 
     }
 
-    #banner {
-      
-      height: 325px;
-      
-    }/*#banner end*/
-  }/*#content end*/
-
-  #content2 {
-
-    h1 {font-size: 1.1em;}
-    p {   font-size: 0.75em; line-height: 2em;}
-
-    .servicebox {
-      h1 {line-height: 20px; height: 45px; text-indent:0;}
-      figcaption {
-
-        p {font-size: 0.70em;}
-
-      }
-
-    }
-
-    .holiday_details {
-
-      h1 {font-size: 1em; height:35px; line-height:35px;}
-
-      span.holidayprice {
-        font-size: 0.80em;
-        left: 81%;
-
-      }
-
-      figure{
-        width: 100%;
-                
-        img{width:28%; display:inline-block; float:left; }
-        figcaption{
-          
-          width: 64%;
-          margin-bottom: 1%;
-          p{ font-size: 0.75em; }
-               
-          a{height:35px;  height: 25px; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
-          a:hover{ font-weight:bold; }
-
-        }/*figcaption end*/
-      }/*figure end*/
-  
-    }/*.holiday details end*/
-
-    .holiday_details_small {
-
-      width: 45%;
-      
-      h1 {font-size: 0.75em;}
-
-      figure{
-                       
-        img{width:47%;  margin:0 3% 0 0;}
-
-        figcaption{
-          width:49%;
-          display:inline-block;
-          margin-bottom: 2%;
-          span.holidayprice {font-size: 0.75em;}
-          p{ font-size: 0.7em; margin: 0 0 2% 0;}
-          a{width: 70%;  font-size: 0.75em;  padding:2% 3%; margin:0; }
-          a:hover{ font-size: 0.75em; width: 70%; }
-        }
-      }
-  }/*.holiday details small end*/
-
-
-
-  }/*#content2 end*/
-
-}/*wrapper end*/
-
-footer {
-  width: 92%;
-  ul {
-    li {width: 14.570684%;}
-    a {font-size: 0.75em;}
-    a:hover {font-size: 0.75em;}
-  }
 
 }
-  
-
-}
-
 
 @media (max-width: 768px){
 
-#wrapper {
+    #wrapper {
 
-  width: 92%;
-  margin: auto;
+        width: 92%;
+        margin: auto;
 
-  header {
-    
-    height: 117px;
+        header {
 
-    nav {
-      
-      height: 40px;
+            height: 117px;
 
-      ul{
+            nav {
 
-        li {
-               
-          width: 16.5%;
-          
-          a {font-size: 0.65em; }
-          a:hover {font-size: 0.65em; }
-          
-        }
+                height: 40px;
 
-      }
-    
-    }
+                ul{
 
-  }/*header end*/
+                    li {
 
-  #leftside {
+                        width: 16.5%;
 
+                        a {font-size: 0.65em; }
+                        a:hover {font-size: 0.65em; }
 
-    .leftsidebox {
+                    }
 
-      h1 {font-size: 1em;}
+                }
 
-      div.destinations{
-        width:91%; 
-       
-        figure{
-          
-          width: 100%;
-          img{width:47%;  margin-right:1%;}
-          figcaption{
-            width:50%;
-            display: inline-block;
-            h3{font-size: 0.8em;}
-            p{ font-size: 0.70em;}
-          }
-
-        }
-      }/*.destinations end*/
-
-   
-      #search_form {
-
-        ul {
-
-          .misc_inner {
-
-            .misc {font-size:0.8em;}
-
-          }
-
-          li {
-              
-            .destination1 {font-size:0.8em; }
-            .time_1 {font-size:0.8em;}
-            #time_2 {font-size:0.8em;}
-
-          }
-
-        }
-
-        label {font-size: 0.75em;}
-        #searchbtn {font-size:0.75em;}
-
-        }
-
-    }/*.leftsidebox end*/
-  }/*#leftside end*/
-
-  #leftside2 {
-
-    h1 {font-size: 0.75em;}
-
-    ul {
-
-      li {
-
-        a {font-size: 0.7em;}
-        a:hover {font-size: 0.75em;}
-
-      }
-    }
-
-  }/*#leftside2 end*/ 
-
-  #leftside3 {
-
-    h1 {font-size: 0.75em;}
-
-    #contact-details{
-
-      width: 96%;
-
-          
-      font-size:0.60em;
-     
-      li{
-        height:70px;
-        
-        &:first-line{color:#164d6b; font-weight:bold;}
-        
-        span{ 
-			width:23%;
-			img{width:41%; height:23%;}
-		  
-		}
-          
-          
-        a{  line-height:20px; font-size: 0.90em;}
-        
-      }
-
-    }
-
-    figure{
-      margin:0;
-
-      figcaption{
-        top: -384px;
-        
-        h1{ font-size:1.1em;  }
-    
-        p{font-size: 0.65em; line-height:1.5em;}
-      }
-    }
- 
-  }/*#leftside2 end*/ 
-
-
-  #content {
-
-    #offers {
-
-      h1 { font-size: 1.1em;}
-
-            div.offerbox{  
-
-       margin: 0px 0px 20px 2px;
-        width: 31%;
-       
-        figure{
-          
-          img {width:80%; }
-          figcaption{
-            padding: 7% 0;
-            display:block;
-            p{  font-size:0.7em; }
-            p:nth-of-type(2){ 
-              
-              font-size: 0.70em; 
-             
-              span{color:#f66c00;}
             }
-          }
+
+        }/*header end*/
+
+        #leftside {
+
+
+            .leftsidebox {
+
+                h1 {font-size: 1em;}
+
+                div.destinations{
+                    width:91%; 
+
+                    figure{
+
+                        width: 100%;
+                        img{width:47%;  margin-right:1%;}
+                        figcaption{
+                            width:50%;
+                            display: inline-block;
+                            h3{font-size: 0.8em;}
+                            p{ font-size: 0.70em;}
+                        }
+
+                    }
+                }/*.destinations end*/
+
+
+                #search_form {
+
+                    ul {
+
+                        .misc_inner {
+
+                            .misc {font-size:0.8em;}
+
+                        }
+
+                        li {
+
+                            .destination1 {font-size:0.8em; }
+                            .time_1 {font-size:0.8em;}
+                            #time_2 {font-size:0.8em;}
+
+                        }
+
+                    }
+
+                    label {font-size: 0.75em;}
+                    #searchbtn {font-size:0.75em;}
+
+                }
+
+            }/*.leftsidebox end*/
+        }/*#leftside end*/
+
+        #leftside2 {
+
+            h1 {font-size: 0.75em;}
+
+            ul {
+
+                li {
+
+                    a {font-size: 0.7em;}
+                    a:hover {font-size: 0.75em;}
+
+                }
+            }
+
+        }/*#leftside2 end*/ 
+
+        #leftside3 {
+
+            h1 {font-size: 0.75em;}
+
+            #contact-details{
+
+                width: 96%;
+
+
+                font-size:0.60em;
+
+                li{
+                    height:70px;
+
+                    &:first-line{color:#164d6b; font-weight:bold;}
+
+                    span{ 
+                        width:23%;
+                        img{width:41%; height:23%;}
+
+                    }
+
+
+                    a{  line-height:20px; font-size: 0.90em;}
+
+                }
+
+            }
+
+            figure{
+                margin:0;
+
+                figcaption{
+                    top: -384px;
+
+                    h1{ font-size:1.1em;  }
+
+                    p{font-size: 0.65em; line-height:1.5em;}
+                }
+            }
+
+        }/*#leftside2 end*/ 
+
+
+        #content {
+
+            #offers {
+
+                h1 { font-size: 1.1em;}
+
+                div.offerbox{  
+
+                    margin: 0px 0px 20px 2px;
+                    width: 31%;
+
+                    figure{
+
+                        img {width:80%; }
+                        figcaption{
+                            padding: 7% 0;
+                            display:block;
+                            p{  font-size:0.7em; }
+                            p:nth-of-type(2){ 
+
+                                font-size: 0.70em; 
+
+                                span{color:#f66c00;}
+                            }
+                        }
+                    }
+                }/*offerboxend*/
+
+            }
+
+            #banner {
+
+                height: 325px;
+
+            }/*#banner end*/
+        }/*#content end*/
+
+        #content2 {
+
+            h1 {font-size: 1.1em;}
+            p {   font-size: 0.75em;}
+
+            .servicebox {
+                h1 {line-height: 20px; height: 45px; text-indent:0;}
+                figcaption {
+
+                    p {font-size: 0.70em;}
+
+                }
+
+            }
+
+            .holiday_details {
+
+                h1 {font-size: 1em; height:35px; line-height:35px;}
+
+                span.holidayprice {
+                    font-size: 0.80em;
+                    left: 81%;
+
+                }
+
+                figure{
+                    width: 100%;
+
+                    img{width: 31%;  }
+                    figcaption{
+
+                        width: 64%;
+                        margin-bottom: 1%;
+                        p{ font-size: 0.75em;  }
+
+                        a{height:35px;  height: 25px; font-size:0.8em; width: 30%; padding: 1% 2%; margin:1% 0; }
+                        a:hover{ font-size:0.85em; width: 30%; }
+
+                    }/*figcaption end*/
+                }/*figure end*/
+            }/*.holiday details end*/
+
+            .holiday_details_small {
+
+                h1 {font-size: 0.75em;}
+
+                figure{
+
+                    img{width:47%;  margin:0 3% 0 0;}
+
+                    figcaption{
+                        width:49%;
+                        display:inline-block;
+                        margin-bottom: 2%;
+                        span.holidayprice {font-size: 0.75em;}
+                        p{ font-size: 0.7em;}
+                        a{ padding:2% 3%; margin:0; }
+                        a:hover{ }
+                    }
+                }
+
+
+            }/*.holiday details small end*/
+        }/*#content2 end*/
+    }/*wrapper end*/
+
+    footer {
+        width: 92%;
+        ul {
+            li {
+                width: 14.570684%;
+                a {font-size: 0.7em;}
+                a:hover {font-size: 0.7em;}
+            }
         }
-      }/*offerboxend*/
-
     }
-
-    #banner {
-      
-      height: 325px;
-    
-    }/*#banner end*/
-  }/*#content end*/
-
-  #content2 {
-
-    h1 {font-size: 1.1em;}
-    p {   font-size: 0.75em;}
-
-    .servicebox {
-      h1 {line-height: 20px; height: 45px; text-indent:0;}
-      figcaption {
-
-        p {font-size: 0.70em;}
-
-      }
-
-    }
-
-    .holiday_details {
-
-      h1 {font-size: 1em; height:35px; line-height:35px;}
-
-      span.holidayprice {
-        font-size: 0.80em;
-        left: 81%;
-
-      }
-
-      figure{
-        width: 100%;
-                
-        img{width: 31%;  }
-        figcaption{
-          
-          width: 64%;
-          margin-bottom: 1%;
-          p{ font-size: 0.75em;  }
-               
-          a{height:35px;  height: 25px; font-size:0.8em; width: 30%; padding: 1% 2%; margin:1% 0; }
-          a:hover{ font-size:0.85em; width: 30%; }
-
-        }/*figcaption end*/
-      }/*figure end*/
-    }/*.holiday details end*/
-
-    .holiday_details_small {
-      
-      h1 {font-size: 0.75em;}
-
-      figure{
-                        
-        img{width:47%;  margin:0 3% 0 0;}
-
-        figcaption{
-          width:49%;
-          display:inline-block;
-          margin-bottom: 2%;
-          span.holidayprice {font-size: 0.75em;}
-          p{ font-size: 0.7em;}
-          a{ padding:2% 3%; margin:0; }
-          a:hover{ }
-        }
-      }
-       
-
-    }/*.holiday details small end*/
-  }/*#content2 end*/
-}/*wrapper end*/
-
-footer {
-  width: 92%;
-  ul {
-    li {
-      width: 14.570684%;
-      a {font-size: 0.7em;}
-      a:hover {font-size: 0.7em;}
-    }
-  }
-}
 
 
 }
-
 
 @media (max-width: 667px){
 
-#wrapper {
+    #wrapper {
 
-  width: 96%;
-  margin: 0 auto;
+        width: 96%;
+        margin: 0 auto;
 
-  header {
-    
-    height: 117px;
-    .contact {
-      width: 112px;
+        header {
 
-      span:nth-child(1) {
-        font-size:0.8em;
-        img.tele{ width: 10%; }
+            height: 117px;
+            .contact {
+                width: 112px;
 
-      }
-      span:nth-child(2) {font-size:0.70em;}
+                span:nth-child(1) {
+                    font-size:0.8em;
+                    img.tele{ width: 10%; }
 
-    }
+                }
+                span:nth-child(2) {font-size:0.70em;}
 
-    nav {
-      
-      height: 40px;
-
-      ul{
-
-        li {
-               
-          width: 15.880684%;
-          a {font-size: 0.70em; }
-          a:hover {font-size: 0.70em; }
-          
-        }
-      }
-    }
-
-  }/*header end*/
-
-  #leftside {
-
-    display:none;
-
-    .leftsidebox {
-
-      h1 {font-size: 1em;}
-
-      div.destinations{
-        width:91%; 
-       
-        figure{
-          
-          width: 100%;
-          img{width:42%;  margin-right:1%;}
-          figcaption{
-            width:50%;
-            display: inline-block;
-            h3{font-size: 0.9em;}
-            p{ font-size: 0.70em;}
-          }
-
-        }
-      }/*.destinations end*/
-
-      
-      #search_form {
-
-
-
-        ul {
-
-          .misc_inner {
-
-            .misc {font-size:0.8em;}
-
-          }
-
-          li {
-              
-              #destination1 {font-size:0.8em; }
-              #time_1 {font-size:0.8em;}
-              #time_2 {font-size:0.8em;}
-
-          }
-
-        }
-
-        label {font-size: 0.75em;}
-        #searchbtn {font-size:0.75em;}
-
-        }
-
-    }/*.leftsidebox end*/
-  }/*#leftside end*/
-
-  #leftside2 {
-
-    display:none;
-
-    h1 {font-size: 0.75em;}
-
-    ul {
-
-      li {
-
-        a {font-size: 0.7em;}
-        a:hover {font-size: 0.75em;}
-
-      }
-    }
-  }/*#leftside2 end*/ 
-
-  #leftside3 {
-
-    display:none;
-
-    h1 {font-size: 0.75em;}
-
-    figure{
-      margin:0;
-
-      figcaption{
-        top: -405px;
-        
-        h1{ font-size:1.15em;  }
-    
-        p{font-size: 0.65em; line-height:1.5em;}
-      }
-    }
-  }/*#leftside2 end*/ 
-
-
-  #content {
-    width: 100%;
-
-    #offers {
-
-      h1 { font-size: 1.1em;}
-
-      div.offerbox{  
-
-       margin: 0px 0px 20px 2px;
-        width: 31.5%;
-       
-        figure{
-          
-          img {width:80%; }
-          figcaption{
-            padding: 7% 0;
-            display:block;
-            p{  font-size:0.7em; }
-            p:nth-of-type(2){ 
-              
-              font-size: 0.75em; 
-             
-              span{color:#f66c00;}
             }
-          }
+
+            nav {
+
+                height: 40px;
+
+                ul{
+
+                    li {
+
+                        width: 15.880684%;
+                        a {font-size: 0.70em; }
+                        a:hover {font-size: 0.70em; }
+
+                    }
+                }
+            }
+
+        }/*header end*/
+
+        #leftside {
+
+            display:none;
+
+            .leftsidebox {
+
+                h1 {font-size: 1em;}
+
+                div.destinations{
+                    width:91%; 
+
+                    figure{
+
+                        width: 100%;
+                        img{width:42%;  margin-right:1%;}
+                        figcaption{
+                            width:50%;
+                            display: inline-block;
+                            h3{font-size: 0.9em;}
+                            p{ font-size: 0.70em;}
+                        }
+
+                    }
+                }/*.destinations end*/
+
+
+                #search_form {
+
+
+
+                    ul {
+
+                        .misc_inner {
+
+                            .misc {font-size:0.8em;}
+
+                        }
+
+                        li {
+
+                            #destination1 {font-size:0.8em; }
+                            #time_1 {font-size:0.8em;}
+                            #time_2 {font-size:0.8em;}
+
+                        }
+
+                    }
+
+                    label {font-size: 0.75em;}
+                    #searchbtn {font-size:0.75em;}
+
+                }
+
+            }/*.leftsidebox end*/
+        }/*#leftside end*/
+
+        #leftside2 {
+
+            display:none;
+
+            h1 {font-size: 0.75em;}
+
+            ul {
+
+                li {
+
+                    a {font-size: 0.7em;}
+                    a:hover {font-size: 0.75em;}
+
+                }
+            }
+        }/*#leftside2 end*/ 
+
+        #leftside3 {
+
+            display:none;
+
+            h1 {font-size: 0.75em;}
+
+            figure{
+                margin:0;
+
+                figcaption{
+                    top: -405px;
+
+                    h1{ font-size:1.15em;  }
+
+                    p{font-size: 0.65em; line-height:1.5em;}
+                }
+            }
+        }/*#leftside2 end*/ 
+
+
+        #content {
+            width: 100%;
+
+            #offers {
+
+                h1 { font-size: 1.1em;}
+
+                div.offerbox{  
+
+                    margin: 0px 0px 20px 2px;
+                    width: 31.5%;
+
+                    figure{
+
+                        img {width:80%; }
+                        figcaption{
+                            padding: 7% 0;
+                            display:block;
+                            p{  font-size:0.7em; }
+                            p:nth-of-type(2){ 
+
+                                font-size: 0.75em; 
+
+                                span{color:#f66c00;}
+                            }
+                        }
+                    }
+                }/*offerboxend*/
+
+            }
+
+            #banner {
+
+                height: 325px;
+
+            }/*#banner end*/
+        }/*#content end*/
+
+        #content2 {
+            width:98%;
+
+            h1 {font-size: 1.1em;}
+            p {   font-size: 0.75em;}
+
+            .servicebox {
+                h1 {line-height: 30px; height: 30px; text-align: center;}
+                figcaption {
+
+                    p {font-size: 0.70em;}
+
+                }
+
+            }
+
+            .holiday_details {
+
+                h1 {font-size: 1em; height:35px; line-height:35px;}
+
+                span.holidayprice {
+                    font-size: 0.80em;
+                    left: 79%;
+
+                }
+
+                figure{
+                    width: 100%;
+
+                    img{width:26%; display:inline-block; float:left; }
+                    figcaption{
+
+
+                        width: 64%;
+                        margin-bottom: 1%;
+                        p{ font-size: 0.75em;  }
+
+                        a{width: 25%; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
+                        a:hover{ }
+
+                    }/*figcaption end*/
+                }/*figure end*/
+            }/*.holiday details end*/
+
+            .holiday_details_small {
+
+                h1 {font-size: 0.85em;}
+
+                figure{
+
+                    img{width:43%;  margin:0 3% 0 0;}
+
+                    figcaption{
+                        width:49%;
+
+                        margin-bottom: 2%;
+                        span.holidayprice {font-size: 0.75em;}
+                        p{ font-size: 0.7em;}
+                        a{ padding:2% 3%; margin:0; }
+                        a:hover{font-size: 0.75em; }
+                    }
+                }
+
+            }/*.holiday details small end*/
+        }/*#content2 end*/
+    }/*wrapper end*/
+
+    footer {
+        width: 92%;
+        ul {
+            li {
+                width: 14.570684%;
+                a {font-size: 0.7em;}
+                a:hover {font-size: 0.7em;}
+            }
         }
-      }/*offerboxend*/
-
     }
-
-    #banner {
-      
-      height: 325px;
-    
-    }/*#banner end*/
-  }/*#content end*/
-
-  #content2 {
-    width:98%;
-
-    h1 {font-size: 1.1em;}
-    p {   font-size: 0.75em;}
-
-    .servicebox {
-      h1 {line-height: 30px; height: 30px; text-indent:0;}
-      figcaption {
-
-        p {font-size: 0.70em;}
-
-      }
-
-    }
-
-    .holiday_details {
-
-      h1 {font-size: 1em; height:35px; line-height:35px;}
-
-      span.holidayprice {
-        font-size: 0.80em;
-        left: 79%;
-
-      }
-
-      figure{
-        width: 100%;
-                
-        img{width:26%; display:inline-block; float:left; }
-        figcaption{
-
-          
-          width: 64%;
-          margin-bottom: 1%;
-          p{ font-size: 0.75em;  }
-               
-          a{width: 25%; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
-          a:hover{ }
-
-        }/*figcaption end*/
-      }/*figure end*/
-    }/*.holiday details end*/
-
-    .holiday_details_small {
-      
-      h1 {font-size: 0.85em;}
-
-      figure{
-           
-        img{width:43%;  margin:0 3% 0 0;}
-
-        figcaption{
-          width:49%;
-          
-          margin-bottom: 2%;
-          span.holidayprice {font-size: 0.75em;}
-          p{ font-size: 0.7em;}
-          a{ padding:2% 3%; margin:0; }
-          a:hover{font-size: 0.75em; }
-        }
-      }
-
-    }/*.holiday details small end*/
-  }/*#content2 end*/
-}/*wrapper end*/
-
-footer {
-  width: 92%;
-  ul {
-    li {
-      width: 14.570684%;
-      a {font-size: 0.7em;}
-      a:hover {font-size: 0.7em;}
-    }
-  }
-}
 
 
 }
 
 @media (max-width: 600px){
 
-#wrapper {
+    #wrapper {
 
-  width: 96%;
-  margin: 0 auto;
+        width: 96%;
+        margin: 0 auto;
 
-  header {
-    
-    height: 117px;
+        header {
 
-    .contact span:nth-child(1) {font-size: 0.7em;}
-    .contact span:nth-child(1) img.tele { width: 15%;}
+            height: 117px;
 
-
-    nav {
-      
-      height: 40px;
-
-      ul{
-
-        li {
-               
-          width: 15.880684%;
-          a {font-size: 0.60em; }
-          a:hover {font-size: 0.60em; }
-          
-        }
-      }
-    }
-
-  }/*header end*/
-
-  #leftside {
-
-    display:none;
-
-    .leftsidebox {
-
-      h1 {font-size: 1em;}
-
-      div.destinations{
-        width:91%; 
-       
-        figure{
-          
-          width: 100%;
-          img{width:42%;  margin-right:1%;}
-          figcaption{
-            width:50%;
-            display: inline-block;
-            h3{font-size: 0.9em;}
-            p{ font-size: 0.70em;}
-          }
-
-        }
-      }/*.destinations end*/
-
-      
-      #search_form {
+            .contact span:nth-child(1) {font-size: 0.7em;}
+            .contact span:nth-child(1) img.tele { width: 15%;}
 
 
+            nav {
 
-        ul {
+                height: 40px;
 
-          .misc_inner {
+                ul{
 
-            .misc {font-size:0.8em;}
+                    li {
 
-          }
+                        width: 15.880684%;
+                        a {font-size: 0.60em; }
+                        a:hover {font-size: 0.60em; }
 
-          li {
-              
-              #destination1 {font-size:0.8em; }
-              #time_1 {font-size:0.8em;}
-              #time_2 {font-size:0.8em;}
-
-          }
-
-        }
-
-        label {font-size: 0.75em;}
-        #searchbtn {font-size:0.75em;}
-
-        }
-
-    }/*.leftsidebox end*/
-  }/*#leftside end*/
-
-  #leftside2 {
-
-    display:none;
-
-    h1 {font-size: 0.75em;}
-
-    ul {
-
-      li {
-
-        a {font-size: 0.7em;}
-        a:hover {font-size: 0.75em;}
-
-      }
-    }
-  }/*#leftside2 end*/ 
-
-  #leftside3 {
-
-    display:none;
-
-    h1 {font-size: 0.75em;}
-
-    figure{
-      margin:0;
-
-      figcaption{
-        top: -405px;
-        
-        h1{ font-size:1.15em;  }
-    
-        p{font-size: 0.65em; line-height:1.5em;}
-      }
-    }
-  }/*#leftside2 end*/ 
-
-
-  #content {
-    width: 100%;
-
-    #offers {
-
-      h1 { font-size: 1.1em;}
-
-      div.offerbox{  
-
-       margin: 0px 0px 20px 2px;
-        width: 31.5%;
-       
-        figure{
-          
-          img {width:80%; }
-          figcaption{
-            padding: 7% 0;
-            display:block;
-            p{  font-size:0.7em; }
-            p:nth-of-type(2){ 
-              
-              font-size: 0.75em; 
-             
-              span{color:#f66c00;}
+                    }
+                }
             }
-          }
+
+        }/*header end*/
+
+        #leftside {
+
+            display:none;
+
+            .leftsidebox {
+
+                h1 {font-size: 1em;}
+
+                div.destinations{
+                    width:91%; 
+
+                    figure{
+
+                        width: 100%;
+                        img{width:42%;  margin-right:1%;}
+                        figcaption{
+                            width:50%;
+                            display: inline-block;
+                            h3{font-size: 0.9em;}
+                            p{ font-size: 0.70em;}
+                        }
+
+                    }
+                }/*.destinations end*/
+
+
+                #search_form {
+
+
+
+                    ul {
+
+                        .misc_inner {
+
+                            .misc {font-size:0.8em;}
+
+                        }
+
+                        li {
+
+                            #destination1 {font-size:0.8em; }
+                            #time_1 {font-size:0.8em;}
+                            #time_2 {font-size:0.8em;}
+
+                        }
+
+                    }
+
+                    label {font-size: 0.75em;}
+                    #searchbtn {font-size:0.75em;}
+
+                }
+
+            }/*.leftsidebox end*/
+        }/*#leftside end*/
+
+        #leftside2 {
+
+            display:none;
+
+            h1 {font-size: 0.75em;}
+
+            ul {
+
+                li {
+
+                    a {font-size: 0.7em;}
+                    a:hover {font-size: 0.75em;}
+
+                }
+            }
+        }/*#leftside2 end*/ 
+
+        #leftside3 {
+
+            display:none;
+
+            h1 {font-size: 0.75em;}
+
+            figure{
+                margin:0;
+
+                figcaption{
+                    top: -405px;
+
+                    h1{ font-size:1.15em;  }
+
+                    p{font-size: 0.65em; line-height:1.5em;}
+                }
+            }
+        }/*#leftside2 end*/ 
+
+
+        #content {
+            width: 100%;
+
+            #offers {
+
+                h1 { font-size: 1.1em;}
+
+                div.offerbox{  
+
+                    margin: 0px 0px 20px 2px;
+                    width: 31.5%;
+
+                    figure{
+
+                        img {width:80%; }
+                        figcaption{
+                            padding: 7% 0;
+                            display:block;
+                            p{  font-size:0.7em; }
+                            p:nth-of-type(2){ 
+
+                                font-size: 0.75em; 
+
+                                span{color:#f66c00;}
+                            }
+                        }
+                    }
+                }/*offerboxend*/
+
+            }
+
+            #banner {
+
+                height: 325px;
+
+            }/*#banner end*/
+        }/*#content end*/
+
+        #content2 {
+            width:98%;
+
+            h1 {font-size: 1.1em;}
+            p {   font-size: 0.75em;}
+
+            .servicebox {
+                h1 {line-height: 30px; height: 30px; text-indent:0;}
+                figcaption {
+
+                    p {font-size: 0.70em;}
+
+                }
+
+            }
+
+            .holiday_details {
+
+                h1 {font-size: 1em; height:35px; line-height:35px;}
+
+                span.holidayprice {
+                    font-size: 0.80em;
+                    left: 81%;
+
+                }
+
+                figure{
+                    width: 100%;
+
+                    img{width:26%; display:inline-block; float:left; }
+                    figcaption{
+
+
+                        width: 64%;
+                        margin-bottom: 1%;
+                        p{ font-size: 0.70em;  }
+
+                        a{width: 25%; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
+                        a:hover{ }
+
+                    }/*figcaption end*/
+                }/*figure end*/
+            }/*.holiday details end*/
+
+            .holiday_details_small {
+
+                h1 {font-size: 0.85em;}
+
+                figure{
+
+                    img{width:43%;  margin:0 3% 0 0;}
+
+                    figcaption{
+                        width:49%;
+
+                        margin-bottom: 2%;
+                        span.holidayprice {font-size: 0.75em;}
+                        p{ font-size: 0.7em;}
+                        a{ padding:2% 3%; margin:0; }
+                        a:hover{font-size: 0.75em; }
+                    }
+                }
+
+            }/*.holiday details small end*/
+        }/*#content2 end*/
+    }/*wrapper end*/
+
+    footer {
+        width: 92%;
+        ul {
+            li {
+                width: 14.570684%;
+                a {font-size: 0.7em;}
+                a:hover {font-size: 0.7em;}
+            }
         }
-      }/*offerboxend*/
-
     }
-
-    #banner {
-      
-      height: 325px;
-    
-    }/*#banner end*/
-  }/*#content end*/
-
-  #content2 {
-    width:98%;
-
-    h1 {font-size: 1.1em;}
-    p {   font-size: 0.75em;}
-
-    .servicebox {
-      h1 {line-height: 30px; height: 30px; text-indent:0;}
-      figcaption {
-
-        p {font-size: 0.70em;}
-
-      }
-
-    }
-
-    .holiday_details {
-
-      h1 {font-size: 1em; height:35px; line-height:35px;}
-
-      span.holidayprice {
-        font-size: 0.80em;
-        left: 81%;
-
-      }
-
-      figure{
-        width: 100%;
-                
-        img{width:26%; display:inline-block; float:left; }
-        figcaption{
-
-          
-          width: 64%;
-          margin-bottom: 1%;
-          p{ font-size: 0.70em;  }
-               
-          a{width: 25%; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
-          a:hover{ }
-
-        }/*figcaption end*/
-      }/*figure end*/
-    }/*.holiday details end*/
-
-    .holiday_details_small {
-      
-      h1 {font-size: 0.85em;}
-
-      figure{
-           
-        img{width:43%;  margin:0 3% 0 0;}
-
-        figcaption{
-          width:49%;
-          
-          margin-bottom: 2%;
-          span.holidayprice {font-size: 0.75em;}
-          p{ font-size: 0.7em;}
-          a{ padding:2% 3%; margin:0; }
-          a:hover{font-size: 0.75em; }
-        }
-      }
-
-    }/*.holiday details small end*/
-  }/*#content2 end*/
-}/*wrapper end*/
-
-footer {
-  width: 92%;
-  ul {
-    li {
-      width: 14.570684%;
-      a {font-size: 0.7em;}
-      a:hover {font-size: 0.7em;}
-    }
-  }
-}
 
 
 }
 
 @media (max-width: 568px){
 
-#wrapper {
+    #wrapper {
 
-  width: 96%;
-  margin: 0 auto;
+        width: 96%;
+        margin: 0 auto;
 
-  header {
-    
-    height: 117px;
+        header {
 
-    .contact {
+            height: 117px;
 
-
-      span:nth-child(1) {
-        font-size:0.75em;
-        img.tele{ width: 10%; }
-
-      }
-      span:nth-child(2) {font-size:0.65em;}
-
-    }
-
-    nav {
-      
-      height: 40px;
-
-      ul{
-
-        li {
-               
-          width: 15.880684%;
-          a {font-size: 0.70em; }
-          a:hover {font-size: 0.70em; }
-          
-        }
-      }
-    }
-
-  }/*header end*/
-
-  #leftside {
-
-    display:none;
-
-    .leftsidebox {
-
-      h1 {font-size: 1em;}
-
-      div.destinations{
-        width:91%; 
-       
-        figure{
-          
-          width: 100%;
-          img{width:42%;  margin-right:1%;}
-          figcaption{
-            width:50%;
-            display: inline-block;
-            h3{font-size: 0.9em;}
-            p{ font-size: 0.70em;}
-          }
-
-        }
-      }/*.destinations end*/
-
-      
-      #search_form {
+            .contact {
 
 
+                span:nth-child(1) {
+                    font-size:0.75em;
+                    img.tele{ width: 10%; }
 
-        ul {
+                }
+                span:nth-child(2) {font-size:0.65em;}
 
-          .misc_inner {
-
-            .misc {font-size:0.8em;}
-
-          }
-
-          li {
-              
-              #destination1 {font-size:0.8em; }
-              #time_1 {font-size:0.8em;}
-              #time_2 {font-size:0.8em;}
-
-          }
-
-        }
-
-        label {font-size: 0.75em;}
-        #searchbtn {font-size:0.75em;}
-
-        }
-
-    }/*.leftsidebox end*/
-  }/*#leftside end*/
-
-  #leftside2 {
-
-    display:none;
-
-    h1 {font-size: 0.75em;}
-
-    ul {
-
-      li {
-
-        a {font-size: 0.7em;}
-        a:hover {font-size: 0.75em;}
-
-      }
-    }
-  }/*#leftside2 end*/ 
-
-  #leftside3 {
-
-    display:none;
-
-    h1 {font-size: 0.75em;}
-
-    figure{
-      margin:0;
-
-      figcaption{
-        top: -405px;
-        
-        h1{ font-size:1.15em;  }
-    
-        p{font-size: 0.65em; line-height:1.5em;}
-      }
-    }
-  }/*#leftside2 end*/ 
-
-
-  #content {
-    width: 100%;
-
-    #offers {
-
-      h1 { font-size: 1.1em;}
-
-      div.offerbox{  
-
-       margin: 0px 0px 20px 2px;
-        width: 31.5%;
-       
-        figure{
-          
-          img {width:80%; }
-          figcaption{
-            padding: 7% 0;
-            display:block;
-            p{  font-size:0.7em; }
-            p:nth-of-type(2){ 
-              
-              font-size: 0.75em; 
-             
-              span{color:#f66c00;}
             }
-          }
+
+            nav {
+
+                height: 40px;
+
+                ul{
+
+                    li {
+
+                        width: 15.880684%;
+                        a {font-size: 0.70em; }
+                        a:hover {font-size: 0.70em; }
+
+                    }
+                }
+            }
+
+        }/*header end*/
+
+        #leftside {
+
+            display:none;
+
+            .leftsidebox {
+
+                h1 {font-size: 1em;}
+
+                div.destinations{
+                    width:91%; 
+
+                    figure{
+
+                        width: 100%;
+                        img{width:42%;  margin-right:1%;}
+                        figcaption{
+                            width:50%;
+                            display: inline-block;
+                            h3{font-size: 0.9em;}
+                            p{ font-size: 0.70em;}
+                        }
+
+                    }
+                }/*.destinations end*/
+
+
+                #search_form {
+
+
+
+                    ul {
+
+                        .misc_inner {
+
+                            .misc {font-size:0.8em;}
+
+                        }
+
+                        li {
+
+                            #destination1 {font-size:0.8em; }
+                            #time_1 {font-size:0.8em;}
+                            #time_2 {font-size:0.8em;}
+
+                        }
+
+                    }
+
+                    label {font-size: 0.75em;}
+                    #searchbtn {font-size:0.75em;}
+
+                }
+
+            }/*.leftsidebox end*/
+        }/*#leftside end*/
+
+        #leftside2 {
+
+            display:none;
+
+            h1 {font-size: 0.75em;}
+
+            ul {
+
+                li {
+
+                    a {font-size: 0.7em;}
+                    a:hover {font-size: 0.75em;}
+
+                }
+            }
+        }/*#leftside2 end*/ 
+
+        #leftside3 {
+
+            display:none;
+
+            h1 {font-size: 0.75em;}
+
+            figure{
+                margin:0;
+
+                figcaption{
+                    top: -405px;
+
+                    h1{ font-size:1.15em;  }
+
+                    p{font-size: 0.65em; line-height:1.5em;}
+                }
+            }
+        }/*#leftside2 end*/ 
+
+
+        #content {
+            width: 100%;
+
+            #offers {
+
+                h1 { font-size: 1.1em;}
+
+                div.offerbox{  
+
+                    margin: 0px 0px 20px 2px;
+                    width: 31.5%;
+
+                    figure{
+
+                        img {width:80%; }
+                        figcaption{
+                            padding: 7% 0;
+                            display:block;
+                            p{  font-size:0.7em; }
+                            p:nth-of-type(2){ 
+
+                                font-size: 0.75em; 
+
+                                span{color:#f66c00;}
+                            }
+                        }
+                    }
+                }/*offerboxend*/
+
+            }
+
+            #banner {
+
+                height: 325px;
+
+            }/*#banner end*/
+        }/*#content end*/
+
+        #content2 {
+            width:98%;
+
+            h1 {font-size: 1.1em; height:auto;}
+
+
+            p {   font-size: 0.75em;}
+
+            .servicebox {
+                h1 {line-height: 30px; height: 30px; text-indent:0;}
+                figcaption {
+
+                    p {font-size: 0.70em;}
+
+                }
+
+            }
+
+            .holiday_details {
+
+                h1 {font-size: 1em; height:35px; line-height:35px;}
+
+                span.holidayprice {
+                    font-size: 0.80em;
+                    left: 81%;
+
+                }
+
+                figure{
+                    width: 100%;
+
+                    img{width:26%; display:inline-block; float:left; }
+                    figcaption{
+
+
+                        width: 64%;
+                        margin-bottom: 1%;
+                        p{ font-size: 0.70em;  }
+
+                        a{width: 25%; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
+                        a:hover{ }
+
+                    }/*figcaption end*/
+                }/*figure end*/
+            }/*.holiday details end*/
+
+            .holiday_details_small {
+
+                h1 {font-size: 0.85em;}
+
+                figure{
+
+                    img{width:43%;  margin:0 3% 0 0;}
+
+                    figcaption{
+                        width:49%;
+
+                        margin-bottom: 2%;
+                        span.holidayprice {font-size: 0.75em;}
+                        p{ font-size: 0.7em;}
+                        a{ padding:2% 3%; margin:0; }
+                        a:hover{font-size: 0.75em; }
+                    }
+                }
+
+            }/*.holiday details small end*/
+        }/*#content2 end*/
+    }/*wrapper end*/
+
+    footer {
+        width: 92%;
+        ul {
+            li {
+                width: 14.570684%;
+                a {font-size: 0.7em;}
+                a:hover {font-size: 0.7em;}
+            }
         }
-      }/*offerboxend*/
-
     }
-
-    #banner {
-      
-      height: 325px;
-    
-    }/*#banner end*/
-  }/*#content end*/
-
-  #content2 {
-    width:98%;
-
-    h1 {font-size: 1.1em; height:auto;}
-
-
-    p {   font-size: 0.75em;}
-
-    .servicebox {
-      h1 {line-height: 30px; height: 30px; text-indent:0;}
-      figcaption {
-
-        p {font-size: 0.70em;}
-
-      }
-
-    }
-
-    .holiday_details {
-
-      h1 {font-size: 1em; height:35px; line-height:35px;}
-
-      span.holidayprice {
-        font-size: 0.80em;
-        left: 81%;
-
-      }
-
-      figure{
-        width: 100%;
-                
-        img{width:26%; display:inline-block; float:left; }
-        figcaption{
-
-          
-          width: 64%;
-          margin-bottom: 1%;
-          p{ font-size: 0.70em;  }
-               
-          a{width: 25%; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
-          a:hover{ }
-
-        }/*figcaption end*/
-      }/*figure end*/
-    }/*.holiday details end*/
-
-    .holiday_details_small {
-      
-      h1 {font-size: 0.85em;}
-
-      figure{
-           
-        img{width:43%;  margin:0 3% 0 0;}
-
-        figcaption{
-          width:49%;
-          
-          margin-bottom: 2%;
-          span.holidayprice {font-size: 0.75em;}
-          p{ font-size: 0.7em;}
-          a{ padding:2% 3%; margin:0; }
-          a:hover{font-size: 0.75em; }
-        }
-      }
-
-    }/*.holiday details small end*/
-  }/*#content2 end*/
-}/*wrapper end*/
-
-footer {
-  width: 92%;
-  ul {
-    li {
-      width: 14.570684%;
-      a {font-size: 0.7em;}
-      a:hover {font-size: 0.7em;}
-    }
-  }
-}
 
 
 }
 
 @media (max-width: 600px){
 
-#wrapper {
+    #wrapper {
 
-  width: 96%;
-  margin: 0 auto;
+        width: 96%;
+        margin: 0 auto;
 
-  header {
-    
-    height: 117px;
+        header {
 
-    nav {
-      
-      height: 40px;
+            height: 117px;
 
-      ul{
+            nav {
 
-        li {
-               
-          width: 16.39%;
-          a {font-size: 0.60em; }
-          a:hover {font-size: 0.60em; }
-                             
-        }
-        
-        li:nth-child(2){
-          a {font-size: 0.60em; line-height:20px;}
-          a:hover {font-size: 0.60em;line-height:20px; }
-          
-        }
-      }
-    }
+                height: 40px;
 
-  }/*header end*/
+                ul{
 
-  #leftside {
+                    li {
 
-    display:none;
+                        width: 16.39%;
+                        a {font-size: 0.60em; }
+                        a:hover {font-size: 0.60em; }
 
-    .leftsidebox {
+                    }
 
-      h1 {font-size: 1em;}
+                    li:nth-child(2){
+                        a {font-size: 0.60em; line-height:20px;}
+                        a:hover {font-size: 0.60em;line-height:20px; }
 
-      div.destinations{
-        width:91%; 
-       
-        figure{
-          
-          width: 100%;
-          img{width:42%;  margin-right:1%;}
-          figcaption{
-            width:50%;
-            display: inline-block;
-            h3{font-size: 0.9em;}
-            p{ font-size: 0.70em;}
-          }
-
-        }
-      }/*.destinations end*/
-
-      
-      #search_form {
-
-
-
-        ul {
-
-          .misc_inner {
-
-            .misc {font-size:0.8em;}
-
-          }
-
-          li {
-              
-              #destination1 {font-size:0.8em; }
-              #time_1 {font-size:0.8em;}
-              #time_2 {font-size:0.8em;}
-
-          }
-
-        }
-
-        label {font-size: 0.75em;}
-        #searchbtn {font-size:0.75em;}
-
-        }
-
-    }/*.leftsidebox end*/
-  }/*#leftside end*/
-
-  #leftside2 {
-
-    display:none;
-
-    h1 {font-size: 0.75em;}
-
-    ul {
-
-      li {
-
-        a {font-size: 0.7em;}
-        a:hover {font-size: 0.75em;}
-
-      }
-    }
-  }/*#leftside2 end*/ 
-
-  #leftside3 {
-
-    display:none;
-
-    h1 {font-size: 0.75em;}
-
-    figure{
-      margin:0;
-
-      figcaption{
-        top: -405px;
-        
-        h1{ font-size:1.15em;  }
-    
-        p{font-size: 0.65em; line-height:1.5em;}
-      }
-    }
-  }/*#leftside2 end*/ 
-
-
-  #content {
-    width: 100%;
-
-    #offers {
-
-      h1 { font-size: 1.1em;}
-
-      div.offerbox{  
-
-       margin: 0px 0px 20px 2px;
-        width: 31.5%;
-       
-        figure{
-          
-          img {width:80%; }
-          figcaption{
-            padding: 7% 0;
-            display:block;
-            p{  font-size:0.7em; }
-            p:nth-of-type(2){ 
-              
-              font-size: 0.75em; 
-             
-              span{color:#f66c00;}
+                    }
+                }
             }
-          }
+
+        }/*header end*/
+
+        #leftside {
+
+            display:none;
+
+            .leftsidebox {
+
+                h1 {font-size: 1em;}
+
+                div.destinations{
+                    width:91%; 
+
+                    figure{
+
+                        width: 100%;
+                        img{width:42%;  margin-right:1%;}
+                        figcaption{
+                            width:50%;
+                            display: inline-block;
+                            h3{font-size: 0.9em;}
+                            p{ font-size: 0.70em;}
+                        }
+
+                    }
+                }/*.destinations end*/
+
+
+                #search_form {
+
+
+
+                    ul {
+
+                        .misc_inner {
+
+                            .misc {font-size:0.8em;}
+
+                        }
+
+                        li {
+
+                            #destination1 {font-size:0.8em; }
+                            #time_1 {font-size:0.8em;}
+                            #time_2 {font-size:0.8em;}
+
+                        }
+
+                    }
+
+                    label {font-size: 0.75em;}
+                    #searchbtn {font-size:0.75em;}
+
+                }
+
+            }/*.leftsidebox end*/
+        }/*#leftside end*/
+
+        #leftside2 {
+
+            display:none;
+
+            h1 {font-size: 0.75em;}
+
+            ul {
+
+                li {
+
+                    a {font-size: 0.7em;}
+                    a:hover {font-size: 0.75em;}
+
+                }
+            }
+        }/*#leftside2 end*/ 
+
+        #leftside3 {
+
+            display:none;
+
+            h1 {font-size: 0.75em;}
+
+            figure{
+                margin:0;
+
+                figcaption{
+                    top: -405px;
+
+                    h1{ font-size:1.15em;  }
+
+                    p{font-size: 0.65em; line-height:1.5em;}
+                }
+            }
+        }/*#leftside2 end*/ 
+
+
+        #content {
+            width: 100%;
+
+            #offers {
+
+                h1 { font-size: 1.1em;}
+
+                div.offerbox{  
+
+                    margin: 0px 0px 20px 2px;
+                    width: 31.5%;
+
+                    figure{
+
+                        img {width:80%; }
+                        figcaption{
+                            padding: 7% 0;
+                            display:block;
+                            p{  font-size:0.7em; }
+                            p:nth-of-type(2){ 
+
+                                font-size: 0.75em; 
+
+                                span{color:#f66c00;}
+                            }
+                        }
+                    }
+                }/*offerboxend*/
+
+            }
+
+            #banner {
+
+                height: 325px;
+
+            }/*#banner end*/
+        }/*#content end*/
+
+        #content2 {
+            width:98%;
+
+            h1 {font-size: 1.1em;}
+            p {   font-size: 0.75em;}
+
+            .servicebox {
+                h1 {line-height: 30px; height: 30px; text-indent:0;}
+                figcaption {
+
+                    p {font-size: 0.70em;}
+
+                }
+
+            }
+
+            .holiday_details {
+
+                h1 {font-size: 1em; height:35px; width: 60%; line-height:35px;}
+
+                span.holidayprice {
+                    font-size: 0.80em;
+                    left: 79%;
+
+                }
+
+                figure{
+                    width: 100%;
+
+                    img{width:26%; display:inline-block; float:left; }
+                    figcaption{
+
+
+                        width: 64%;
+                        margin-bottom: 1%;
+                        p{ font-size: 0.70em;  }
+
+                        a{width: 25%; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
+                        a:hover{ }
+
+                    }/*figcaption end*/
+                }/*figure end*/
+            }/*.holiday details end*/
+
+            .holiday_details_small {
+
+                h1 {font-size: 0.80em;}
+
+                figure{
+
+                    img{width:43%;  margin:0 3% 0 0;}
+
+                    figcaption{
+                        width:49%;
+
+                        margin-bottom: 2%;
+                        span.holidayprice {font-size: 0.75em;}
+                        p{ font-size: 0.7em;}
+                        a{ padding:2% 3%; margin:0; }
+                        a:hover{font-size: 0.75em; }
+                    }
+                }
+
+            }/*.holiday details small end*/
+        }/*#content2 end*/
+    }/*wrapper end*/
+
+    footer {
+        width: 92%;
+        ul {
+            li {
+                width: 16.39%;
+                a {font-size: 0.7em;}
+                a:hover {font-size: 0.7em;}
+            }
+            li:nth-child(2){
+                a {font-size: 0.70em; line-height:20px;}
+                a:hover {font-size: 0.70em;line-height:20px; }
+
+            }
         }
-      }/*offerboxend*/
-
     }
-
-    #banner {
-      
-      height: 325px;
-    
-    }/*#banner end*/
-  }/*#content end*/
-
-  #content2 {
-    width:98%;
-
-    h1 {font-size: 1.1em;}
-    p {   font-size: 0.75em;}
-
-    .servicebox {
-      h1 {line-height: 30px; height: 30px; text-indent:0;}
-      figcaption {
-
-        p {font-size: 0.70em;}
-
-      }
-
-    }
-
-    .holiday_details {
-
-      h1 {font-size: 1em; height:35px; width: 60%; line-height:35px;}
-
-      span.holidayprice {
-        font-size: 0.80em;
-        left: 79%;
-
-      }
-
-      figure{
-        width: 100%;
-                
-        img{width:26%; display:inline-block; float:left; }
-        figcaption{
-
-          
-          width: 64%;
-          margin-bottom: 1%;
-          p{ font-size: 0.70em;  }
-               
-          a{width: 25%; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
-          a:hover{ }
-
-        }/*figcaption end*/
-      }/*figure end*/
-    }/*.holiday details end*/
-
-    .holiday_details_small {
-      
-      h1 {font-size: 0.80em;}
-
-      figure{
-           
-        img{width:43%;  margin:0 3% 0 0;}
-
-        figcaption{
-          width:49%;
-          
-          margin-bottom: 2%;
-          span.holidayprice {font-size: 0.75em;}
-          p{ font-size: 0.7em;}
-          a{ padding:2% 3%; margin:0; }
-          a:hover{font-size: 0.75em; }
-        }
-      }
-
-    }/*.holiday details small end*/
-  }/*#content2 end*/
-}/*wrapper end*/
-
-footer {
-  width: 92%;
-  ul {
-    li {
-      width: 16.39%;
-      a {font-size: 0.7em;}
-      a:hover {font-size: 0.7em;}
-    }
-    li:nth-child(2){
-      a {font-size: 0.70em; line-height:20px;}
-      a:hover {font-size: 0.70em;line-height:20px; }
-          
-    }
-  }
-}
 
 
 }
-
 
 @media (max-width: 568px){
 
-#wrapper {
+    #wrapper {
 
-  width: 96%;
-  margin: 0 auto;
+        width: 96%;
+        margin: 0 auto;
 
-  header {
-    
-    height: 117px;
+        header {
 
-    nav {
-      
-      height: 40px;
+            height: 117px;
 
-      ul{
+            nav {
 
-        li {
-               
-          width: 16.39%;
-          a {font-size: 0.70em; }
-          a:hover {font-size: 0.70em; }
-          
-        }
-      }
-    }
+                height: 40px;
 
-  }/*header end*/
+                ul{
 
-  #leftside {
+                    li {
 
-    display:none;
+                        width: 16.39%;
+                        a {font-size: 0.70em; }
+                        a:hover {font-size: 0.70em; }
 
-    .leftsidebox {
-
-      h1 {font-size: 1em;}
-
-      div.destinations{
-        width:91%; 
-       
-        figure{
-          
-          width: 100%;
-          img{width:42%;  margin-right:1%;}
-          figcaption{
-            width:50%;
-            display: inline-block;
-            h3{font-size: 0.9em;}
-            p{ font-size: 0.70em;}
-          }
-
-        }
-      }/*.destinations end*/
-
-      
-      #search_form {
-
-
-
-        ul {
-
-          .misc_inner {
-
-            .misc {font-size:0.8em;}
-
-          }
-
-          li {
-              
-              #destination1 {font-size:0.8em; }
-              #time_1 {font-size:0.8em;}
-              #time_2 {font-size:0.8em;}
-
-          }
-
-        }
-
-        label {font-size: 0.75em;}
-        #searchbtn {font-size:0.75em;}
-
-        }
-
-    }/*.leftsidebox end*/
-  }/*#leftside end*/
-
-  #leftside2 {
-
-    display:none;
-
-    h1 {font-size: 0.75em;}
-
-    ul {
-
-      li {
-
-        a {font-size: 0.7em;}
-        a:hover {font-size: 0.75em;}
-
-      }
-    }
-  }/*#leftside2 end*/ 
-
-  #leftside3 {
-
-    display:none;
-
-    h1 {font-size: 0.75em;}
-
-    figure{
-      margin:0;
-
-      figcaption{
-        top: -405px;
-        
-        h1{ font-size:1.15em;  }
-    
-        p{font-size: 0.65em; line-height:1.5em;}
-      }
-    }
-  }/*#leftside2 end*/ 
-
-
-  #content {
-    width: 100%;
-
-    #offers {
-
-      h1 { font-size: 1.1em;}
-
-      div.offerbox{  
-
-       margin: 0px 0px 20px 2px;
-        width: 31.5%;
-       
-        figure{
-          
-          img {width:80%; }
-          figcaption{
-            padding: 7% 0;
-            display:block;
-            p{  font-size:0.7em; }
-            p:nth-of-type(2){ 
-              
-              font-size: 0.75em; 
-             
-              span{color:#f66c00;}
+                    }
+                }
             }
-          }
+
+        }/*header end*/
+
+        #leftside {
+
+            display:none;
+
+            .leftsidebox {
+
+                h1 {font-size: 1em;}
+
+                div.destinations{
+                    width:91%; 
+
+                    figure{
+
+                        width: 100%;
+                        img{width:42%;  margin-right:1%;}
+                        figcaption{
+                            width:50%;
+                            display: inline-block;
+                            h3{font-size: 0.9em;}
+                            p{ font-size: 0.70em;}
+                        }
+
+                    }
+                }/*.destinations end*/
+
+
+                #search_form {
+
+
+
+                    ul {
+
+                        .misc_inner {
+
+                            .misc {font-size:0.8em;}
+
+                        }
+
+                        li {
+
+                            #destination1 {font-size:0.8em; }
+                            #time_1 {font-size:0.8em;}
+                            #time_2 {font-size:0.8em;}
+
+                        }
+
+                    }
+
+                    label {font-size: 0.75em;}
+                    #searchbtn {font-size:0.75em;}
+
+                }
+
+            }/*.leftsidebox end*/
+        }/*#leftside end*/
+
+        #leftside2 {
+
+            display:none;
+
+            h1 {font-size: 0.75em;}
+
+            ul {
+
+                li {
+
+                    a {font-size: 0.7em;}
+                    a:hover {font-size: 0.75em;}
+
+                }
+            }
+        }/*#leftside2 end*/ 
+
+        #leftside3 {
+
+            display:none;
+
+            h1 {font-size: 0.75em;}
+
+            figure{
+                margin:0;
+
+                figcaption{
+                    top: -405px;
+
+                    h1{ font-size:1.15em;  }
+
+                    p{font-size: 0.65em; line-height:1.5em;}
+                }
+            }
+        }/*#leftside2 end*/ 
+
+
+        #content {
+            width: 100%;
+
+            #offers {
+
+                h1 { font-size: 1.1em;}
+
+                div.offerbox{  
+
+                    margin: 0px 0px 20px 2px;
+                    width: 31.5%;
+
+                    figure{
+
+                        img {width:80%; }
+                        figcaption{
+                            padding: 7% 0;
+                            display:block;
+                            p{  font-size:0.7em; }
+                            p:nth-of-type(2){ 
+
+                                font-size: 0.75em; 
+
+                                span{color:#f66c00;}
+                            }
+                        }
+                    }
+                }/*offerboxend*/
+
+            }
+
+            #banner {
+
+                height: 325px;
+
+            }/*#banner end*/
+        }/*#content end*/
+
+        #content2 {
+            width:98%;
+
+            h1 {font-size: 1.1em;}
+            p {   font-size: 0.75em;}
+
+            .servicebox {
+                width: 30%;
+                h1 {line-height: 30px; height: 30px; text-indent:0;}
+                figcaption {
+
+                    p {font-size: 0.70em;}
+
+                }
+
+            }
+
+            .holiday_details {
+
+                h1 {font-size: 1em; height:35px; line-height:35px;}
+
+                span.holidayprice {
+                    font-size: 0.80em;
+                    left: 81%;
+
+                }
+
+                figure{
+                    width: 100%;
+
+                    img{width:26%; display:inline-block; float:left; }
+                    figcaption{
+
+
+                        width: 64%;
+                        margin-bottom: 1%;
+                        p{ font-size: 0.70em;  }
+
+                        a{width: 25%; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
+                        a:hover{ }
+
+                    }/*figcaption end*/
+                }/*figure end*/
+            }/*.holiday details end*/
+
+            .holiday_details_small {
+
+                h1 {font-size: 0.80em;}
+
+                figure{
+
+                    img{width:43%;  margin:0 3% 0 0;}
+
+                    figcaption{
+                        width:49%;
+
+                        margin-bottom: 2%;
+                        span.holidayprice {font-size: 0.75em;}
+                        p{ font-size: 0.7em;}
+                        a{ padding:2% 3%; margin:0; font-size: 0.70em;}
+                        a:hover{font-size: 0.70em; }
+                    }
+                }
+
+            }/*.holiday details small end*/
+        }/*#content2 end*/
+    }/*wrapper end*/
+
+    footer {
+        width: 92%;
+        ul {
+            li {
+                width: 16.39%;
+                a {font-size: 0.65em;}
+                a:hover {font-size: 0.65em;}
+            }
         }
-      }/*offerboxend*/
-
     }
-
-    #banner {
-      
-      height: 325px;
-    
-    }/*#banner end*/
-  }/*#content end*/
-
-  #content2 {
-    width:98%;
-
-    h1 {font-size: 1.1em;}
-    p {   font-size: 0.75em;}
-
-    .servicebox {
-      width: 30%;
-      h1 {line-height: 30px; height: 30px; text-indent:0;}
-      figcaption {
-
-        p {font-size: 0.70em;}
-
-      }
-
-    }
-
-    .holiday_details {
-
-      h1 {font-size: 1em; height:35px; line-height:35px;}
-
-      span.holidayprice {
-        font-size: 0.80em;
-        left: 81%;
-
-      }
-
-      figure{
-        width: 100%;
-                
-        img{width:26%; display:inline-block; float:left; }
-        figcaption{
-
-          
-          width: 64%;
-          margin-bottom: 1%;
-          p{ font-size: 0.70em;  }
-               
-          a{width: 25%; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
-          a:hover{ }
-
-        }/*figcaption end*/
-      }/*figure end*/
-    }/*.holiday details end*/
-
-    .holiday_details_small {
-      
-      h1 {font-size: 0.80em;}
-
-      figure{
-           
-        img{width:43%;  margin:0 3% 0 0;}
-
-        figcaption{
-          width:49%;
-          
-          margin-bottom: 2%;
-          span.holidayprice {font-size: 0.75em;}
-          p{ font-size: 0.7em;}
-          a{ padding:2% 3%; margin:0; font-size: 0.70em;}
-          a:hover{font-size: 0.70em; }
-        }
-      }
-
-    }/*.holiday details small end*/
-  }/*#content2 end*/
-}/*wrapper end*/
-
-footer {
-  width: 92%;
-  ul {
-    li {
-      width: 16.39%;
-      a {font-size: 0.65em;}
-      a:hover {font-size: 0.65em;}
-    }
-  }
-}
 
 
 }
 
 @media (max-width: 480px){
 
-#wrapper {
+    #wrapper {
 
-  width: 96%;
-  margin: 0 auto;
-  min-height: 1400px;
+        width: 96%;
+        margin: 0 auto;
+        min-height: 1400px;
 
-  header {
-    
-    height: 117px;
+        header {
 
-    .contact {
+            height: 117px;
 
-      span:nth-child(1) {
-        font-size:0.7em;
-        img.tele{ width: 10%; }
+            .contact {
 
-      }
-      span:nth-child(2) {font-size: 0.55em;}
+                span:nth-child(1) {
+                    font-size:0.7em;
+                    img.tele{ width: 10%; }
 
-    }
+                }
+                span:nth-child(2) {font-size: 0.55em;}
 
-    nav {
-      
-      height: 40px;
-
-      ul{
-
-        li {
-          width: 16.9%;     
-          a {font-size: 0.60em; }
-          a:hover {font-size: 0.60em; }
-          
-        }
-        li:nth-child(2){
-          width: 16.9%;
-          a {font-size: 0.55em; line-height:19px;}
-          a:hover {font-size: 0.55em;line-height:19px; }
-          
-        }
-      }
-    }
-
-  }/*header end*/
-
-  #leftside {
-
-    display:none;
-
-    .leftsidebox {
-
-      h1 {font-size: 1em;}
-
-      div.destinations{
-        width:91%; 
-       
-        figure{
-          
-          width: 100%;
-          img{width:42%;  margin-right:1%;}
-          figcaption{
-            width:50%;
-            display: inline-block;
-            h3{font-size: 0.9em;}
-            p{ font-size: 0.70em;}
-          }
-
-        }
-      }/*.destinations end*/
-
-      
-      #search_form {
-
-
-
-        ul {
-
-          .misc_inner {
-
-            .misc {font-size:0.8em;}
-
-          }
-
-          li {
-              
-              #destination1 {font-size:0.8em; }
-              #time_1 {font-size:0.8em;}
-              #time_2 {font-size:0.8em;}
-
-          }
-
-        }
-
-        label {font-size: 0.75em;}
-        #searchbtn {font-size:0.75em;}
-
-        }
-
-    }/*.leftsidebox end*/
-  }/*#leftside end*/
-
-  #leftside2 {
-
-    display:none;
-
-    h1 {font-size: 0.75em;}
-
-    ul {
-
-      li {
-
-        a {font-size: 0.7em;}
-        a:hover {font-size: 0.75em;}
-
-      }
-    }
-  }/*#leftside2 end*/ 
-
-  #leftside3 {
-
-    display:none;
-
-    h1 {font-size: 0.75em;}
-
-    figure{
-      margin:0;
-
-      figcaption{
-        top: -405px;
-        
-        h1{ font-size:1.15em;  }
-    
-        p{font-size: 0.65em; line-height:1.5em;}
-      }
-    }
-  }/*#leftside2 end*/ 
-
-
-  #content {
-    width: 100%;
-
-    #offers {
-
-      h1 { font-size: 1.1em;}
-
-      div.offerbox{  
-
-       margin: 0px 0px 20px 2px;
-        width: 47.5%;
-       
-        figure{
-          
-          img {width:80%; }
-          figcaption{
-            padding: 7% 0;
-            display:block;
-            p{  font-size:0.7em; }
-            p:nth-of-type(2){ 
-              
-              font-size: 0.75em; 
-             
-              span{color:#f66c00;}
             }
-          }
+
+            nav {
+
+                height: 40px;
+
+                ul{
+
+                    li {
+                        width: 16.9%;     
+                        a {font-size: 0.60em; }
+                        a:hover {font-size: 0.60em; }
+
+                    }
+                    li:nth-child(2){
+                        width: 16.9%;
+                        a {font-size: 0.55em; line-height:19px;}
+                        a:hover {font-size: 0.55em;line-height:19px; }
+
+                    }
+                }
+            }
+
+        }/*header end*/
+
+        #leftside {
+
+            display:none;
+
+            .leftsidebox {
+
+                h1 {font-size: 1em;}
+
+                div.destinations{
+                    width:91%; 
+
+                    figure{
+
+                        width: 100%;
+                        img{width:42%;  margin-right:1%;}
+                        figcaption{
+                            width:50%;
+                            display: inline-block;
+                            h3{font-size: 0.9em;}
+                            p{ font-size: 0.70em;}
+                        }
+
+                    }
+                }/*.destinations end*/
+
+
+                #search_form {
+
+
+
+                    ul {
+
+                        .misc_inner {
+
+                            .misc {font-size:0.8em;}
+
+                        }
+
+                        li {
+
+                            #destination1 {font-size:0.8em; }
+                            #time_1 {font-size:0.8em;}
+                            #time_2 {font-size:0.8em;}
+
+                        }
+
+                    }
+
+                    label {font-size: 0.75em;}
+                    #searchbtn {font-size:0.75em;}
+
+                }
+
+            }/*.leftsidebox end*/
+        }/*#leftside end*/
+
+        #leftside2 {
+
+            display:none;
+
+            h1 {font-size: 0.75em;}
+
+            ul {
+
+                li {
+
+                    a {font-size: 0.7em;}
+                    a:hover {font-size: 0.75em;}
+
+                }
+            }
+        }/*#leftside2 end*/ 
+
+        #leftside3 {
+
+            display:none;
+
+            h1 {font-size: 0.75em;}
+
+            figure{
+                margin:0;
+
+                figcaption{
+                    top: -405px;
+
+                    h1{ font-size:1.15em;  }
+
+                    p{font-size: 0.65em; line-height:1.5em;}
+                }
+            }
+        }/*#leftside2 end*/ 
+
+
+        #content {
+            width: 100%;
+
+            #offers {
+
+                h1 { font-size: 1.1em;}
+
+                div.offerbox{  
+
+                    margin: 0px 0px 20px 2px;
+                    width: 47.5%;
+
+                    figure{
+
+                        img {width:80%; }
+                        figcaption{
+                            padding: 7% 0;
+                            display:block;
+                            p{  font-size:0.7em; }
+                            p:nth-of-type(2){ 
+
+                                font-size: 0.75em; 
+
+                                span{color:#f66c00;}
+                            }
+                        }
+                    }
+                }/*offerboxend*/
+
+            }
+
+            #banner {
+
+                height: 325px;
+
+            }/*#banner end*/
+        }/*#content end*/
+
+        #content2 {
+            width:98%;
+
+            h1 {font-size: 1.1em;}
+            p {   font-size: 0.75em;}
+
+            #contactform ul li label { width: 25%; font-size:0.8em;}
+            #contactform ul li #contactbtn {  width: 25%;  margin-left: 25%;}
+
+            .servicebox {
+                h1 {line-height: 20px; height: auto; text-indent:0;}
+                figcaption {
+
+                    p {font-size: 0.70em;}
+
+                }
+
+            }
+
+            .holiday_details {
+
+                h1 {font-size: 1em; height:35px; line-height:35px;}
+
+                span.holidayprice {
+                    font-size: 0.70em;
+                    left: 74%;
+
+                }
+
+                figure{
+                    width: 100%;
+
+                    img{width:32%; display:inline-block; float:left; }
+                    figcaption{
+
+
+                        width: 64%;
+                        margin-bottom: 1%;
+                        p{ font-size: 0.70em;  }
+
+                        a{width: 35%; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
+                        a:hover{ }
+
+                    }/*figcaption end*/
+                }/*figure end*/
+            }/*.holiday details end*/
+
+            .holiday_details_small {
+                width: 96%;
+                margin:2% auto;
+                display:block; 
+                float: none;     
+                h1 {font-size: 0.95em;}
+
+                figure{
+
+                    img{width:35%;  margin:0 3% 0 0;}
+
+                    figcaption{
+                        width:53%;
+
+                        margin-bottom: 2%;
+                        span.holidayprice {font-size: 0.75em;}
+                        p{ font-size: 0.7em;}
+                        a{ padding:2% 3%; margin:0;font-size: 0.8em; }
+                        a:hover{font-size: 0.9em; }
+                    }
+                }
+
+            }/*.holiday details small end*/
+        }/*#content2 end*/
+    }/*wrapper end*/
+
+    footer {
+        width: 92%;
+        ul {
+            li {
+
+                a {font-size: 0.6em;}
+                a:hover {font-size: 0.6em;}
+            }
+            li:nth-child(2){
+                a {font-size: 0.65em; line-height:15px;}
+                a:hover {font-size: 0.65em;line-height:15px; }
+
+            }
         }
-      }/*offerboxend*/
-
     }
-
-    #banner {
-      
-      height: 325px;
-    
-    }/*#banner end*/
-  }/*#content end*/
-
-  #content2 {
-    width:98%;
-
-    h1 {font-size: 1.1em;}
-    p {   font-size: 0.75em;}
-    
-    #contactform ul li label { width: 25%; font-size:0.8em;}
-    #contactform ul li #contactbtn {  width: 25%;  margin-left: 25%;}
-
-    .servicebox {
-      h1 {line-height: 20px; height: auto; text-indent:0;}
-      figcaption {
-
-        p {font-size: 0.70em;}
-
-      }
-
-    }
-
-    .holiday_details {
-
-      h1 {font-size: 1em; height:35px; line-height:35px;}
-
-      span.holidayprice {
-        font-size: 0.70em;
-        left: 74%;
-
-      }
-
-      figure{
-        width: 100%;
-                
-        img{width:32%; display:inline-block; float:left; }
-        figcaption{
-
-          
-          width: 64%;
-          margin-bottom: 1%;
-          p{ font-size: 0.70em;  }
-               
-          a{width: 35%; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
-          a:hover{ }
-
-        }/*figcaption end*/
-      }/*figure end*/
-    }/*.holiday details end*/
-
-    .holiday_details_small {
-      width: 96%;
-      margin:2% auto;
-      display:block; 
-      float: none;     
-      h1 {font-size: 0.95em;}
-
-      figure{
-           
-        img{width:35%;  margin:0 3% 0 0;}
-
-        figcaption{
-          width:53%;
-          
-          margin-bottom: 2%;
-          span.holidayprice {font-size: 0.75em;}
-          p{ font-size: 0.7em;}
-          a{ padding:2% 3%; margin:0;font-size: 0.8em; }
-          a:hover{font-size: 0.9em; }
-        }
-      }
-
-    }/*.holiday details small end*/
-  }/*#content2 end*/
-}/*wrapper end*/
-
-footer {
-  width: 92%;
-  ul {
-    li {
-      
-      a {font-size: 0.6em;}
-      a:hover {font-size: 0.6em;}
-    }
-    li:nth-child(2){
-      a {font-size: 0.65em; line-height:15px;}
-      a:hover {font-size: 0.65em;line-height:15px; }
-          
-    }
-  }
-}
 
 
 }
 
 @media (max-width: 375px){
 
-#wrapper {
+    #wrapper {
 
-  width: 96%;
-  margin: 0 auto;
-  min-height: 2500px;
+        width: 96%;
+        margin: 0 auto;
+        min-height: 2500px;
 
-  header {
-    
-    height: 108px;
-    
-    #logo { height: 63px; width: 184px}
+        header {
 
-    .contact {
+            height: 108px;
 
-      span:nth-child(1) {
-        font-size:0.65em;
-        img.tele{ width: 14%; }
+            #logo { height: 63px; width: 184px}
 
-      }
-      span:nth-child(2) {font-size: 0.50em;}
+            .contact {
 
-    }
-    nav {
-      
-      height: 40px;
+                span:nth-child(1) {
+                    font-size:0.65em;
+                    img.tele{ width: 14%; }
 
-      ul{
+                }
+                span:nth-child(2) {font-size: 0.50em;}
 
-        li {
-          a {font-size: 0.50em;  }
-          a:hover {font-size: 0.50em; }
-          
-        }
-        li:nth-child(2){
-          a {font-size: 0.50em; line-height:18px;}
-          a:hover {font-size: 0.50em;line-height:18px; }
-          
-        }
-      }
-    }
-
-  }/*header end*/
-
-  #leftside {
-
-    display:none;
-
-    .leftsidebox {
-
-      h1 {font-size: 1em;}
-
-      div.destinations{
-        width:91%; 
-       
-        figure{
-          
-          width: 100%;
-          img{width:42%;  margin-right:1%;}
-          figcaption{
-            width:50%;
-            display: inline-block;
-            h3{font-size: 0.9em;}
-            p{ font-size: 0.70em;}
-          }
-
-        }
-      }/*.destinations end*/
-
-      
-      #search_form {
-
-
-
-        ul {
-
-          .misc_inner {
-
-            .misc {font-size:0.8em;}
-
-          }
-
-          li {
-              
-              #destination1 {font-size:0.8em; }
-              #time_1 {font-size:0.8em;}
-              #time_2 {font-size:0.8em;}
-
-          }
-
-        }
-
-        label {font-size: 0.75em;}
-        #searchbtn {font-size:0.75em;}
-
-        }
-
-    }/*.leftsidebox end*/
-  }/*#leftside end*/
-
-  #leftside2 {
-
-    display:none;
-
-    h1 {font-size: 0.75em;}
-
-    ul {
-
-      li {
-
-        a {font-size: 0.7em;}
-        a:hover {font-size: 0.75em;}
-
-      }
-    }
-  }/*#leftside2 end*/ 
-
-  #leftside3 {
-
-    display:none;
-
-    h1 {font-size: 0.75em;}
-
-    figure{
-      margin:0;
-
-      figcaption{
-        top: -405px;
-        
-        h1{ font-size:1.15em;  }
-    
-        p{font-size: 0.65em; line-height:1.5em;}
-      }
-    }
-  }/*#leftside2 end*/ 
-
-
-  #content {
-    width: 100%;
-
-    #offers {
-
-      h1 { font-size: 1.1em;}
-      h2 {text-align:center;}
-
-      div.offerbox{  
-
-       
-        width: 60.5%;
-        margin:4% auto;
-        float:none;
-        
-       
-        figure{
-          
-          img {width:80%; }
-          figcaption{
-            padding: 7% 0;
-            display:block;
-            p{  font-size:0.7em; }
-            p:nth-of-type(2){ 
-              
-              font-size: 0.75em; 
-             
-              span{color:#f66c00;}
             }
-          }
+            nav {
+
+                height: 40px;
+
+                ul{
+
+                    li {
+                        a {font-size: 0.50em;  }
+                        a:hover {font-size: 0.50em; }
+
+                    }
+                    li:nth-child(2){
+                        a {font-size: 0.50em; line-height:18px;}
+                        a:hover {font-size: 0.50em;line-height:18px; }
+
+                    }
+                }
+            }
+
+        }/*header end*/
+
+        #leftside {
+
+            display:none;
+
+            .leftsidebox {
+
+                h1 {font-size: 1em;}
+
+                div.destinations{
+                    width:91%; 
+
+                    figure{
+
+                        width: 100%;
+                        img{width:42%;  margin-right:1%;}
+                        figcaption{
+                            width:50%;
+                            display: inline-block;
+                            h3{font-size: 0.9em;}
+                            p{ font-size: 0.70em;}
+                        }
+
+                    }
+                }/*.destinations end*/
+
+
+                #search_form {
+
+
+
+                    ul {
+
+                        .misc_inner {
+
+                            .misc {font-size:0.8em;}
+
+                        }
+
+                        li {
+
+                            #destination1 {font-size:0.8em; }
+                            #time_1 {font-size:0.8em;}
+                            #time_2 {font-size:0.8em;}
+
+                        }
+
+                    }
+
+                    label {font-size: 0.75em;}
+                    #searchbtn {font-size:0.75em;}
+
+                }
+
+            }/*.leftsidebox end*/
+        }/*#leftside end*/
+
+        #leftside2 {
+
+            display:none;
+
+            h1 {font-size: 0.75em;}
+
+            ul {
+
+                li {
+
+                    a {font-size: 0.7em;}
+                    a:hover {font-size: 0.75em;}
+
+                }
+            }
+        }/*#leftside2 end*/ 
+
+        #leftside3 {
+
+            display:none;
+
+            h1 {font-size: 0.75em;}
+
+            figure{
+                margin:0;
+
+                figcaption{
+                    top: -405px;
+
+                    h1{ font-size:1.15em;  }
+
+                    p{font-size: 0.65em; line-height:1.5em;}
+                }
+            }
+        }/*#leftside2 end*/ 
+
+
+        #content {
+            width: 100%;
+
+            #offers {
+
+                h1 { font-size: 1.1em;}
+                h2 {text-align:center;}
+
+                div.offerbox{  
+
+
+                    width: 60.5%;
+                    margin:4% auto;
+                    float:none;
+
+
+                    figure{
+
+                        img {width:80%; }
+                        figcaption{
+                            padding: 7% 0;
+                            display:block;
+                            p{  font-size:0.7em; }
+                            p:nth-of-type(2){ 
+
+                                font-size: 0.75em; 
+
+                                span{color:#f66c00;}
+                            }
+                        }
+                    }
+                }/*offerboxend*/
+
+            }
+
+            #banner {
+
+                height: 325px;
+
+            }/*#banner end*/
+        }/*#content end*/
+
+        #content2 {
+            width:98%;
+
+            h1,h2,h3 {font-size: 1em; line-height:30px; height:30px;}
+            p {   font-size: 0.75em;}
+
+            .servicebox {
+                h1 {line-height: 30px; height: 30px; text-indent:0;}
+                figcaption {
+
+                    p {font-size: 0.70em;}
+
+                }
+
+            }
+
+            .holiday_details {
+
+                h1 {font-size: 0.85em; height:35px; line-height:35px;}
+
+                span.holidayprice {
+                    font-size: 0.70em;
+                    left: 67%;
+
+                }
+
+                figure{
+                    width: 100%;
+
+                    img{width:32%; display:inline-block; float:left; }
+                    figcaption{
+
+
+                        width: 64%;
+                        margin-bottom: 1%;
+                        p{ font-size: 0.65em; line-height: 1.8em; }
+
+                        a{width: 50%; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
+                        a:hover{ }
+
+                    }/*figcaption end*/
+                }/*figure end*/
+            }/*.holiday details end*/
+
+            .holiday_details_small {
+
+                h1 {font-size: 0.85em;}
+
+                figure{
+
+                    img{width:47%;  margin:0 3% 0 0;}
+
+                    figcaption{
+                        width:49%;
+
+                        margin-bottom: 2%;
+                        span.holidayprice {font-size: 0.75em;}
+                        p{ font-size: 0.7em;}
+                        a{ padding:2% 3%; margin:0; }
+                        a:hover{font-size: 0.75em; }
+                    }
+                }
+
+            }/*.holiday details small end*/
+        }/*#content2 end*/
+    }/*wrapper end*/
+
+    footer {
+        width: 92%;
+        ul {
+            li {
+
+                a {font-size: 0.6em;}
+                a:hover {font-size: 0.6em;}
+            }
+            li:nth-child(2){
+                a {font-size: 0.55em; line-height:15px;}
+                a:hover {font-size: 0.55em;line-height:15px; }
+
+            }
         }
-      }/*offerboxend*/
-
     }
-
-    #banner {
-      
-      height: 325px;
-    
-    }/*#banner end*/
-  }/*#content end*/
-
-  #content2 {
-    width:98%;
-
-    h1,h2,h3 {font-size: 1em; line-height:30px; height:30px;}
-    p {   font-size: 0.75em;}
-
-    .servicebox {
-      h1 {line-height: 30px; height: 30px; text-indent:0;}
-      figcaption {
-
-        p {font-size: 0.70em;}
-
-      }
-
-    }
-
-    .holiday_details {
-
-      h1 {font-size: 0.85em; height:35px; line-height:35px;}
-
-      span.holidayprice {
-        font-size: 0.70em;
-        left: 67%;
-
-      }
-
-      figure{
-        width: 100%;
-                
-        img{width:32%; display:inline-block; float:left; }
-        figcaption{
-
-          
-          width: 64%;
-          margin-bottom: 1%;
-          p{ font-size: 0.65em; line-height: 1.8em; }
-               
-          a{width: 50%; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
-          a:hover{ }
-
-        }/*figcaption end*/
-      }/*figure end*/
-    }/*.holiday details end*/
-
-    .holiday_details_small {
-      
-      h1 {font-size: 0.85em;}
-
-      figure{
-           
-        img{width:47%;  margin:0 3% 0 0;}
-
-        figcaption{
-          width:49%;
-          
-          margin-bottom: 2%;
-          span.holidayprice {font-size: 0.75em;}
-          p{ font-size: 0.7em;}
-          a{ padding:2% 3%; margin:0; }
-          a:hover{font-size: 0.75em; }
-        }
-      }
-
-    }/*.holiday details small end*/
-  }/*#content2 end*/
-}/*wrapper end*/
-
-footer {
-  width: 92%;
-  ul {
-    li {
-      
-      a {font-size: 0.6em;}
-      a:hover {font-size: 0.6em;}
-    }
-    li:nth-child(2){
-      a {font-size: 0.55em; line-height:15px;}
-      a:hover {font-size: 0.55em;line-height:15px; }
-          
-    }
-  }
-}
 
 
 }
 
 @media (max-width: 360px){
 
-#wrapper {
+    #wrapper {
 
-  width: 96%;
-  margin: 0 auto;
-  min-height: 2500px;
+        width: 96%;
+        margin: 0 auto;
+        min-height: 2500px;
 
-  header {
-    
-    height: 100px;
-    
-    #logo {  height: 59px; width: 185px;}
+        header {
 
-    .contact { width: 107px;}
+            height: 100px;
 
+            #logo {  height: 59px; width: 185px;}
 
-    nav {
-      
-      height: 40px;
-
-      ul{
-
-        li {
-          a {font-size: 0.45em; letter-spacing:0.08em; }
-          a:hover {font-size: 0.45em; }
-          
-        }
-        li:nth-child(2){
-          a {font-size: 0.45em; line-height:18px;}
-          a:hover {font-size: 0.45em;line-height:18px; }
-          
-        }
-      }
-    }
-
-  }/*header end*/
-
-  #leftside {
-
-    display:none;
-
-    .leftsidebox {
-
-      h1 {font-size: 1em;}
-
-      div.destinations{
-        width:91%; 
-       
-        figure{
-          
-          width: 100%;
-          img{width:42%;  margin-right:1%;}
-          figcaption{
-            width:50%;
-            display: inline-block;
-            h3{font-size: 0.9em;}
-            p{ font-size: 0.70em;}
-          }
-
-        }
-      }/*.destinations end*/
-
-      
-      #search_form {
+            .contact { width: 107px;}
 
 
+            nav {
 
-        ul {
+                height: 40px;
 
-          .misc_inner {
+                ul{
 
-            .misc {font-size:0.8em;}
+                    li {
+                        a {font-size: 0.45em; letter-spacing:0.08em; }
+                        a:hover {font-size: 0.45em; }
 
-          }
+                    }
+                    li:nth-child(2){
+                        a {font-size: 0.45em; line-height:18px;}
+                        a:hover {font-size: 0.45em;line-height:18px; }
 
-          li {
-              
-              #destination1 {font-size:0.8em; }
-              #time_1 {font-size:0.8em;}
-              #time_2 {font-size:0.8em;}
-
-          }
-
-        }
-
-        label {font-size: 0.75em;}
-        #searchbtn {font-size:0.75em;}
-
-        }
-
-    }/*.leftsidebox end*/
-  }/*#leftside end*/
-
-  #leftside2 {
-
-    display:none;
-
-    h1 {font-size: 0.75em;}
-
-    ul {
-
-      li {
-
-        a {font-size: 0.7em;}
-        a:hover {font-size: 0.75em;}
-
-      }
-    }
-  }/*#leftside2 end*/ 
-
-  #leftside3 {
-
-    display:none;
-
-    h1 {font-size: 0.75em;}
-
-    figure{
-      margin:0;
-
-      figcaption{
-        top: -405px;
-        
-        h1{ font-size:1.15em;  }
-    
-        p{font-size: 0.65em; line-height:1.5em;}
-      }
-    }
-  }/*#leftside2 end*/ 
-
-
-  #content {
-    width: 100%;
-
-    #offers {
-
-      h1 { font-size: 1.1em;}
-      h2 {text-align:center;}
-
-      div.offerbox{  
-        width: 60.5%;
-        margin:4% auto;
-        float:none;
-        
-       
-        figure{
-          
-          img {width:80%; }
-          figcaption{
-            padding: 7% 0;
-            display:block;
-            p{  font-size:0.7em; }
-            p:nth-of-type(2){ 
-              
-              font-size: 0.75em; 
-             
-              span{color:#f66c00;}
+                    }
+                }
             }
-          }
+
+        }/*header end*/
+
+        #leftside {
+
+            display:none;
+
+            .leftsidebox {
+
+                h1 {font-size: 1em;}
+
+                div.destinations{
+                    width:91%; 
+
+                    figure{
+
+                        width: 100%;
+                        img{width:42%;  margin-right:1%;}
+                        figcaption{
+                            width:50%;
+                            display: inline-block;
+                            h3{font-size: 0.9em;}
+                            p{ font-size: 0.70em;}
+                        }
+
+                    }
+                }/*.destinations end*/
+
+
+                #search_form {
+
+
+
+                    ul {
+
+                        .misc_inner {
+
+                            .misc {font-size:0.8em;}
+
+                        }
+
+                        li {
+
+                            #destination1 {font-size:0.8em; }
+                            #time_1 {font-size:0.8em;}
+                            #time_2 {font-size:0.8em;}
+
+                        }
+
+                    }
+
+                    label {font-size: 0.75em;}
+                    #searchbtn {font-size:0.75em;}
+
+                }
+
+            }/*.leftsidebox end*/
+        }/*#leftside end*/
+
+        #leftside2 {
+
+            display:none;
+
+            h1 {font-size: 0.75em;}
+
+            ul {
+
+                li {
+
+                    a {font-size: 0.7em;}
+                    a:hover {font-size: 0.75em;}
+
+                }
+            }
+        }/*#leftside2 end*/ 
+
+        #leftside3 {
+
+            display:none;
+
+            h1 {font-size: 0.75em;}
+
+            figure{
+                margin:0;
+
+                figcaption{
+                    top: -405px;
+
+                    h1{ font-size:1.15em;  }
+
+                    p{font-size: 0.65em; line-height:1.5em;}
+                }
+            }
+        }/*#leftside2 end*/ 
+
+
+        #content {
+            width: 100%;
+
+            #offers {
+
+                h1 { font-size: 1.1em;}
+                h2 {text-align:center;}
+
+                div.offerbox{  
+                    width: 60.5%;
+                    margin:4% auto;
+                    float:none;
+
+
+                    figure{
+
+                        img {width:80%; }
+                        figcaption{
+                            padding: 7% 0;
+                            display:block;
+                            p{  font-size:0.7em; }
+                            p:nth-of-type(2){ 
+
+                                font-size: 0.75em; 
+
+                                span{color:#f66c00;}
+                            }
+                        }
+                    }
+                }/*offerboxend*/
+
+            }
+
+            #banner {
+
+                height: 325px;
+
+            }/*#banner end*/
+        }/*#content end*/
+
+        #content2 {
+            width:98%;
+
+            h1,h2,h3 {font-size: 0.9em; line-height:30px; height:30px;}
+            p {   font-size: 0.75em;}
+
+            .servicebox {
+                width: 92%;
+                h1 {line-height: 30px; height: 30px; text-indent:0; text-align:center;}
+                figcaption {
+
+                    p {font-size: 0.75em;}
+
+                }
+
+            }
+
+            .holiday_details {
+
+                h1 {font-size: 0.85em; height:35px; line-height:35px;}
+
+                span.holidayprice {
+                    font-size: 0.70em;
+                    left: 67%;
+
+                }
+
+                figure{
+                    width: 100%;
+
+                    img{width:46%; display:inline-block; float:left; }
+                    figcaption{
+
+
+                        width: 50%;
+                        margin-bottom: 1%;
+                        p{ font-size: 0.65em; line-height: 1.8em; }
+
+                        a{width: 60%; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
+                        a:hover{ }
+
+                    }/*figcaption end*/
+                }/*figure end*/
+            }/*.holiday details end*/
+
+            .holiday_details_small {
+
+                h1 {font-size: 0.85em;}
+
+                figure{
+
+                    img{width:47%;  margin:0 3% 0 0;}
+
+                    figcaption{
+                        width:49%;
+
+                        margin-bottom: 2%;
+                        span.holidayprice {font-size: 0.75em;}
+                        p{ font-size: 0.7em;}
+                        a{ padding:2% 3%; margin:0; }
+                        a:hover{font-size: 0.75em; }
+                    }
+                }
+
+            }/*.holiday details small end*/
+        }/*#content2 end*/
+    }/*wrapper end*/
+
+    footer {
+        width: 92%;
+        ul {
+            li {
+
+                a {font-size: 0.6em;}
+                a:hover {font-size: 0.6em;}
+            }
+            li:nth-child(2){
+                a {font-size: 0.55em; line-height:15px;}
+                a:hover {font-size: 0.55em;line-height:15px; }
+
+            }
         }
-      }/*offerboxend*/
-
     }
-
-    #banner {
-      
-      height: 325px;
-    
-    }/*#banner end*/
-  }/*#content end*/
-
-  #content2 {
-    width:98%;
-
-    h1,h2,h3 {font-size: 0.9em; line-height:30px; height:30px;}
-    p {   font-size: 0.75em;}
-
-    .servicebox {
-      width: 92%;
-      h1 {line-height: 30px; height: 30px; text-indent:0; text-align:center;}
-      figcaption {
-
-        p {font-size: 0.75em;}
-
-      }
-
-    }
-
-    .holiday_details {
-
-      h1 {font-size: 0.85em; height:35px; line-height:35px;}
-
-      span.holidayprice {
-        font-size: 0.70em;
-        left: 67%;
-
-      }
-
-      figure{
-        width: 100%;
-                
-        img{width:46%; display:inline-block; float:left; }
-        figcaption{
-
-          
-          width: 50%;
-          margin-bottom: 1%;
-          p{ font-size: 0.65em; line-height: 1.8em; }
-               
-          a{width: 60%; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
-          a:hover{ }
-
-        }/*figcaption end*/
-      }/*figure end*/
-    }/*.holiday details end*/
-
-    .holiday_details_small {
-      
-      h1 {font-size: 0.85em;}
-
-      figure{
-           
-        img{width:47%;  margin:0 3% 0 0;}
-
-        figcaption{
-          width:49%;
-          
-          margin-bottom: 2%;
-          span.holidayprice {font-size: 0.75em;}
-          p{ font-size: 0.7em;}
-          a{ padding:2% 3%; margin:0; }
-          a:hover{font-size: 0.75em; }
-        }
-      }
-
-    }/*.holiday details small end*/
-  }/*#content2 end*/
-}/*wrapper end*/
-
-footer {
-  width: 92%;
-  ul {
-    li {
-      
-      a {font-size: 0.6em;}
-      a:hover {font-size: 0.6em;}
-    }
-    li:nth-child(2){
-      a {font-size: 0.55em; line-height:15px;}
-      a:hover {font-size: 0.55em;line-height:15px; }
-          
-    }
-  }
-}
 
 
 
@@ -3828,7 +3816,7 @@ footer {
 }
 
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-/* Style adjustments for high resolution devices */
+    /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
