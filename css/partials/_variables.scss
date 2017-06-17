@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "avantgarde-book";
+    src: url('../fonts/Poet(2).eot');
+    src: url('../fonts/Poet(2).eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Poet(2).svg#AvantGarde-Book') format('svg'),
+    url('../fonts/Poet(2).woff') format('woff'),
+    url('../fonts/Poet(2).ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 $color3:#f7f7f7;
 $colorpw:#ffffff;
@@ -13,10 +24,10 @@ $colorbtn:#c90;
 $colorsearchbtn:#f4810a;
 $colorbtn5:#d85f24;
 $colorsearchbtnroll:#f99f3e;
-$colorbtn1:#f66c00;
+$colorbtn1:#ff6600;
 $colorbtn4:#ff6d00;
-$colorbtn2:#EE2A26;
-$colorbtn3:#FC7D3C;
+$colorbtn2:#f58115;
+$colorbtn3:#faa544;
 
 $colorbg:#175480;
 $colorbgvar:#1e4b6c;
@@ -32,7 +43,8 @@ $sideboxborder:#ebece7;
 $sideboxbordercolvar:#ededeb;
 
 
+
 $font-style:'PT Sans', Arial, sans-serif ;
-$font-style1:'Myriad Pro' , sans-serif;
+$font-style1:'avantgarde-book', arial, san-serif;
 
 
