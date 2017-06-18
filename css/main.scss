@@ -185,7 +185,7 @@ body{
         border-bottom: 1px solid $colorgry2;
         figure#logo{
             height:77px; 
-            width:250px; 
+            width:30.0120048%; 
             margin:0px;
             text-indent:-9999px;
             img{ display:block;}
@@ -673,7 +673,7 @@ body{
 
     #content{ 
         width:70%; 
-        height:1070px;  
+        height:auto;  
         float:left; 
         margin:1% 0;
         h1{
@@ -832,10 +832,12 @@ body{
                         padding:0; 
                         margin:0; 
                         line-height:35px;
+                        border:1px solid $colorgry2;
                     }
                     textarea{ 
                         width:65%; 
                         line-height:1.5em; 
+                        border:1px solid $colorgry2;
                     }
                     #contactbtn{
                         width:20%; 
@@ -1118,7 +1120,7 @@ footer{
         
         figure#logo{
             height:77px; 
-            width:250px; 
+            width:30.0120048%; 
             margin:0px;  
         }
 
@@ -1390,7 +1392,7 @@ footer{
 
     #content{ 
         width:70%; 
-        height:1070px;  
+        height:auto;  
         margin:1% 0;
         h1{
             font-weight:bold;
@@ -1677,7 +1679,6 @@ footer{
     
 }
 
-
 @media (max-width: 1280px){
     
 #wrapper{	
@@ -1688,7 +1689,7 @@ footer{
         
         figure#logo{
             height:77px; 
-            width:250px; 
+            width:30.0120048%; 
             margin:0px;  
         }
 
@@ -1950,7 +1951,7 @@ footer{
 
     #content{ 
         width:70%; 
-        height:1070px;  
+        height:auto;  
         margin:1% 0;
         h1{
             font-weight:bold;
@@ -2052,10 +2053,12 @@ footer{
                         width:65%; 
                         height:35px; 
                         line-height:35px;
+                        
                     }
                     textarea{ 
                         width:65%; 
                         line-height:1.5em; 
+                        
                     }
                     #contactbtn{
                         width:20%; 
@@ -2227,1062 +2230,2100 @@ footer{
 
 @media (max-width: 1024px){
 
-    #wrapper {
+#wrapper{	
+    width: 81%;	
 
-        width: 82%;
-        margin: auto;
+    header{	
+        height:117px;
 
-        header {
+        figure#logo{
+            height:77px; 
+            width:30.0120048%; 
+            margin:0px;  
+        }
 
-            height: 117px;
-
-            .contact {
-
-                span:nth-child(1) {
-
-                    line-height: 34px;
-                    img.tele { width: 12%;}
-
-                }
+        aside.contact{ 
+            width:155px; 
+            img.tele{ 
+                padding:2%;
+                width: 11.5%; 
+            }
+            span:first-of-type {
+                font-size: 1.05em;
 
             }
-
-            nav {
-
-                height: 40px;
-
-
-                ul{	
-
-                    li {
-                        -webkit-flex: 0 1 13.71%;
-                        -ms-flex: 0 1 13.71%;
-                        flex: 0 1 13.71%;
-
-                        width: 13.71%;
-                        a {font-size: 0.75em; }
-                        a:hover {font-size: 0.75em; }
-
-                    }
-                }
-            }
-
-
-
-            .contact {
-                width:130px;
-
-                span:nth-child(1) {
-                    font-size:0.9em;
-                    img.tele{ width: 12%; }
-
-                }
-                span:nth-child(2) {font-size:0.75em;}
+            span:last-of-type { 
+                line-height:20px; 
 
             }
+        }/*contact end*/
 
-        }/*header end*/
+        nav { 
+            height:40px; 
+            margin-bottom:0px; 
 
-        #leftside {
+            ul{	
 
-
-            .leftsidebox {
-
-                h2 {font-size: 1.1em;}
-
-                a { font-size:0.9em;}
-
-
-                div.destinations{
-                    width:91%; 
-
-                    figure{
-
-                        width: 100%;
-                        img{width:47%; float:left; display:inline-block; margin-right:1%;}
-                        figcaption{
-                            width:50%;
-                            display: inline-block;
-                            h3{font-size: 0.9em;}
-                            p{ font-size: 0.70em;}
-                        }
-
-                    }
-                }/*.destinations end*/
-
-                #search_form {
-
-                    ul {
-
-                        .misc_inner {
-                            label {font-size:0.75em;}
-                            .misc {font-size:0.9em;}
-
-                        }
-
-                        li {
-
-                            .destination1 {font-size:0.9em; }
-                            .time_1 {font-size:0.9em;}
-                            #time_2 {font-size:0.9em;}
-                        }
-
-                        #searchbtn {font-size:0.9em;}
-
-                    }
-
-                    label {font-size: 0.80em;}
-
-                }
-
-            }/*.leftsidebox end*/
-        }/*#leftside end*/
-
-        #leftside2 {
-
-            h1 {font-size: 0.8em;}
-
-            ul {
-
-                li {
-
-                    a {font-size: 0.7em;}
-                    a:hover {font-size: 0.75em;}
-
-                }
-            }
-        }/*#leftside2 end*/ 
-
-        #leftside3 {
-
-            #contact-details{
-
-                font-size:0.75em;
-
+                height:100%;
                 li{
+                    width:13.71%; 
+                    height:40px; 
 
-                    &:first-line{color:#164d6b; font-weight:bold;}
+                    a{
+                        font-size:0.75em; 
+                        &:hover{
 
-                    span{ 
-                        width:25%;
-                        img{width:41%; height:25%; }
+                        }
+                        &:visited{  
+
+                            color:$colorbtn5;
+                        }
+                        &:focus{  
+
+                            color:$colorbtn5;
+                        }
+                        &:active{  
+
+                            color:$colorbtn5;
+                        }
+                    }
+                }
+
+                li#language-box{
+                    width: 14%;
+                    margin-left: 2%;
+
+                    span{
+                        width:56%;
+                        font-size:0.75em;
                     }
 
+                    select{
+                        font-size:0.8em;
+                        width:40%;
 
-                    a{  line-height:20px; font-size: 0.85em;}
+                    }
 
                 }
-
             }
+        }/*nav end*/
 
+    }/*header end*/
 
-            figure{
-                margin:0;
+    #leftside{ 
+        width:30%; 
+        padding-top:1%;
 
-                figcaption{
+        .leftsidebox{
+            width:96%;  
+            margin-bottom:1%; 
+            a{
+                margin-left:10px; 
 
-                    top: -448px;
-
-                    h1{font-size:1.3em; margin: 0 auto;  }
-
-                    p{font-size:0.75em; line-height:1.6em; }
+                &:hover{
+                    height: 30px; 
+                    line-height: 30px; 
                 }
             }
 
-        }/*#leftside2 end*/ 
+            h2{
+                font-size:1.05em; 
+                text-indent:2%; 
+            }
 
-        #content {
+            #search_form{
 
-            #offers {
+                padding:2%;
+                label{
+                    width:96%; 
+                    font-size:0.85em; 
+                 }
+                ul{
+                    width:100%; 
 
-                h1 { font-size: 1.1em;}
+                    li{  
+                        width:96%;
+                        select.destination1{ 
+                            font-size:0.85em;
 
-                div.offerbox{  
+                        }
+                        select.time_1{ 
+                            width:27.1%; 
+                            font-size:0.85em;
+                        }
+                        select#time_2{ 
+                            width:43%; 
+                            font-size:0.85em;
+                        }
+                    }
+                    li.misc_inner{ 
+                        width:48%; 
+
+                        select.misc { 
+                            width:98%; 
+                            font-size:0.85em;
+                        }
+                        label{
+                            width:96%; 
+                            font-size:0.85em; 
+                        }
+                    }
+                }
+
+                #searchbtn{
+                    clear:left; 
+                    font-size: 0.9em;
+                    &:hover{
+                        border: 0;
+                    }
+                }
+            }/*#searchform end*/
+
+            div.destinations{
+                width:91%; 
+                margin:5px auto; 
+                padding:2.5%;
+                figure{
+                    margin-right:2%;
+                    img{
+                        width:42%; 
+
+                    }
+                    figcaption{
+                        width:50%;
+                        h3{
+                            font-size: 0.9em; 
+                        }
+                        p{ 
+                            font-size:0.75em; 
+                            line-height:20px;
+                        }
+                    }
+                }
+            }/*.destinations end*/
+        }/*.leftsidebox end*/
+
+    }/*#leftside end*/
+
+    #leftside2{ 
+        width:20%; 
+        margin-top:1%;
 
 
-                    width: 31%;
-                    @include borderRaduis(5px);
-                    figure{
+        h1{
+            text-indent:5%; 
+            font-size:0.85em; 
+            line-height:20px; 
+        }
 
-                        img {width:80%; margin:0 auto; display:block;}
-                        figcaption{
-                            padding: 7% 0;
-                            display:block;
-                            p{  font-size:0.7em; }
-                            p:nth-of-type(2){ 
+        ul{
+            width:90%;
+            padding:2%;
 
-                                font-size: 0.75em; 
+            li{ 
+                margin:0 0 2% 0;
 
-                                span{color:#f66c00;}
+                a{
+
+                    font-size:0.75em; 
+                    letter-spacing:0.02em;
+                    &::before{
+                        content: "<   ";
+                    }
+                    &:hover{ 
+                        font-size:0.80em; 
+                        line-height:25px;
+                    }
+                }
+            }
+        }
+    }
+
+    #leftside3{ 
+        width:20%; 
+        margin:1% 1% 0 0;
+
+        #contact-details{
+
+            font-size:0.65em;
+            li{
+                line-height:20px;
+                height:80px; 
+                
+                &:first-line{
+                    font-weight:bold;
+                }
+
+                span{ 
+                    width:22%; 
+                    img{
+                        width:41%; 
+                        margin:10% auto;
+                    }
+                }
+
+                a{ 
+                    line-height:20px; 
+                    font-size: 0.90em;
+                }
+            }
+        }
+
+        figure{
+            margin:0;
+
+            figcaption{
+                top: -475px;
+                padding:5%;
+                h1{ 
+                    text-indent:0; 
+                    font-size: 1em; 
+                    margin: 25% 0 ;
+                    line-height: 2em; 
+                }
+
+                p{
+                    font-size:0.75em; 
+                    line-height:1.6em; 
+                }
+            }
+        }
+    }
+
+    #content{ 
+        width:70%; 
+        height:auto;  
+        margin:1% 0;
+        h1{
+            font-weight:bold;
+        }
+
+        #banner{
+            width: 96%;
+            height: 370px;
+
+            img {width:100%;}
+        }/*banner end*/
+
+        #offers{  
+            width:100%; 
+            height:540px;
+            h2{ 
+                font-size:1.15em; 
+                letter-spacing:0.05em;
+            } 
+
+            div.offerbox{  
+                width: 31%;
+                figure{
+                    margin:2% 0;
+                    img {
+                        width:80%; 
+                    }
+                    figcaption{
+                        padding: 5% 0;
+                        p{  
+                            font-size:0.75em; 
+                        }
+                        p:nth-of-type(2){ 
+                            font-weight:bold;
+                            span{
+                                color:$colorbtn1;
                             }
                         }
                     }
-                }/*offerboxend*/
-
-
-            }
-
-            #banner {
-
-                height: 325px;
-
-            }/*#banner end*/
-        }/*#content end*/
-
-        #content2 {
-
-            h1 {font-size: 1.3em;}
-            h2 { font-size: 1.1em;}
-
-            p{font-size:0.75em; line-height: 1.9em;}
-
-            .holiday_details {
-
-                h1 {font-size: 1em; height:35px; line-height:35px;}
-
-                span.holidayprice {
-                    font-size: 0.85em;
-                    left: 78%;
-
                 }
 
-                figure{
-                    width: 100%;
+            }/*offerboxend*/
+        }/*offer end*/
 
-                    img{width:25%;  }
-                    figcaption{
+    }/*content end*/
 
-                        width: 64%;
-                        margin-bottom: 1%;
-                        p{ font-size:0.80em; margin:0 0 1% 0; line-height:2em;}
+    label.error{
+        font-size:0.9em; 
+        index:2; 
+        border:1px solid black; 
+        padding:1%; 
+        text-align:1.5em;
+    }
 
-                        a{ font-size:0.9em;  padding: 1% 2%; margin:1% 0; }
-                        a:hover{ font-size:0.9em; }
+    #content2 { 
+        width:77%; 
+        padding:1%; 
+        line-height:1.5em;
 
-                    }/*figcaption end*/
-                }/*figure end*/
-
-            }/*.holiday details end*/
-
-            .holiday_details_small {
-                width: 45%;
-
-                h1 {font-size: 0.80em;}
-
-                figure{
+        h1{
+            font-size:1.2em; 
 
 
-                    img{width:47%;  margin:0 3% 0 0;}
-                    figcaption{
-                        width:50%;
-                        display:inline-block;
-                        margin-bottom: 2%;
-                        span.holidayprice {font-size: 0.8em;}
-                        p{ font-size:0.75em;  margin: 0 0 1% 0;  }
-                        a{ width: 55%; font-size: 0.75em;  padding:2% 3%; margin:0; }
-                        a:hover{font-size: 0.75em; width: 55%; }
+        }
+        h2{
+            font-size:1.05em; 
+ 
+        }
+        h3{
+            font-size:1em; 
+
+        }
+        p{ 
+            font-size:0.8em; 
+            margin: 0;
+        }
+
+        #contactform { 
+            width:100%; 
+            margin:auto; 
+            ul{
+                list-style: none;
+
+                li{ 
+                    margin:5px 0 10px 0;
+                    label {
+                        width:16%; 
+                        height:35px; 
+                        line-height:35px; 
+                        font-size:0.85em; 
+                    }
+                    input{ 
+                        width:65%; 
+                        height:35px; 
+                        line-height:35px;
+
+                    }
+                    textarea{ 
+                        width:65%; 
+                        line-height:1.5em; 
+
+                    }
+                    #contactbtn{
+                        width:20%; 
+                        margin-left:16%; 
+                        height:30px; 
+                        line-height:30px; 
+                    }
+                    #contactbtn:hover{
+                        color:$colorpw; 
+                    }
+                }
+            }
+        }/*end of contact form*/
+
+        .holiday_details{ 
+            margin:1% 0 0 0; 
+            padding:1%;
+            width: 96%;
+
+            h1{ 
+                width: 70%; 
+                line-height:40px; 
+                font-size:1.05em; 
+            }
+
+            span.holidayprice{ 
+                font-size:0.80em; 
+                left: 77%;
+                .offerbox-price{ 
+                    font-weight:bold;
+                }
+            }
+
+            figure{
+                width: 100%;
+
+                img{
+                    width:21%; 
+                    margin:0 2% 0 0;
+                }
+                figcaption{
+                    width: 77%;
+                    margin-bottom: 1%;
+                    p{ 
+                        font-size:0.75em; 
+                        margin:0 0 1% 0; 
+                        line-height:1.6em; 
+                    }
+
+                    a{
+                        width:20%; 
+                        height: 25px; 
+                        font-size:0.85em; 
+                        padding:1% 2%; 
+                    }
+                    a:hover{
+                        padding:1% 2%; 
+                    }
+                }/*figcaption end*/
+            }/*figure end*/
+
+        }  /*Holiday details packages page end*/ 
+
+        .holiday_details_small{
+            width:45%;
+            margin:0.5%; 
+
+
+            h1{ 
+                font-size:0.85em; 
+            }
+
+            figure{
+                width: 100%;
+                margin-right:10px; 
+                img{
+                    width:43%; 
+                    margin:0 3% 0 0;
+                }
+                span.holidayprice{ 
+                    font-size:0.75em;
+                    .offerbox-price{ 
+                        display:inline-block; 
                     }
                 }
 
-            }/*.holiday details small end*/
+                figcaption{
+                    width:54%;
+                    display:inline-block;
+                    margin-bottom: 2%;
 
-        }/*#content2 end*/
+                    p{ 
+                        font-size:0.75em; 
+                        margin: 0 0 2% 0; 
+                        line-height:1.7em; 
+                    }
+                    a{
+                        width: 48%; 
+                        font-size:0.8em; 
+                        padding:2% 3%; 
+                        margin:0; 
+                    }
+                    a:hover{
+                        text-align:center;  
+                    }
+                }
+            }
 
-    }/*wrapper end*/
+        }/*Holiday details Best deals page end*/
+        .servicebox{  
+            width:31%;  
+            margin:5px 0 0 5px; 
 
-    footer {
-        width: 82%;
+            h1{
+                font-size:0.75em; 
+                text-indent:1%; 
+            }
+            figure{
 
+                width:90%;
+                margin:1% auto;
+
+            }
+
+            figcaption{
+                p{ 
+                    font-size:0.7em; 
+                    margin:2%; 
+                    width:96%;
+                }
+                a{ 
+                    font-size:0.75em; 
+                    margin-left:2%;
+                    &:hover{ 
+                        font-size:0.85em; 
+                    }
+                }
+            }
+        }
+    }/*content2 end*/
+
+}/*wrapper end*/
+
+footer{ 
+    width:85%; 
+    height:40px;  
+    ul{ 
+        display:block;
+        li {
+            width:13.570684%;
+
+            a{
+                font-size:0.8em; 
+                &:hover{
+                    font-size:0.8em; 
+                 
+                }
+                &:active{
+                    font-size:0.8em; 
+                }
+            }
+        }
     }
+}/*footer end*/
 
 }
 
 @media (max-width: 980px){
 
-    #wrapper {
+#wrapper{	
+    width: 85%;	
 
-        width: 82%;
-        margin: auto;
+    header{	
+        height:117px;
 
-        header {
+        figure#logo{
+            height:77px; 
+            width:30.0120048%; 
+        }
 
-            height: 117px;
-
-
-            .contact {
-
-                span:nth-child(1) {
-                    font-size:0.85em;
-                    img.tele{ margin:0 5% 0 0; width: 13%; clear:both;}
-
-                }
-                span:nth-child(2) {font-size:0.70em;}
+        aside.contact{ 
+            width:155px; 
+            img.tele{ 
+                padding:2%;
+                width: 11.5%; 
+            }
+            span:first-of-type {
+                font-size: 1.05em;
 
             }
+            span:last-of-type { 
+                line-height:20px; 
 
-            nav {
-
-                height: 40px;
-                ul{
-
-                    li {
-
-                        width: 13.970684%;
-                        a {font-size: 0.65em; }
-                        a:hover {font-size: 0.65em; }
-
-                    }
-
-                }
-
-            }/*Nav end*/
-
-        }/*header end*/
-
-        #leftside {
-
-
-            .leftsidebox {
-
-                h1 {font-size: 1.1em;}
-                a { font-size:0.8em;}
-
-                div.destinations{
-                    width:91%; 
-
-                    figure{
-
-                        width: 100%;
-                        img{width:47%; margin-right:1%;}
-                        figcaption{
-                            width:50%;
-                            display: inline-block;
-                            h3{font-size: 0.9em;}
-                            p{ font-size: 0.70em;}
-                        }
-
-                    }
-                }/*.destinations end*/
-
-                #search_form {
-
-                    ul {
-
-                        .misc_inner {
-
-                            .misc {font-size:0.9em;}
-
-                        }
-
-                        li {
-
-                            .destination1 {font-size:0.85em; }
-                            .time_1 {font-size:0.85em;}
-                            #time_2 {font-size:0.85em;}
-                            label {font-size: 0.80em;}
-
-                        }
-                    }
-                }
-
-
-            }/*.leftsidebox end*/
-        }/*#leftside end*/
-
-        #leftside2 {
-
-            h1 {font-size: 0.8em;}
-
-            ul {
-
-                li {
-
-                    a {font-size: 0.7em;}
-                    a:hover {font-size: 0.70em;}
-
-                }
             }
-        }/*#leftside2 end*/ 
+        }/*contact end*/
 
-        #leftside3 {
+        nav { 
+            height:40px; 
+            margin-bottom:0px; 
 
-            h1 {font-size: 0.8em;}
+            ul{	
 
-            #contact-details{
-
-                font-size:0.70em;
-
+                height:100%;
                 li{
-                    height:75px;
+                    width:13.71%; 
+                    height:40px; 
 
-                    &:first-line{color:#164d6b; font-weight:bold;}
+                    a{
+                        font-size:0.75em; 
+                        &:hover{
 
-                    span{   
-                        width:25%;
-                        img{width:41%; height:25%;}
+                        }
+                        &:visited{  
+
+                            color:$colorbtn5;
+                        }
+                        &:focus{  
+
+                            color:$colorbtn5;
+                        }
+                        &:active{  
+
+                            color:$colorbtn5;
+                        }
+                    }
+                }
+
+                li#language-box{
+                    width: 14%;
+                    margin-left: 2.5%;
+
+                    span{
+                        width:50%;
+                        font-size:0.7em;
                     }
 
+                    select{
+                        font-size:0.75em;
+                        width:49%;
 
-                    a{  line-height:20px; font-size: 0.85em;}
+                    }
 
                 }
-
             }
+        }/*nav end*/
 
-            figure{
-                margin:0;
+    }/*header end*/
 
-                figcaption{
+    #leftside{ 
+        width:30%; 
+        padding-top:1%;
 
-                    top: -431px;
+        .leftsidebox{
+            width:96%;  
+            margin-bottom:1%; 
+            a{
+                margin-left:10px; 
 
-                    h1{font-size:1.2em;  }
-
-                    p{ font-size:0.75em; }
+                &:hover{
+                    height: 30px; 
+                    line-height: 30px; 
                 }
             }
 
-        }/*#leftside2 end*/
+            h2{
+                font-size:1em; 
+                text-indent:2%; 
+            }
+
+            #search_form{
+
+                padding:2%;
+                label{
+                    width:96%; 
+                    font-size:0.8em; 
+                 }
+                ul{
+                    width:100%; 
+
+                    li{  
+                        width:96%;
+                        select.destination1{ 
+                            font-size:0.8em;
+
+                        }
+                        select.time_1{ 
+                            width:27.1%; 
+                            font-size:0.8em;
+                        }
+                        select#time_2{ 
+                            width:43%; 
+                            font-size:0.8em;
+                        }
+                    }
+                    li.misc_inner{ 
+                        width:48%; 
+
+                        select.misc { 
+                            width:98%; 
+                            font-size:0.8em;
+                        }
+                        label{
+                            width:96%; 
+                            font-size:0.8em; 
+                        }
+                    }
+                }
+
+                #searchbtn{
+                    clear:left; 
+                    font-size: 0.9em;
+                    &:hover{
+                        border: 0;
+                    }
+                }
+            }/*#searchform end*/
+
+            div.destinations{
+                width:91%; 
+                padding:2.5%;
+                figure{
+                    margin-right:2%;
+                    img{
+                        width:42%; 
+
+                    }
+                    figcaption{
+                        width:53%;
+                        h3{
+                            font-size: 0.9em; 
+                        }
+                        p{ 
+                            font-size:0.7em; 
+                            line-height:20px;
+                        }
+                    }
+                }
+            }/*.destinations end*/
+        }/*.leftsidebox end*/
+
+    }/*#leftside end*/
+
+    #leftside2{ 
+        width:20%; 
+        margin-top:1%;
 
 
-        #content {
+        h1{
+            text-indent:5%; 
+            font-size:0.85em; 
+        }
 
-            #offers {
+        ul{
+            width:90%;
+            padding:2%;
 
-                h1 { font-size: 1.1em;}
+            li{ 
+                margin:0 0 2% 0;
 
-                div.offerbox{  
+                a{
 
+                    font-size:0.7em; 
+                    letter-spacing:0.02em;
+                    &::before{
+                        content: "<   ";
+                    }
+                    &:hover{ 
+                        font-size:0.80em; 
+                        line-height:25px;
+                    }
+                }
+            }
+        }
+    }
 
-                    width: 31%;
-                    @include borderRaduis(5px);
-                    figure{
+    #leftside3{ 
+        width:20%; 
+        margin:1% 1% 0 0;
 
-                        img {width:80%; margin:0 auto; display:block;}
-                        figcaption{
-                            padding: 7% 0;
-                            display:block;
-                            p{  font-size:0.7em; }
-                            p:nth-of-type(2){ 
+        #contact-details{
 
-                                font-size: 0.75em; 
+            font-size:0.65em;
+            li{
+                line-height:20px;
+                height:80px; 
+                
+                &:first-line{
+                    font-weight:bold;
+                }
 
-                                span{color:#f66c00;}
+                span{ 
+                    width:22%; 
+                    img{
+                        width:41%; 
+                        margin:10% auto;
+                    }
+                }
+
+                a{ 
+                    line-height:20px; 
+                    font-size: 0.90em;
+                }
+            }
+        }
+
+        figure{
+            margin:0;
+
+            figcaption{
+                top: -475px;
+                padding:5%;
+                h1{ 
+                    font-size: 1em; 
+                    margin: 25% 0 ;
+                    line-height: 2em; 
+                }
+
+                p{
+                    font-size:0.7em; 
+                    line-height:1.6em; 
+                }
+            }
+        }
+    }
+
+    #content{ 
+        width:70%; 
+        height:auto;  
+        margin:1% 0;
+        h1{
+            font-weight:bold;
+        }
+
+        #banner{
+            width: 96%;
+            height: 350px;
+
+            img {width:100%;}
+        }/*banner end*/
+
+        #offers{  
+            width:100%; 
+            height:540px;
+            h2{ 
+                font-size:1.15em; 
+                letter-spacing:0.05em;
+            } 
+
+            div.offerbox{  
+                width: 31%;
+                figure{
+                    margin:2% 0;
+                    img {
+                        width:80%; 
+                    }
+                    figcaption{
+                        padding: 5% 0;
+                        p{  
+                            font-size:0.75em; 
+                        }
+                        p:nth-of-type(2){ 
+                            font-weight:bold;
+                            span{
+                                color:$colorbtn1;
                             }
                         }
                     }
-                }/*offerboxend*/
+                }
+
+            }/*offerboxend*/
+        }/*offer end*/
+
+    }/*content end*/
+
+    label.error{
+        font-size:0.9em; 
+        index:2; 
+        border:1px solid black; 
+        text-align:1.5em;
+    }
+
+    #content2 { 
+        width:77%; 
+        padding:1%; 
+        line-height:1.5em;
+
+        h1{
+            font-size:1.2em; 
+
+
+        }
+        h2{
+            font-size:1.05em; 
+ 
+        }
+        h3{
+            font-size:1em; 
+
+        }
+        p{ 
+            font-size:0.75em; 
+            margin: 0;
+        }
+
+        #contactform { 
+            width:100%; 
+            margin:auto; 
+            ul{
+                list-style: none;
+
+                li{ 
+                    margin:5px 0 10px 0;
+                    label {
+                        width:16%; 
+                        font-size:0.8em; 
+                    }
+                    input{ 
+                        width:65%; 
+
+                    }
+                    textarea{ 
+                        width:65%; 
+                        line-height:1.5em; 
+
+                    }
+                    #contactbtn{
+                        width:20%; 
+                        margin-left:16%; 
+
+                    }
+                    #contactbtn:hover{
+                        color:$colorpw; 
+                    }
+                }
+            }
+        }/*end of contact form*/
+
+        .holiday_details{ 
+            margin:1% 0 0 0; 
+            padding:1%;
+            width: 96%;
+
+            h1{ 
+                width: 70%; 
+                line-height:40px; 
+                font-size:1.05em; 
             }
 
-            #banner {
-
-                height: 325px;
-
-            }/*#banner end*/
-        }/*#content end*/
-
-        #content2 {
-
-            h1 {font-size: 1.15em;}
-            h2 { font-size: 1.05em;}
-
-            .holiday_details {
-
-                h1 {font-size: 1em; height:35px; line-height:35px;}
-
-                span.holidayprice {
-                    font-size: 0.85em;
-                    left: 78%;
-
+            span.holidayprice{ 
+                font-size:0.80em; 
+                left: 79%;
+                .offerbox-price{ 
+                    font-weight:bold;
                 }
-                figure{
-                    width: 100%;
+            }
 
-                    img{width:26%; display:inline-block; float:left; }
-                    figcaption{
+            figure{
+                width: 100%;
 
-                        width: 64%;
-                        margin-bottom: 1%;
-                        p{ font-size: 0.75em; }
+                img{
+                    width:21%; 
+                    margin:0 2% 0 0;
+                }
+                figcaption{
+                    width: 77%;
+                    margin-bottom: 1%;
+                    p{ 
+                        font-size:0.75em; 
+                        margin:0 0 1% 0; 
+                        line-height:1.6em; 
+                    }
 
-                        a{height:35px;  height: 25px; font-size:0.9em;  padding: 1% 2%; margin:1% 0;width: 25%; }
-                        a:hover{ font-size:0.9em;width: 25%; }
+                    a{
+                        width:20%; 
+                        height: 25px; 
+                        font-size:0.85em; 
+                        padding:1% 2%; 
+                    }
+                    a:hover{
+                        padding:1% 2%; 
+                    }
+                }/*figcaption end*/
+            }/*figure end*/
 
-                    }/*figcaption end*/
-                }/*figure end*/
+        }  /*Holiday details packages page end*/ 
 
-            }/*.holiday details end*/
+        .holiday_details_small{
+            width:45%;
+            margin:0.5%; 
 
-            .holiday_details_small {
-                width: 45.70%;
 
-                h1 {font-size: 0.80em;}
+            h1{ 
+                font-size:0.85em; 
+            }
 
-                figure{
-
-                    img{width:47%;  margin:0 3% 0 0;}
-
-                    figcaption{
-                        width:49%;
-                        display:inline-block;
-                        margin-bottom: 2%;
-                        span.holidayprice {font-size: 0.8em;}
-                        p{ font-size: 0.7em; }
-                        a{width: 60%;  font-size: 0.75em;  padding:2% 3%; margin:0; }
-                        a:hover{ font-size: 0.75em; width: 60%;}
+            figure{
+                width: 100%;
+                margin-right:10px; 
+                img{
+                    width:43%; 
+                    margin:0 3% 0 0;
+                }
+                span.holidayprice{ 
+                    font-size:0.75em;
+                    .offerbox-price{ 
+                        display:inline-block; 
                     }
                 }
 
+                figcaption{
+                    width:54%;
+                    display:inline-block;
+                    margin-bottom: 2%;
 
-            }/*.holiday details small end*/
+                    p{ 
+                        font-size:0.7em; 
+                        margin: 0 0 2% 0; 
+                        line-height:1.7em; 
+                    }
+                    a{
+                        width: 55%; 
+                        font-size:0.8em; 
+                        padding:2% 3%; 
+                        margin:0; 
+                    }
+                    a:hover{
+                        text-align:center;  
+                    }
+                }
+            }
 
-        }/*#content2 end*/
+        }/*Holiday details Best deals page end*/
+        .servicebox{  
+            width:31%;  
+            margin:5px 0 0 5px; 
 
-    }/*wrapper end*/
+            h1{
+                font-size:0.75em; 
+                text-indent:1%; 
+            }
+            figure{
 
-    footer {
-        width: 82%;
+                width:90%;
+                margin:1% auto;
 
+            }
+
+            figcaption{
+                p{ 
+                    font-size:0.7em; 
+                    margin:2%; 
+                    width:96%;
+                }
+                a{ 
+                    font-size:0.75em; 
+                    margin-left:2%;
+                    &:hover{ 
+                        font-size:0.85em; 
+                    }
+                }
+            }
+        }
+    }/*content2 end*/
+
+}/*wrapper end*/
+
+footer{ 
+    width:89%; 
+    ul{ 
+        display:block;
+        li {
+            width:13.570684%;
+
+            a{
+                font-size:0.75em; 
+                &:hover{
+                    font-size:0.75em; 
+                 
+                }
+                &:active{
+                    font-size:0.75em; 
+                }
+            }
+        }
     }
+}/*footer end*/
 
 }
 
 @media (max-width: 800px){
 
-    #wrapper {
+#wrapper{	
+    width: 90%;	
 
-        width: 92%;
-        margin: auto;
+    header{	
+        height:107px;
 
-        header {
+        figure#logo{
+            height:67px; 
+            width:30.0120048%; 
+        }
 
-            height: 117px;
-
-            .contact {
-
-                span:nth-child(1) {
-                    font-size:0.85em;
-                    img.tele{ width: 13%; }
-
-                }
-                span:nth-child(2) {font-size:0.70em;}
+        aside.contact{ 
+            width:151px; 
+            img.tele{ 
+                padding:2%;
+                width: 9.5%; 
+            }
+            span:first-of-type {
+                font-size: 0.9em;
+                line-height: 25px;
 
             }
+            span:last-of-type { 
+                line-height:20px; 
 
-            nav {
-
-                height: 40px;
-
-                ul{
-
-                    li {
-
-                        width: 16.4%;
-                        a {font-size: 0.65em; }
-                        a:hover {font-size: 0.65em; }
-
-                    }
-                }
             }
+        }/*contact end*/
 
+        nav { 
+            height:40px; 
+            margin-bottom:0px; 
 
-        }/*header end*/
+            ul{	
 
-        #leftside {
-
-
-            .leftsidebox {
-
-                h1 {font-size: 1em;}
-
-                div.destinations{
-                    width:91%; 
-
-                    figure{
-
-                        width: 100%;
-                        img{width:46%; margin-right:1%;}
-                        figcaption{
-                            width:50%;
-                            display: inline-block;
-                            h3{font-size: 0.85em;}
-                            p{ font-size: 0.70em;}
-                        }
-
-                    }
-                }/*.destinations end*/
-
-
-                #search_form {
-
-                    ul {
-
-                        .misc_inner {
-
-                            .misc {font-size:0.8em;}
-
-                        }
-
-                        li {
-
-                            .destination1 {font-size:0.8em; }
-                            .time_1 {font-size:0.8em;}
-                            #time_2 {font-size:0.8em;}
-                            label {font-size: 0.75em;}
-
-                        }
-
-                    }
-
-                    #searchbtn {font-size:0.75em;}
-
-                }
-
-            }/*.leftsidebox end*/
-        }/*#leftside end*/
-
-        #leftside2 {
-
-            h1 {font-size: 0.75em;}
-
-            ul {
-
-                li {
-
-                    a {font-size: 0.7em;}
-                    a:hover {font-size: 0.7em;}
-
-                }
-            }
-        }/*#leftside2 end*/ 
-
-        #leftside3 {
-
-            h1 {font-size: 0.75em;}
-
-            #contact-details{
-
-                width: 95%;
-
-
-                font-size:0.65em;
-
+                height:100%;
                 li{
-                    height:70px;
+                    width:13.71%; 
+                    height:40px; 
 
-                    &:first-line{color:#164d6b; font-weight:bold;}
+                    a{
+                        font-size:0.7em; 
+                        &:hover{
 
-                    span{ 
-                        width:25%;
-                        img{width:41%; height:25%;}
+                        }
+                        &:visited{  
+
+                            color:$colorbtn5;
+                        }
+                        &:focus{  
+
+                            color:$colorbtn5;
+                        }
+                        &:active{  
+
+                            color:$colorbtn5;
+                        }
+                    }
+                }
+
+                li#language-box{
+                    width: 15%;
+                    margin-left: 0%;
+
+                    span{
+                        width:50%;
+                        font-size:0.65em;
+                        text-indent:1.5%;
+                    }
+
+                    select{
+                        font-size:0.7em;
+                        width:49%;
 
                     }
 
-
-                    a{  line-height:20px; font-size: 0.85em;}
-
-                }
-
-            }
-
-            figure{
-                margin:0;
-
-                figcaption{
-                    top: -397px;
-
-                    h1{ font-size:1.1em;  }
-
-                    p{font-size:0.70em; line-height: 1.9em; }
                 }
             }
-        }/*#leftside2 end*/ 
+        }/*nav end*/
+
+    }/*header end*/
+
+    #leftside{ 
+        width:30%; 
+        padding-top:1%;
+
+        .leftsidebox{
+            width:96%;  
+            margin-bottom:1%; 
+            a{
+                margin-left:10px;
+                font-size:0.9em;
+
+                &:hover{
+                    height: 30px; 
+                    line-height: 30px; 
+                }
+            }
+
+            h2{
+                font-size:1em; 
+                text-indent:2%; 
+            }
+
+            #search_form{
+
+                padding:2%;
+                label{
+                    width:96%; 
+                    font-size:0.8em; 
+                 }
+                ul{
+                    width:100%; 
+
+                    li{  
+                        width:96%;
+                        select.destination1{ 
+                            font-size:0.75em;
+
+                        }
+                        select.time_1{ 
+                            width:27.1%; 
+                            font-size:0.75em;
+                        }
+                        select#time_2{ 
+                            width:43%; 
+                            font-size:0.75em;
+                        }
+                    }
+                    li.misc_inner{ 
+                        width:48%; 
+
+                        select.misc { 
+                            width:98%; 
+                            font-size:0.75em;
+                        }
+                        label{
+                            width:96%; 
+                            font-size:0.75em; 
+                        }
+                    }
+                }
+
+                #searchbtn{
+                    clear:left; 
+                    font-size: 0.9em;
+                    &:hover{
+                        border: 0;
+                    }
+                }
+            }/*#searchform end*/
+
+            div.destinations{
+                width:91%; 
+                padding:2.5%;
+                figure{
+                    margin-right:2%;
+                    img{
+                        width:42%; 
+
+                    }
+                    figcaption{
+                        width:53%;
+                        h3{
+                            font-size: 0.85em; 
+                        }
+                        p{ 
+                            font-size:0.7em; 
+                            line-height:20px;
+                        }
+                    }
+                }
+            }/*.destinations end*/
+        }/*.leftsidebox end*/
+
+    }/*#leftside end*/
+
+    #leftside2{ 
+        width:20%; 
+        margin-top:1%;
 
 
+        h1{
+            text-indent:5%; 
+            font-size:0.8em; 
+        }
 
-        #content {
+        ul{
+            width:90%;
+            padding:2%;
 
-            #offers {
+            li{ 
+                margin:0 0 2% 0;
 
-                h1 { font-size: 1.1em;}
+                a{
 
-                div.offerbox{  
+                    font-size:0.7em; 
+                    letter-spacing:0.02em;
+                    &::before{
+                        content: "<   ";
+                    }
+                    &:hover{ 
+                        font-size:0.80em; 
+                        line-height:25px;
+                    }
+                }
+            }
+        }
+    }
 
-                    margin: 0px 0px 20px 2px;
-                    width: 31%;
+    #leftside3{ 
+        width:20%; 
+        margin:1% 1% 0 0;
 
-                    figure{
+        #contact-details{
 
-                        img {width:80%; }
-                        figcaption{
-                            padding: 7% 0;
-                            display:block;
-                            p{  font-size:0.7em; }
-                            p:nth-of-type(2){ 
+            font-size:0.65em;
+            li{
+                line-height:20px;
+                height:80px; 
+                
+                &:first-line{
+                    font-weight:bold;
+                }
 
-                                font-size: 0.75em; 
+                span{ 
+                    width:22%; 
+                    img{
+                        width:41%; 
+                        margin:10% auto;
+                    }
+                }
 
-                                span{color:#f66c00;}
+                a{ 
+                    line-height:20px; 
+                    font-size: 0.90em;
+                }
+            }
+        }
+
+        figure{
+            margin:0;
+
+            figcaption{
+                top: -412px;
+                padding:5%;
+                h1{ 
+                    font-size: 0.9em; 
+                    margin: 22% 0 ;
+                    line-height: 2em; 
+                }
+
+                p{
+                    font-size:0.65em; 
+                    line-height:1.6em; 
+                }
+            }
+        }
+    }
+
+    #content{ 
+        width:70%; 
+        height:auto;  
+        margin:1% 0;
+        h1{
+            font-weight:bold;
+        }
+
+        #banner{
+            width: 96%;
+            height: 340px;
+
+            img {width:100%;}
+        }/*banner end*/
+
+        #offers{  
+            width:100%; 
+            height:540px;
+            h2{ 
+                font-size:1.15em; 
+                letter-spacing:0.05em;
+            } 
+
+            div.offerbox{  
+                width: 30%;
+                figure{
+                    margin:2% 0;
+                    img {
+                        width:80%; 
+                    }
+                    figcaption{
+                        padding: 5% 0;
+                        p{  
+                            font-size:0.7em; 
+                        }
+                        p:nth-of-type(2){ 
+                            font-weight:bold;
+                            span{
+                                color:$colorbtn1;
                             }
                         }
                     }
-                }/*offerboxend*/
-
-            }
-
-            #banner {
-
-                height: 325px;
-
-            }/*#banner end*/
-        }/*#content end*/
-
-        #content2 {
-
-            h1 {font-size: 1.1em;}
-            p {   font-size: 0.75em; line-height: 2em;}
-
-            .servicebox {
-                h1 {line-height: 20px; height: 45px; text-indent:0;}
-                figcaption {
-
-                    p {font-size: 0.70em;}
-
                 }
 
-            }
+            }/*offerboxend*/
+        }/*offer end*/
 
-            .holiday_details {
+    }/*content end*/
 
-                h1 {font-size: 1em; height:35px; line-height:35px;}
-
-                span.holidayprice {
-                    font-size: 0.80em;
-                    left: 81%;
-
-                }
-
-                figure{
-                    width: 100%;
-
-                    img{width:28%; display:inline-block; float:left; }
-                    figcaption{
-
-                        width: 64%;
-                        margin-bottom: 1%;
-                        p{ font-size: 0.75em; }
-
-                        a{height:35px;  height: 25px; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
-                        a:hover{ font-weight:bold; }
-
-                    }/*figcaption end*/
-                }/*figure end*/
-
-            }/*.holiday details end*/
-
-            .holiday_details_small {
-
-                width: 45%;
-
-                h1 {font-size: 0.75em;}
-
-                figure{
-
-                    img{width:47%;  margin:0 3% 0 0;}
-
-                    figcaption{
-                        width:49%;
-                        display:inline-block;
-                        margin-bottom: 2%;
-                        span.holidayprice {font-size: 0.75em;}
-                        p{ font-size: 0.7em; margin: 0 0 2% 0;}
-                        a{width: 70%;  font-size: 0.75em;  padding:2% 3%; margin:0; }
-                        a:hover{ font-size: 0.75em; width: 70%; }
-                    }
-                }
-            }/*.holiday details small end*/
-
-
-
-        }/*#content2 end*/
-
-    }/*wrapper end*/
-
-    footer {
-        width: 92%;
-        ul {
-            li {width: 14.570684%;}
-            a {font-size: 0.75em;}
-            a:hover {font-size: 0.75em;}
-        }
-
+    label.error{
+        font-size:0.9em; 
+        index:2; 
+        border:1px solid black; 
+        text-align:1.5em;
     }
 
+    #content2 { 
+        width:77%; 
+        padding:1%; 
+        line-height:1.5em;
+
+        h1{
+            font-size:1.2em; 
+
+
+        }
+        h2{
+            font-size:1.05em; 
+ 
+        }
+        h3{
+            font-size:1em; 
+
+        }
+        p{ 
+            font-size:0.75em; 
+            margin: 0;
+        }
+
+        #contactform { 
+            width:100%; 
+            margin:auto; 
+            ul{
+                list-style: none;
+
+                li{ 
+                    margin:5px 0 10px 0;
+                    label {
+                        width:16%; 
+                        font-size:0.8em; 
+                    }
+                    input{ 
+                        width:65%; 
+
+                    }
+                    textarea{ 
+                        width:65%; 
+                        line-height:1.5em; 
+
+                    }
+                    #contactbtn{
+                        width:20%; 
+                        margin-left:16%; 
+
+                    }
+                    #contactbtn:hover{
+                        color:$colorpw; 
+                    }
+                }
+            }
+        }/*end of contact form*/
+
+        .holiday_details{ 
+            margin:1% 0 0 0; 
+            padding:1%;
+            width: 96%;
+
+            h1{ 
+                width: 70%; 
+                line-height:40px; 
+                font-size:1.05em; 
+            }
+
+            span.holidayprice{ 
+                font-size:0.80em; 
+                left: 79%;
+                .offerbox-price{ 
+                    font-weight:bold;
+                }
+            }
+
+            figure{
+                width: 100%;
+
+                img{
+                    width:21%; 
+                    margin:0 2% 0 0;
+                }
+                figcaption{
+                    width: 77%;
+                    margin-bottom: 1%;
+                    p{ 
+                        font-size:0.75em; 
+
+                        line-height:1.6em; 
+                    }
+
+                    a{
+                        width: 25%; 
+                        font-size:0.85em; 
+
+                    }
+                    a:hover{
+                        padding:1% 2%; 
+                    }
+                }/*figcaption end*/
+            }/*figure end*/
+
+        }  /*Holiday details packages page end*/ 
+
+        .holiday_details_small{
+            width:45%;
+            margin:0.5%; 
+
+
+            h1{ 
+                font-size:0.8em; 
+            }
+
+            figure{
+                width: 100%;
+                margin-right:10px; 
+                img{
+                    width:43%; 
+                    margin:0 3% 0 0;
+                }
+                span.holidayprice{ 
+                    font-size:0.75em;
+                    .offerbox-price{ 
+                        display:inline-block; 
+                    }
+                }
+
+                figcaption{
+                    width:54%;
+                    margin-bottom: 2%;
+
+                    p{ 
+                        font-size:0.7em; 
+                        line-height:1.6em; 
+                    }
+                    a{
+                        width: 65%; 
+                        font-size:0.8em; 
+                        padding:2% 3%; 
+                    }
+                    a:hover{
+                        text-align:center;  
+                    }
+                }
+            }
+
+        }/*Holiday details Best deals page end*/
+        .servicebox{  
+            width:30.5%;  
+            margin:5px 0 0 5px; 
+
+            h1{
+                font-size:0.65em; 
+                text-indent:0%; 
+            }
+            figure{
+
+                width:90%;
+                margin:1% auto;
+
+            }
+
+            figcaption{
+                p{ 
+                    font-size:0.65em; 
+                    margin:2%; 
+                    width:96%;
+                }
+                a{ 
+                    font-size:0.75em; 
+                    margin-left:2%;
+                    &:hover{ 
+                        font-size:0.8em; 
+                    }
+                }
+            }
+        }
+    }/*content2 end*/
+
+}/*wrapper end*/
+
+footer{ 
+    width:94%; 
+    ul{ 
+        display:block;
+        li {
+            width:13.570684%;
+
+            a{
+                font-size:0.7em; 
+                &:hover{
+                    font-size:0.7em; 
+                 
+                }
+                &:active{
+                    font-size:0.7em; 
+                }
+            }
+        }
+    }
+}/*footer end*/
 
 }
 
 @media (max-width: 768px){
 
-    #wrapper {
+#wrapper{	
+    width: 94%;	
 
-        width: 92%;
-        margin: auto;
+    header{	
+        height:107px;
 
-        header {
+        figure#logo{
+            height:67px; 
+            width:30.0120048%; 
+        }
 
-            height: 117px;
-
-            nav {
-
-                height: 40px;
-
-                ul{
-
-                    li {
-
-                        width: 16.5%;
-
-                        a {font-size: 0.65em; }
-                        a:hover {font-size: 0.65em; }
-
-                    }
-
-                }
+        aside.contact{ 
+            width:151px; 
+            img.tele{ 
+                padding:2%;
+                width: 9.5%; 
+            }
+            span:first-of-type {
+                font-size: 0.9em;
+                line-height: 25px;
 
             }
+            span:last-of-type { 
+                line-height:20px; 
 
-        }/*header end*/
-
-        #leftside {
-
-
-            .leftsidebox {
-
-                h1 {font-size: 1em;}
-
-                div.destinations{
-                    width:91%; 
-
-                    figure{
-
-                        width: 100%;
-                        img{width:47%;  margin-right:1%;}
-                        figcaption{
-                            width:50%;
-                            display: inline-block;
-                            h3{font-size: 0.8em;}
-                            p{ font-size: 0.70em;}
-                        }
-
-                    }
-                }/*.destinations end*/
-
-
-                #search_form {
-
-                    ul {
-
-                        .misc_inner {
-
-                            .misc {font-size:0.8em;}
-
-                        }
-
-                        li {
-
-                            .destination1 {font-size:0.8em; }
-                            .time_1 {font-size:0.8em;}
-                            #time_2 {font-size:0.8em;}
-
-                        }
-
-                    }
-
-                    label {font-size: 0.75em;}
-                    #searchbtn {font-size:0.75em;}
-
-                }
-
-            }/*.leftsidebox end*/
-        }/*#leftside end*/
-
-        #leftside2 {
-
-            h1 {font-size: 0.75em;}
-
-            ul {
-
-                li {
-
-                    a {font-size: 0.7em;}
-                    a:hover {font-size: 0.75em;}
-
-                }
             }
+        }/*contact end*/
 
-        }/*#leftside2 end*/ 
+        nav { 
+            height:40px; 
+            margin-bottom:0px; 
 
-        #leftside3 {
+            ul{	
 
-            h1 {font-size: 0.75em;}
-
-            #contact-details{
-
-                width: 96%;
-
-
-                font-size:0.60em;
-
+                height:100%;
                 li{
-                    height:70px;
+                    width:13.71%; 
+                    height:40px; 
 
-                    &:first-line{color:#164d6b; font-weight:bold;}
+                    a{
+                        font-size:0.7em; 
+                        &:hover{
 
-                    span{ 
-                        width:23%;
-                        img{width:41%; height:23%;}
+                        }
+                        &:visited{  
 
-                    }
+                            color:$colorbtn5;
+                        }
+                        &:focus{  
 
+                            color:$colorbtn5;
+                        }
+                        &:active{  
 
-                    a{  line-height:20px; font-size: 0.90em;}
-
-                }
-
-            }
-
-            figure{
-                margin:0;
-
-                figcaption{
-                    top: -384px;
-
-                    h1{ font-size:1.1em;  }
-
-                    p{font-size: 0.65em; line-height:1.5em;}
-                }
-            }
-
-        }/*#leftside2 end*/ 
-
-
-        #content {
-
-            #offers {
-
-                h1 { font-size: 1.1em;}
-
-                div.offerbox{  
-
-                    margin: 0px 0px 20px 2px;
-                    width: 31%;
-
-                    figure{
-
-                        img {width:80%; }
-                        figcaption{
-                            padding: 7% 0;
-                            display:block;
-                            p{  font-size:0.7em; }
-                            p:nth-of-type(2){ 
-
-                                font-size: 0.70em; 
-
-                                span{color:#f66c00;}
-                            }
+                            color:$colorbtn5;
                         }
                     }
-                }/*offerboxend*/
-
-            }
-
-            #banner {
-
-                height: 325px;
-
-            }/*#banner end*/
-        }/*#content end*/
-
-        #content2 {
-
-            h1 {font-size: 1.1em;}
-            p {   font-size: 0.75em;}
-
-            .servicebox {
-                h1 {line-height: 20px; height: 45px; text-indent:0;}
-                figcaption {
-
-                    p {font-size: 0.70em;}
-
                 }
 
-            }
+                li#language-box{
+                    width: 15%;
+                    margin-left: 0%;
 
-            .holiday_details {
+                    span{
+                        width:45%;
+                        font-size:0.55em;
+                        text-indent:1%;
+                    }
 
-                h1 {font-size: 1em; height:35px; line-height:35px;}
+                    select{
+                        font-size:0.65em;
+                        width:53%;
 
-                span.holidayprice {
-                    font-size: 0.80em;
-                    left: 81%;
+                    }
 
                 }
+            }
+        }/*nav end*/
 
-                figure{
-                    width: 100%;
+    }/*header end*/
 
-                    img{width: 31%;  }
-                    figcaption{
+    #leftside{ 
+        width:30%; 
+        padding-top:1%;
 
-                        width: 64%;
-                        margin-bottom: 1%;
-                        p{ font-size: 0.75em;  }
+        .leftsidebox{
+            width:96%;  
+            margin-bottom:1%; 
+            a{
+                margin-left:10px;
+                font-size:0.9em;
 
-                        a{height:35px;  height: 25px; font-size:0.8em; width: 30%; padding: 1% 2%; margin:1% 0; }
-                        a:hover{ font-size:0.85em; width: 30%; }
+                &:hover{
+                    height: 30px; 
+                    line-height: 30px; 
+                }
+            }
 
-                    }/*figcaption end*/
-                }/*figure end*/
-            }/*.holiday details end*/
+            h2{
+                font-size:1em; 
+                text-indent:2%; 
+            }
 
-            .holiday_details_small {
+            #search_form{
 
-                h1 {font-size: 0.75em;}
+                padding:2%;
+                label{
+                    width:96%; 
+                    font-size:0.8em; 
+                 }
+                ul{
+                    width:100%; 
 
-                figure{
+                    li{  
+                        width:96%;
+                        select.destination1{ 
+                            font-size:0.75em;
 
-                    img{width:47%;  margin:0 3% 0 0;}
+                        }
+                        select.time_1{ 
+                            width:27.1%; 
+                            font-size:0.75em;
+                        }
+                        select#time_2{ 
+                            width:43%; 
+                            font-size:0.75em;
+                        }
+                    }
+                    li.misc_inner{ 
+                        width:48%; 
 
-                    figcaption{
-                        width:49%;
-                        display:inline-block;
-                        margin-bottom: 2%;
-                        span.holidayprice {font-size: 0.75em;}
-                        p{ font-size: 0.7em;}
-                        a{ padding:2% 3%; margin:0; }
-                        a:hover{ }
+                        select.misc { 
+                            width:98%; 
+                            font-size:0.75em;
+                        }
+                        label{
+                            width:96%; 
+                            font-size:0.75em; 
+                        }
                     }
                 }
 
+                #searchbtn{
+                    clear:left; 
+                    font-size: 0.9em;
+                    &:hover{
+                        border: 0;
+                    }
+                }
+            }/*#searchform end*/
 
-            }/*.holiday details small end*/
-        }/*#content2 end*/
-    }/*wrapper end*/
+            div.destinations{
+                width:91%; 
+                padding:2.5%;
+                figure{
+                    margin-right:2%;
+                    img{
+                        width:42%; 
 
-    footer {
-        width: 92%;
-        ul {
-            li {
-                width: 14.570684%;
-                a {font-size: 0.7em;}
-                a:hover {font-size: 0.7em;}
+                    }
+                    figcaption{
+                        width:53%;
+                        h3{
+                            font-size: 0.85em; 
+                        }
+                        p{ 
+                            font-size:0.7em; 
+                            line-height:20px;
+                        }
+                    }
+                }
+            }/*.destinations end*/
+        }/*.leftsidebox end*/
+
+    }/*#leftside end*/
+
+    #leftside2{ 
+        width:20%; 
+        margin-top:1%;
+
+
+        h1{
+            text-indent:5%; 
+            font-size:0.8em; 
+        }
+
+        ul{
+            width:90%;
+            padding:2%;
+
+            li{ 
+                margin:0 0 2% 0;
+
+                a{
+
+                    font-size:0.7em; 
+                    letter-spacing:0.02em;
+                    &::before{
+                        content: "<   ";
+                    }
+                    &:hover{ 
+                        font-size:0.80em; 
+                        line-height:25px;
+                    }
+                }
             }
         }
     }
 
+    #leftside3{ 
+        width:20%; 
+        margin:1% 1% 0 0;
+
+        #contact-details{
+
+            font-size:0.65em;
+            li{
+                line-height:20px;
+                height:80px; 
+                
+                &:first-line{
+                    font-weight:bold;
+                }
+
+                span{ 
+                    width:22%; 
+                    img{
+                        width:41%; 
+                        margin:10% auto;
+                    }
+                }
+
+                a{ 
+                    line-height:20px; 
+                    font-size: 0.90em;
+                }
+            }
+        }
+
+        figure{
+            margin:0;
+
+            figcaption{
+                top: -412px;
+                padding:5%;
+                h1{ 
+                    font-size: 0.9em; 
+                    margin: 22% 0 ;
+                    line-height: 2em; 
+                }
+
+                p{
+                    font-size:0.65em; 
+                    line-height:1.6em; 
+                }
+            }
+        }
+    }
+
+    #content{ 
+        width:70%; 
+        height:auto;  
+        margin:1% 0;
+        h1{
+            font-weight:bold;
+        }
+
+        #banner{
+            width: 96%;
+            height: 340px;
+
+            img {width:100%;}
+        }/*banner end*/
+
+        #offers{  
+            width:100%; 
+            height:540px;
+            h2{ 
+                font-size:1.15em; 
+                letter-spacing:0.05em;
+            } 
+
+            div.offerbox{  
+                width: 30%;
+                figure{
+                    margin:2% 0;
+                    img {
+                        width:80%; 
+                    }
+                    figcaption{
+                        padding: 5% 0;
+                        p{  
+                            font-size:0.7em; 
+                        }
+                        p:nth-of-type(2){ 
+                            font-weight:bold;
+                            span{
+                                color:$colorbtn1;
+                            }
+                        }
+                    }
+                }
+
+            }/*offerboxend*/
+        }/*offer end*/
+
+    }/*content end*/
+
+    label.error{
+        font-size:0.9em; 
+        index:2; 
+        border:1px solid black; 
+        text-align:1.5em;
+    }
+
+    #content2 { 
+        width:77%; 
+        padding:1%; 
+        line-height:1.5em;
+
+        h1{
+            font-size:1.2em; 
+
+
+        }
+        h2{
+            font-size:1.05em; 
+ 
+        }
+        h3{
+            font-size:1em; 
+
+        }
+        p{ 
+            font-size:0.75em; 
+            margin: 0;
+        }
+
+        #contactform { 
+            width:100%; 
+            margin:auto; 
+            ul{
+                list-style: none;
+
+                li{ 
+                    margin:5px 0 10px 0;
+                    label {
+                        width:16%; 
+                        font-size:0.8em; 
+                    }
+                    input{ 
+                        width:65%; 
+
+                    }
+                    textarea{ 
+                        width:65%; 
+                        line-height:1.5em; 
+
+                    }
+                    #contactbtn{
+                        width:20%; 
+                        margin-left:16%; 
+
+                    }
+                    #contactbtn:hover{
+                        color:$colorpw; 
+                    }
+                }
+            }
+        }/*end of contact form*/
+
+        .holiday_details{ 
+            margin:1% 0 0 0; 
+            padding:1%;
+            width: 96%;
+
+            h1{ 
+                width: 70%; 
+                line-height:40px; 
+                font-size:1em; 
+            }
+
+            span.holidayprice{ 
+                font-size:0.75em; 
+                left: 80%;
+                .offerbox-price{ 
+                    font-weight:bold;
+                }
+            }
+
+            figure{
+                width: 100%;
+
+                img{
+                    width:21%; 
+                    margin:0 2% 0 0;
+                }
+                figcaption{
+                    width: 77%;
+                    margin-bottom: 1%;
+                    p{ 
+                        font-size:0.75em; 
+
+                        line-height:1.6em; 
+                    }
+
+                    a{
+                        width: 25%; 
+                        font-size:0.85em; 
+
+                    }
+                    a:hover{
+                        padding:1% 2%; 
+                    }
+                }/*figcaption end*/
+            }/*figure end*/
+
+        }  /*Holiday details packages page end*/ 
+
+        .holiday_details_small{
+            width:45%;
+            margin:0.5%; 
+
+
+            h1{ 
+                font-size:0.8em; 
+            }
+
+            figure{
+                width: 100%;
+                margin-right:10px; 
+                img{
+                    width:43%; 
+                    margin:0 3% 0 0;
+                }
+                span.holidayprice{ 
+                    font-size:0.75em;
+                    .offerbox-price{ 
+                        display:inline-block; 
+                    }
+                }
+
+                figcaption{
+                    width:54%;
+                    margin-bottom: 2%;
+
+                    p{ 
+                        font-size:0.7em; 
+                        line-height:1.6em; 
+                    }
+                    a{
+                        width: 65%; 
+                        font-size:0.8em; 
+                        padding:2% 3%; 
+                    }
+                    a:hover{
+                        text-align:center;  
+                    }
+                }
+            }
+
+        }/*Holiday details Best deals page end*/
+        .servicebox{  
+            width:30.5%;  
+            margin:5px 0 0 5px; 
+
+            h1{
+                font-size:0.65em; 
+                text-indent:0%; 
+            }
+            figure{
+
+                width:90%;
+                margin:1% auto;
+
+            }
+
+            figcaption{
+                p{ 
+                    font-size:0.65em; 
+                    margin:2%; 
+                    width:96%;
+                }
+                a{ 
+                    font-size:0.75em; 
+                    margin-left:2%;
+                    &:hover{ 
+                        font-size:0.8em; 
+                    }
+                }
+            }
+        }
+    }/*content2 end*/
+
+}/*wrapper end*/
+
+footer{ 
+    width:98%; 
+    ul{ 
+        display:block;
+        li {
+            width:14.570684%;
+
+            a{
+                font-size:0.7em; 
+                &:hover{
+                    font-size:0.7em; 
+                 
+                }
+                &:active{
+                    font-size:0.7em; 
+                }
+            }
+        }
+    }
+}/*footer end*/
 
 }
-
 
 //mobile
 
@@ -3493,506 +4534,6 @@ footer{
                         width: 64%;
                         margin-bottom: 1%;
                         p{ font-size: 0.75em;  }
-
-                        a{width: 25%; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
-                        a:hover{ }
-
-                    }/*figcaption end*/
-                }/*figure end*/
-            }/*.holiday details end*/
-
-            .holiday_details_small {
-
-                h1 {font-size: 0.85em;}
-
-                figure{
-
-                    img{width:43%;  margin:0 3% 0 0;}
-
-                    figcaption{
-                        width:49%;
-
-                        margin-bottom: 2%;
-                        span.holidayprice {font-size: 0.75em;}
-                        p{ font-size: 0.7em;}
-                        a{ padding:2% 3%; margin:0; }
-                        a:hover{font-size: 0.75em; }
-                    }
-                }
-
-            }/*.holiday details small end*/
-        }/*#content2 end*/
-    }/*wrapper end*/
-
-    footer {
-        width: 92%;
-        ul {
-            li {
-                width: 14.570684%;
-                a {font-size: 0.7em;}
-                a:hover {font-size: 0.7em;}
-            }
-        }
-    }
-
-
-}
-
-@media (max-width: 600px){
-
-    #wrapper {
-
-        width: 96%;
-        margin: 0 auto;
-
-        header {
-
-            height: 117px;
-
-            .contact span:nth-child(1) {font-size: 0.7em;}
-            .contact span:nth-child(1) img.tele { width: 15%;}
-
-
-            nav {
-
-                height: 40px;
-
-                ul{
-
-                    li {
-
-                        width: 15.880684%;
-                        a {font-size: 0.60em; }
-                        a:hover {font-size: 0.60em; }
-
-                    }
-                }
-            }
-
-        }/*header end*/
-
-        #leftside {
-
-            display:none;
-
-            .leftsidebox {
-
-                h1 {font-size: 1em;}
-
-                div.destinations{
-                    width:91%; 
-
-                    figure{
-
-                        width: 100%;
-                        img{width:42%;  margin-right:1%;}
-                        figcaption{
-                            width:50%;
-                            display: inline-block;
-                            h3{font-size: 0.9em;}
-                            p{ font-size: 0.70em;}
-                        }
-
-                    }
-                }/*.destinations end*/
-
-
-                #search_form {
-
-
-
-                    ul {
-
-                        .misc_inner {
-
-                            .misc {font-size:0.8em;}
-
-                        }
-
-                        li {
-
-                            #destination1 {font-size:0.8em; }
-                            #time_1 {font-size:0.8em;}
-                            #time_2 {font-size:0.8em;}
-
-                        }
-
-                    }
-
-                    label {font-size: 0.75em;}
-                    #searchbtn {font-size:0.75em;}
-
-                }
-
-            }/*.leftsidebox end*/
-        }/*#leftside end*/
-
-        #leftside2 {
-
-            display:none;
-
-            h1 {font-size: 0.75em;}
-
-            ul {
-
-                li {
-
-                    a {font-size: 0.7em;}
-                    a:hover {font-size: 0.75em;}
-
-                }
-            }
-        }/*#leftside2 end*/ 
-
-        #leftside3 {
-
-            display:none;
-
-            h1 {font-size: 0.75em;}
-
-            figure{
-                margin:0;
-
-                figcaption{
-                    top: -405px;
-
-                    h1{ font-size:1.15em;  }
-
-                    p{font-size: 0.65em; line-height:1.5em;}
-                }
-            }
-        }/*#leftside2 end*/ 
-
-
-        #content {
-            width: 100%;
-
-            #offers {
-
-                h1 { font-size: 1.1em;}
-
-                div.offerbox{  
-
-                    margin: 0px 0px 20px 2px;
-                    width: 31.5%;
-
-                    figure{
-
-                        img {width:80%; }
-                        figcaption{
-                            padding: 7% 0;
-                            display:block;
-                            p{  font-size:0.7em; }
-                            p:nth-of-type(2){ 
-
-                                font-size: 0.75em; 
-
-                                span{color:#f66c00;}
-                            }
-                        }
-                    }
-                }/*offerboxend*/
-
-            }
-
-            #banner {
-
-                height: 325px;
-
-            }/*#banner end*/
-        }/*#content end*/
-
-        #content2 {
-            width:98%;
-
-            h1 {font-size: 1.1em;}
-            p {   font-size: 0.75em;}
-
-            .servicebox {
-                h1 {line-height: 30px; height: 30px; text-indent:0;}
-                figcaption {
-
-                    p {font-size: 0.70em;}
-
-                }
-
-            }
-
-            .holiday_details {
-
-                h1 {font-size: 1em; height:35px; line-height:35px;}
-
-                span.holidayprice {
-                    font-size: 0.80em;
-                    left: 81%;
-
-                }
-
-                figure{
-                    width: 100%;
-
-                    img{width:26%; display:inline-block; float:left; }
-                    figcaption{
-
-
-                        width: 64%;
-                        margin-bottom: 1%;
-                        p{ font-size: 0.70em;  }
-
-                        a{width: 25%; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
-                        a:hover{ }
-
-                    }/*figcaption end*/
-                }/*figure end*/
-            }/*.holiday details end*/
-
-            .holiday_details_small {
-
-                h1 {font-size: 0.85em;}
-
-                figure{
-
-                    img{width:43%;  margin:0 3% 0 0;}
-
-                    figcaption{
-                        width:49%;
-
-                        margin-bottom: 2%;
-                        span.holidayprice {font-size: 0.75em;}
-                        p{ font-size: 0.7em;}
-                        a{ padding:2% 3%; margin:0; }
-                        a:hover{font-size: 0.75em; }
-                    }
-                }
-
-            }/*.holiday details small end*/
-        }/*#content2 end*/
-    }/*wrapper end*/
-
-    footer {
-        width: 92%;
-        ul {
-            li {
-                width: 14.570684%;
-                a {font-size: 0.7em;}
-                a:hover {font-size: 0.7em;}
-            }
-        }
-    }
-
-
-}
-
-@media (max-width: 568px){
-
-    #wrapper {
-
-        width: 96%;
-        margin: 0 auto;
-
-        header {
-
-            height: 117px;
-
-            .contact {
-
-
-                span:nth-child(1) {
-                    font-size:0.75em;
-                    img.tele{ width: 10%; }
-
-                }
-                span:nth-child(2) {font-size:0.65em;}
-
-            }
-
-            nav {
-
-                height: 40px;
-
-                ul{
-
-                    li {
-
-                        width: 15.880684%;
-                        a {font-size: 0.70em; }
-                        a:hover {font-size: 0.70em; }
-
-                    }
-                }
-            }
-
-        }/*header end*/
-
-        #leftside {
-
-            display:none;
-
-            .leftsidebox {
-
-                h1 {font-size: 1em;}
-
-                div.destinations{
-                    width:91%; 
-
-                    figure{
-
-                        width: 100%;
-                        img{width:42%;  margin-right:1%;}
-                        figcaption{
-                            width:50%;
-                            display: inline-block;
-                            h3{font-size: 0.9em;}
-                            p{ font-size: 0.70em;}
-                        }
-
-                    }
-                }/*.destinations end*/
-
-
-                #search_form {
-
-
-
-                    ul {
-
-                        .misc_inner {
-
-                            .misc {font-size:0.8em;}
-
-                        }
-
-                        li {
-
-                            #destination1 {font-size:0.8em; }
-                            #time_1 {font-size:0.8em;}
-                            #time_2 {font-size:0.8em;}
-
-                        }
-
-                    }
-
-                    label {font-size: 0.75em;}
-                    #searchbtn {font-size:0.75em;}
-
-                }
-
-            }/*.leftsidebox end*/
-        }/*#leftside end*/
-
-        #leftside2 {
-
-            display:none;
-
-            h1 {font-size: 0.75em;}
-
-            ul {
-
-                li {
-
-                    a {font-size: 0.7em;}
-                    a:hover {font-size: 0.75em;}
-
-                }
-            }
-        }/*#leftside2 end*/ 
-
-        #leftside3 {
-
-            display:none;
-
-            h1 {font-size: 0.75em;}
-
-            figure{
-                margin:0;
-
-                figcaption{
-                    top: -405px;
-
-                    h1{ font-size:1.15em;  }
-
-                    p{font-size: 0.65em; line-height:1.5em;}
-                }
-            }
-        }/*#leftside2 end*/ 
-
-
-        #content {
-            width: 100%;
-
-            #offers {
-
-                h1 { font-size: 1.1em;}
-
-                div.offerbox{  
-
-                    margin: 0px 0px 20px 2px;
-                    width: 31.5%;
-
-                    figure{
-
-                        img {width:80%; }
-                        figcaption{
-                            padding: 7% 0;
-                            display:block;
-                            p{  font-size:0.7em; }
-                            p:nth-of-type(2){ 
-
-                                font-size: 0.75em; 
-
-                                span{color:#f66c00;}
-                            }
-                        }
-                    }
-                }/*offerboxend*/
-
-            }
-
-            #banner {
-
-                height: 325px;
-
-            }/*#banner end*/
-        }/*#content end*/
-
-        #content2 {
-            width:98%;
-
-            h1 {font-size: 1.1em; height:auto;}
-
-
-            p {   font-size: 0.75em;}
-
-            .servicebox {
-                h1 {line-height: 30px; height: 30px; text-indent:0;}
-                figcaption {
-
-                    p {font-size: 0.70em;}
-
-                }
-
-            }
-
-            .holiday_details {
-
-                h1 {font-size: 1em; height:35px; line-height:35px;}
-
-                span.holidayprice {
-                    font-size: 0.80em;
-                    left: 81%;
-
-                }
-
-                figure{
-                    width: 100%;
-
-                    img{width:26%; display:inline-block; float:left; }
-                    figcaption{
-
-
-                        width: 64%;
-                        margin-bottom: 1%;
-                        p{ font-size: 0.70em;  }
 
                         a{width: 25%; font-size:0.8em;  padding: 1% 2%; margin:1% 0; }
                         a:hover{ }
