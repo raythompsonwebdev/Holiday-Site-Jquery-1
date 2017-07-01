@@ -159,7 +159,7 @@ body {
   line-height: 1;
   font-family: "avantgarde-book", arial, san-serif; }
 
-@media (max-width: 1920px) {
+@media only screen and (max-width: 1920px) {
   #wrapper {
     width: 53%;
     margin: 0 auto;
@@ -809,7 +809,8 @@ body {
         margin: auto;
         list-style: none; }
         #wrapper #content2 #contactform ul {
-          list-style: none; }
+          list-style: none;
+          padding: 0; }
           #wrapper #content2 #contactform ul li {
             margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
@@ -1094,7 +1095,7 @@ body {
             color: #d85f24; }
 
   /*footer end*/ }
-@media (max-width: 1440px) {
+@media only screen and (max-width: 1440px) {
   #wrapper {
     width: 67%;
     padding: 0 2%;
@@ -1473,7 +1474,7 @@ body {
             line-height: 40px; }
 
   /*footer end*/ }
-@media (max-width: 1280px) {
+@media only screen and (max-width: 1280px) {
   #wrapper {
     width: 76%;
     /*header end*/
@@ -1829,7 +1830,7 @@ body {
             font-size: 0.8em; }
 
   /*footer end*/ }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   #wrapper {
     width: 81%;
     /*header end*/
@@ -2167,7 +2168,7 @@ body {
             font-size: 0.8em; }
 
   /*footer end*/ }
-@media (max-width: 980px) {
+@media only screen and (max-width: 980px) {
   #wrapper {
     width: 85%;
     /*header end*/
@@ -2493,7 +2494,7 @@ body {
             font-size: 0.75em; }
 
   /*footer end*/ }
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   #wrapper {
     width: 90%;
     /*header end*/
@@ -2820,7 +2821,7 @@ body {
             font-size: 0.7em; }
 
   /*footer end*/ }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   #wrapper {
     width: 94%;
     /*header end*/
@@ -3145,7 +3146,7 @@ body {
             font-size: 0.7em; }
 
   /*footer end*/ }
-@media (max-width: 667px) {
+@media only screen and (max-width: 667px) {
   #wrapper {
     width: 94%;
     /*header end*/
@@ -3514,7 +3515,7 @@ body {
             font-size: 0.7em; }
 
   /*footer end*/ }
-@media (max-width: 640px) {
+@media only screen and (max-width: 640px) {
   #wrapper {
     width: 94%;
     /*header end*/
@@ -3854,7 +3855,7 @@ body {
             font-size: 0.7em; }
 
   /*footer end*/ }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   #wrapper {
     width: 94%;
     /*header end*/
@@ -4193,7 +4194,7 @@ body {
             font-size: 0.7em; }
 
   /*footer end*/ }
-@media (max-width: 568px) {
+@media only screen and (max-width: 568px) {
   #wrapper {
     width: 94%;
     /*header end*/
@@ -4534,7 +4535,7 @@ body {
             font-size: 0.7em; }
 
   /*footer end*/ }
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   #wrapper {
     width: 94%;
     /*header end*/
@@ -4877,7 +4878,7 @@ body {
             font-size: 0.55em; }
 
   /*footer end*/ }
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   #wrapper {
     width: 94%;
     /*header end*/
@@ -5227,7 +5228,7 @@ body {
             font-size: 0.5em; }
 
   /*footer end*/ }
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   #wrapper {
     width: 94%;
     /*header end*/
@@ -5581,7 +5582,7 @@ body {
             line-height: 15px; }
 
   /*footer end*/ }
-@media (max-width: 320px) {
+@media only screen and (max-width: 320px) {
   #wrapper {
     width: 94%;
     /*header end*/
@@ -5786,7 +5787,7 @@ body {
             #wrapper #content #offers div.offerbox figure figcaption {
               padding: 5% 0; }
               #wrapper #content #offers div.offerbox figure figcaption p {
-                font-size: 0.65em; }
+                font-size: 0.6em; }
               #wrapper #content #offers div.offerbox figure figcaption p:nth-of-type(2) {
                 font-weight: bold; }
                 #wrapper #content #offers div.offerbox figure figcaption p:nth-of-type(2) span {
@@ -5806,9 +5807,9 @@ body {
       #wrapper #content2 h1 {
         font-size: 0.9em; }
       #wrapper #content2 h2 {
-        font-size: 0.8em; }
+        font-size: 0.7em; }
       #wrapper #content2 h3 {
-        font-size: 0.75em; }
+        font-size: 0.65em; }
       #wrapper #content2 p {
         font-size: 0.7em;
         margin: 0;
