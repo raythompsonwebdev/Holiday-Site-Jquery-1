@@ -8421,7 +8421,7 @@ footer{
             font-size:0.7em; 
 =======
             font-size:0.65em; 
->>>>>>> 2839d7063e0c140b5caae5f5a8f399579f824a55
+>>>>>>> origin/master
 
         }
         p{ 
@@ -8521,7 +8521,7 @@ footer{
 =======
             width:90%;
             margin:0.5%; 
->>>>>>> 2839d7063e0c140b5caae5f5a8f399579f824a55
+>>>>>>> origin/master
             float:none;
             display:block;
             margin:2% auto;
@@ -8711,5 +8711,3 @@ footer{
         page-break-after: avoid;
     }
 }
-
-

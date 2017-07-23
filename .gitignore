@@ -30,8 +30,10 @@ js/
 js/vendor/
 
 .htaccess
-
+favicons/
 fonts/
 nbproject/
 css/.sass-cache/
 css/main.css.map
+icons/
+images/
