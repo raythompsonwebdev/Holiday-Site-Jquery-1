@@ -918,7 +918,7 @@ body{
 					p:first-of-type{ font-weight:bold; color:#6d6d6d;}
                     p{ 
                         font-size:0.80em; 
-                        margin:0 0 1% 0; 
+                        margin:0 0 4% 0; 
                         line-height:1.6em; 
                         color:#9e9e9e;
                     }
@@ -936,6 +936,7 @@ body{
                         border: 1px solid #f47f11;
                         @include gradient($colorbtn2, $colorbtn3); 
                         display:block;
+						line-height: 25px;
                     }
                     a:hover{
                         color:$colorpw; 
@@ -943,6 +944,7 @@ body{
                         padding:1% 2%; 
                         font-weight:bold; 
                         @include gradient($colorbtn3,$colorbtn2);
+						line-height: 25px;
                     }
                 }/*figcaption end*/
             }/*figure end*/
@@ -1003,7 +1005,7 @@ body{
                         color:$colorgry2;
                     }
                     a{
-                        width: 48%; 
+                        width: 92%; 
                         @include borderRaduis(5px); 
                         display:block; 
                         text-align:center; 
@@ -1606,7 +1608,7 @@ footer{
                 }
 
                 figcaption{
-                    width:54%;
+                    width:92%;
                     display:inline-block;
                     margin-bottom: 2%;
 
@@ -2145,7 +2147,7 @@ footer{
                 }
 
                 figcaption{
-                    width:54%;
+                    width:92%;
                     display:inline-block;
                     margin-bottom: 2%;
 
@@ -2678,7 +2680,7 @@ footer{
                         line-height:1.7em; 
                     }
                     a{
-                        width: 58%; 
+                        width: 92%; 
                         font-size:0.8em; 
                         padding:2% 3%; 
                         margin:0; 
@@ -3190,7 +3192,7 @@ footer{
                         line-height:1.7em; 
                     }
                     a{
-                        width: 70%; 
+                        width: 92%; 
                         font-size:0.8em; 
                         padding:2% 3%; 
                         margin:0; 
@@ -3710,7 +3712,7 @@ footer{
                         line-height:1.6em; 
                     }
                     a{
-                        width: 75%; 
+                        width: 92%; 
                         font-size:0.8em; 
                         padding:2% 3%; 
                     }
@@ -3783,7 +3785,7 @@ footer{
 @media only screen and (max-width: 768px){
 
 #wrapper{	
-    width: 94%;	
+    width: 92%;	
 
     header{	
         height:107px;
@@ -3801,6 +3803,527 @@ footer{
             }
             span:first-of-type {
                 font-size: 0.9em;
+                line-height: 25px;
+                width: 83%;
+                
+
+            }
+            span:last-of-type { 
+                line-height:20px;
+                
+
+            }
+        }/*contact end*/
+
+        nav { 
+            height:40px; 
+            margin-bottom:0px; 
+
+            ul{	
+
+                height:100%;
+                li{
+                    width:16.71%; 
+                    height:40px; 
+
+                    a{
+                        font-size:0.65em; 
+                        &:hover{
+
+                        }
+                        &:visited{  
+                        }
+                        &:focus{  
+                        }
+                        &:active{  
+                        }
+                    }
+                }
+            }
+              aside#language-box{
+                width: 16%;
+                margin-left: 0%;
+
+                span{
+                    width:50%;
+                    font-size:0.65em;
+                    text-indent:1.5%;
+                }
+
+                select{
+                    font-size:0.7em;
+                    width:49%;
+
+                }
+
+            }
+        }/*nav end*/
+
+    }/*header end*/
+
+    #leftside{ 
+        width:30%; 
+        padding-top:1%;
+
+        .leftsidebox{
+            width:96%;  
+            margin-bottom:1%; 
+            a{
+                margin-left:10px;
+                font-size:0.9em;
+
+                &:hover{
+                    height: 30px; 
+                    line-height: 30px; 
+                }
+            }
+
+            h2{
+                font-size:1em; 
+                text-indent:2%; 
+            }
+
+            #search_form{
+
+                padding:2%;
+                label{
+                    width:96%; 
+                    font-size:0.8em; 
+                 }
+                ul{
+                    width:100%; 
+
+                    li{  
+                        width:96%;
+                        select.destination1{ 
+                            font-size:0.75em;
+
+                        }
+                        select.time_1{ 
+                            width:27.1%; 
+                            font-size:0.75em;
+                        }
+                        select#time_2{ 
+                            width:43%; 
+                            font-size:0.75em;
+                        }
+                    }
+                    li.misc_inner{ 
+                        width:48%; 
+
+                        select.misc { 
+                            width:98%; 
+                            font-size:0.75em;
+                        }
+                        label{
+                            width:96%; 
+                            font-size:0.75em; 
+                        }
+                    }
+                }
+
+                #searchbtn{
+                    clear:left; 
+                    font-size: 0.9em;
+                    &:hover{
+                        border: 0;
+                    }
+                }
+            }/*#searchform end*/
+
+            div.destinations{
+                width:91%; 
+                padding:2.5%;
+                figure{
+                    margin-right:2%;
+                    img{
+                        width:52%; 
+
+                    }
+                    figcaption{
+                        width:40%;
+                        h3{
+                            font-size: 0.75em;
+                            line-height: 25px;
+                            height: 25px;
+                        }
+                        p{ 
+                            font-size:0.7em; 
+                            line-height:20px;
+                        }
+                    }
+                }
+            }/*.destinations end*/
+        }/*.leftsidebox end*/
+
+    }/*#leftside end*/
+
+    #leftside2{ 
+        width:20%; 
+        margin-top:1%;
+
+
+        h1{
+            text-indent:5%; 
+            font-size:0.75em; 
+        }
+
+        ul{
+            width:90%;
+            padding:2%;
+
+            li{ 
+                margin:0 0 2% 0;
+
+                a{
+
+                    font-size:0.7em; 
+                    letter-spacing:0.02em;
+                    &::before{
+                        content: "<   ";
+                    }
+                    &:hover{ 
+                        font-size:0.80em; 
+                        line-height:25px;
+                    }
+                }
+            }
+        }
+    }
+
+    #leftside3{ 
+        width:20%; 
+        margin:1% 1% 0 0;
+
+        #contact-details{
+
+            font-size:0.65em;
+            li{
+                line-height:20px;
+                height:80px; 
+                
+                &:first-line{
+                    font-weight:bold;
+                }
+
+                span{ 
+                    width:22%; 
+                    img{
+                        width:41%; 
+                        margin:10% auto;
+                    }
+                }
+
+                a{ 
+                    line-height:20px; 
+                    font-size: 0.90em;
+                }
+            }
+        }
+
+        figure{
+            margin:0;
+
+            figcaption{
+                top: -402px;
+                padding:5%;
+                h1{ 
+                    font-size: 0.9em; 
+                    margin: 22% 0 ;
+                    line-height: 2em; 
+                }
+
+                p{
+                    font-size:0.65em; 
+                    line-height:1.6em; 
+                }
+            }
+        }
+    }
+
+    #content{ 
+        width:70%; 
+        height:auto;  
+        margin:1% 0;
+        h1{
+            font-weight:bold;
+        }
+
+        #banner{
+            width: 96%;
+            height: 310px;
+
+            img {width:100%;}
+        }/*banner end*/
+
+        #offers{  
+            width:100%; 
+            height:540px;
+            h2{ 
+                font-size:1.1em; 
+                letter-spacing:0.05em;
+            } 
+
+            div.offerbox{  
+                width: 30%;
+                figure{
+                    margin:2% 0;
+                    img {
+                        width:80%; 
+                    }
+                    figcaption{
+                        padding: 5% 0;
+                        p{  
+                            font-size:0.65em; 
+                        }
+                        p:nth-of-type(2){ 
+                            font-weight:bold;
+                            span{
+                                color:$colorbtn1;
+                            }
+                        }
+                    }
+                }
+
+            }/*offerboxend*/
+        }/*offer end*/
+
+    }/*content end*/
+
+    label.error{
+        font-size:0.9em; 
+        index:2; 
+        border:1px solid black; 
+        text-align:1.5em;
+    }
+
+    #content2 { 
+        width:77%; 
+        padding:1%; 
+        line-height:1.5em;
+
+        h1{
+            font-size:1.1em; 
+
+
+        }
+        h2{
+            font-size:1em; 
+ 
+        }
+        h3{
+            font-size:0.9em; 
+
+        }
+        p{ 
+            font-size:0.7em; 
+            margin: 0;
+        }
+
+        form#contactform { 
+            width:80%; 
+
+            ul{
+                list-style: none;
+
+                li{ 
+                    margin:5px 0 10px 0;
+                    label {
+                        width:16%; 
+                        font-size:0.75em; 
+                    }
+                    input[tyep="text"]{ 
+                        width:82%; 
+
+                    }
+                    textarea{ 
+                        width:82%; 
+                        line-height:1.5em; 
+
+                    }
+                    #contactbtn{
+                        width:20%; 
+                        margin-left:16%; 
+
+                    }
+                    #contactbtn:hover{
+                        color:$colorpw; 
+                    }
+                }
+            }
+        }/*end of contact form*/
+
+        .holiday_details{ 
+            margin:1% 0 0 0; 
+            padding:1%;
+            width: 96%;
+
+            h1{ 
+                width: 70%; 
+                line-height:40px; 
+                font-size:1em; 
+            }
+
+            span.holidayprice{ 
+                font-size:0.75em; 
+                left: 11%;
+                .offerbox-price{ 
+                    font-weight:bold;
+                }
+            }
+
+            figure{
+                width: 100%;
+
+                img{
+                    width:25%; 
+                    margin:0 2% 0 0;
+                }
+                figcaption{
+                    width: 72%;
+                    margin-bottom: 1%;
+                    p{ 
+                        font-size:0.7em; 
+
+                        line-height:1.6em; 
+                    }
+
+                    a{
+                        width: 30%; 
+                        font-size:0.85em; 
+
+                    }
+                    a:hover{
+                        padding:1% 2%; 
+                    }
+                }/*figcaption end*/
+            }/*figure end*/
+
+        }  /*Holiday details packages page end*/ 
+
+        .holiday_details_small{
+            width:45%;
+            margin:0.5%; 
+
+
+            h1{ 
+                font-size:0.8em; 
+            }
+
+            figure{
+                width: 100%;
+                margin-right:10px; 
+                img{
+                    width:45%; 
+                    margin:0 3% 0 0;
+                }
+                span.holidayprice{ 
+                    font-size: 0.7em;
+                    .offerbox-price{ 
+                        display:inline-block; 
+                    }
+                }
+
+                figcaption{
+                    width:50%;
+                    margin-bottom: 2%;
+
+                    p{ 
+                        font-size:0.7em; 
+                        line-height:1.6em; 
+                    }
+                    a{
+                        width: 92%; 
+                        font-size:0.8em; 
+                        padding:2% 3%; 
+                    }
+                    a:hover{
+                        text-align:center;  
+                    }
+                }
+            }
+
+        }/*Holiday details Best deals page end*/
+        .servicebox{  
+            width:30.5%;  
+            margin:5px 0 0 5px; 
+
+            h1{
+                font-size:0.75em; 
+                text-indent:0%;
+                height:auto;
+                line-height:20px;
+            }
+            figure{
+
+                width:90%;
+                margin:1% auto;
+
+            }
+
+            figcaption{
+                p{ 
+                    font-size:0.65em; 
+                    margin:2%; 
+                    width:96%;
+                }
+                a{ 
+                    font-size:0.75em; 
+                    margin-left:2%;
+                    &:hover{ 
+                        font-weight:bold; 
+                    }
+                }
+            }
+        }
+    }/*content2 end*/
+
+}/*wrapper end*/
+
+footer{ 
+    width:94%; 
+    ul{ 
+        display:block;
+        li {
+            width:13.570684%;
+
+            a{
+                font-size:0.7em; 
+                &:hover{
+                    font-size:0.7em; 
+                 
+                }
+                &:active{
+                    font-size:0.7em; 
+                }
+            }
+        }
+    }
+}/*footer end*/
+
+}
+
+@media only screen and (max-width: 736px){
+
+#wrapper{	
+    width: 94%;	
+
+    header{	
+        height:107px;
+
+        figure#logo{
+            height:67px; 
+            width:30.0120048%; 
+        }
+
+        aside.contact{ 
+            width:130px; 
+            img.tele{ 
+                padding:2%;
+                width: 12%; 
+            }
+            span:first-of-type {
+                font-size: 0.85em;
                 line-height: 25px;
                 width: 83%;
 
@@ -3823,7 +4346,7 @@ footer{
                     height:40px; 
 
                     a{
-                        font-size:0.65em; 
+                        font-size:0.6em; 
                         &:hover{
 
                         }
@@ -4021,8 +4544,8 @@ footer{
             margin:0;
 
             figcaption{
-                top: -412px;
-                padding:5%;
+                top: -396px;
+    			padding: 4%;
                 h1{ 
                     font-size: 0.9em; 
                     margin: 22% 0 ;
@@ -4229,7 +4752,7 @@ footer{
                         line-height:1.6em; 
                     }
                     a{
-                        width: 80%; 
+                        width: 92%; 
                         font-size:0.8em; 
                         padding:2% 3%; 
                     }
@@ -4309,7 +4832,7 @@ footer{
         height:107px;
 
         figure#logo{
-            height:65px; 
+            height:64px; 
             width: 32.012%; 
         }
 
@@ -4367,20 +4890,21 @@ footer{
                 flex-flow: column;
                 li{
                     width:100%; 
-                    height:50px;
-                    line-height:50px;
+                    height:40px;
+                    line-height:40px;
                     float:none;
                     display:block;
                     margin-bottom: 0.2em;
-                    @include borderRaduis(0px 0px 0px 0px);
+                    @include borderRaduis(0px);
 
                     a{
                         font-size:1em;
-                        height:50px;
-                        line-height:50px;
+                        height:40px;
+                        line-height:40px;
+						@include borderRaduis(0px);
                         &:hover{
-                            height:50px;
-                            line-height:50px;
+                            height:40px;
+                            line-height:40px;
                             box-shadow: none;
 
                         }
@@ -4791,7 +5315,7 @@ footer{
                         line-height:1.6em; 
                     }
                     a{
-                        width: 70%; 
+                        width: 92%; 
                         font-size:0.8em; 
                         padding:2% 3%; 
                     }
@@ -4870,7 +5394,7 @@ footer{
         height:107px;
 
         figure#logo{
-            height:65px; 
+            height:64px; 
             width: 35.012%; 
         }
 
@@ -4881,7 +5405,7 @@ footer{
                 width: 11.5%; 
             }
             span:first-of-type {
-                font-size: 0.9em;
+                font-size: 0.85em;
                 line-height: 25px;
 
             }
@@ -4907,16 +5431,16 @@ footer{
                 width: 92%;
                 li{
                     width:100%; 
-                    height:50px;
+                    height:40px;
                     line-height:50px;
 
                     a{
                         font-size:0.95em;
                         height:50px;
-                        line-height:50px;
+                        line-height:40px;
                         &:hover{
-                            height:50px;
-                            line-height:50px;
+                            height:40px;
+                            line-height:40px;
 
                         }
                         
@@ -5318,7 +5842,7 @@ footer{
                         line-height:1.6em; 
                     }
                     a{
-                        width: 70%; 
+                        width: 92%; 
                         font-size:0.8em; 
                         padding:2% 3%; 
                     }
@@ -5433,8 +5957,8 @@ footer{
                 width:92%;
                 li{
                     width:100%; 
-                    height:50px;
-                    line-height:50px;
+                    height:40px;
+                    line-height:40px;
 
                     a{
                         font-size:0.9em;
@@ -5849,7 +6373,7 @@ footer{
                         line-height:1.6em; 
                     }
                     a{
-                        width: 85%; 
+                        width: 92%; 
                         font-size:0.8em; 
                         padding:2% 3%; 
                     }
@@ -5967,16 +6491,16 @@ footer{
                 width:92%;
                 li{
                     width:100%; 
-                    height:40px;
-                    line-height:40px;
+                    height:35px;
+                    line-height:35px;
 
                     a{
                         font-size:0.9em;
-                        height:40px;
-                        line-height:40px;
+                        height:35px;
+                        line-height:35px;
                         &:hover{
-                            height:40px;
-                            line-height:40px;
+                            height:35px;
+                            line-height:35px;
 
                         }
                         &:visited{  
@@ -6383,7 +6907,7 @@ footer{
                         line-height:1.6em; 
                     }
                     a{
-                        width: 75%; 
+                        width: 92%; 
                         font-size:0.8em; 
                         padding:2% 3%; 
                     }
@@ -6463,7 +6987,7 @@ footer{
         height:107px;
 
         figure#logo{
-            height:65px; 
+            height:64px; 
             width: 47.012%; 
         }
 
@@ -6990,6 +7514,550 @@ footer{
 
 }
 
+@media only screen and (max-width: 414px){
+
+#wrapper{	
+    width: 94%;	
+    @include clearfix();
+    header{	
+        height:107px;
+
+        figure#logo{
+            height:64px; 
+            width: 52.012%; 
+        }
+
+        aside.contact{ 
+            width:110px; 
+            img.tele{ 
+                width: 14.5%; 
+            }
+            span:first-of-type {
+                font-size: 0.75em;
+                line-height: 25px;
+                width: 81%;
+
+            }
+            span:last-of-type { 
+                line-height:20px;
+                font-size:0.65em;
+
+            }
+        }/*contact end*/
+
+        nav { 
+            height:40px; 
+            margin-bottom:0px; 
+            
+            #toggle-menu{
+                left:12px;
+                top:65px;
+                font-size:0.9em;
+            }
+            
+            ul{	
+                left:3%;
+                top:108px;
+                width:92%;
+                li{
+                    width:100%; 
+                    height:35px;
+                    line-height:35px;
+
+                    a{
+                        font-size:0.8em;
+                        height:35px;
+                        line-height:35px;
+                        &:hover{
+                            height:35px;
+                            line-height:35px;
+
+                        }
+                        &:visited{  
+                        }
+                        &:focus{  
+                        }
+                        &:active{  
+                        }
+                    }
+                }
+            }
+            aside#language-box{
+                width: 34%;
+                margin-left: 0%;
+
+                span{
+                    width:51%;
+                    font-size:0.7em;
+                    text-indent:1%;
+                }
+
+                select{
+                    font-size:0.65em;
+                    width:48%;
+
+                }
+
+            }
+        }/*nav end*/
+
+    }/*header end*/
+
+    #leftside{ 
+        width:30%; 
+        padding-top:1%;
+        display:none;
+
+        .leftsidebox{
+            width:96%;  
+            margin-bottom:1%; 
+            a{
+                margin-left:10px;
+                font-size:0.9em;
+
+                &:hover{
+                    height: 30px; 
+                    line-height: 30px; 
+                }
+            }
+
+            h2{
+                font-size:1em; 
+                text-indent:2%; 
+            }
+
+            #search_form{
+
+                padding:2%;
+                label{
+                    width:96%; 
+                    font-size:0.8em; 
+                 }
+                ul{
+                    width:100%; 
+
+                    li{  
+                        width:96%;
+                        select.destination1{ 
+                            font-size:0.75em;
+
+                        }
+                        select.time_1{ 
+                            width:27.1%; 
+                            font-size:0.75em;
+                        }
+                        select#time_2{ 
+                            width:43%; 
+                            font-size:0.75em;
+                        }
+                    }
+                    li.misc_inner{ 
+                        width:48%; 
+
+                        select.misc { 
+                            width:98%; 
+                            font-size:0.75em;
+                        }
+                        label{
+                            width:96%; 
+                            font-size:0.75em; 
+                        }
+                    }
+                }
+
+                #searchbtn{
+                    clear:left; 
+                    font-size: 0.9em;
+                    &:hover{
+                        border: 0;
+                    }
+                }
+            }/*#searchform end*/
+
+            div.destinations{
+                width:91%; 
+                padding:2.5%;
+                figure{
+                    margin-right:2%;
+                    img{
+                        width:42%; 
+
+                    }
+                    figcaption{
+                        width:53%;
+                        h3{
+                            font-size: 0.8em; 
+                        }
+                        p{ 
+                            font-size:0.7em; 
+                            line-height:20px;
+                        }
+                    }
+                }
+            }/*.destinations end*/
+        }/*.leftsidebox end*/
+
+    }/*#leftside end*/
+
+    #leftside2{ 
+        width:15%; 
+        margin-top:1%;
+        display:none;
+
+
+        h1{
+            text-indent:2%; 
+            font-size:0.65em; 
+        }
+
+        ul{
+            width:90%;
+            padding:2%;
+
+            li{ 
+                margin:0 0 2% 0;
+
+                a{
+
+                    font-size:0.65em; 
+                    letter-spacing:0.02em;
+                    &::before{
+                        content: "<   ";
+                    }
+                    &:hover{ 
+                        font-size:0.7em; 
+                        line-height:25px;
+                    }
+                }
+            }
+        }
+    }
+
+    #leftside3{ 
+        width:14%; 
+        margin:1% 1% 0 0;
+        display:none;
+        
+        #contact-details{
+
+            font-size:0.65em;
+            li{
+                line-height:20px;
+                height:80px; 
+                
+                &:first-line{
+                    font-weight:bold;
+                }
+
+                span{ 
+                    width:22%; 
+                    img{
+                        width:41%; 
+                        margin:10% auto;
+                    }
+                }
+
+                a{ 
+                    line-height:20px; 
+                    font-size: 0.90em;
+                }
+            }
+        }
+
+        figure{
+            margin:0;
+
+            figcaption{
+                top: -254px;
+                padding:5%;
+                h1{ 
+                    font-size: 0.6em; 
+                    margin: 18% 0 ;
+                    line-height: 1.5em; 
+                }
+
+                p{
+                    font-size:0.45em; 
+                    line-height:1.3em; 
+                }
+            }
+        }
+    }
+
+    #content{ 
+        width:100%; 
+        height:auto;  
+        margin:1% 0;
+        h1{
+            font-weight:bold;
+        }
+
+        #banner{
+            width: 96%;
+            height: 200px;
+
+            img {width:100%;}
+        }/*banner end*/
+
+        #offers{  
+            width:100%; 
+            height:540px;
+            h2{ 
+                font-size:1em; 
+                letter-spacing:0.05em;
+            } 
+
+            div.offerbox{  
+                width: 46%;
+                figure{
+                    margin:2% 0;
+                    img {
+                        width:80%; 
+                    }
+                    figcaption{
+                        padding: 5% 0;
+                        p{  
+                            font-size:0.65em; 
+                        }
+                        p:nth-of-type(2){ 
+                            font-weight:bold;
+                            span{
+                                color:$colorbtn1;
+                            }
+                        }
+                    }
+                }
+
+            }/*offerboxend*/
+        }/*offer end*/
+
+    }/*content end*/
+
+    label.error{
+        font-size:0.9em; 
+        index:2; 
+        border:1px solid black; 
+        text-align:1.5em;
+    }
+
+    #content2 { 
+        width:100%; 
+        padding:1%; 
+        line-height:1.5em;
+
+        h1{
+            font-size:0.9em; 
+
+
+        }
+        h2{
+            font-size:0.8em; 
+ 
+        }
+        h3{
+            font-size:0.75em; 
+
+        }
+        p{ 
+            font-size:0.7em; 
+            margin: 0;
+            letter-spacing: 0.01em;
+        }
+
+        form#contactform { 
+            width:98%; 
+            margin:auto; 
+            ul{
+                list-style: none;
+
+                li{ 
+                    margin:5px 0 10px 0;
+                    label {
+                        width:16%; 
+                        font-size:0.55em; 
+                    }
+                    input[type="text"]{ 
+                        width:82%; 
+
+                    }
+                    textarea{ 
+                        width:82%; 
+                        line-height:1.5em; 
+
+                    }
+                    #contactbtn{
+                        width:30%; 
+                        margin-left:25%; 
+
+                    }
+                    #contactbtn:hover{
+                        color:$colorpw; 
+                    }
+                }
+            }
+        }/*end of contact form*/
+
+        .holiday_details{ 
+            margin:1% 0 0 0; 
+            padding:1%;
+            width: 94%;
+
+            h1{ 
+                width: 65%; 
+                line-height:40px; 
+                font-size: 0.85em; 
+            }
+
+            span.holidayprice{ 
+                font-size:0.7em; 
+                left: 8%;
+                width: 28%;
+                .offerbox-price{ 
+                    font-weight:bold;
+                }
+            }
+
+            figure{
+                width: 100%;
+
+                img{
+                    width:35%; 
+                    margin:2% 2% 0 0;
+                }
+                figcaption{
+                    width: 63%;
+                    margin-bottom: 1%;
+					
+
+                    p{ 
+                        font-size:0.55em; 
+
+                        line-height:1.6em; 
+                    }
+
+                    a{
+                        width: 55%; 
+                        font-size:0.85em; 
+
+                    }
+                    a:hover{
+                        
+                        padding:1% 2%; 
+                    }
+                }/*figcaption end*/
+            }/*figure end*/
+
+        }  /*Holiday details packages page end*/ 
+
+        .holiday_details_small{
+            width:80%;
+            float:none;
+            display:block;
+            margin:2% auto;
+			padding: 0 2% 1% 4%;
+
+
+            h1{ 
+                font-size:0.8em; 
+            }
+
+            figure{
+                width: 100%;
+                margin-right:10px; 
+                img{
+                    width:45%; 
+                    margin:0 6% 0 0;
+                }
+                span.holidayprice{ 
+                    font-size:0.7em;
+                    .offerbox-price{ 
+                        display:inline-block; 
+                    }
+                }
+
+                figcaption{
+                    width:48%;
+                    margin-bottom: 2%;
+
+                    p{ 
+                        font-size:0.65em; 
+                        line-height:1.6em; 
+                    }
+                    a{
+                        width: 92%; 
+                        font-size:0.8em; 
+                        padding:2% 3%; 
+                    }
+                    a:hover{
+                        text-align:center;  
+                    }
+                }
+            }
+
+        }/*Holiday details Best deals page end*/
+        
+        .servicebox{  
+            width:29%;  
+            margin:5px 0 0 5px; 
+
+            h1{
+                font-size: 0.7em;
+                text-indent: 0%;
+                height: auto;
+                line-height: 1.5em; 
+            }
+            figure{
+
+                width:90%;
+                margin:1% auto;
+
+            }
+
+            figcaption{
+                p{ 
+                    font-size:0.6em; 
+                    margin:2%; 
+                    width:96%;
+                }
+                a{ 
+                    font-size:0.7em; 
+                    margin-left:2%;
+                    &:hover{ 
+                        font-weight:bold; 
+                    }
+                }
+            }
+        }
+    }/*content2 end*/
+
+}/*wrapper end*/
+
+footer{ 
+    width:98%; 
+    ul{ 
+        display:block;
+        li {
+            width: 16.571%;
+
+            a{
+                font-size: 0.55em; 
+				line-height: 15px;
+                &:hover{
+                    font-size:0.55em;
+					line-height: 15px;
+                 
+                }
+                &:active{
+                    font-size:0.55em;
+					line-height: 15px;
+                }
+            }
+        }
+    }
+}/*footer end*/
+
+}
+
 @media only screen and (max-width: 375px){
 
 #wrapper{	
@@ -7379,14 +8447,14 @@ footer{
             width: 94%;
 
             h1{ 
-                width: 70%; 
+                width: 65%; 
                 line-height:40px; 
                 font-size: 0.9em; 
             }
 
             span.holidayprice{ 
                 font-size:0.75em; 
-                left: 69%;
+                left: 5%;
                 width: 28%;
                 .offerbox-price{ 
                     font-weight:bold;
@@ -7460,7 +8528,7 @@ footer{
                         line-height:1.6em; 
                     }
                     a{
-                        width: 75%; 
+                        width: 85%; 
                         font-size:0.8em; 
                         padding:2% 3%; 
                     }
@@ -7515,13 +8583,16 @@ footer{
             width: 16.571%;
 
             a{
-                font-size: 0.5em; 
+                font-size: 0.5em;
+				line-height: 15px;
                 &:hover{
-                    font-size:0.5em; 
+                    font-size:0.55em; 
+					line-height: 15px;
                  
                 }
                 &:active{
-                    font-size:0.5em; 
+                    font-size:0.55em; 
+					line-height: 15px;
                 }
             }
         }
@@ -7981,8 +9052,8 @@ footer{
             figure{
                 width: 100%;
                 margin-right:10px; 
-                img{
-                    width:45%; 
+                img{                    
+					width:45%; 
                     margin:0 6% 0 0;
                 }
                 span.holidayprice{ 
@@ -8001,7 +9072,7 @@ footer{
                         line-height:1.6em; 
                     }
                     a{
-                        width: 75%; 
+                        width: 92%; 
                         font-size:0.8em; 
                         padding:2% 3%; 
                     }
@@ -8095,7 +9166,7 @@ footer{
                 width: 15.5%; 
             }
             span:first-of-type {
-                font-size: 0.75em;
+                font-size: 0.6em;
                 line-height: 25px;
                 width: 80%;
 
@@ -8379,7 +9450,7 @@ footer{
                     figcaption{
                         padding: 5% 0;
                         p{  
-                            font-size:0.6em; 
+                            font-size:0.5em; 
                         }
                         p:nth-of-type(2){ 
                             font-weight:bold;
@@ -8417,11 +9488,8 @@ footer{
  
         }
         h3{
-<<<<<<< HEAD
-            font-size:0.7em; 
-=======
             font-size:0.65em; 
->>>>>>> 2839d7063e0c140b5caae5f5a8f399579f824a55
+
 
         }
         p{ 
@@ -8440,14 +9508,14 @@ footer{
                     margin:5px 0 10px 0;
                     label {
                         width:20%; 
-                        font-size:0.55em; 
+                        font-size:0.5em; 
                     }
                     input[type="text"]{ 
-                        width:78%; 
+                        width:76%; 
 
                     }
                     textarea{ 
-                        width:78%; 
+                        width:76%; 
                         line-height:1.5em; 
 
                     }
@@ -8471,12 +9539,12 @@ footer{
             h1{ 
                 width: 65%; 
                 line-height:40px; 
-                font-size: 0.8em; 
+                font-size: 0.75em; 
             }
 
             span.holidayprice{ 
                 font-size:0.65em; 
-                left: 3%;
+                left: 2%;
                 width: 28%;
                 .offerbox-price{ 
                     font-weight:bold;
@@ -8516,12 +9584,12 @@ footer{
         }  /*Holiday details packages page end*/ 
 
         .holiday_details_small{
-<<<<<<< HEAD
+
             width:80%;
-=======
+
             width:90%;
             margin:0.5%; 
->>>>>>> 2839d7063e0c140b5caae5f5a8f399579f824a55
+
             float:none;
             display:block;
             margin:2% auto;
@@ -8555,7 +9623,7 @@ footer{
                         line-height:1.6em; 
                     }
                     a{
-                        width: 75%; 
+                        width: 94%; 
                         font-size:0.8em; 
                         padding:2% 3%; 
                     }
@@ -8711,5 +9779,3 @@ footer{
         page-break-after: avoid;
     }
 }
-
-
