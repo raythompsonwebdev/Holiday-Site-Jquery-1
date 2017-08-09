@@ -17,11 +17,7 @@ background-size: cover;
 color: #fff;
 background-color: #000;
 }*/
-html,
-button,
-input,
-select,
-textarea {
+html, button, input, select, textarea {
   color: #222; }
 
 html {
@@ -40,8 +36,7 @@ html {
   display: block;
   clear: both; }
 
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .clearfix:after {
   content: " ";
   /* 1 */
   display: table;
@@ -58,11 +53,7 @@ hr {
   margin: 1em 0;
   padding: 0; }
 
-audio,
-canvas,
-img,
-svg,
-video {
+audio, canvas, img, svg, video {
   vertical-align: middle; }
 
 fieldset {
@@ -108,8 +99,7 @@ textarea {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -208,14 +198,14 @@ body {
         color: #f7f7f7;
         font-size: 0.9em;
         display: block; }
-        #wrapper header aside.contact span.tele {
+        #wrapper header aside.contact img.tele {
           margin: 0;
           padding: 2%;
           width: 12%;
           float: left;
           display: block;
           background-color: #175480; }
-        #wrapper header aside.contact a#contact-number {
+        #wrapper header aside.contact span:first-of-type {
           width: 84%;
           background-color: #175480;
           padding: 0;
@@ -225,11 +215,8 @@ body {
           font-weight: bold;
           font-size: 1em;
           text-align: center;
-          text-shadow: 1px 1px 1px #000;
-          text-decoration: none; }
-          #wrapper header aside.contact a#contact-number:active {
-            color: dodgerblue; }
-        #wrapper header aside.contact span#opening-times {
+          text-shadow: 1px 1px 1px #000; }
+        #wrapper header aside.contact span:last-of-type {
           display: block;
           line-height: 20px;
           color: #000000;
@@ -370,10 +357,10 @@ body {
                 -o-box-shadow: 0px 0px 0px #9e9e9e;
                 box-shadow: 0px 0px 0px #9e9e9e; }
         #wrapper header nav aside#language-box {
-          width: 13%;
+          width: 14%;
           display: block;
           float: right; }
-          #wrapper header nav aside#language-box form label {
+          #wrapper header nav aside#language-box span {
             width: 56%;
             font-size: 0.85em;
             display: inline-block;
@@ -385,11 +372,11 @@ body {
             border-top: solid 1px #e4e2e2;
             border-bottom: solid 1px #e4e2e2;
             border-right: none; }
-          #wrapper header nav aside#language-box form select {
+          #wrapper header nav aside#language-box select {
             height: 30px;
             line-height: 30px;
             font-size: 0.85em;
-            width: 30%;
+            width: 40%;
             display: inline-block;
             border-right: solid 1px #e4e2e2;
             border-top: solid 1px #e4e2e2;
@@ -398,32 +385,32 @@ body {
             background-image: url("../images/United_Kingdom.jpg");
             background-repeat: no-repeat;
             background-position: 5% 50%; }
-            #wrapper header nav aside#language-box form select option[value="United_States"] {
+            #wrapper header nav aside#language-box select option[value="United_States"] {
               background-image: url("../images/USA.gif");
               background-repeat: no-repeat;
               background-position: 5% 50%;
               padding: 0.5em 0; }
-            #wrapper header nav aside#language-box form select option[value="United_Kingdom"] {
+            #wrapper header nav aside#language-box select option[value="United_Kingdom"] {
               background-image: url("../images/United_Kingdom.jpg");
               background-repeat: no-repeat;
               background-position: 5% 50%;
               padding: 0.5em 0; }
-            #wrapper header nav aside#language-box form select option[value="France"] {
+            #wrapper header nav aside#language-box select option[value="France"] {
               background-image: url("../images/France.jpg");
               background-repeat: no-repeat;
               background-position: 5% 50%;
               padding: 0.5em 0; }
-            #wrapper header nav aside#language-box form select option[value="Germany"] {
+            #wrapper header nav aside#language-box select option[value="Germany"] {
               background-image: url("../images/Germany.jpg");
               background-repeat: no-repeat;
               background-position: 5% 50%;
               padding: 0.5em 0; }
-            #wrapper header nav aside#language-box form select option[value="Spain"] {
+            #wrapper header nav aside#language-box select option[value="Spain"] {
               background-image: url("../images/Spain.jpg");
               background-repeat: no-repeat;
               background-position: 5% 50%;
               padding: 0.5em 0; }
-            #wrapper header nav aside#language-box form select option[value="Jamaica"] {
+            #wrapper header nav aside#language-box select option[value="Jamaica"] {
               background-image: url("../images/Jamaica.jpg");
               background-repeat: no-repeat;
               background-position: 5% 50%;
@@ -915,15 +902,13 @@ body {
           width: 70%;
           line-height: 40px;
           font-size: 1.1em;
-          color: #1485c9;
-          display: inline-block; }
+          color: #1485c9; }
         #wrapper #content2 .holiday_details span.holidayprice {
           font-size: 0.95em;
-          position: relative;
-          z-index: 1;
-          left: 13%;
-          color: #9e9e9e;
-          top: -1px; }
+          position: absolute;
+          z-index: 2;
+          left: 71%;
+          color: #9e9e9e; }
           #wrapper #content2 .holiday_details span.holidayprice .offerbox-price {
             display: inline-block;
             color: #ff6d00;
@@ -935,14 +920,14 @@ body {
             width: 21%;
             display: inline-block;
             float: left;
-            margin: 1% 2% 0 0; }
+            margin: 0 2% 0 0; }
           #wrapper #content2 .holiday_details figure figcaption {
             width: 77%;
             margin-bottom: 1%;
             display: inline-block; }
             #wrapper #content2 .holiday_details figure figcaption p {
               font-size: 0.9em;
-              margin: 0 0 2% 0;
+              margin: 0 0 1% 0;
               line-height: 1.6em;
               color: #9e9e9e; }
             #wrapper #content2 .holiday_details figure figcaption a {
@@ -954,8 +939,6 @@ body {
               text-align: center;
               color: #fff;
               height: 25px;
-              line-height: 25px;
-              height: auto;
               font-size: 1em;
               text-decoration: none;
               padding: 1% 2%;
@@ -1157,14 +1140,14 @@ body {
         margin: 0px; }
       #wrapper header aside.contact {
         width: 150px; }
-        #wrapper header aside.contact span.tele {
+        #wrapper header aside.contact img.tele {
           padding: 2%;
           width: 12.5%; }
-        #wrapper header aside.contact a#contact-number {
+        #wrapper header aside.contact span:first-of-type {
           width: 83%;
           line-height: 30px;
           font-size: 0.95em; }
-        #wrapper header aside.contact span#opening-times {
+        #wrapper header aside.contact span:last-of-type {
           line-height: 20px;
           font-size: 0.8em; }
       #wrapper header nav {
@@ -1178,11 +1161,11 @@ body {
             #wrapper header nav ul li a {
               font-size: 0.75em; }
         #wrapper header nav aside#language-box {
-          width: 13%; }
-          #wrapper header nav aside#language-box form label {
+          width: 14%; }
+          #wrapper header nav aside#language-box span {
             width: 56%;
             font-size: 0.8em; }
-          #wrapper header nav aside#language-box form select {
+          #wrapper header nav aside#language-box select {
             font-size: 0.85em;
             width: 40%; }
     #wrapper #leftside {
@@ -1423,20 +1406,21 @@ body {
           font-size: 1.05em; }
         #wrapper #content2 .holiday_details span.holidayprice {
           font-size: 0.9em;
-          left: 15%; }
+          left: 76%; }
           #wrapper #content2 .holiday_details span.holidayprice .offerbox-price {
             font-weight: bold; }
         #wrapper #content2 .holiday_details figure {
           width: 100%;
           /*figcaption end*/ }
           #wrapper #content2 .holiday_details figure img {
-            width: 21%; }
+            width: 21%;
+            margin: 0 2% 0 0; }
           #wrapper #content2 .holiday_details figure figcaption {
             width: 77%;
             margin-bottom: 1%; }
             #wrapper #content2 .holiday_details figure figcaption p {
               font-size: 0.8em;
-              margin: 0 0 2% 0;
+              margin: 0 0 1% 0;
               line-height: 1.6em; }
             #wrapper #content2 .holiday_details figure figcaption a {
               width: 20%;
@@ -1535,14 +1519,14 @@ body {
         margin: 0px; }
       #wrapper header aside.contact {
         width: 145px; }
-        #wrapper header aside.contact span.tele {
+        #wrapper header aside.contact img.tele {
           padding: 2%;
           width: 13%; }
-        #wrapper header aside.contact a#contact-number {
+        #wrapper header aside.contact span:first-of-type {
           width: 83%;
           line-height: 30px;
           font-size: 0.95em; }
-        #wrapper header aside.contact span#opening-times {
+        #wrapper header aside.contact span:last-of-type {
           line-height: 20px; }
       #wrapper header nav {
         height: 40px;
@@ -1555,11 +1539,11 @@ body {
               font-size: 0.75em; }
         #wrapper header nav aside#language-box {
           width: 14%; }
-          #wrapper header nav aside#language-box form label {
+          #wrapper header nav aside#language-box span {
             width: 53%;
             font-size: 0.8em;
             text-indent: 4%; }
-          #wrapper header nav aside#language-box form select {
+          #wrapper header nav aside#language-box select {
             font-size: 0.85em;
             width: 42%; }
     #wrapper #leftside {
@@ -1783,20 +1767,21 @@ body {
           font-size: 1.05em; }
         #wrapper #content2 .holiday_details span.holidayprice {
           font-size: 0.80em;
-          left: 15%; }
+          left: 76%; }
           #wrapper #content2 .holiday_details span.holidayprice .offerbox-price {
             font-weight: bold; }
         #wrapper #content2 .holiday_details figure {
           width: 100%;
           /*figcaption end*/ }
           #wrapper #content2 .holiday_details figure img {
-            width: 21%; }
+            width: 21%;
+            margin: 0 2% 0 0; }
           #wrapper #content2 .holiday_details figure figcaption {
             width: 77%;
             margin-bottom: 1%; }
             #wrapper #content2 .holiday_details figure figcaption p {
               font-size: 0.75em;
-              margin: 0 0 2% 0;
+              margin: 0 0 1% 0;
               line-height: 1.6em; }
             #wrapper #content2 .holiday_details figure figcaption a {
               width: 20%;
@@ -1887,13 +1872,13 @@ body {
         margin: 0px; }
       #wrapper header aside.contact {
         width: 140px; }
-        #wrapper header aside.contact span.tele {
+        #wrapper header aside.contact img.tele {
           padding: 2%;
           width: 13.5%; }
-        #wrapper header aside.contact a#contact-number {
+        #wrapper header aside.contact span:first-of-type {
           font-size: 0.95em;
           width: 82%; }
-        #wrapper header aside.contact span#opening-times {
+        #wrapper header aside.contact span:last-of-type {
           line-height: 20px;
           font-size: 0.75em; }
       #wrapper header nav {
@@ -1907,13 +1892,13 @@ body {
             #wrapper header nav ul li a {
               font-size: 0.7em; }
         #wrapper header nav aside#language-box {
-          width: 13%; }
-          #wrapper header nav aside#language-box form label {
-            width: 58%;
+          width: 14%; }
+          #wrapper header nav aside#language-box span {
+            width: 53%;
             font-size: 0.7em; }
-          #wrapper header nav aside#language-box form select {
+          #wrapper header nav aside#language-box select {
             font-size: 0.75em;
-            width: 40%; }
+            width: 45%; }
     #wrapper #leftside {
       width: 30%;
       padding-top: 1%;
@@ -2017,7 +2002,7 @@ body {
       #wrapper #leftside3 figure {
         margin: 0; }
         #wrapper #leftside3 figure figcaption {
-          top: -472px;
+          top: -475px;
           padding: 5%; }
           #wrapper #leftside3 figure figcaption h1 {
             text-indent: 0;
@@ -2025,7 +2010,7 @@ body {
             margin: 25% 0;
             line-height: 2em; }
           #wrapper #leftside3 figure figcaption p {
-            font-size: 0.7em;
+            font-size: 0.75em;
             line-height: 1.6em; }
     #wrapper #content {
       width: 70%;
@@ -2120,20 +2105,21 @@ body {
           font-size: 1.05em; }
         #wrapper #content2 .holiday_details span.holidayprice {
           font-size: 0.80em;
-          left: 11%; }
+          left: 77%; }
           #wrapper #content2 .holiday_details span.holidayprice .offerbox-price {
             font-weight: bold; }
         #wrapper #content2 .holiday_details figure {
           width: 100%;
           /*figcaption end*/ }
           #wrapper #content2 .holiday_details figure img {
-            width: 21%; }
+            width: 21%;
+            margin: 0 2% 0 0; }
           #wrapper #content2 .holiday_details figure figcaption {
             width: 77%;
             margin-bottom: 1%; }
             #wrapper #content2 .holiday_details figure figcaption p {
               font-size: 0.75em;
-              margin: 0 0 2% 0;
+              margin: 0 0 1% 0;
               line-height: 1.6em; }
             #wrapper #content2 .holiday_details figure figcaption a {
               width: 20%;
@@ -2223,13 +2209,13 @@ body {
         width: 28.012%; }
       #wrapper header aside.contact {
         width: 140px; }
-        #wrapper header aside.contact span.tele {
+        #wrapper header aside.contact img.tele {
           padding: 2%;
           width: 13.5%; }
-        #wrapper header aside.contact a#contact-number {
+        #wrapper header aside.contact span:first-of-type {
           font-size: 0.95em;
           width: 82%; }
-        #wrapper header aside.contact span#opening-times {
+        #wrapper header aside.contact span:last-of-type {
           line-height: 20px; }
       #wrapper header nav {
         height: 40px;
@@ -2242,14 +2228,14 @@ body {
             #wrapper header nav ul li a {
               font-size: 0.7em; }
         #wrapper header nav aside#language-box {
-          width: 13%;
+          width: 14%;
           margin-left: 2.5%; }
-          #wrapper header nav aside#language-box form label {
-            width: 58%;
+          #wrapper header nav aside#language-box span {
+            width: 50%;
             font-size: 0.7em; }
-          #wrapper header nav aside#language-box form select {
+          #wrapper header nav aside#language-box select {
             font-size: 0.75em;
-            width: 40%; }
+            width: 49%; }
     #wrapper #leftside {
       width: 30%;
       padding-top: 1%;
@@ -2446,20 +2432,21 @@ body {
           font-size: 1.05em; }
         #wrapper #content2 .holiday_details span.holidayprice {
           font-size: 0.80em;
-          left: 11%; }
+          left: 79%; }
           #wrapper #content2 .holiday_details span.holidayprice .offerbox-price {
             font-weight: bold; }
         #wrapper #content2 .holiday_details figure {
           width: 100%;
           /*figcaption end*/ }
           #wrapper #content2 .holiday_details figure img {
-            width: 21%; }
+            width: 21%;
+            margin: 0 2% 0 0; }
           #wrapper #content2 .holiday_details figure figcaption {
             width: 77%;
             margin-bottom: 1%; }
             #wrapper #content2 .holiday_details figure figcaption p {
               font-size: 0.75em;
-              margin: 0 0 2% 0;
+              margin: 0 0 1% 0;
               line-height: 1.6em; }
             #wrapper #content2 .holiday_details figure figcaption a {
               width: 20%;
@@ -2548,16 +2535,15 @@ body {
         width: 30.0120048%; }
       #wrapper header aside.contact {
         width: 130px; }
-        #wrapper header aside.contact span.tele {
+        #wrapper header aside.contact img.tele {
           padding: 2%;
-          width: 12%; }
-        #wrapper header aside.contact a#contact-number {
-          font-size: 0.8em;
+          width: 11.5%; }
+        #wrapper header aside.contact span:first-of-type {
+          font-size: 0.9em;
           line-height: 25px;
           width: 83%; }
-        #wrapper header aside.contact span#opening-times {
-          line-height: 20px;
-          font-size: 0.7em; }
+        #wrapper header aside.contact span:last-of-type {
+          line-height: 20px; }
       #wrapper header nav {
         height: 40px;
         margin-bottom: 0px; }
@@ -2571,13 +2557,13 @@ body {
         #wrapper header nav aside#language-box {
           width: 16%;
           margin-left: 0%; }
-          #wrapper header nav aside#language-box form label {
-            width: 58%;
+          #wrapper header nav aside#language-box span {
+            width: 50%;
             font-size: 0.65em;
             text-indent: 4%; }
-          #wrapper header nav aside#language-box form select {
+          #wrapper header nav aside#language-box select {
             font-size: 0.7em;
-            width: 40%; }
+            width: 49%; }
     #wrapper #leftside {
       width: 30%;
       padding-top: 1%;
@@ -2682,7 +2668,7 @@ body {
       #wrapper #leftside3 figure {
         margin: 0; }
         #wrapper #leftside3 figure figcaption {
-          top: -409px;
+          top: -412px;
           padding: 5%; }
           #wrapper #leftside3 figure figcaption h1 {
             font-size: 0.9em;
@@ -2777,14 +2763,15 @@ body {
           font-size: 1.05em; }
         #wrapper #content2 .holiday_details span.holidayprice {
           font-size: 0.80em;
-          left: 10%; }
+          left: 79%; }
           #wrapper #content2 .holiday_details span.holidayprice .offerbox-price {
             font-weight: bold; }
         #wrapper #content2 .holiday_details figure {
           width: 100%;
           /*figcaption end*/ }
           #wrapper #content2 .holiday_details figure img {
-            width: 25%; }
+            width: 25%;
+            margin: 0 2% 0 0; }
           #wrapper #content2 .holiday_details figure figcaption {
             width: 72%;
             margin-bottom: 1%; }
@@ -2874,15 +2861,15 @@ body {
         height: 67px;
         width: 30.0120048%; }
       #wrapper header aside.contact {
-        width: 120px; }
-        #wrapper header aside.contact span.tele {
+        width: 130px; }
+        #wrapper header aside.contact img.tele {
           padding: 2%;
-          width: 13%; }
-        #wrapper header aside.contact a#contact-number {
-          font-size: 0.8em;
+          width: 11.5%; }
+        #wrapper header aside.contact span:first-of-type {
+          font-size: 0.9em;
           line-height: 25px;
           width: 83%; }
-        #wrapper header aside.contact span#opening-times {
+        #wrapper header aside.contact span:last-of-type {
           line-height: 20px; }
       #wrapper header nav {
         height: 40px;
@@ -2897,13 +2884,13 @@ body {
         #wrapper header nav aside#language-box {
           width: 16%;
           margin-left: 0%; }
-          #wrapper header nav aside#language-box form label {
-            width: 58%;
+          #wrapper header nav aside#language-box span {
+            width: 45%;
             font-size: 0.65em;
             text-indent: 4%; }
-          #wrapper header nav aside#language-box form select {
+          #wrapper header nav aside#language-box select {
             font-size: 0.65em;
-            width: 40%; }
+            width: 53%; }
     #wrapper #leftside {
       width: 30%;
       padding-top: 1%;
@@ -3008,7 +2995,7 @@ body {
       #wrapper #leftside3 figure {
         margin: 0; }
         #wrapper #leftside3 figure figcaption {
-          top: -409px;
+          top: -412px;
           padding: 5%; }
           #wrapper #leftside3 figure figcaption h1 {
             font-size: 0.9em;
@@ -3103,14 +3090,15 @@ body {
           font-size: 1em; }
         #wrapper #content2 .holiday_details span.holidayprice {
           font-size: 0.75em;
-          left: 10%; }
+          left: 81%; }
           #wrapper #content2 .holiday_details span.holidayprice .offerbox-price {
             font-weight: bold; }
         #wrapper #content2 .holiday_details figure {
           width: 100%;
           /*figcaption end*/ }
           #wrapper #content2 .holiday_details figure img {
-            width: 21%; }
+            width: 21%;
+            margin: 0 2% 0 0; }
           #wrapper #content2 .holiday_details figure figcaption {
             width: 77%;
             margin-bottom: 1%; }
@@ -3198,15 +3186,15 @@ body {
         height: 65px;
         width: 35.012%; }
       #wrapper header aside.contact {
-        width: 120px; }
-        #wrapper header aside.contact span.tele {
+        width: 130px; }
+        #wrapper header aside.contact img.tele {
           padding: 2%;
-          width: 13%; }
-        #wrapper header aside.contact a#contact-number {
+          width: 11.5%; }
+        #wrapper header aside.contact span:first-of-type {
           font-size: 0.85em;
           line-height: 25px;
-          width: 83%; }
-        #wrapper header aside.contact span#opening-times {
+          width: 84%; }
+        #wrapper header aside.contact span:last-of-type {
           line-height: 20px; }
       #wrapper header nav {
         height: 40px;
@@ -3262,13 +3250,13 @@ body {
         #wrapper header nav aside#language-box {
           width: 21%;
           margin-left: 0%; }
-          #wrapper header nav aside#language-box form label {
-            width: 58%;
+          #wrapper header nav aside#language-box span {
+            width: 51%;
             font-size: 0.75em;
             text-indent: 4%; }
-          #wrapper header nav aside#language-box form select {
+          #wrapper header nav aside#language-box select {
             font-size: 0.65em;
-            width: 40%; }
+            width: 48%; }
     #wrapper #leftside {
       width: 30%;
       padding-top: 1%;
@@ -3393,7 +3381,7 @@ body {
         font-weight: bold; }
       #wrapper #content #banner {
         width: 96%;
-        height: 360px; }
+        height: 310px; }
         #wrapper #content #banner img {
           width: 100%; }
       #wrapper #content #offers {
@@ -3470,14 +3458,15 @@ body {
           font-size: 1em; }
         #wrapper #content2 .holiday_details span.holidayprice {
           font-size: 0.8em;
-          left: 12%; }
+          left: 81%; }
           #wrapper #content2 .holiday_details span.holidayprice .offerbox-price {
             font-weight: bold; }
         #wrapper #content2 .holiday_details figure {
           width: 100%;
           /*figcaption end*/ }
           #wrapper #content2 .holiday_details figure img {
-            width: 21%; }
+            width: 21%;
+            margin: 0 2% 0 0; }
           #wrapper #content2 .holiday_details figure figcaption {
             width: 77%;
             margin-bottom: 1%; }
@@ -3485,7 +3474,7 @@ body {
               font-size: 0.7em;
               line-height: 1.6em; }
             #wrapper #content2 .holiday_details figure figcaption a {
-              width: 35%;
+              width: 25%;
               font-size: 0.85em; }
             #wrapper #content2 .holiday_details figure figcaption a:hover {
               padding: 1% 2%; }
@@ -3567,14 +3556,14 @@ body {
         height: 65px;
         width: 35.012%; }
       #wrapper header aside.contact {
-        width: 120px; }
-        #wrapper header aside.contact span.tele {
+        width: 130px; }
+        #wrapper header aside.contact img.tele {
           padding: 2%;
-          width: 13%; }
-        #wrapper header aside.contact a#contact-number {
+          width: 11.5%; }
+        #wrapper header aside.contact span:first-of-type {
           font-size: 0.85em;
           line-height: 25px; }
-        #wrapper header aside.contact span#opening-times {
+        #wrapper header aside.contact span:last-of-type {
           line-height: 20px; }
       #wrapper header nav {
         height: 40px;
@@ -3601,12 +3590,12 @@ body {
         #wrapper header nav aside#language-box {
           width: 22%;
           margin-left: 0%; }
-          #wrapper header nav aside#language-box form span {
-            width: 58%;
+          #wrapper header nav aside#language-box span {
+            width: 51%;
             font-size: 0.75em; }
-          #wrapper header nav aside#language-box form select {
+          #wrapper header nav aside#language-box select {
             font-size: 0.65em;
-            width: 40%; }
+            width: 48%; }
     #wrapper #leftside {
       width: 30%;
       padding-top: 1%;
@@ -3807,15 +3796,16 @@ body {
           line-height: 40px;
           font-size: 1em; }
         #wrapper #content2 .holiday_details span.holidayprice {
-          font-size: 0.75em;
-          left: 11%; }
+          font-size: 0.8em;
+          left: 80%; }
           #wrapper #content2 .holiday_details span.holidayprice .offerbox-price {
             font-weight: bold; }
         #wrapper #content2 .holiday_details figure {
           width: 100%;
           /*figcaption end*/ }
           #wrapper #content2 .holiday_details figure img {
-            width: 25%; }
+            width: 25%;
+            margin: 0 2% 0 0; }
           #wrapper #content2 .holiday_details figure figcaption {
             width: 70%;
             margin-bottom: 1%; }
@@ -3823,7 +3813,7 @@ body {
               font-size: 0.7em;
               line-height: 1.6em; }
             #wrapper #content2 .holiday_details figure figcaption a {
-              width: 35%;
+              width: 25%;
               font-size: 0.85em; }
             #wrapper #content2 .holiday_details figure figcaption a:hover {
               padding: 1% 2%; }
@@ -3861,7 +3851,7 @@ body {
           font-size: 0.75em;
           text-indent: 0%;
           height: auto;
-          line-height: 20px; }
+          line-height: 25px; }
         #wrapper #content2 .servicebox figure {
           width: 90%;
           margin: 1% auto; }
@@ -3905,13 +3895,13 @@ body {
         height: 64px;
         width: 35.012%; }
       #wrapper header aside.contact {
-        width: 120px; }
-        #wrapper header aside.contact span.tele {
-          width: 13%; }
-        #wrapper header aside.contact a#contact-number {
-          font-size: 0.8em;
+        width: 130px; }
+        #wrapper header aside.contact img.tele {
+          width: 12%; }
+        #wrapper header aside.contact span:first-of-type {
+          font-size: 0.85em;
           line-height: 25px; }
-        #wrapper header aside.contact span#opening-times {
+        #wrapper header aside.contact span:last-of-type {
           line-height: 20px; }
       #wrapper header nav {
         height: 40px;
@@ -3938,12 +3928,12 @@ body {
         #wrapper header nav aside#language-box {
           width: 23%;
           margin-left: 0%; }
-          #wrapper header nav aside#language-box form span {
-            width: 58%;
+          #wrapper header nav aside#language-box span {
+            width: 51%;
             font-size: 0.75em; }
-          #wrapper header nav aside#language-box form select {
+          #wrapper header nav aside#language-box select {
             font-size: 0.65em;
-            width: 40%; }
+            width: 48%; }
     #wrapper #leftside {
       width: 30%;
       padding-top: 1%;
@@ -4144,15 +4134,16 @@ body {
           line-height: 40px;
           font-size: 0.95em; }
         #wrapper #content2 .holiday_details span.holidayprice {
-          font-size: 0.75em;
-          left: 10%; }
+          font-size: 0.8em;
+          left: 80%; }
           #wrapper #content2 .holiday_details span.holidayprice .offerbox-price {
             font-weight: bold; }
         #wrapper #content2 .holiday_details figure {
           width: 100%;
           /*figcaption end*/ }
           #wrapper #content2 .holiday_details figure img {
-            width: 25%; }
+            width: 25%;
+            margin: 0 2% 0 0; }
           #wrapper #content2 .holiday_details figure figcaption {
             width: 70%;
             margin-bottom: 1%; }
@@ -4197,7 +4188,8 @@ body {
         #wrapper #content2 .servicebox h1 {
           font-size: 0.75em;
           text-indent: 0%;
-          height: auto; }
+          height: auto;
+          line-height: 1.5em; }
         #wrapper #content2 .servicebox figure {
           width: 90%;
           margin: 1% auto; }
@@ -4242,13 +4234,13 @@ body {
         width: 37.012%; }
       #wrapper header aside.contact {
         width: 120px; }
-        #wrapper header aside.contact span.tele {
+        #wrapper header aside.contact img.tele {
           width: 13%; }
-        #wrapper header aside.contact a#contact-number {
+        #wrapper header aside.contact span:first-of-type {
           font-size: 0.8em;
           line-height: 25px;
           width: 83%; }
-        #wrapper header aside.contact span#opening-times {
+        #wrapper header aside.contact span:last-of-type {
           line-height: 20px;
           font-size: 0.75em; }
       #wrapper header nav {
@@ -4276,12 +4268,12 @@ body {
         #wrapper header nav aside#language-box {
           width: 23%;
           margin-left: 0%; }
-          #wrapper header nav aside#language-box form label {
-            width: 58%;
+          #wrapper header nav aside#language-box span {
+            width: 51%;
             font-size: 0.7em; }
-          #wrapper header nav aside#language-box form select {
+          #wrapper header nav aside#language-box select {
             font-size: 0.65em;
-            width: 40%; }
+            width: 48%; }
     #wrapper #leftside {
       width: 30%;
       padding-top: 1%;
@@ -4482,16 +4474,16 @@ body {
           line-height: 40px;
           font-size: 0.95em; }
         #wrapper #content2 .holiday_details span.holidayprice {
-          font-size: 0.75em;
-          left: 8%;
-          top: -2px; }
+          font-size: 0.8em;
+          left: 78%; }
           #wrapper #content2 .holiday_details span.holidayprice .offerbox-price {
             font-weight: bold; }
         #wrapper #content2 .holiday_details figure {
           width: 100%;
           /*figcaption end*/ }
           #wrapper #content2 .holiday_details figure img {
-            width: 27%; }
+            width: 27%;
+            margin: 0 2% 0 0; }
           #wrapper #content2 .holiday_details figure figcaption {
             width: 70%;
             margin-bottom: 1%; }
@@ -4499,7 +4491,7 @@ body {
               font-size: 0.7em;
               line-height: 1.6em; }
             #wrapper #content2 .holiday_details figure figcaption a {
-              width: 35%;
+              width: 25%;
               font-size: 0.85em; }
             #wrapper #content2 .holiday_details figure figcaption a:hover {
               padding: 1% 2%; }
@@ -4581,14 +4573,14 @@ body {
         height: 65px;
         width: 42.012%; }
       #wrapper header aside.contact {
-        width: 110px; }
-        #wrapper header aside.contact span.tele {
-          width: 14.5%; }
-        #wrapper header aside.contact a#contact-number {
+        width: 120px; }
+        #wrapper header aside.contact img.tele {
+          width: 13.5%; }
+        #wrapper header aside.contact span:first-of-type {
           font-size: 0.75em;
           line-height: 25px;
-          width: 81%; }
-        #wrapper header aside.contact span#opening-times {
+          width: 82%; }
+        #wrapper header aside.contact span:last-of-type {
           line-height: 20px;
           font-size: 0.7em; }
       #wrapper header nav {
@@ -4613,14 +4605,14 @@ body {
                 height: 50px;
                 line-height: 50px; }
         #wrapper header nav aside#language-box {
-          width: 27%;
+          width: 30%;
           margin-left: 0%; }
-          #wrapper header nav aside#language-box form span {
-            width: 58%;
+          #wrapper header nav aside#language-box span {
+            width: 51%;
             font-size: 0.7em; }
-          #wrapper header nav aside#language-box form select {
+          #wrapper header nav aside#language-box select {
             font-size: 0.65em;
-            width: 40%; }
+            width: 48%; }
     #wrapper #leftside {
       width: 30%;
       padding-top: 1%;
@@ -4821,15 +4813,16 @@ body {
           line-height: 40px;
           font-size: 0.95em; }
         #wrapper #content2 .holiday_details span.holidayprice {
-          font-size: 0.7em;
-          left: 8%; }
+          font-size: 0.75em;
+          left: 76%; }
           #wrapper #content2 .holiday_details span.holidayprice .offerbox-price {
             font-weight: bold; }
         #wrapper #content2 .holiday_details figure {
           width: 100%;
           /*figcaption end*/ }
           #wrapper #content2 .holiday_details figure img {
-            width: 27%; }
+            width: 27%;
+            margin: 0 2% 0 0; }
           #wrapper #content2 .holiday_details figure figcaption {
             width: 71%;
             margin-bottom: 1%; }
@@ -4874,9 +4867,10 @@ body {
         width: 29.5%;
         margin: 5px 0 0 5px; }
         #wrapper #content2 .servicebox h1 {
-          font-size: 0.7em;
+          font-size: 0.75em;
           text-indent: 0%;
-          height: auto; }
+          height: auto;
+          line-height: 1.5em; }
         #wrapper #content2 .servicebox figure {
           width: 90%;
           margin: 1% auto; }
@@ -4926,13 +4920,13 @@ body {
         width: 52.012%; }
       #wrapper header aside.contact {
         width: 110px; }
-        #wrapper header aside.contact span.tele {
+        #wrapper header aside.contact img.tele {
           width: 14.5%; }
-        #wrapper header aside.contact a#contact-number {
+        #wrapper header aside.contact span:first-of-type {
           font-size: 0.75em;
           line-height: 25px;
-          width: 80%; }
-        #wrapper header aside.contact span#opening-times {
+          width: 81%; }
+        #wrapper header aside.contact span:last-of-type {
           line-height: 20px;
           font-size: 0.65em; }
       #wrapper header nav {
@@ -4958,14 +4952,14 @@ body {
                 height: 50px;
                 line-height: 50px; }
         #wrapper header nav aside#language-box {
-          width: 35%;
+          width: 34%;
           margin-left: 0%; }
-          #wrapper header nav aside#language-box form label {
-            width: 58%;
+          #wrapper header nav aside#language-box span {
+            width: 51%;
             font-size: 0.7em; }
-          #wrapper header nav aside#language-box form select {
+          #wrapper header nav aside#language-box select {
             font-size: 0.65em;
-            width: 40%; }
+            width: 48%; }
     #wrapper #leftside {
       width: 30%;
       padding-top: 1%;
@@ -5166,8 +5160,8 @@ body {
           line-height: 40px;
           font-size: 0.9em; }
         #wrapper #content2 .holiday_details span.holidayprice {
-          font-size: 0.7em;
-          left: 1%;
+          font-size: 0.75em;
+          left: 69%;
           width: 28%; }
           #wrapper #content2 .holiday_details span.holidayprice .offerbox-price {
             font-weight: bold; }
@@ -5175,7 +5169,8 @@ body {
           width: 100%;
           /*figcaption end*/ }
           #wrapper #content2 .holiday_details figure img {
-            width: 41%; }
+            width: 41%;
+            margin: 0 2% 0 0; }
           #wrapper #content2 .holiday_details figure figcaption {
             width: 55%;
             margin-bottom: 1%; }
@@ -5183,7 +5178,7 @@ body {
               font-size: 0.65em;
               line-height: 1.6em; }
             #wrapper #content2 .holiday_details figure figcaption a {
-              width: 75%;
+              width: 55%;
               font-size: 0.85em; }
             #wrapper #content2 .holiday_details figure figcaption a:hover {
               padding: 1% 2%; }
@@ -5222,7 +5217,8 @@ body {
         #wrapper #content2 .servicebox h1 {
           font-size: 0.7em;
           text-indent: 0%;
-          height: auto; }
+          height: auto;
+          line-height: 1.5em; }
         #wrapper #content2 .servicebox figure {
           width: 90%;
           margin: 1% auto; }
@@ -5249,10 +5245,6 @@ body {
             font-size: 0.5em; }
           footer ul li a:active {
             font-size: 0.5em; }
-      footer ul li:nth-of-type(2) a {
-        line-height: 16px; }
-        footer ul li:nth-of-type(2) a a:hover {
-          line-height: 16px; }
 
   /*footer end*/ }
 @media only screen and (max-width: 360px) {
@@ -5276,13 +5268,13 @@ body {
         width: 52.012%; }
       #wrapper header aside.contact {
         width: 100px; }
-        #wrapper header aside.contact span.tele {
+        #wrapper header aside.contact img.tele {
           width: 16%; }
-        #wrapper header aside.contact a#contact-number {
-          font-size: 0.7em;
+        #wrapper header aside.contact span:first-of-type {
+          font-size: 0.65em;
           line-height: 25px;
           width: 80%; }
-        #wrapper header aside.contact span#opening-times {
+        #wrapper header aside.contact span:last-of-type {
           line-height: 20px;
           font-size: 0.55em; }
       #wrapper header nav {
@@ -5308,14 +5300,14 @@ body {
                 height: 50px;
                 line-height: 50px; }
         #wrapper header nav aside#language-box {
-          width: 35%;
+          width: 40%;
           margin-left: 0%; }
-          #wrapper header nav aside#language-box form label {
-            width: 58%;
+          #wrapper header nav aside#language-box span {
+            width: 51%;
             font-size: 0.7em; }
-          #wrapper header nav aside#language-box form select {
+          #wrapper header nav aside#language-box select {
             font-size: 0.65em;
-            width: 40%; }
+            width: 48%; }
     #wrapper #leftside {
       width: 30%;
       padding-top: 1%;
@@ -5516,8 +5508,8 @@ body {
           line-height: 40px;
           font-size: 0.85em; }
         #wrapper #content2 .holiday_details span.holidayprice {
-          font-size: 0.7em;
-          left: 9%;
+          font-size: 0.75em;
+          left: 69%;
           width: 28%; }
           #wrapper #content2 .holiday_details span.holidayprice .offerbox-price {
             font-weight: bold; }
@@ -5525,7 +5517,8 @@ body {
           width: 100%;
           /*figcaption end*/ }
           #wrapper #content2 .holiday_details figure img {
-            width: 38%; }
+            width: 38%;
+            margin: 0 2% 0 0; }
           #wrapper #content2 .holiday_details figure figcaption {
             width: 60%;
             margin-bottom: 1%; }
@@ -5533,7 +5526,7 @@ body {
               font-size: 0.6em;
               line-height: 1.6em; }
             #wrapper #content2 .holiday_details figure figcaption a {
-              width: 80%;
+              width: 55%;
               font-size: 0.85em; }
             #wrapper #content2 .holiday_details figure figcaption a:hover {
               padding: 1% 2%; }
@@ -5572,7 +5565,8 @@ body {
         #wrapper #content2 .servicebox h1 {
           font-size: 0.65em;
           text-indent: 0%;
-          height: auto; }
+          height: auto;
+          line-height: 1.5em; }
         #wrapper #content2 .servicebox figure {
           width: 90%;
           margin: 1% auto; }
@@ -5603,10 +5597,6 @@ body {
           footer ul li a:active {
             font-size: 0.5em;
             line-height: 15px; }
-      footer ul li:nth-of-type(2) a {
-        line-height: 16px; }
-        footer ul li:nth-of-type(2) a a:hover {
-          line-height: 16px; }
 
   /*footer end*/ }
 @media only screen and (max-width: 320px) {
@@ -5629,14 +5619,14 @@ body {
         height: 57px;
         width: 54.012%; }
       #wrapper header aside.contact {
-        width: 100px; }
-        #wrapper header aside.contact span.tele {
-          width: 16%; }
-        #wrapper header aside.contact a#contact-number {
+        width: 110px; }
+        #wrapper header aside.contact img.tele {
+          width: 14.5%; }
+        #wrapper header aside.contact span:first-of-type {
           font-size: 0.7em;
           line-height: 25px;
-          width: 80%; }
-        #wrapper header aside.contact span#opening-times {
+          width: 81%; }
+        #wrapper header aside.contact span:last-of-type {
           line-height: 20px;
           font-size: 0.55em; }
       #wrapper header nav {
@@ -5662,14 +5652,14 @@ body {
                 height: 50px;
                 line-height: 50px; }
         #wrapper header nav aside#language-box {
-          width: 35%;
+          width: 45%;
           margin-left: 0%; }
-          #wrapper header nav aside#language-box form label {
-            width: 58%;
+          #wrapper header nav aside#language-box span {
+            width: 51%;
             font-size: 0.7em; }
-          #wrapper header nav aside#language-box form select {
+          #wrapper header nav aside#language-box select {
             font-size: 0.65em;
-            width: 40%; }
+            width: 48%; }
     #wrapper #leftside {
       width: 30%;
       padding-top: 1%;
@@ -5813,7 +5803,7 @@ body {
             #wrapper #content #offers div.offerbox figure figcaption {
               padding: 5% 0; }
               #wrapper #content #offers div.offerbox figure figcaption p {
-                font-size: 0.55em; }
+                font-size: 0.6em; }
               #wrapper #content #offers div.offerbox figure figcaption p:nth-of-type(2) {
                 font-weight: bold; }
                 #wrapper #content #offers div.offerbox figure figcaption p:nth-of-type(2) span {
@@ -5868,8 +5858,8 @@ body {
           line-height: 40px;
           font-size: 0.75em; }
         #wrapper #content2 .holiday_details span.holidayprice {
-          font-size: 0.65em;
-          left: 9%;
+          font-size: 0.75em;
+          left: 66%;
           width: 32%; }
           #wrapper #content2 .holiday_details span.holidayprice .offerbox-price {
             font-weight: bold; }
@@ -5877,7 +5867,8 @@ body {
           width: 100%;
           /*figcaption end*/ }
           #wrapper #content2 .holiday_details figure img {
-            width: 38%; }
+            width: 38%;
+            margin: 0 2% 0 0; }
           #wrapper #content2 .holiday_details figure figcaption {
             width: 60%;
             margin-bottom: 1%; }
@@ -5885,7 +5876,7 @@ body {
               font-size: 0.55em;
               line-height: 1.6em; }
             #wrapper #content2 .holiday_details figure figcaption a {
-              width: 80%;
+              width: 60%;
               font-size: 0.85em; }
             #wrapper #content2 .holiday_details figure figcaption a:hover {
               padding: 1% 2%; }
@@ -5925,7 +5916,8 @@ body {
         #wrapper #content2 .servicebox h1 {
           font-size: 0.65em;
           text-indent: 0%;
-          height: auto; }
+          height: auto;
+          line-height: 1.5em; }
         #wrapper #content2 .servicebox figure {
           width: 90%;
           margin: 1% auto; }
@@ -5989,9 +5981,9 @@ body {
   abbr[title]:after {
     content: " (" attr(title) ")"; }
 
-  	/*
-       * Don't show links for images, or javascript/internal links
-       */
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
@@ -6025,4 +6017,4 @@ body {
   h3 {
     page-break-after: avoid; } }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.csss.map */

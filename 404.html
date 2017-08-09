@@ -60,9 +60,8 @@
 <header>
 <!---contact number-->
 <aside class="contact">
-<img class="tele" src="images/images/Telephone.png" alt="Travel Agency Contact Number">
-<span>0208-365-1452</span>
-<span>Everyday 8am - 9pm</span>
+<span class="tele"><img src="images/images/Telephone.png" alt="Travel Agency Contact Number"></span><a href="tel:0208-000-1452" id="contact-number">0208-365-1452</a>
+<span id="opening-time">Everyday 8am - 9pm</span>
 </aside>
 
 <figure id="logo">
@@ -82,9 +81,10 @@
 <li><a href="contact-us-travel-agency-website.html">Contact us</a></li>
 </ul>
 <aside id="language-box">
-    <span>Language:</span>
-    <select name="language">
-    <option value="empty"></option>
+    <form>
+		<label>Language:</label>
+       <select name="language">
+        <option value="empty"></option>
         <option value="United_Kingdom"></option>
         <option value="Germany"></option>
         <option value="United_States"></option>
@@ -92,7 +92,9 @@
         <option value="France"></option>
         <option value="Spain"></option>
     </select>
-</aside>
+    </form>
+    
+</aside> 
     
 </nav>
 <!--primary navigation end-->
