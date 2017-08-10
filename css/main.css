@@ -143,6 +143,10 @@ a:hover {
   -ms--transform: scale(1);
   transform: scale(1); }
 
+a:active, a:focus {
+  color: #fff;
+  text-decoration: none; }
+
 h1,
 h2,
 h3 {
@@ -201,22 +205,22 @@ body {
         #wrapper header figure#logo img {
           display: block; }
       #wrapper header aside.contact {
-        width: 155px;
-        height: auto;
+        width: 145px;
+        height: 40px;
         float: right;
         margin: 1% 0 0 0;
-        color: #f7f7f7;
         font-size: 0.9em;
-        display: block; }
+        display: block;
+        line-height: 22px; }
         #wrapper header aside.contact span.tele {
           margin: 0;
           padding: 2%;
-          width: 12%;
+          width: 13%;
           float: left;
           display: block;
           background-color: #175480; }
         #wrapper header aside.contact a#contact-number {
-          width: 84%;
+          width: 83%;
           background-color: #175480;
           padding: 0;
           display: inline-block;
@@ -226,10 +230,11 @@ body {
           font-size: 1em;
           text-align: center;
           text-shadow: 1px 1px 1px #000;
-          text-decoration: none; }
+          text-decoration: none;
+          color: #f7f7f7; }
           #wrapper header aside.contact a#contact-number:active {
-            color: dodgerblue; }
-        #wrapper header aside.contact span#opening-times {
+            color: #fff; }
+        #wrapper header aside.contact span#opening-time {
           display: block;
           line-height: 20px;
           color: #000000;
@@ -279,7 +284,7 @@ body {
             #wrapper header nav ul li a {
               text-decoration: none;
               width: 100%;
-              font-size: 0.80em;
+              font-size: 0.85em;
               text-align: center;
               -webkit-border-radius: 5px 5px 0px 0px;
               -moz-border-radius: 5px 5px 0px 0px;
@@ -374,7 +379,7 @@ body {
           display: block;
           float: right; }
           #wrapper header nav aside#language-box form label {
-            width: 56%;
+            width: 58%;
             font-size: 0.85em;
             display: inline-block;
             text-indent: 5%;
@@ -389,7 +394,7 @@ body {
             height: 30px;
             line-height: 30px;
             font-size: 0.85em;
-            width: 30%;
+            width: 40%;
             display: inline-block;
             border-right: solid 1px #e4e2e2;
             border-top: solid 1px #e4e2e2;
@@ -404,12 +409,12 @@ body {
               background-position: 5% 50%;
               padding: 0.5em 0; }
             #wrapper header nav aside#language-box form select option[value="United_Kingdom"] {
-              background-image: url("../images/United_Kingdom.jpg");
+              background-image: url(../images/United_Kingdom.jpg);
               background-repeat: no-repeat;
               background-position: 5% 50%;
               padding: 0.5em 0; }
             #wrapper header nav aside#language-box form select option[value="France"] {
-              background-image: url("../images/France.jpg");
+              background-image: url(../images/France.jpg);
               background-repeat: no-repeat;
               background-position: 5% 50%;
               padding: 0.5em 0; }
@@ -672,7 +677,7 @@ body {
       #wrapper #leftside3 #contact-details {
         background-color: #ffffff;
         display: block;
-        width: 96%;
+        width: 98%;
         height: auto;
         border: 4px #ecebe6 solid;
         margin: 0;
@@ -694,25 +699,25 @@ body {
           #wrapper #leftside3 #contact-details li span {
             height: 100%;
             float: left;
-            width: 22%;
+            width: 18%;
             display: inline-block;
             background-color: #ffffff; }
             #wrapper #leftside3 #contact-details li span img {
               width: 41%;
               height: auto;
               display: block;
-              margin: 10% auto; }
+              margin: 11% auto; }
           #wrapper #leftside3 #contact-details li a {
             display: block;
             line-height: 20px;
-            font-size: 0.90em; }
+            font-size: 1em; }
       #wrapper #leftside3 figure {
         margin: 0; }
         #wrapper #leftside3 figure figcaption {
           position: relative;
           z-index: 1;
           left: 0;
-          top: -556px;
+          top: -564px;
           padding: 5%; }
           #wrapper #leftside3 figure figcaption h1 {
             text-indent: 0;
@@ -720,7 +725,7 @@ body {
             color: #ffffff;
             display: block;
             font-size: 1.28em;
-            margin: 0 0 20% 0;
+            margin: 0 0 25% 0;
             text-transform: uppercase;
             line-height: 1.5em; }
           #wrapper #leftside3 figure figcaption p {
@@ -1076,7 +1081,8 @@ body {
           background-color: #ebece7;
           color: #4facf4;
           text-indent: 1%;
-          line-height: 30px; }
+          line-height: 30px;
+          padding: 0.5em 0; }
         #wrapper #content2 .servicebox figure {
           width: 90%;
           margin: 1% auto; }
@@ -1156,15 +1162,15 @@ body {
         width: 24.012%;
         margin: 0px; }
       #wrapper header aside.contact {
-        width: 150px; }
+        width: 140px; }
         #wrapper header aside.contact span.tele {
           padding: 2%;
-          width: 12.5%; }
+          width: 13%; }
         #wrapper header aside.contact a#contact-number {
           width: 83%;
           line-height: 30px;
-          font-size: 0.95em; }
-        #wrapper header aside.contact span#opening-times {
+          font-size: 0.9em; }
+        #wrapper header aside.contact span#opening-time {
           line-height: 20px;
           font-size: 0.8em; }
       #wrapper header nav {
@@ -1176,7 +1182,7 @@ body {
             width: 16.71%;
             height: 40px; }
             #wrapper header nav ul li a {
-              font-size: 0.75em; }
+              font-size: 0.8em; }
         #wrapper header nav aside#language-box {
           width: 13%; }
           #wrapper header nav aside#language-box form label {
@@ -1294,17 +1300,18 @@ body {
         font-size: 0.70em; }
         #wrapper #leftside3 #contact-details li {
           line-height: 20px;
-          height: 80px; }
+          height: 80px;
+          font-size: 0.95em; }
           #wrapper #leftside3 #contact-details li:first-line {
             font-weight: bold; }
           #wrapper #leftside3 #contact-details li span {
-            width: 22%; }
+            width: 18%; }
             #wrapper #leftside3 #contact-details li span img {
               width: 41%;
               margin: 10% auto; }
           #wrapper #leftside3 #contact-details li a {
             line-height: 20px;
-            font-size: 0.90em; }
+            font-size: 1em; }
       #wrapper #leftside3 figure {
         margin: 0; }
         #wrapper #leftside3 figure figcaption {
@@ -1483,7 +1490,6 @@ body {
         #wrapper #content2 .servicebox h1 {
           font-size: 0.75em;
           height: 30px;
-          text-indent: 1%;
           line-height: 30px; }
         #wrapper #content2 .servicebox figure {
           width: 90%;
@@ -1534,15 +1540,15 @@ body {
         width: 24.012%;
         margin: 0px; }
       #wrapper header aside.contact {
-        width: 145px; }
+        width: 140px; }
         #wrapper header aside.contact span.tele {
           padding: 2%;
-          width: 13%; }
+          width: 12.5%; }
         #wrapper header aside.contact a#contact-number {
           width: 83%;
           line-height: 30px;
-          font-size: 0.95em; }
-        #wrapper header aside.contact span#opening-times {
+          font-size: 0.9em; }
+        #wrapper header aside.contact span#opening-time {
           line-height: 20px; }
       #wrapper header nav {
         height: 40px;
@@ -1652,22 +1658,23 @@ body {
       width: 20%;
       margin: 1% 1% 0 0; }
       #wrapper #leftside3 #contact-details {
-        width: 96%;
+        width: 98%;
         padding: 10% 0;
         font-size: 0.70em; }
         #wrapper #leftside3 #contact-details li {
           line-height: 20px;
-          height: 80px; }
+          height: 80px;
+          font-size: 0.9em; }
           #wrapper #leftside3 #contact-details li:first-line {
             font-weight: bold; }
           #wrapper #leftside3 #contact-details li span {
-            width: 22%; }
+            width: 18%; }
             #wrapper #leftside3 #contact-details li span img {
               width: 41%;
               margin: 10% auto; }
           #wrapper #leftside3 #contact-details li a {
             line-height: 20px;
-            font-size: 0.90em; }
+            font-size: 1em; }
       #wrapper #leftside3 figure {
         margin: 0; }
         #wrapper #leftside3 figure figcaption {
@@ -1757,7 +1764,7 @@ body {
               width: 16%;
               height: 35px;
               line-height: 35px;
-              font-size: 0.85em; }
+              font-size: 0.8em; }
             #wrapper #content2 #contactform ul li input {
               width: 65%;
               height: 35px;
@@ -1839,8 +1846,7 @@ body {
         width: 31%;
         margin: 5px 0 0 5px; }
         #wrapper #content2 .servicebox h1 {
-          font-size: 0.75em;
-          text-indent: 1%; }
+          font-size: 0.75em; }
         #wrapper #content2 .servicebox figure {
           width: 90%;
           margin: 1% auto; }
@@ -1886,14 +1892,14 @@ body {
         width: 27.012%;
         margin: 0px; }
       #wrapper header aside.contact {
-        width: 140px; }
+        width: 130px; }
         #wrapper header aside.contact span.tele {
           padding: 2%;
-          width: 13.5%; }
+          width: 14%; }
         #wrapper header aside.contact a#contact-number {
-          font-size: 0.95em;
+          font-size: 0.85em;
           width: 82%; }
-        #wrapper header aside.contact span#opening-times {
+        #wrapper header aside.contact span#opening-time {
           line-height: 20px;
           font-size: 0.75em; }
       #wrapper header nav {
@@ -2007,13 +2013,13 @@ body {
           #wrapper #leftside3 #contact-details li:first-line {
             font-weight: bold; }
           #wrapper #leftside3 #contact-details li span {
-            width: 22%; }
+            width: 18%; }
             #wrapper #leftside3 #contact-details li span img {
-              width: 41%;
+              width: 48%;
               margin: 10% auto; }
           #wrapper #leftside3 #contact-details li a {
             line-height: 20px;
-            font-size: 0.90em; }
+            font-size: 1em; }
       #wrapper #leftside3 figure {
         margin: 0; }
         #wrapper #leftside3 figure figcaption {
@@ -2081,7 +2087,7 @@ body {
       #wrapper #content2 h3 {
         font-size: 1em; }
       #wrapper #content2 p {
-        font-size: 0.8em;
+        font-size: 0.75em;
         margin: 0; }
       #wrapper #content2 #contactform {
         width: 100%;
@@ -2094,7 +2100,7 @@ body {
               width: 16%;
               height: 35px;
               line-height: 35px;
-              font-size: 0.85em; }
+              font-size: 0.75em; }
             #wrapper #content2 #contactform ul li input {
               width: 65%;
               height: 35px;
@@ -2176,8 +2182,7 @@ body {
         width: 31%;
         margin: 5px 0 0 5px; }
         #wrapper #content2 .servicebox h1 {
-          font-size: 0.75em;
-          text-indent: 1%; }
+          font-size: 0.75em; }
         #wrapper #content2 .servicebox figure {
           width: 90%;
           margin: 1% auto; }
@@ -2222,14 +2227,14 @@ body {
         height: 77px;
         width: 28.012%; }
       #wrapper header aside.contact {
-        width: 140px; }
+        width: 130px; }
         #wrapper header aside.contact span.tele {
           padding: 2%;
           width: 13.5%; }
         #wrapper header aside.contact a#contact-number {
-          font-size: 0.95em;
+          font-size: 0.9em;
           width: 82%; }
-        #wrapper header aside.contact span#opening-times {
+        #wrapper header aside.contact span#opening-time {
           line-height: 20px; }
       #wrapper header nav {
         height: 40px;
@@ -2242,8 +2247,7 @@ body {
             #wrapper header nav ul li a {
               font-size: 0.7em; }
         #wrapper header nav aside#language-box {
-          width: 13%;
-          margin-left: 2.5%; }
+          width: 15%; }
           #wrapper header nav aside#language-box form label {
             width: 58%;
             font-size: 0.7em; }
@@ -2341,13 +2345,13 @@ body {
           #wrapper #leftside3 #contact-details li:first-line {
             font-weight: bold; }
           #wrapper #leftside3 #contact-details li span {
-            width: 22%; }
+            width: 18%; }
             #wrapper #leftside3 #contact-details li span img {
-              width: 41%;
+              width: 48%;
               margin: 10% auto; }
           #wrapper #leftside3 #contact-details li a {
             line-height: 20px;
-            font-size: 0.90em; }
+            font-size: 1em; }
       #wrapper #leftside3 figure {
         margin: 0; }
         #wrapper #leftside3 figure figcaption {
@@ -2502,8 +2506,7 @@ body {
         width: 31%;
         margin: 5px 0 0 5px; }
         #wrapper #content2 .servicebox h1 {
-          font-size: 0.75em;
-          text-indent: 1%; }
+          font-size: 0.75em; }
         #wrapper #content2 .servicebox figure {
           width: 90%;
           margin: 1% auto; }
@@ -2547,15 +2550,16 @@ body {
         height: 67px;
         width: 30.0120048%; }
       #wrapper header aside.contact {
-        width: 130px; }
+        width: 120px; }
         #wrapper header aside.contact span.tele {
           padding: 2%;
-          width: 12%; }
+          width: 12%;
+          line-height: 19px; }
         #wrapper header aside.contact a#contact-number {
           font-size: 0.8em;
           line-height: 25px;
-          width: 83%; }
-        #wrapper header aside.contact span#opening-times {
+          width: 82%; }
+        #wrapper header aside.contact span#opening-time {
           line-height: 20px;
           font-size: 0.7em; }
       #wrapper header nav {
@@ -2668,17 +2672,18 @@ body {
         font-size: 0.65em; }
         #wrapper #leftside3 #contact-details li {
           line-height: 20px;
-          height: 80px; }
+          height: 80px;
+          font-size: 0.8em; }
           #wrapper #leftside3 #contact-details li:first-line {
             font-weight: bold; }
           #wrapper #leftside3 #contact-details li span {
-            width: 22%; }
+            width: 18%; }
             #wrapper #leftside3 #contact-details li span img {
-              width: 41%;
+              width: 48%;
               margin: 10% auto; }
           #wrapper #leftside3 #contact-details li a {
             line-height: 20px;
-            font-size: 0.90em; }
+            font-size: 1em; }
       #wrapper #leftside3 figure {
         margin: 0; }
         #wrapper #leftside3 figure figcaption {
@@ -2738,14 +2743,13 @@ body {
       /*Holiday details packages page end*/
       /*Holiday details Best deals page end*/ }
       #wrapper #content2 h1 {
-        font-size: 1.2em; }
+        font-size: 1.1em; }
       #wrapper #content2 h2 {
         font-size: 1.05em; }
       #wrapper #content2 h3 {
         font-size: 1em; }
       #wrapper #content2 p {
-        font-size: 0.75em;
-        margin: 0; }
+        font-size: 0.7em; }
       #wrapper #content2 #contactform {
         width: 100%;
         margin: auto; }
@@ -2755,7 +2759,7 @@ body {
             margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
-              font-size: 0.8em; }
+              font-size: 0.75em; }
             #wrapper #content2 #contactform ul li input {
               width: 65%; }
             #wrapper #content2 #contactform ul li textarea {
@@ -2828,7 +2832,7 @@ body {
         margin: 5px 0 0 5px; }
         #wrapper #content2 .servicebox h1 {
           font-size: 0.75em;
-          text-indent: 0%;
+          text-indent: 0;
           height: auto;
           line-height: 20px; }
         #wrapper #content2 .servicebox figure {
@@ -2882,7 +2886,7 @@ body {
           font-size: 0.8em;
           line-height: 25px;
           width: 83%; }
-        #wrapper header aside.contact span#opening-times {
+        #wrapper header aside.contact span#opening-time {
           line-height: 20px; }
       #wrapper header nav {
         height: 40px;
@@ -2998,13 +3002,13 @@ body {
           #wrapper #leftside3 #contact-details li:first-line {
             font-weight: bold; }
           #wrapper #leftside3 #contact-details li span {
-            width: 22%; }
+            width: 18%; }
             #wrapper #leftside3 #contact-details li span img {
-              width: 41%;
+              width: 48%;
               margin: 10% auto; }
           #wrapper #leftside3 #contact-details li a {
             line-height: 20px;
-            font-size: 0.90em; }
+            font-size: 1em; }
       #wrapper #leftside3 figure {
         margin: 0; }
         #wrapper #leftside3 figure figcaption {
@@ -3066,7 +3070,7 @@ body {
       #wrapper #content2 h1 {
         font-size: 1.2em; }
       #wrapper #content2 h2 {
-        font-size: 1.05em; }
+        font-size: 1.1em; }
       #wrapper #content2 h3 {
         font-size: 1em; }
       #wrapper #content2 p {
@@ -3081,7 +3085,7 @@ body {
             margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
-              font-size: 0.8em; }
+              font-size: 0.75em; }
             #wrapper #content2 #contactform ul li input {
               width: 65%; }
             #wrapper #content2 #contactform ul li textarea {
@@ -3153,8 +3157,7 @@ body {
         width: 30.5%;
         margin: 5px 0 0 5px; }
         #wrapper #content2 .servicebox h1 {
-          font-size: 0.75em;
-          text-indent: 0%; }
+          font-size: 0.7em; }
         #wrapper #content2 .servicebox figure {
           width: 90%;
           margin: 1% auto; }
@@ -3206,7 +3209,7 @@ body {
           font-size: 0.85em;
           line-height: 25px;
           width: 83%; }
-        #wrapper header aside.contact span#opening-times {
+        #wrapper header aside.contact span#opening-time {
           line-height: 20px; }
       #wrapper header nav {
         height: 40px;
@@ -3364,13 +3367,13 @@ body {
           #wrapper #leftside3 #contact-details li:first-line {
             font-weight: bold; }
           #wrapper #leftside3 #contact-details li span {
-            width: 22%; }
+            width: 18%; }
             #wrapper #leftside3 #contact-details li span img {
-              width: 41%;
+              width: 48%;
               margin: 10% auto; }
           #wrapper #leftside3 #contact-details li a {
             line-height: 20px;
-            font-size: 0.90em; }
+            font-size: 1em; }
       #wrapper #leftside3 figure {
         margin: 0; }
         #wrapper #leftside3 figure figcaption {
@@ -3434,7 +3437,7 @@ body {
       #wrapper #content2 h2 {
         font-size: 1em; }
       #wrapper #content2 h3 {
-        font-size: 1em; }
+        font-size: 0.95em; }
       #wrapper #content2 p {
         font-size: 0.7em;
         margin: 0;
@@ -3448,7 +3451,7 @@ body {
             margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
-              font-size: 0.8em; }
+              font-size: 0.75em; }
             #wrapper #content2 #contactform ul li input {
               width: 65%; }
             #wrapper #content2 #contactform ul li textarea {
@@ -3520,10 +3523,7 @@ body {
         width: 30.5%;
         margin: 5px 0 0 5px; }
         #wrapper #content2 .servicebox h1 {
-          font-size: 0.75em;
-          text-indent: 0%;
-          height: auto;
-          line-height: 20px; }
+          font-size: 0.7em; }
         #wrapper #content2 .servicebox figure {
           width: 90%;
           margin: 1% auto; }
@@ -3574,7 +3574,7 @@ body {
         #wrapper header aside.contact a#contact-number {
           font-size: 0.85em;
           line-height: 25px; }
-        #wrapper header aside.contact span#opening-times {
+        #wrapper header aside.contact span#opening-time {
           line-height: 20px; }
       #wrapper header nav {
         height: 40px;
@@ -3702,13 +3702,12 @@ body {
           #wrapper #leftside3 #contact-details li:first-line {
             font-weight: bold; }
           #wrapper #leftside3 #contact-details li span {
-            width: 22%; }
+            width: 18%; }
             #wrapper #leftside3 #contact-details li span img {
-              width: 41%;
+              width: 48%;
               margin: 10% auto; }
           #wrapper #leftside3 #contact-details li a {
-            line-height: 20px;
-            font-size: 0.90em; }
+            line-height: 20px; }
       #wrapper #leftside3 figure {
         margin: 0; }
         #wrapper #leftside3 figure figcaption {
@@ -3768,11 +3767,11 @@ body {
       /*Holiday details packages page end*/
       /*Holiday details Best deals page end*/ }
       #wrapper #content2 h1 {
-        font-size: 1.1em; }
+        font-size: 1em; }
       #wrapper #content2 h2 {
-        font-size: 1em; }
+        font-size: 0.95em; }
       #wrapper #content2 h3 {
-        font-size: 1em; }
+        font-size: 0.9em; }
       #wrapper #content2 p {
         font-size: 0.7em;
         margin: 0;
@@ -3786,7 +3785,7 @@ body {
             margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
-              font-size: 0.8em; }
+              font-size: 0.75em; }
             #wrapper #content2 #contactform ul li input {
               width: 65%; }
             #wrapper #content2 #contactform ul li textarea {
@@ -3858,10 +3857,7 @@ body {
         width: 30.5%;
         margin: 5px 0 0 5px; }
         #wrapper #content2 .servicebox h1 {
-          font-size: 0.75em;
-          text-indent: 0%;
-          height: auto;
-          line-height: 20px; }
+          font-size: 0.7em; }
         #wrapper #content2 .servicebox figure {
           width: 90%;
           margin: 1% auto; }
@@ -3903,15 +3899,16 @@ body {
       /*nav end*/ }
       #wrapper header figure#logo {
         height: 64px;
-        width: 35.012%; }
+        width: 34.012%; }
       #wrapper header aside.contact {
         width: 120px; }
         #wrapper header aside.contact span.tele {
           width: 13%; }
         #wrapper header aside.contact a#contact-number {
           font-size: 0.8em;
-          line-height: 25px; }
-        #wrapper header aside.contact span#opening-times {
+          line-height: 26px;
+          width: 82%; }
+        #wrapper header aside.contact span#opening-time {
           line-height: 20px; }
       #wrapper header nav {
         height: 40px;
@@ -4039,13 +4036,12 @@ body {
           #wrapper #leftside3 #contact-details li:first-line {
             font-weight: bold; }
           #wrapper #leftside3 #contact-details li span {
-            width: 22%; }
+            width: 18%; }
             #wrapper #leftside3 #contact-details li span img {
-              width: 41%;
+              width: 48%;
               margin: 10% auto; }
           #wrapper #leftside3 #contact-details li a {
-            line-height: 20px;
-            font-size: 0.90em; }
+            line-height: 20px; }
       #wrapper #leftside3 figure {
         margin: 0; }
         #wrapper #leftside3 figure figcaption {
@@ -4105,11 +4101,11 @@ body {
       /*Holiday details packages page end*/
       /*Holiday details Best deals page end*/ }
       #wrapper #content2 h1 {
-        font-size: 1.1em; }
+        font-size: 1em; }
       #wrapper #content2 h2 {
-        font-size: 1em; }
+        font-size: 0.95em; }
       #wrapper #content2 h3 {
-        font-size: 1em; }
+        font-size: 0.9em; }
       #wrapper #content2 p {
         font-size: 0.7em;
         margin: 0;
@@ -4123,7 +4119,7 @@ body {
             margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
-              font-size: 0.8em; }
+              font-size: 0.75em; }
             #wrapper #content2 #contactform ul li input {
               width: 65%; }
             #wrapper #content2 #contactform ul li textarea {
@@ -4195,9 +4191,7 @@ body {
         width: 30.5%;
         margin: 5px 0 0 5px; }
         #wrapper #content2 .servicebox h1 {
-          font-size: 0.75em;
-          text-indent: 0%;
-          height: auto; }
+          font-size: 0.7em; }
         #wrapper #content2 .servicebox figure {
           width: 90%;
           margin: 1% auto; }
@@ -4248,9 +4242,9 @@ body {
           font-size: 0.8em;
           line-height: 25px;
           width: 83%; }
-        #wrapper header aside.contact span#opening-times {
+        #wrapper header aside.contact span#opening-time {
           line-height: 20px;
-          font-size: 0.75em; }
+          font-size: 0.65em; }
       #wrapper header nav {
         height: 40px;
         margin-bottom: 0px; }
@@ -4377,13 +4371,12 @@ body {
           #wrapper #leftside3 #contact-details li:first-line {
             font-weight: bold; }
           #wrapper #leftside3 #contact-details li span {
-            width: 22%; }
+            width: 18%; }
             #wrapper #leftside3 #contact-details li span img {
-              width: 41%;
+              width: 48%;
               margin: 10% auto; }
           #wrapper #leftside3 #contact-details li a {
-            line-height: 20px;
-            font-size: 0.90em; }
+            line-height: 20px; }
       #wrapper #leftside3 figure {
         margin: 0; }
         #wrapper #leftside3 figure figcaption {
@@ -4443,11 +4436,11 @@ body {
       /*Holiday details packages page end*/
       /*Holiday details Best deals page end*/ }
       #wrapper #content2 h1 {
-        font-size: 1.1em; }
+        font-size: 1em; }
       #wrapper #content2 h2 {
-        font-size: 1em; }
+        font-size: 0.95em; }
       #wrapper #content2 h3 {
-        font-size: 1em; }
+        font-size: 0.9em; }
       #wrapper #content2 p {
         font-size: 0.7em;
         margin: 0;
@@ -4461,7 +4454,7 @@ body {
             margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
-              font-size: 0.8em; }
+              font-size: 0.75em; }
             #wrapper #content2 #contactform ul li input {
               width: 65%; }
             #wrapper #content2 #contactform ul li textarea {
@@ -4534,10 +4527,7 @@ body {
         width: 30.5%;
         margin: 5px 0 0 5px; }
         #wrapper #content2 .servicebox h1 {
-          font-size: 0.75em;
-          text-indent: 0%;
-          height: auto;
-          line-height: 1.5em; }
+          font-size: 0.7em; }
         #wrapper #content2 .servicebox figure {
           width: 90%;
           margin: 1% auto; }
@@ -4579,7 +4569,7 @@ body {
       /*nav end*/ }
       #wrapper header figure#logo {
         height: 65px;
-        width: 42.012%; }
+        width: 46.012%; }
       #wrapper header aside.contact {
         width: 110px; }
         #wrapper header aside.contact span.tele {
@@ -4588,9 +4578,9 @@ body {
           font-size: 0.75em;
           line-height: 25px;
           width: 81%; }
-        #wrapper header aside.contact span#opening-times {
+        #wrapper header aside.contact span#opening-time {
           line-height: 20px;
-          font-size: 0.7em; }
+          font-size: 0.6em; }
       #wrapper header nav {
         height: 40px;
         margin-bottom: 0px; }
@@ -4716,13 +4706,12 @@ body {
           #wrapper #leftside3 #contact-details li:first-line {
             font-weight: bold; }
           #wrapper #leftside3 #contact-details li span {
-            width: 22%; }
+            width: 18%; }
             #wrapper #leftside3 #contact-details li span img {
-              width: 41%;
+              width: 48%;
               margin: 10% auto; }
           #wrapper #leftside3 #contact-details li a {
-            line-height: 20px;
-            font-size: 0.90em; }
+            line-height: 20px; }
       #wrapper #leftside3 figure {
         margin: 0; }
         #wrapper #leftside3 figure figcaption {
@@ -4782,11 +4771,11 @@ body {
       /*Holiday details packages page end*/
       /*Holiday details Best deals page end*/ }
       #wrapper #content2 h1 {
-        font-size: 1.1em; }
+        font-size: 1em; }
       #wrapper #content2 h2 {
-        font-size: 1em; }
+        font-size: 0.95em; }
       #wrapper #content2 h3 {
-        font-size: 1em; }
+        font-size: 0.9em; }
       #wrapper #content2 p {
         font-size: 0.7em;
         margin: 0;
@@ -4874,9 +4863,7 @@ body {
         width: 29.5%;
         margin: 5px 0 0 5px; }
         #wrapper #content2 .servicebox h1 {
-          font-size: 0.7em;
-          text-indent: 0%;
-          height: auto; }
+          font-size: 0.7em; }
         #wrapper #content2 .servicebox figure {
           width: 90%;
           margin: 1% auto; }
@@ -4923,7 +4910,7 @@ body {
       /*nav end*/ }
       #wrapper header figure#logo {
         height: 67px;
-        width: 52.012%; }
+        width: 60.012%; }
       #wrapper header aside.contact {
         width: 110px; }
         #wrapper header aside.contact span.tele {
@@ -4932,9 +4919,9 @@ body {
           font-size: 0.75em;
           line-height: 25px;
           width: 80%; }
-        #wrapper header aside.contact span#opening-times {
+        #wrapper header aside.contact span#opening-time {
           line-height: 20px;
-          font-size: 0.65em; }
+          font-size: 0.6em; }
       #wrapper header nav {
         height: 40px;
         margin-bottom: 0px; }
@@ -4958,11 +4945,11 @@ body {
                 height: 50px;
                 line-height: 50px; }
         #wrapper header nav aside#language-box {
-          width: 35%;
+          width: 31%;
           margin-left: 0%; }
           #wrapper header nav aside#language-box form label {
             width: 58%;
-            font-size: 0.7em; }
+            font-size: 0.65em; }
           #wrapper header nav aside#language-box form select {
             font-size: 0.65em;
             width: 40%; }
@@ -5061,13 +5048,12 @@ body {
           #wrapper #leftside3 #contact-details li:first-line {
             font-weight: bold; }
           #wrapper #leftside3 #contact-details li span {
-            width: 22%; }
+            width: 18%; }
             #wrapper #leftside3 #contact-details li span img {
-              width: 41%;
+              width: 48%;
               margin: 10% auto; }
           #wrapper #leftside3 #contact-details li a {
-            line-height: 20px;
-            font-size: 0.90em; }
+            line-height: 20px; }
       #wrapper #leftside3 figure {
         margin: 0; }
         #wrapper #leftside3 figure figcaption {
@@ -5129,7 +5115,9 @@ body {
       #wrapper #content2 h1 {
         font-size: 1em; }
       #wrapper #content2 h2 {
-        font-size: 0.85em; }
+        font-size: 0.9em;
+        height: auto;
+        line-height: 25px; }
       #wrapper #content2 h3 {
         font-size: 0.8em; }
       #wrapper #content2 p {
@@ -5145,7 +5133,7 @@ body {
             margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 25%;
-              font-size: 0.75em; }
+              font-size: 0.7em; }
             #wrapper #content2 #contactform ul li input {
               width: 65%; }
             #wrapper #content2 #contactform ul li textarea {
@@ -5220,9 +5208,7 @@ body {
         width: 29.5%;
         margin: 5px 0 0 5px; }
         #wrapper #content2 .servicebox h1 {
-          font-size: 0.7em;
-          text-indent: 0%;
-          height: auto; }
+          font-size: 0.7em; }
         #wrapper #content2 .servicebox figure {
           width: 90%;
           margin: 1% auto; }
@@ -5273,7 +5259,7 @@ body {
       /*nav end*/ }
       #wrapper header figure#logo {
         height: 57px;
-        width: 52.012%; }
+        width: 56.012%; }
       #wrapper header aside.contact {
         width: 100px; }
         #wrapper header aside.contact span.tele {
@@ -5282,7 +5268,7 @@ body {
           font-size: 0.7em;
           line-height: 25px;
           width: 80%; }
-        #wrapper header aside.contact span#opening-times {
+        #wrapper header aside.contact span#opening-time {
           line-height: 20px;
           font-size: 0.55em; }
       #wrapper header nav {
@@ -5308,11 +5294,11 @@ body {
                 height: 50px;
                 line-height: 50px; }
         #wrapper header nav aside#language-box {
-          width: 35%;
+          width: 33%;
           margin-left: 0%; }
           #wrapper header nav aside#language-box form label {
             width: 58%;
-            font-size: 0.7em; }
+            font-size: 0.65em; }
           #wrapper header nav aside#language-box form select {
             font-size: 0.65em;
             width: 40%; }
@@ -5411,13 +5397,12 @@ body {
           #wrapper #leftside3 #contact-details li:first-line {
             font-weight: bold; }
           #wrapper #leftside3 #contact-details li span {
-            width: 22%; }
+            width: 18%; }
             #wrapper #leftside3 #contact-details li span img {
-              width: 41%;
+              width: 48%;
               margin: 10% auto; }
           #wrapper #leftside3 #contact-details li a {
-            line-height: 20px;
-            font-size: 0.90em; }
+            line-height: 20px; }
       #wrapper #leftside3 figure {
         margin: 0; }
         #wrapper #leftside3 figure figcaption {
@@ -5477,9 +5462,9 @@ body {
       /*Holiday details packages page end*/
       /*Holiday details Best deals page end*/ }
       #wrapper #content2 h1 {
-        font-size: 0.9em; }
+        font-size: 0.95em; }
       #wrapper #content2 h2 {
-        font-size: 0.8em; }
+        font-size: 0.85em; }
       #wrapper #content2 h3 {
         font-size: 0.75em; }
       #wrapper #content2 p {
@@ -5495,7 +5480,7 @@ body {
             margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 25%;
-              font-size: 0.75em; }
+              font-size: 0.7em; }
             #wrapper #content2 #contactform ul li input {
               width: 65%; }
             #wrapper #content2 #contactform ul li textarea {
@@ -5570,9 +5555,7 @@ body {
         width: 28.5%;
         margin: 5px 0 0 5px; }
         #wrapper #content2 .servicebox h1 {
-          font-size: 0.65em;
-          text-indent: 0%;
-          height: auto; }
+          font-size: 0.65em; }
         #wrapper #content2 .servicebox figure {
           width: 90%;
           margin: 1% auto; }
@@ -5627,16 +5610,17 @@ body {
       /*nav end*/ }
       #wrapper header figure#logo {
         height: 57px;
-        width: 54.012%; }
+        width: 56.012%; }
       #wrapper header aside.contact {
         width: 100px; }
         #wrapper header aside.contact span.tele {
-          width: 16%; }
+          width: 15%;
+          margin-top: 1%; }
         #wrapper header aside.contact a#contact-number {
-          font-size: 0.7em;
-          line-height: 25px;
+          font-size: 0.65em;
+          line-height: 24px;
           width: 80%; }
-        #wrapper header aside.contact span#opening-times {
+        #wrapper header aside.contact span#opening-time {
           line-height: 20px;
           font-size: 0.55em; }
       #wrapper header nav {
@@ -5662,11 +5646,11 @@ body {
                 height: 50px;
                 line-height: 50px; }
         #wrapper header nav aside#language-box {
-          width: 35%;
+          width: 33%;
           margin-left: 0%; }
           #wrapper header nav aside#language-box form label {
             width: 58%;
-            font-size: 0.7em; }
+            font-size: 0.65em; }
           #wrapper header nav aside#language-box form select {
             font-size: 0.65em;
             width: 40%; }
@@ -5765,13 +5749,12 @@ body {
           #wrapper #leftside3 #contact-details li:first-line {
             font-weight: bold; }
           #wrapper #leftside3 #contact-details li span {
-            width: 22%; }
+            width: 18%; }
             #wrapper #leftside3 #contact-details li span img {
-              width: 41%;
+              width: 48%;
               margin: 10% auto; }
           #wrapper #leftside3 #contact-details li a {
-            line-height: 20px;
-            font-size: 0.90em; }
+            line-height: 20px; }
       #wrapper #leftside3 figure {
         margin: 0; }
         #wrapper #leftside3 figure figcaption {
@@ -5833,11 +5816,11 @@ body {
       #wrapper #content2 h1 {
         font-size: 0.9em; }
       #wrapper #content2 h2 {
-        font-size: 0.7em; }
+        font-size: 0.8em; }
       #wrapper #content2 h3 {
-        font-size: 0.65em; }
+        font-size: 0.7em; }
       #wrapper #content2 p {
-        font-size: 0.7em;
+        font-size: 0.65em;
         margin: 0;
         letter-spacing: 0.01em; }
       #wrapper #content2 #contactform {
@@ -5849,7 +5832,7 @@ body {
             margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 25%;
-              font-size: 0.75em; }
+              font-size: 0.7em; }
             #wrapper #content2 #contactform ul li input {
               width: 65%; }
             #wrapper #content2 #contactform ul li textarea {
@@ -5923,9 +5906,7 @@ body {
         width: 28.5%;
         margin: 5px 0 0 5px; }
         #wrapper #content2 .servicebox h1 {
-          font-size: 0.65em;
-          text-indent: 0%;
-          height: auto; }
+          font-size: 0.65em; }
         #wrapper #content2 .servicebox figure {
           width: 90%;
           margin: 1% auto; }

@@ -161,6 +161,11 @@ a {
 a:hover {
 	@include TransScale(scale(1.00));
 }
+a:active, a:focus{
+	color:#fff;
+	text-decoration:none;
+
+}
 
 h1,
 h2,
@@ -215,17 +220,18 @@ body {
 				}
 			}
 			aside.contact {
-				width: 155px;
-				height: auto;
+				width: 145px;
+				height: 40px;
 				float: right;
 				margin: 1% 0 0 0;
-				color: $color3;
+				
 				font-size: 0.9em;
 				display: block;
+				line-height: 22px;
 				span.tele {
 					margin: 0;
 					padding: 2%;
-					width: 12%;
+					width: 13%;
 					float: left;
 					display: block;
 					//background:url('../images/phoneicon_05.gif');
@@ -234,7 +240,7 @@ body {
 					//background-position: 50% 50%;
 				}
 				a#contact-number {
-					width: 84%;
+					width: 83%;
 					background-color: $colorbg;
 					padding: 0;
 					display: inline-block;
@@ -245,11 +251,12 @@ body {
 					text-align: center;
 					text-shadow: 1px 1px 1px #000;
 					text-decoration: none;
+					color: $color3;
 					&:active {
-						color: dodgerblue;
+						color: #fff;
 					}
 				}
-				span#opening-times {
+				span#opening-time {
 					display: block;
 					line-height: 20px;
 					color: $colorblk;
@@ -259,6 +266,7 @@ body {
 					text-indent: 0;
 					color: $colorgry;
 					clear: both;
+					
 				}
 			}
 			/*contact end*/
@@ -300,7 +308,7 @@ body {
 						a {
 							text-decoration: none;
 							width: 100%;
-							font-size: 0.80em;
+							font-size: 0.85em;
 							text-align: center;
 							@include borderRaduis(5px 5px 0px 0px);
 							height: 40px;
@@ -355,7 +363,7 @@ body {
 					float: right;
 					form {
 						label {
-							width: 56%;
+							width: 58%;
 							font-size: 0.85em;
 							display: inline-block;
 							text-indent: 5%;
@@ -371,7 +379,7 @@ body {
 							height: 30px;
 							line-height: 30px;
 							font-size: 0.85em;
-							width: 30%;
+							width: 40%;
 							display: inline-block;
 							border-right: solid 1px #e4e2e2;
 							border-top: solid 1px #e4e2e2;
@@ -387,13 +395,13 @@ body {
 								padding: 0.5em 0;
 							}
 							option[value="United_Kingdom"] {
-								background-image: url("../images/United_Kingdom.jpg");
+								background-image: url(../images/United_Kingdom.jpg);
 								background-repeat: no-repeat;
 								background-position: 5% 50%;
 								padding: 0.5em 0;
 							}
 							option[value="France"] {
-								background-image: url("../images/France.jpg");
+								background-image: url(../images/France.jpg);
 								background-repeat: no-repeat;
 								background-position: 5% 50%;
 								padding: 0.5em 0;
@@ -659,7 +667,7 @@ body {
 			#contact-details {
 				background-color: #ffffff;
 				display: block;
-				width: 96%;
+				width: 98%;
 				height: auto;
 				border: 4px $sideboxbg1 solid;
 				margin: 0;
@@ -679,20 +687,20 @@ body {
 					span {
 						height: 100%;
 						float: left;
-						width: 22%;
+						width: 18%;
 						display: inline-block;
 						background-color: $colorpw;
 						img {
 							width: 41%;
 							height: auto;
 							display: block;
-							margin: 10% auto;
+							margin: 11% auto;
 						}
 					}
 					a {
 						display: block;
 						line-height: 20px;
-						font-size: 0.90em;
+						font-size: 1em;
 					}
 				}
 			}
@@ -702,7 +710,7 @@ body {
 					position: relative;
 					z-index: 1;
 					left: 0;
-					top: -556px;
+					top: -564px;
 					padding: 5%;
 					h1 {
 						text-indent: 0;
@@ -710,7 +718,7 @@ body {
 						color: $colorpw;
 						display: block;
 						font-size: 1.28em;
-						margin: 0 0 20% 0;
+						margin: 0 0 25% 0;
 						text-transform: uppercase;
 						line-height: 1.5em;
 					}
@@ -1074,6 +1082,7 @@ body {
 					color: $colorblue2;
 					text-indent: 1%;
 					line-height: 30px;
+					padding: 0.5em 0;
 				}
 				figure {
 					width: 90%;
@@ -1165,17 +1174,17 @@ body {
 				margin: 0px;
 			}
 			aside.contact {
-				width: 150px;
+				width: 140px;
 				span.tele {
 					padding: 2%;
-					width: 12.5%;
+					width: 13%;
 				}
 				a#contact-number {
 					width: 83%;
 					line-height: 30px;
-					font-size: 0.95em;
+					font-size: 0.9em;
 				}
-				span#opening-times {
+				span#opening-time {
 					line-height: 20px;
 					font-size: 0.8em;
 				}
@@ -1190,7 +1199,7 @@ body {
 						width: 16.71%;
 						height: 40px;
 						a {
-							font-size: 0.75em;
+							font-size: 0.8em;
 							&:hover {}
 							&:visited {}
 							&:focus {}
@@ -1356,11 +1365,12 @@ body {
 				li {
 					line-height: 20px;
 					height: 80px;
+					font-size: 0.95em;
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
-						width: 22%;
+						width: 18%;
 						img {
 							width: 41%;
 							margin: 10% auto;
@@ -1368,7 +1378,7 @@ body {
 					}
 					a {
 						line-height: 20px;
-						font-size: 0.90em;
+						font-size: 1em;
 					}
 				}
 			}
@@ -1602,7 +1612,6 @@ body {
 				h1 {
 					font-size: 0.75em;
 					height: 30px;
-					text-indent: 1%;
 					line-height: 30px;
 				}
 				figure {
@@ -1665,17 +1674,17 @@ body {
 				margin: 0px;
 			}
 			aside.contact {
-				width: 145px;
+				width: 140px;
 				span.tele {
 					padding: 2%;
-					width: 13%;
+					width: 12.5%;
 				}
 				a#contact-number {
 					width: 83%;
 					line-height: 30px;
-					font-size: 0.95em;
+					font-size: 0.9em;
 				}
-				span#opening-times {
+				span#opening-time {
 					line-height: 20px;
 				}
 			}
@@ -1832,17 +1841,18 @@ body {
 			width: 20%;
 			margin: 1% 1% 0 0;
 			#contact-details {
-				width: 96%;
+				width: 98%;
 				padding: 10% 0;
 				font-size: 0.70em;
 				li {
 					line-height: 20px;
 					height: 80px;
+					font-size: 0.9em;
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
-						width: 22%;
+						width: 18%;
 						img {
 							width: 41%;
 							margin: 10% auto;
@@ -1850,7 +1860,7 @@ body {
 					}
 					a {
 						line-height: 20px;
-						font-size: 0.90em;
+						font-size: 1em;
 					}
 				}
 			}
@@ -1964,7 +1974,7 @@ body {
 							width: 16%;
 							height: 35px;
 							line-height: 35px;
-							font-size: 0.85em;
+							font-size: 0.8em;
 						}
 						input {
 							width: 65%;
@@ -2078,7 +2088,7 @@ body {
 				margin: 5px 0 0 5px;
 				h1 {
 					font-size: 0.75em;
-					text-indent: 1%;
+					
 				}
 				figure {
 					width: 90%;
@@ -2136,16 +2146,16 @@ body {
 				margin: 0px;
 			}
 			aside.contact {
-				width: 140px;
+				width: 130px;
 				span.tele {
 					padding: 2%;
-					width: 13.5%;
+					width: 14%;
 				}
 				a#contact-number {
-					font-size: 0.95em;
+					font-size: 0.85em;
 					width: 82%;
 				}
-				span#opening-times {
+				span#opening-time {
 					line-height: 20px;
 					font-size: 0.75em;
 				}
@@ -2310,15 +2320,15 @@ body {
 						font-weight: bold;
 					}
 					span {
-						width: 22%;
+						width: 18%;
 						img {
-							width: 41%;
+							width: 48%;
 							margin: 10% auto;
 						}
 					}
 					a {
 						line-height: 20px;
-						font-size: 0.90em;
+						font-size: 1em;
 					}
 				}
 			}
@@ -2409,7 +2419,7 @@ body {
 				font-size: 1em;
 			}
 			p {
-				font-size: 0.8em;
+				font-size: 0.75em;
 				margin: 0;
 			}
 			#contactform {
@@ -2423,7 +2433,7 @@ body {
 							width: 16%;
 							height: 35px;
 							line-height: 35px;
-							font-size: 0.85em;
+							font-size: 0.75em;
 						}
 						input {
 							width: 65%;
@@ -2537,7 +2547,7 @@ body {
 				margin: 5px 0 0 5px;
 				h1 {
 					font-size: 0.75em;
-					text-indent: 1%;
+					
 				}
 				figure {
 					width: 90%;
@@ -2594,16 +2604,16 @@ body {
 				width: 28.012%;
 			}
 			aside.contact {
-				width: 140px;
+				width: 130px;
 				span.tele {
 					padding: 2%;
 					width: 13.5%;
 				}
 				a#contact-number {
-					font-size: 0.95em;
+					font-size: 0.9em;
 					width: 82%;
 				}
-				span#opening-times {
+				span#opening-time {
 					line-height: 20px;
 				}
 			}
@@ -2623,8 +2633,8 @@ body {
 					}
 				}
 				aside#language-box {
-					width: 13%;
-					margin-left: 2.5%;
+					width: 15%;
+
 					form {
 						label {
 							width: 58%;
@@ -2763,15 +2773,15 @@ body {
 						font-weight: bold;
 					}
 					span {
-						width: 22%;
+						width: 18%;
 						img {
-							width: 41%;
+							width: 48%;
 							margin: 10% auto;
 						}
 					}
 					a {
 						line-height: 20px;
-						font-size: 0.90em;
+						font-size: 1em;
 					}
 				}
 			}
@@ -2982,7 +2992,7 @@ body {
 				margin: 5px 0 0 5px;
 				h1 {
 					font-size: 0.75em;
-					text-indent: 1%;
+					
 				}
 				figure {
 					width: 90%;
@@ -3038,17 +3048,18 @@ body {
 				width: 30.0120048%;
 			}
 			aside.contact {
-				width: 130px;
+				width: 120px;
 				span.tele {
 					padding: 2%;
 					width: 12%;
+					line-height:19px;
 				}
 				a#contact-number {
 					font-size: 0.8em;
 					line-height: 25px;
-					width: 83%;
+					width: 82%;
 				}
-				span#opening-times {
+				span#opening-time {
 					line-height: 20px;
 					font-size: 0.7em;
 				}
@@ -3212,19 +3223,20 @@ body {
 				li {
 					line-height: 20px;
 					height: 80px;
+					font-size: 0.8em;
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
-						width: 22%;
+						width: 18%;
 						img {
-							width: 41%;
+							width: 48%;
 							margin: 10% auto;
 						}
 					}
 					a {
 						line-height: 20px;
-						font-size: 0.90em;
+						font-size: 1em;
 					}
 				}
 			}
@@ -3304,7 +3316,7 @@ body {
 			padding: 1%;
 			line-height: 1.5em;
 			h1 {
-				font-size: 1.2em;
+				font-size: 1.1em;
 			}
 			h2 {
 				font-size: 1.05em;
@@ -3313,8 +3325,8 @@ body {
 				font-size: 1em;
 			}
 			p {
-				font-size: 0.75em;
-				margin: 0;
+				font-size: 0.7em;
+				
 			}
 			#contactform {
 				width: 100%;
@@ -3325,7 +3337,7 @@ body {
 						margin: 5px 0 10px 0;
 						label {
 							width: 16%;
-							font-size: 0.8em;
+							font-size: 0.75em;
 						}
 						input {
 							width: 65%;
@@ -3429,7 +3441,7 @@ body {
 				margin: 5px 0 0 5px;
 				h1 {
 					font-size: 0.75em;
-					text-indent: 0%;
+					text-indent: 0;
 					height: auto;
 					line-height: 20px;
 				}
@@ -3497,7 +3509,7 @@ body {
 					line-height: 25px;
 					width: 83%;
 				}
-				span#opening-times {
+				span#opening-time {
 					line-height: 20px;
 				}
 			}
@@ -3664,15 +3676,15 @@ body {
 						font-weight: bold;
 					}
 					span {
-						width: 22%;
+						width: 18%;
 						img {
-							width: 41%;
+							width: 48%;
 							margin: 10% auto;
 						}
 					}
 					a {
 						line-height: 20px;
-						font-size: 0.90em;
+						font-size: 1em;
 					}
 				}
 			}
@@ -3755,7 +3767,7 @@ body {
 				font-size: 1.2em;
 			}
 			h2 {
-				font-size: 1.05em;
+				font-size: 1.1em;
 			}
 			h3 {
 				font-size: 1em;
@@ -3773,7 +3785,7 @@ body {
 						margin: 5px 0 10px 0;
 						label {
 							width: 16%;
-							font-size: 0.8em;
+							font-size: 0.75em;
 						}
 						input {
 							width: 65%;
@@ -3876,8 +3888,8 @@ body {
 				width: 30.5%;
 				margin: 5px 0 0 5px;
 				h1 {
-					font-size: 0.75em;
-					text-indent: 0%;
+					font-size: 0.7em;
+					
 				}
 				figure {
 					width: 90%;
@@ -3944,7 +3956,7 @@ body {
 					line-height: 25px;
 					width: 83%;
 				}
-				span#opening-times {
+				span#opening-time {
 					line-height: 20px;
 				}
 			}
@@ -4151,15 +4163,15 @@ body {
 						font-weight: bold;
 					}
 					span {
-						width: 22%;
+						width: 18%;
 						img {
-							width: 41%;
+							width: 48%;
 							margin: 10% auto;
 						}
 					}
 					a {
 						line-height: 20px;
-						font-size: 0.90em;
+						font-size: 1em;
 					}
 				}
 			}
@@ -4245,7 +4257,7 @@ body {
 				font-size: 1em;
 			}
 			h3 {
-				font-size: 1em;
+				font-size: 0.95em;
 			}
 			p {
 				font-size: 0.7em;
@@ -4261,7 +4273,7 @@ body {
 						margin: 5px 0 10px 0;
 						label {
 							width: 16%;
-							font-size: 0.8em;
+							font-size: 0.75em;
 						}
 						input {
 							width: 65%;
@@ -4364,10 +4376,7 @@ body {
 				width: 30.5%;
 				margin: 5px 0 0 5px;
 				h1 {
-					font-size: 0.75em;
-					text-indent: 0%;
-					height: auto;
-					line-height: 20px;
+					font-size: 0.7em;
 				}
 				figure {
 					width: 90%;
@@ -4432,7 +4441,7 @@ body {
 					font-size: 0.85em;
 					line-height: 25px;
 				}
-				span#opening-times {
+				span#opening-time {
 					line-height: 20px;
 				}
 			}
@@ -4609,15 +4618,15 @@ body {
 						font-weight: bold;
 					}
 					span {
-						width: 22%;
+						width: 18%;
 						img {
-							width: 41%;
+							width: 48%;
 							margin: 10% auto;
 						}
 					}
 					a {
 						line-height: 20px;
-						font-size: 0.90em;
+						
 					}
 				}
 			}
@@ -4697,13 +4706,13 @@ body {
 			padding: 1%;
 			line-height: 1.5em;
 			h1 {
-				font-size: 1.1em;
+				font-size: 1em;
 			}
 			h2 {
-				font-size: 1em;
+				font-size: 0.95em;
 			}
 			h3 {
-				font-size: 1em;
+				font-size: 0.9em;
 			}
 			p {
 				font-size: 0.7em;
@@ -4719,7 +4728,7 @@ body {
 						margin: 5px 0 10px 0;
 						label {
 							width: 16%;
-							font-size: 0.8em;
+							font-size: 0.75em;
 						}
 						input {
 							width: 65%;
@@ -4822,10 +4831,7 @@ body {
 				width: 30.5%;
 				margin: 5px 0 0 5px;
 				h1 {
-					font-size: 0.75em;
-					text-indent: 0%;
-					height: auto;
-					line-height: 20px;
+					font-size: 0.7em;
 				}
 				figure {
 					width: 90%;
@@ -4878,7 +4884,7 @@ body {
 			height: 107px;
 			figure#logo {
 				height: 64px;
-				width: 35.012%;
+				width: 34.012%;
 			}
 			aside.contact {
 				width: 120px;
@@ -4887,9 +4893,10 @@ body {
 				}
 				a#contact-number {
 					font-size: 0.8em;
-					line-height: 25px;
+					line-height: 26px;
+					width: 82%;
 				}
-				span#opening-times {
+				span#opening-time {
 					line-height: 20px;
 				}
 			}
@@ -5069,15 +5076,15 @@ body {
 						font-weight: bold;
 					}
 					span {
-						width: 22%;
+						width: 18%;
 						img {
-							width: 41%;
+							width: 48%;
 							margin: 10% auto;
 						}
 					}
 					a {
 						line-height: 20px;
-						font-size: 0.90em;
+						
 					}
 				}
 			}
@@ -5157,13 +5164,13 @@ body {
 			padding: 1%;
 			line-height: 1.5em;
 			h1 {
-				font-size: 1.1em;
+				font-size: 1em;
 			}
 			h2 {
-				font-size: 1em;
+				font-size: 0.95em;
 			}
 			h3 {
-				font-size: 1em;
+				font-size: 0.9em;
 			}
 			p {
 				font-size: 0.7em;
@@ -5179,7 +5186,7 @@ body {
 						margin: 5px 0 10px 0;
 						label {
 							width: 16%;
-							font-size: 0.8em;
+							font-size: 0.75em;
 						}
 						input {
 							width: 65%;
@@ -5282,9 +5289,7 @@ body {
 				width: 30.5%;
 				margin: 5px 0 0 5px;
 				h1 {
-					font-size: 0.75em;
-					text-indent: 0%;
-					height: auto;
+					font-size: 0.7em;
 				}
 				figure {
 					width: 90%;
@@ -5349,9 +5354,9 @@ body {
 					line-height: 25px;
 					width: 83%;
 				}
-				span#opening-times {
+				span#opening-time {
 					line-height: 20px;
-					font-size: 0.75em;
+					font-size: 0.65em;
 				}
 			}
 			/*contact end*/
@@ -5530,15 +5535,15 @@ body {
 						font-weight: bold;
 					}
 					span {
-						width: 22%;
+						width: 18%;
 						img {
-							width: 41%;
+							width: 48%;
 							margin: 10% auto;
 						}
 					}
 					a {
 						line-height: 20px;
-						font-size: 0.90em;
+						
 					}
 				}
 			}
@@ -5618,13 +5623,13 @@ body {
 			padding: 1%;
 			line-height: 1.5em;
 			h1 {
-				font-size: 1.1em;
+				font-size: 1em;
 			}
 			h2 {
-				font-size: 1em;
+				font-size: 0.95em;
 			}
 			h3 {
-				font-size: 1em;
+				font-size: 0.9em;
 			}
 			p {
 				font-size: 0.7em;
@@ -5640,7 +5645,7 @@ body {
 						margin: 5px 0 10px 0;
 						label {
 							width: 16%;
-							font-size: 0.8em;
+							font-size: 0.75em;
 						}
 						input {
 							width: 65%;
@@ -5744,10 +5749,7 @@ body {
 				width: 30.5%;
 				margin: 5px 0 0 5px;
 				h1 {
-					font-size: 0.75em;
-					text-indent: 0%;
-					height: auto;
-					line-height: 1.5em;
+					font-size: 0.7em;
 				}
 				figure {
 					width: 90%;
@@ -5800,7 +5802,7 @@ body {
 			height: 107px;
 			figure#logo {
 				height: 65px;
-				width: 42.012%;
+				width: 46.012%;
 			}
 			aside.contact {
 				width: 110px;
@@ -5812,9 +5814,9 @@ body {
 					line-height: 25px;
 					width: 81%;
 				}
-				span#opening-times {
+				span#opening-time {
 					line-height: 20px;
-					font-size: 0.7em;
+					font-size: 0.6em;
 				}
 			}
 			/*contact end*/
@@ -5992,15 +5994,15 @@ body {
 						font-weight: bold;
 					}
 					span {
-						width: 22%;
+						width: 18%;
 						img {
-							width: 41%;
+							width: 48%;
 							margin: 10% auto;
 						}
 					}
 					a {
 						line-height: 20px;
-						font-size: 0.90em;
+						
 					}
 				}
 			}
@@ -6080,13 +6082,13 @@ body {
 			padding: 1%;
 			line-height: 1.5em;
 			h1 {
-				font-size: 1.1em;
+				font-size: 1em;
 			}
 			h2 {
-				font-size: 1em;
+				font-size: 0.95em;
 			}
 			h3 {
-				font-size: 1em;
+				font-size: 0.9em;
 			}
 			p {
 				font-size: 0.7em;
@@ -6208,8 +6210,6 @@ body {
 				margin: 5px 0 0 5px;
 				h1 {
 					font-size: 0.7em;
-					text-indent: 0%;
-					height: auto;
 				}
 				figure {
 					width: 90%;
@@ -6263,7 +6263,7 @@ body {
 			height: 107px;
 			figure#logo {
 				height: 67px;
-				width: 52.012%;
+				width: 60.012%;
 			}
 			aside.contact {
 				width: 110px;
@@ -6275,9 +6275,9 @@ body {
 					line-height: 25px;
 					width: 80%;
 				}
-				span#opening-times {
+				span#opening-time {
 					line-height: 20px;
-					font-size: 0.65em;
+					font-size: 0.6em;
 				}
 			}
 			/*contact end*/
@@ -6312,12 +6312,12 @@ body {
 					}
 				}
 				aside#language-box {
-					width: 35%;
+					width: 31%;
 					margin-left: 0%;
 					form {
 						label {
 							width: 58%;
-							font-size: 0.7em;
+							font-size: 0.65em;
 						}
 						select {
 							font-size: 0.65em;
@@ -6456,15 +6456,15 @@ body {
 						font-weight: bold;
 					}
 					span {
-						width: 22%;
+						width: 18%;
 						img {
-							width: 41%;
+							width: 48%;
 							margin: 10% auto;
 						}
 					}
 					a {
 						line-height: 20px;
-						font-size: 0.90em;
+						
 					}
 				}
 			}
@@ -6547,7 +6547,9 @@ body {
 				font-size: 1em;
 			}
 			h2 {
-				font-size: 0.85em;
+				font-size: 0.9em;
+				height: auto;
+				line-height: 25px;
 			}
 			h3 {
 				font-size: 0.8em;
@@ -6566,7 +6568,7 @@ body {
 						margin: 5px 0 10px 0;
 						label {
 							width: 25%;
-							font-size: 0.75em;
+							font-size: 0.7em;
 						}
 						input {
 							width: 65%;
@@ -6673,8 +6675,6 @@ body {
 				margin: 5px 0 0 5px;
 				h1 {
 					font-size: 0.7em;
-					text-indent: 0%;
-					height: auto;
 				}
 				figure {
 					width: 90%;
@@ -6736,7 +6736,7 @@ body {
 			height: 97px;
 			figure#logo {
 				height: 57px;
-				width: 52.012%;
+				width: 56.012%;
 			}
 			aside.contact {
 				width: 100px;
@@ -6748,7 +6748,7 @@ body {
 					line-height: 25px;
 					width: 80%;
 				}
-				span#opening-times {
+				span#opening-time {
 					line-height: 20px;
 					font-size: 0.55em;
 				}
@@ -6778,19 +6778,17 @@ body {
 								height: 50px;
 								line-height: 50px;
 							}
-							&:visited {}
-							&:focus {}
-							&:active {}
+							
 						}
 					}
 				}
 				aside#language-box {
-					width: 35%;
+					width: 33%;
 					margin-left: 0%;
 					form {
 						label {
 							width: 58%;
-							font-size: 0.7em;
+							font-size: 0.65em;
 						}
 						select {
 							font-size: 0.65em;
@@ -6929,15 +6927,15 @@ body {
 						font-weight: bold;
 					}
 					span {
-						width: 22%;
+						width: 18%;
 						img {
-							width: 41%;
+							width: 48%;
 							margin: 10% auto;
 						}
 					}
 					a {
 						line-height: 20px;
-						font-size: 0.90em;
+						
 					}
 				}
 			}
@@ -7017,10 +7015,10 @@ body {
 			padding: 1%;
 			line-height: 1.5em;
 			h1 {
-				font-size: 0.9em;
+				font-size: 0.95em;
 			}
 			h2 {
-				font-size: 0.8em;
+				font-size: 0.85em;
 			}
 			h3 {
 				font-size: 0.75em;
@@ -7039,7 +7037,7 @@ body {
 						margin: 5px 0 10px 0;
 						label {
 							width: 25%;
-							font-size: 0.75em;
+							font-size: 0.7em;
 						}
 						input {
 							width: 65%;
@@ -7146,8 +7144,6 @@ body {
 				margin: 5px 0 0 5px;
 				h1 {
 					font-size: 0.65em;
-					text-indent: 0%;
-					height: auto;
 				}
 				figure {
 					width: 90%;
@@ -7213,19 +7209,21 @@ body {
 			height: 97px;
 			figure#logo {
 				height: 57px;
-				width: 54.012%;
+				width: 56.012%;
 			}
 			aside.contact {
 				width: 100px;
 				span.tele {
-					width: 16%;
+					    width: 15%;
+    					margin-top: 1%;
+					
 				}
 				a#contact-number {
-					font-size: 0.7em;
-					line-height: 25px;
+					font-size: 0.65em;
+					line-height: 24px;
 					width: 80%;
 				}
-				span#opening-times {
+				span#opening-time {
 					line-height: 20px;
 					font-size: 0.55em;
 				}
@@ -7262,12 +7260,12 @@ body {
 					}
 				}
 				aside#language-box {
-					width: 35%;
+					width: 33%;
 					margin-left: 0%;
 					form {
 						label {
 							width: 58%;
-							font-size: 0.7em;
+							font-size: 0.65em;
 						}
 						select {
 							font-size: 0.65em;
@@ -7406,15 +7404,15 @@ body {
 						font-weight: bold;
 					}
 					span {
-						width: 22%;
+						width: 18%;
 						img {
-							width: 41%;
+							width: 48%;
 							margin: 10% auto;
 						}
 					}
 					a {
 						line-height: 20px;
-						font-size: 0.90em;
+						
 					}
 				}
 			}
@@ -7497,13 +7495,13 @@ body {
 				font-size: 0.9em;
 			}
 			h2 {
-				font-size: 0.7em;
+				font-size: 0.8em;
 			}
 			h3 {
-				font-size: 0.65em;
+				font-size: 0.7em;
 			}
 			p {
-				font-size: 0.7em;
+				font-size: 0.65em;
 				margin: 0;
 				letter-spacing: 0.01em;
 			}
@@ -7516,7 +7514,7 @@ body {
 						margin: 5px 0 10px 0;
 						label {
 							width: 25%;
-							font-size: 0.75em;
+							font-size: 0.7em;
 						}
 						input {
 							width: 65%;
@@ -7622,8 +7620,7 @@ body {
 				margin: 5px 0 0 5px;
 				h1 {
 					font-size: 0.65em;
-					text-indent: 0%;
-					height: auto;
+
 				}
 				figure {
 					width: 90%;
