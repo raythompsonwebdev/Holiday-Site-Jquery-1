@@ -736,6 +736,7 @@ body {
 			height: auto;
 			float: left;
 			margin: 1% 0;
+			min-height: 740px;
 			h1 {
 				color: $sideboxcolor1;
 				font-weight: bold;
@@ -977,6 +978,7 @@ body {
 							@include gradient($colorbtn2,
 							$colorbtn3);
 							display: block;
+							margin: 0.5em 0 0 0;
 						}
 						a:hover {
 							color: $colorpw;
@@ -1087,25 +1089,31 @@ body {
 				figure {
 					width: 90%;
 					margin: 1% auto;
-				}
-				figcaption {
-					p {
-						font-size: 0.75em;
-						margin: 2%;
-						width: 96%;
-						line-height: 2em;
+					img.service-box-img{
+						width:100%;
+					
 					}
-					a {
-						font-size: 0.75em;
-						display: block;
-						text-decoration: none;
-						margin-left: 2%;
-						&:hover {
-							font-size: 0.85em;
-							color: blue;
+				    figcaption {
+						p {
+							font-size: 0.75em;
+							margin: 2%;
+							width: 96%;
+							line-height: 2em;
+						}
+						a {
+							font-size: 0.75em;
+							display: block;
+							text-decoration: none;
+							margin-left: 2%;
+							&:hover {
+								font-size: 0.85em;
+								color: blue;
+							}
 						}
 					}
+						
 				}
+				
 			}
 		}
 		/*content2 end*/
@@ -1617,20 +1625,21 @@ body {
 				figure {
 					width: 90%;
 					margin: 1% auto;
-				}
-				figcaption {
-					p {
-						font-size: 0.7em;
-						margin: 2%;
-						width: 96%;
-					}
-					a {
-						font-size: 0.75em;
-						margin-left: 2%;
-						&:hover {
-							font-size: 0.85em;
+					figcaption {
+						p {
+							font-size: 0.7em;
+							margin: 2%;
+							width: 96%;
+						}
+						a {
+							font-size: 0.75em;
+							margin-left: 2%;
+							&:hover {
+								font-size: 0.85em;
+							}
 						}
 					}
+					
 				}
 			}
 		}
@@ -2093,21 +2102,23 @@ body {
 				figure {
 					width: 90%;
 					margin: 1% auto;
-				}
-				figcaption {
-					p {
-						font-size: 0.7em;
-						margin: 2%;
-						width: 96%;
-					}
-					a {
-						font-size: 0.75em;
-						margin-left: 2%;
-						&:hover {
-							font-size: 0.85em;
+					figcaption {
+						p {
+							font-size: 0.7em;
+							margin: 2%;
+							width: 96%;
+						}
+						a {
+							font-size: 0.75em;
+							margin-left: 2%;
+							&:hover {
+								font-size: 0.85em;
+							}
 						}
 					}
+					
 				}
+				
 			}
 		}
 		/*content2 end*/
@@ -2552,21 +2563,23 @@ body {
 				figure {
 					width: 90%;
 					margin: 1% auto;
-				}
-				figcaption {
-					p {
-						font-size: 0.7em;
-						margin: 2%;
-						width: 96%;
-					}
-					a {
-						font-size: 0.75em;
-						margin-left: 2%;
-						&:hover {
-							font-size: 0.85em;
+					figcaption {
+						p {
+							font-size: 0.7em;
+							margin: 2%;
+							width: 96%;
+						}
+						a {
+							font-size: 0.75em;
+							margin-left: 2%;
+							&:hover {
+								font-size: 0.85em;
+							}
 						}
 					}
+					
 				}
+				
 			}
 		}
 		/*content2 end*/
@@ -2997,21 +3010,23 @@ body {
 				figure {
 					width: 90%;
 					margin: 1% auto;
-				}
-				figcaption {
-					p {
-						font-size: 0.7em;
-						margin: 2%;
-						width: 96%;
-					}
-					a {
-						font-size: 0.75em;
-						margin-left: 2%;
-						&:hover {
-							font-size: 0.85em;
+					figcaption {
+						p {
+							font-size: 0.7em;
+							margin: 2%;
+							width: 96%;
+						}
+						a {
+							font-size: 0.75em;
+							margin-left: 2%;
+							&:hover {
+								font-size: 0.85em;
+							}
 						}
 					}
+					
 				}
+				
 			}
 		}
 		/*content2 end*/
@@ -3448,21 +3463,23 @@ body {
 				figure {
 					width: 90%;
 					margin: 1% auto;
-				}
-				figcaption {
-					p {
-						font-size: 0.65em;
-						margin: 2%;
-						width: 96%;
-					}
-					a {
-						font-size: 0.75em;
-						margin-left: 2%;
-						&:hover {
-							font-size: 0.8em;
+					figcaption {
+						p {
+							font-size: 0.65em;
+							margin: 2%;
+							width: 96%;
+						}
+						a {
+							font-size: 0.75em;
+							margin-left: 2%;
+							&:hover {
+								font-size: 0.8em;
+							}
 						}
 					}
+					
 				}
+
 			}
 		}
 		/*content2 end*/
@@ -3894,21 +3911,23 @@ body {
 				figure {
 					width: 90%;
 					margin: 1% auto;
-				}
-				figcaption {
-					p {
-						font-size: 0.65em;
-						margin: 2%;
-						width: 96%;
-					}
-					a {
-						font-size: 0.75em;
-						margin-left: 2%;
-						&:hover {
-							font-size: 0.8em;
+					figcaption {
+						p {
+							font-size: 0.65em;
+							margin: 2%;
+							width: 96%;
+						}
+						a {
+							font-size: 0.75em;
+							margin-left: 2%;
+							&:hover {
+								font-size: 0.8em;
+							}
 						}
 					}
+					
 				}
+				
 			}
 		}
 		/*content2 end*/
@@ -4381,21 +4400,23 @@ body {
 				figure {
 					width: 90%;
 					margin: 1% auto;
-				}
-				figcaption {
-					p {
-						font-size: 0.65em;
-						margin: 2%;
-						width: 96%;
-					}
-					a {
-						font-size: 0.75em;
-						margin-left: 2%;
-						&:hover {
-							font-size: 0.8em;
+					figcaption {
+						p {
+							font-size: 0.65em;
+							margin: 2%;
+							width: 96%;
+						}
+						a {
+							font-size: 0.75em;
+							margin-left: 2%;
+							&:hover {
+								font-size: 0.8em;
+							}
 						}
 					}
+					
 				}
+				
 			}
 		}
 		/*content2 end*/
@@ -4836,21 +4857,23 @@ body {
 				figure {
 					width: 90%;
 					margin: 1% auto;
-				}
-				figcaption {
-					p {
-						font-size: 0.65em;
-						margin: 2%;
-						width: 96%;
-					}
-					a {
-						font-size: 0.75em;
-						margin-left: 2%;
-						&:hover {
-							font-size: 0.8em;
+					figcaption {
+						p {
+							font-size: 0.65em;
+							margin: 2%;
+							width: 96%;
+						}
+						a {
+							font-size: 0.75em;
+							margin-left: 2%;
+							&:hover {
+								font-size: 0.8em;
+							}
 						}
 					}
+					
 				}
+				
 			}
 		}
 		/*content2 end*/
@@ -5294,21 +5317,23 @@ body {
 				figure {
 					width: 90%;
 					margin: 1% auto;
-				}
-				figcaption {
-					p {
-						font-size: 0.65em;
-						margin: 2%;
-						width: 96%;
-					}
-					a {
-						font-size: 0.75em;
-						margin-left: 2%;
-						&:hover {
-							font-size: 0.8em;
+					figcaption {
+						p {
+							font-size: 0.65em;
+							margin: 2%;
+							width: 96%;
+						}
+						a {
+							font-size: 0.75em;
+							margin-left: 2%;
+							&:hover {
+								font-size: 0.8em;
+							}
 						}
 					}
+					
 				}
+				
 			}
 		}
 		/*content2 end*/
@@ -5754,21 +5779,23 @@ body {
 				figure {
 					width: 90%;
 					margin: 1% auto;
-				}
-				figcaption {
-					p {
-						font-size: 0.65em;
-						margin: 2%;
-						width: 96%;
-					}
-					a {
-						font-size: 0.75em;
-						margin-left: 2%;
-						&:hover {
-							font-size: 0.8em;
+					figcaption {
+						p {
+							font-size: 0.65em;
+							margin: 2%;
+							width: 96%;
+						}
+						a {
+							font-size: 0.75em;
+							margin-left: 2%;
+							&:hover {
+								font-size: 0.8em;
+							}
 						}
 					}
+					
 				}
+				
 			}
 		}
 		/*content2 end*/
@@ -6166,7 +6193,7 @@ body {
 			}
 			/*Holiday details packages page end*/
 			.holiday_details_small {
-				width: 60%;
+				width: 70%;
 				float: none;
 				display: block;
 				margin: 1em auto;
@@ -6206,29 +6233,39 @@ body {
 			}
 			/*Holiday details Best deals page end*/
 			.servicebox {
-				width: 29.5%;
+				width: 93.5%;
 				margin: 5px 0 0 5px;
 				h1 {
-					font-size: 0.7em;
+					font-size: 0.9em;
+					text-align:center;
 				}
 				figure {
 					width: 90%;
 					margin: 1% auto;
-				}
-				figcaption {
-					p {
-						font-size: 0.65em;
-						margin: 2%;
-						width: 96%;
+					img.service-box-img{
+						
+						width:46%;
+						display:block;
+						margin:auto;
+					
 					}
-					a {
-						font-size: 0.75em;
-						margin-left: 2%;
-						&:hover {
-							font-size: 0.8em;
+					figcaption {
+						p {
+							font-size: 0.7em;
+							margin: 1%;
+							width: 98%;
+						}
+						a {
+							font-size: 0.85em;
+							margin-left: 1%;
+							&:hover {
+								font-size: 0.9em;
+							}
 						}
 					}
+					
 				}
+				
 			}
 		}
 		/*content2 end*/
@@ -6249,6 +6286,475 @@ body {
 						font-size: 0.55em;
 					}
 				}
+			}
+		}
+	}
+	/*footer end*/
+}
+
+@media only screen and (max-width: 414px) {
+	#wrapper {
+		width: 94%;
+		header {
+			height: 107px;
+			figure#logo {
+				height: 65px;
+				width: 56.012%;
+			}
+			aside.contact {
+				width: 110px;
+				span.tele {
+					width: 14.5%;
+				}
+				a#contact-number {
+					font-size: 0.75em;
+					line-height: 25px;
+					width: 81%;
+				}
+				span#opening-time {
+					line-height: 20px;
+					font-size: 0.6em;
+				}
+			}
+			/*contact end*/
+			nav {
+				height: 40px;
+				margin-bottom: 0px;
+				#toggle-menu {
+					left: 15px;
+					top: 65px;
+					font-size: 0.9em;
+				}
+				ul {
+					left: 3%;
+					top: 108px;
+					li {
+						width: 100%;
+						height: 50px;
+						line-height: 50px;
+						a {
+							font-size: 1em;
+							height: 50px;
+							line-height: 50px;
+							&:hover {
+								height: 50px;
+								line-height: 50px;
+							}
+							&:visited {}
+							&:focus {}
+							&:active {}
+						}
+					}
+				}
+				aside#language-box {
+					width: 29%;
+					margin-left: 0%;
+					form {
+						span {
+							width: 58%;
+							font-size: 0.7em;
+						}
+						select {
+							font-size: 0.65em;
+							width: 40%;
+						}
+					}
+				}
+			}
+			/*nav end*/
+		}
+		/*header end*/
+		#leftside {
+			width: 30%;
+			padding-top: 1%;
+			display: none;
+			.leftsidebox {
+				width: 96%;
+				margin-bottom: 1%;
+				a {
+					margin-left: 10px;
+					font-size: 0.9em;
+					&:hover {
+						height: 30px;
+						line-height: 30px;
+					}
+				}
+				h2 {
+					font-size: 1em;
+					text-indent: 2%;
+				}
+				#search_form {
+					padding: 2%;
+					label {
+						width: 96%;
+						font-size: 0.8em;
+					}
+					ul {
+						width: 100%;
+						li {
+							width: 96%;
+							select.destination1 {
+								font-size: 0.75em;
+							}
+							select.time_1 {
+								width: 27.1%;
+								font-size: 0.75em;
+							}
+							select#time_2 {
+								width: 43%;
+								font-size: 0.75em;
+							}
+						}
+						li.misc_inner {
+							width: 48%;
+							select.misc {
+								width: 98%;
+								font-size: 0.75em;
+							}
+							label {
+								width: 96%;
+								font-size: 0.75em;
+							}
+						}
+					}
+					#searchbtn {
+						clear: left;
+						font-size: 0.9em;
+						&:hover {
+							border: 0;
+						}
+					}
+				}
+				/*#searchform end*/
+				div.destinations {
+					width: 91%;
+					padding: 2.5%;
+					figure {
+						margin-right: 2%;
+						img {
+							width: 42%;
+						}
+						figcaption {
+							width: 53%;
+							h3 {
+								font-size: 0.8em;
+							}
+							p {
+								font-size: 0.7em;
+								line-height: 20px;
+							}
+						}
+					}
+				}
+				/*.destinations end*/
+			}
+			/*.leftsidebox end*/
+		}
+		/*#leftside end*/
+		#leftside2 {
+			width: 15%;
+			margin-top: 1%;
+			display: none;
+			h1 {
+				text-indent: 2%;
+				font-size: 0.65em;
+			}
+			ul {
+				width: 90%;
+				padding: 2%;
+				li {
+					margin: 0 0 2% 0;
+					a {
+						font-size: 0.65em;
+						letter-spacing: 0.02em;
+						&::before {
+							content: "<   ";
+						}
+						&:hover {
+							font-size: 0.7em;
+							line-height: 25px;
+						}
+					}
+				}
+			}
+		}
+		#leftside3 {
+			width: 14%;
+			margin: 1% 1% 0 0;
+			display: none;
+			#contact-details {
+				font-size: 0.65em;
+				li {
+					line-height: 20px;
+					height: 80px;
+					&:first-line {
+						font-weight: bold;
+					}
+					span {
+						width: 18%;
+						img {
+							width: 48%;
+							margin: 10% auto;
+						}
+					}
+					a {
+						line-height: 20px;
+						
+					}
+				}
+			}
+			figure {
+				margin: 0;
+				figcaption {
+					top: -254px;
+					padding: 5%;
+					h1 {
+						font-size: 0.6em;
+						margin: 18% 0;
+						line-height: 1.5em;
+					}
+					p {
+						font-size: 0.45em;
+						line-height: 1.3em;
+					}
+				}
+			}
+		}
+		#content {
+			width: 100%;
+			height: auto;
+			margin: 1% 0;
+			h1 {
+				font-weight: bold;
+			}
+			#banner {
+				width: 96%;
+				height: 240px;
+				img {
+					width: 100%;
+				}
+			}
+			/*banner end*/
+			#offers {
+				width: 100%;
+				height: 540px;
+				h2 {
+					font-size: 1em;
+					letter-spacing: 0.05em;
+				}
+				div.offerbox {
+					width: 46%;
+					figure {
+						margin: 2% 0;
+						img {
+							width: 80%;
+						}
+						figcaption {
+							padding: 5% 0;
+							p {
+								font-size: 0.7em;
+							}
+							p:nth-of-type(2) {
+								font-weight: bold;
+								span {
+									color: $colorbtn1;
+								}
+							}
+						}
+					}
+				}
+				/*offerboxend*/
+			}
+			/*offer end*/
+		}
+		/*content end*/
+		label.error {
+			font-size: 0.9em;
+			index: 2;
+			border: 1px solid black;
+			text-align: 1.5em;
+		}
+		#content2 {
+			width: 100%;
+			padding: 1%;
+			line-height: 1.5em;
+			h1 {
+				font-size: 1em;
+			}
+			h2 {
+				font-size: 0.9em;
+			}
+			h3 {
+				font-size: 0.85em;
+			}
+			p {
+				font-size: 0.7em;
+				margin: 0;
+				letter-spacing: 0.01em;
+			}
+			#contactform {
+				width: 100%;
+				margin: auto;
+				ul {
+					list-style: none;
+					li {
+						margin: 5px 0 10px 0;
+						label {
+							width: 20%;
+							font-size: 0.75em;
+						}
+						input {
+							width: 65%;
+						}
+						textarea {
+							width: 65%;
+							line-height: 1.5em;
+						}
+						#contactbtn {
+							width: 30%;
+							margin-left: 20%;
+						}
+						#contactbtn:hover {
+							color: $colorpw;
+						}
+					}
+				}
+			}
+			/*end of contact form*/
+			.holiday_details {
+				margin: 1% 0 0 0;
+				padding: 1%;
+				width: 96%;
+				h1 {
+					width: 70%;
+					line-height: 40px;
+					font-size: 0.95em;
+				}
+				span.holidayprice {
+					font-size: 0.7em;
+					left: 5%;
+					.offerbox-price {
+						font-weight: bold;
+					}
+				}
+				figure {
+					width: 100%;
+					img {
+						width: 35%;
+					}
+					figcaption {
+						width: 61%;
+						margin-bottom: 1%;
+						p {
+							font-size: 0.7em;
+							line-height: 1.6em;
+						}
+						a {
+							width: 50%;
+							font-size: 0.85em;
+						}
+						a:hover {
+							padding: 1% 2%;
+						}
+					}
+					/*figcaption end*/
+				}
+				/*figure end*/
+			}
+			/*Holiday details packages page end*/
+			.holiday_details_small {
+				width: 70%;
+				float: none;
+				display: block;
+				margin: 1em auto;
+				h1 {
+					font-size: 0.85em;
+				}
+				figure {
+					width: 100%;
+					margin-right: 0;
+					img {
+						width: 47%;
+						margin: 0 0.5em 0 0;
+					}
+					span.holidayprice {
+						font-size: 0.75em;
+						.offerbox-price {
+							display: inline-block;
+						}
+					}
+					figcaption {
+						width: 47%;
+						margin-bottom: 2%;
+						p {
+							font-size: 0.7em;
+							line-height: 1.6em;
+						}
+						a {
+							width: 90%;
+							font-size: 0.8em;
+							padding: 2% 3%;
+						}
+						a:hover {
+							text-align: center;
+						}
+					}
+				}
+			}
+			/*Holiday details Best deals page end*/
+			.servicebox {
+				width: 93.5%;
+				margin: 5px 0 0 5px;
+				h1 {
+					font-size: 0.85em;
+				}
+				figure {
+					width: 90%;
+					margin: 1% auto;
+					img.service-box-img{
+						width:55%;
+					}
+					figcaption {
+						p {
+							font-size: 0.7em;
+							margin: 1%;
+							width: 96%;
+						}
+						a {
+							font-size: 0.75em;
+							margin-left: 1%;
+							&:hover {
+								font-size: 0.8em;
+							}
+						}
+					}
+					
+				}
+				
+			}
+		}
+		/*content2 end*/
+	}
+	/*wrapper end*/
+	footer {
+		width: 98%;
+		margin-top: 0.5em;
+		ul {
+			display: block;
+			li {
+				width: 16.571%;
+				a {
+					font-size: 0.55em;
+					line-height:15px;
+					&:hover {
+						font-size: 0.55em;
+						line-height:15px;
+					}
+					&:active {
+						font-size: 0.55em;
+					}
+				}
+				
 			}
 		}
 	}
@@ -6502,13 +7008,16 @@ body {
 			/*banner end*/
 			#offers {
 				width: 100%;
-				height: 540px;
+				height: auto;
 				h2 {
 					font-size: 1em;
 					letter-spacing: 0.05em;
 				}
 				div.offerbox {
-					width: 46%;
+					width: 60%;
+					display:block;
+					float:none;
+					margin:0.5em auto;
 					figure {
 						margin: 2% 0;
 						img {
@@ -6517,7 +7026,7 @@ body {
 						figcaption {
 							padding: 5% 0;
 							p {
-								font-size: 0.7em;
+								font-size: 0.85em;
 							}
 							p:nth-of-type(2) {
 								font-weight: bold;
@@ -6671,29 +7180,31 @@ body {
 			}
 			/*Holiday details Best deals page end*/
 			.servicebox {
-				width: 29.5%;
+				
 				margin: 5px 0 0 5px;
 				h1 {
-					font-size: 0.7em;
+					font-size: 0.85em;
 				}
 				figure {
 					width: 90%;
 					margin: 1% auto;
-				}
-				figcaption {
-					p {
-						font-size: 0.65em;
-						margin: 2%;
-						width: 96%;
-					}
-					a {
-						font-size: 0.75em;
-						margin-left: 2%;
-						&:hover {
-							font-size: 0.8em;
+					figcaption {
+						p {
+							font-size: 0.65em;
+							margin: 1%;
+							width: 96%;
+						}
+						a {
+							font-size: 0.7em;
+							margin-left: 1%;
+							&:hover {
+								font-size: 0.75em;
+							}
 						}
 					}
+					
 				}
+				
 			}
 		}
 		/*content2 end*/
@@ -6973,13 +7484,13 @@ body {
 			/*banner end*/
 			#offers {
 				width: 100%;
-				height: 540px;
+				
 				h2 {
 					font-size: 1em;
 					letter-spacing: 0.05em;
 				}
 				div.offerbox {
-					width: 45%;
+					width: 70%;
 					figure {
 						margin: 2% 0;
 						img {
@@ -6988,7 +7499,7 @@ body {
 						figcaption {
 							padding: 5% 0;
 							p {
-								font-size: 0.65em;
+								font-size: 0.85em;
 							}
 							p:nth-of-type(2) {
 								font-weight: bold;
@@ -7140,29 +7651,31 @@ body {
 			}
 			/*Holiday details Best deals page end*/
 			.servicebox {
-				width: 28.5%;
+				
 				margin: 5px 0 0 5px;
 				h1 {
-					font-size: 0.65em;
+					font-size: 0.85em;
 				}
 				figure {
 					width: 90%;
 					margin: 1% auto;
-				}
-				figcaption {
-					p {
-						font-size: 0.6em;
-						margin: 2%;
-						width: 96%;
-					}
-					a {
-						font-size: 0.7em;
-						margin-left: 2%;
-						&:hover {
+					figcaption {
+						p {
+							font-size: 0.65em;
+							margin: 1%;
+							width: 96%;
+						}
+						a {
 							font-size: 0.75em;
+							margin-left: 1%;
+							&:hover {
+								font-size: 0.8em;
+							}
 						}
 					}
+					
 				}
+				
 			}
 		}
 		/*content2 end*/
@@ -7450,13 +7963,13 @@ body {
 			/*banner end*/
 			#offers {
 				width: 100%;
-				height: 540px;
+				
 				h2 {
 					font-size: 1em;
 					letter-spacing: 0.05em;
 				}
 				div.offerbox {
-					width: 45%;
+					width: 70%;
 					figure {
 						margin: 2% 0;
 						img {
@@ -7465,7 +7978,7 @@ body {
 						figcaption {
 							padding: 5% 0;
 							p {
-								font-size: 0.55em;
+								font-size: 0.80em;
 							}
 							p:nth-of-type(2) {
 								font-weight: bold;
@@ -7616,30 +8129,32 @@ body {
 			}
 			/*Holiday details Best deals page end*/
 			.servicebox {
-				width: 28.5%;
+				
 				margin: 5px 0 0 5px;
 				h1 {
-					font-size: 0.65em;
+					font-size: 0.8em;
 
 				}
 				figure {
 					width: 90%;
 					margin: 1% auto;
-				}
-				figcaption {
-					p {
-						font-size: 0.6em;
-						margin: 2%;
-						width: 96%;
-					}
-					a {
-						font-size: 0.7em;
-						margin-left: 2%;
-						&:hover {
-							font-size: 0.75em;
+					figcaption {
+						p {
+							font-size: 0.6em;
+							margin: 1%;
+							width: 96%;
+						}
+						a {
+							font-size: 0.7em;
+							margin-left: 1%;
+							&:hover {
+								font-size: 0.7em;
+							}
 						}
 					}
+					
 				}
+				
 			}
 		}
 		/*content2 end*/
