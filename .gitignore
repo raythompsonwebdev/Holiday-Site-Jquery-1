@@ -24,10 +24,19 @@ $RECYCLE.BIN/
 images/
 errors/
 doc/
-Pages images/
+Files/
 
-js/
+
 js/vendor/
+js/plugins.js
+js/html5shiv.min.js
+js/jquery-1.10.2.min.js
+js/jquery.mixitup.min.js
+js/jquery.nicescroll.min.js
+js/jquery.validate.min.js
+
+
+
 
 .htaccess
 favicons/
