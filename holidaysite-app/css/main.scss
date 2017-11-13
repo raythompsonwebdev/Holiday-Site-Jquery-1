@@ -180,7 +180,7 @@ img {
 }
 
 body {
-	background-image: url("../images/images/travel-agency-website-bg.png");
+	background-image: url("assets/images/images/travel-agency-website-bg.png");
 	background-repeat: no-repeat;
 	background-position: left bottom;
 	background-attachment: fixed;
@@ -215,6 +215,10 @@ body {
 				width: 21.012%;
 				margin: 0px;
 				text-indent: -9999px;
+				background:url('../images/travel-agency-website-logo.png');
+				background-color: $colorbg;
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
 				img {
 					display: block;
 				}
@@ -224,7 +228,6 @@ body {
 				height: 40px;
 				float: right;
 				margin: 1% 0 0 0;
-				
 				font-size: 0.9em;
 				display: block;
 				line-height: 22px;
@@ -234,10 +237,11 @@ body {
 					width: 13%;
 					float: left;
 					display: block;
-					//background:url('../images/phoneicon_05.gif');
+					height: 30px;
+					background:url('../images/phoneicon_05.gif');
 					background-color: $colorbg;
-					//background-repeat: no-repeat;
-					//background-position: 50% 50%;
+					background-repeat: no-repeat;
+					background-position: 50% 50%;
 				}
 				a#contact-number {
 					width: 83%;
@@ -8209,59 +8213,4 @@ body {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 
-@media print {
-	* {
-		background: transparent !important;
-		color: #000 !important;
-		/* Black prints faster: h5bp.com/s */
-		box-shadow: none !important;
-		text-shadow: none !important;
-	}
-	a,
-	a:visited {
-		text-decoration: underline;
-	}
-	a[href]:after {
-		content: " (" attr(href) ")";
-	}
-	abbr[title]:after {
-		content: " (" attr(title) ")";
-	}
-	/*
-     * Don't show links for images, or javascript/internal links
-     */
-	.ir a:after,
-	a[href^="javascript:"]:after,
-	a[href^="#"]:after {
-		content: "";
-	}
-	pre,
-	blockquote {
-		border: 1px solid #999;
-		page-break-inside: avoid;
-	}
-	thead {
-		display: table-header-group;
-		/* h5bp.com/t */
-	}
-	tr,
-	img {
-		page-break-inside: avoid;
-	}
-	img {
-		max-width: 100% !important;
-	}
-	@page {
-		margin: 0.5cm;
-	}
-	p,
-	h2,
-	h3 {
-		orphans: 3;
-		widows: 3;
-	}
-	h2,
-	h3 {
-		page-break-after: avoid;
-	}
-}
+
