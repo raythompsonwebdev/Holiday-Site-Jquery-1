@@ -2,19 +2,6 @@
 //@import "partials/normalize";
 @import "partials/mixins";
 
-/*html {
-background-image: url(ballet-background.jpg);
-background-repeat: no-repeat;
-background-position: center center;
-background-attachment: fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-color: #fff;
-background-color: #000;
-}*/
-
 html,
 button,
 input,
@@ -96,19 +83,11 @@ textarea {
 }
 
 
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
 .hidden {
 	display: none !important;
 	visibility: hidden;
 }
 
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
 
 .visuallyhidden {
 	border: 0;
@@ -122,11 +101,6 @@ textarea {
 }
 
 
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
 	clip: auto;
@@ -137,10 +111,6 @@ textarea {
 	width: auto;
 }
 
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
 
 .invisible {
 	visibility: hidden;
@@ -180,7 +150,7 @@ img {
 }
 
 body {
-	background-image: url("assets/images/images/travel-agency-website-bg.png");
+	background-image: url("../images/images/travel-agency-website-bg.png");
 	background-repeat: no-repeat;
 	background-position: left bottom;
 	background-attachment: fixed;
@@ -198,8 +168,9 @@ body {
 
 @media only screen and (max-width: 1920px) {
 	#wrapper {
-		width: 60%;
-		margin: 0 auto;
+		width: 70%;
+		margin-left:auto;
+		margin-right:auto;
 		background-color: $color3;
 		padding: 0 2%;
 		font-family: $font-style1;
@@ -212,11 +183,11 @@ body {
 			margin-bottom: 0.5em;
 			figure#logo {
 				height: 77px;
-				width: 21.012%;
+				width: 230px;
 				margin: 0px;
 				text-indent: -9999px;
-				background:url('../images/travel-agency-website-logo.png');
-				background-color: $colorbg;
+				//background:url('../images/travel-agency-website-logo.png');
+				
 				background-repeat: no-repeat;
 				background-position: 50% 50%;
 				img {
@@ -230,20 +201,26 @@ body {
 				margin: 1% 0 0 0;
 				font-size: 0.9em;
 				display: block;
-				line-height: 22px;
+				line-height: 25px;
 				span.tele {
 					margin: 0;
-					padding: 2%;
-					width: 13%;
+					padding: 0;
+					width: 99%;
 					float: left;
 					display: block;
-					height: 30px;
-					background:url('../images/phoneicon_05.gif');
+					
+					//background:url('../images/phoneicon_05.gif');
 					background-color: $colorbg;
 					background-repeat: no-repeat;
 					background-position: 50% 50%;
-				}
-				a#contact-number {
+					
+					img{ 
+						width:12%; 
+						display:inline-block;
+						padding-left: 0.2em;
+					}
+				
+					a#contact-number {
 					width: 83%;
 					background-color: $colorbg;
 					padding: 0;
@@ -259,6 +236,7 @@ body {
 					&:active {
 						color: #fff;
 					}
+				}
 				}
 				span#opening-time {
 					display: block;
@@ -311,8 +289,9 @@ body {
 						flex: 0 1 auto;
 						a {
 							text-decoration: none;
+							text-transform:uppercase;
 							width: 100%;
-							font-size: 0.85em;
+							font-size: 0.75em;
 							text-align: center;
 							@include borderRaduis(5px 5px 0px 0px);
 							height: 40px;
@@ -324,6 +303,7 @@ body {
 							display: block;
 							font-weight: bold;
 							text-shadow: 1px 1px 1px #000;
+							letter-spacing: 0.03em;
 							&:hover {
 								text-decoration: none;
 								width: 100%;
@@ -368,9 +348,9 @@ body {
 					form {
 						label {
 							width: 58%;
-							font-size: 0.85em;
+							font-size: 0.8em;
 							display: inline-block;
-							text-indent: 5%;
+							text-indent: 2.5%;
 							line-height: 28px;
 							height: 28px;
 							float: left;
@@ -395,37 +375,37 @@ body {
 							option[value="United_States"] {
 								background-image: url("../images/USA.gif");
 								background-repeat: no-repeat;
-								background-position: 5% 50%;
+								background-position: 50% 50%;
 								padding: 0.5em 0;
 							}
 							option[value="United_Kingdom"] {
 								background-image: url(../images/United_Kingdom.jpg);
 								background-repeat: no-repeat;
-								background-position: 5% 50%;
+								background-position: 50% 50%;
 								padding: 0.5em 0;
 							}
 							option[value="France"] {
 								background-image: url(../images/France.jpg);
 								background-repeat: no-repeat;
-								background-position: 5% 50%;
+								background-position: 50% 50%;
 								padding: 0.5em 0;
 							}
 							option[value="Germany"] {
 								background-image: url("../images/Germany.jpg");
 								background-repeat: no-repeat;
-								background-position: 5% 50%;
+								background-position: 50% 50%;
 								padding: 0.5em 0;
 							}
 							option[value="Spain"] {
 								background-image: url("../images/Spain.jpg");
 								background-repeat: no-repeat;
-								background-position: 5% 50%;
+								background-position: 50% 50%;
 								padding: 0.5em 0;
 							}
 							option[value="Jamaica"] {
 								background-image: url("../images/Jamaica.jpg");
 								background-repeat: no-repeat;
-								background-position: 5% 50%;
+								background-position: 50% 50%;
 								padding: 0.5em 0;
 							}
 						}
@@ -574,7 +554,7 @@ body {
 						margin-right: 2%;
 						width: 100%;
 						img {
-							width: 39%;
+							width: 32%;
 							float: left;
 							display: inline-block;
 							margin-right: 3%;
@@ -668,6 +648,7 @@ body {
 			height: auto;
 			float: left;
 			margin: 1% 1% 0 0;
+			background-color:#014188;
 			#contact-details {
 				background-color: #ffffff;
 				display: block;
@@ -710,11 +691,10 @@ body {
 			}
 			figure {
 				margin: 0;
+				padding:0;
 				figcaption {
-					position: relative;
-					z-index: 1;
-					left: 0;
-					top: -564px;
+					display:block;
+					margin:0;
 					padding: 5%;
 					h1 {
 						text-indent: 0;
@@ -722,14 +702,28 @@ body {
 						color: $colorpw;
 						display: block;
 						font-size: 1.28em;
-						margin: 0 0 25% 0;
+						margin-top: 25%;
 						text-transform: uppercase;
 						line-height: 1.5em;
+						letter-spacing:0.02em;
 					}
+					
+					span{
+						margin-bottom:1em;
+						display:block;
+						img{
+							display:block;
+							border:none;
+							
+						}
+						
+
+					}
+					
 					p {
 						color: $colorpw;
 						font-size: 0.9em;
-						line-height: 1.7em;
+						line-height: 1.5em;
 						margin: 0 0 5% 0;
 					}
 				}
@@ -747,7 +741,7 @@ body {
 			}
 			#banner {
 				width: 96%;
-				height: 412px;
+				height:auto;
 				margin: 0 auto;
 				display: block;
 				img {
@@ -773,7 +767,7 @@ body {
 					margin: 0px 0px 20px 5px;
 					border: 4px $sideboxborder solid;
 					height: auto;
-					width: 31.4%;
+					width: 31.1%;
 					@include borderRaduis(5px);
 					figure {
 						display: block;
@@ -788,7 +782,7 @@ body {
 							padding: 5% 0;
 							display: block;
 							p {
-								font-size: 0.85em;
+								font-size: 0.8em;
 								line-height: 25px;
 								text-align: center;
 								margin: 0;
@@ -828,14 +822,9 @@ body {
 			background-color: $colorpw;
 			padding: 1%;
 			line-height: 1.5em;
-			//display: -webkit-flex;
-			//display: -ms-flexbox;
-			//display: flex;
-			//-webkit-flex-flow: row wrap;
-			//-ms-flex-flow: row wrap;
-			//flex-flow: row wrap;
+
 			h1 {
-				font-size: 1.4em;
+				font-size: 1.3em;
 				color: $sideboxcolor1;
 				width: 100%;
 				margin: 0;
@@ -857,7 +846,7 @@ body {
 				display: block;
 			}
 			h3 {
-				font-size: 1.0em;
+				font-size: 1em;
 				color: $sideboxcolor1;
 				margin: 0;
 				width: 100%;
@@ -868,12 +857,13 @@ body {
 				display: block;
 			}
 			p {
-				font-size: 0.8em;
+				font-size: 0.85em;
 				margin: 0;
 			}
 			#contactform {
-				width: 100%;
+				width: 90%;
 				margin: auto;
+				display:block;
 				list-style: none;
 				ul {
 					list-style: none;
@@ -889,7 +879,7 @@ body {
 							font-size: 0.9em;
 						}
 						input {
-							width: 65%;
+							width: 75%;
 							height: 35px;
 							padding: 0;
 							margin: 0;
@@ -897,7 +887,7 @@ body {
 							border: 1px solid $colorgry2;
 						}
 						textarea {
-							width: 65%;
+							width: 75%;
 							line-height: 1.5em;
 							border: 1px solid $colorgry2;
 						}
@@ -1182,19 +1172,24 @@ body {
 			height: 117px;
 			figure#logo {
 				height: 77px;
-				width: 24.012%;
+				width: 230px;
 				margin: 0px;
 			}
 			aside.contact {
-				width: 140px;
+				width: 145px;
 				span.tele {
-					padding: 2%;
-					width: 13%;
-				}
-				a#contact-number {
-					width: 83%;
-					line-height: 30px;
-					font-size: 0.9em;
+					padding: 0;
+					
+					img{ 
+						width:12%; 
+						padding-left: 0.2em;
+					}
+				
+					a#contact-number {
+						width: 83%;
+						line-height: 30px;
+						font-size: 0.95em;
+					}
 				}
 				span#opening-time {
 					line-height: 20px;
@@ -1211,11 +1206,7 @@ body {
 						width: 16.71%;
 						height: 40px;
 						a {
-							font-size: 0.8em;
-							&:hover {}
-							&:visited {}
-							&:focus {}
-							&:active {}
+							font-size: 0.75em;
 						}
 					}
 				}
@@ -1316,7 +1307,7 @@ body {
 					figure {
 						margin-right: 2%;
 						img {
-							width: 42%;
+							width: 38%;
 						}
 						figcaption {
 							width: 50%;
@@ -1397,17 +1388,28 @@ body {
 			figure {
 				margin: 0;
 				figcaption {
-					top: -552px;
+					
 					padding: 5%;
 					h1 {
-						text-indent: 0;
-						font-size: 1.26em;
-						margin: 0 0 20% 0;
-						line-height: 1.7em;
+						font-size: 1.28em;
+						margin-top: 25%;
+
 					}
+					
+					span{
+						margin-bottom:1em;
+						display:block;
+						img{
+							display:block;
+						
+						}
+						
+
+					}
+					
 					p {
-						font-size: 0.8em;
-						line-height: 1.7em;
+						color: $colorpw;
+						font-size: 0.9em;
 					}
 				}
 			}
@@ -1421,7 +1423,7 @@ body {
 			}
 			#banner {
 				width: 96%;
-				height: 412px;
+				height: auto;
 				img {
 					width: 100%;
 				}
@@ -1488,16 +1490,16 @@ body {
 				line-height: 40px;
 			}
 			h3 {
-				font-size: 1.0em;
+				font-size: 1em;
 				height: 40px;
 				line-height: 40px;
 			}
 			p {
-				font-size: 0.8em;
+				font-size: 0.85em;
 				margin: 0;
 			}
 			#contactform {
-				width: 100%;
+				
 				margin: auto;
 				ul {
 					list-style: none;
@@ -1510,12 +1512,12 @@ body {
 							font-size: 0.85em;
 						}
 						input {
-							width: 65%;
+							
 							height: 35px;
 							line-height: 35px;
 						}
 						textarea {
-							width: 65%;
+							
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -1542,7 +1544,7 @@ body {
 				}
 				span.holidayprice {
 					font-size: 0.9em;
-					left: 15%;
+					left: 13%;
 					.offerbox-price {
 						font-weight: bold;
 					}
@@ -1678,27 +1680,34 @@ body {
 
 @media only screen and (max-width: 1280px) {
 	#wrapper {
-		width: 80%;
+		width: 82.5%;
 		header {
 			height: 117px;
 			figure#logo {
 				height: 77px;
-				width: 24.012%;
+				width: 230px;
 				margin: 0px;
 			}
 			aside.contact {
-				width: 140px;
+				width: 144px;
 				span.tele {
-					padding: 2%;
-					width: 12.5%;
+					padding: 0;
+					width: 99%;
+					
+					img{ 
+						width:12%; 
+						padding-left: 0.2em;
+					}
+					
+					a#contact-number {
+						
+						line-height: 30px;
+						font-size: 0.9em;
+					}
 				}
-				a#contact-number {
-					width: 83%;
-					line-height: 30px;
-					font-size: 0.9em;
-				}
+				
 				span#opening-time {
-					line-height: 20px;
+					line-height: 25px;
 				}
 			}
 			/*contact end*/
@@ -1710,8 +1719,13 @@ body {
 					li {
 						height: 40px;
 						a {
-							font-size: 0.75em;
-							&:hover {}
+							font-size: 0.7em;
+						}
+					}
+					li:nth-of-type(2){
+						
+						a{
+							font-size: 0.65em;
 						}
 					}
 				}
@@ -1720,11 +1734,11 @@ body {
 					form {
 						label {
 							width: 53%;
-							font-size: 0.8em;
+							font-size: 0.7em;
 							text-indent: 4%;
 						}
 						select {
-							font-size: 0.85em;
+							font-size: 0.8em;
 							width: 42%;
 						}
 					}
@@ -1802,7 +1816,7 @@ body {
 					figure {
 						margin-right: 2%;
 						img {
-							width: 42%;
+							width: 38%;
 						}
 						figcaption {
 							width: 50%;
@@ -1880,17 +1894,28 @@ body {
 			figure {
 				margin: 0;
 				figcaption {
-					top: -531px;
+					
 					padding: 5%;
 					h1 {
-						text-indent: 0;
-						font-size: 1.26em;
-						margin: 0 0 25% 0;
-						line-height: 1.7em;
+						font-size: 1.1em;
+						margin-top: 25%;
+
 					}
+					
+					span{
+						margin-bottom:1em;
+						display:block;
+						img{
+							display:block;
+						
+						}
+						
+
+					}
+					
 					p {
+						
 						font-size: 0.8em;
-						line-height: 1.7em;
 					}
 				}
 			}
@@ -1904,7 +1929,7 @@ body {
 			}
 			#banner {
 				width: 96%;
-				height: 412px;
+				height: auto;
 				img {
 					width: 100%;
 				}
@@ -1930,7 +1955,7 @@ body {
 						figcaption {
 							padding: 5% 0;
 							p {
-								font-size: 0.8em;
+								font-size: 0.75em;
 							}
 							p:nth-of-type(2) {
 								font-weight: bold;
@@ -1958,17 +1983,17 @@ body {
 			padding: 1%;
 			line-height: 1.5em;
 			h1 {
-				font-size: 1.3em;
+				font-size: 1.2em;
 				height: 40px;
 				line-height: 40px;
 			}
 			h2 {
-				font-size: 1.1em;
+				font-size: 1.05em;
 				height: 40px;
 				line-height: 40px;
 			}
 			h3 {
-				font-size: 1.0em;
+				font-size: 0.95em;
 				height: 40px;
 				line-height: 40px;
 			}
@@ -1977,7 +2002,7 @@ body {
 				margin: 0;
 			}
 			#contactform {
-				width: 100%;
+				
 				margin: auto;
 				ul {
 					list-style: none;
@@ -1990,12 +2015,12 @@ body {
 							font-size: 0.8em;
 						}
 						input {
-							width: 65%;
+							
 							height: 35px;
 							line-height: 35px;
 						}
 						textarea {
-							width: 65%;
+							
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -2022,7 +2047,7 @@ body {
 				}
 				span.holidayprice {
 					font-size: 0.80em;
-					left: 15%;
+					left: 13%;
 					.offerbox-price {
 						font-weight: bold;
 					}
@@ -2065,7 +2090,7 @@ body {
 					width: 100%;
 					margin-right: 10px;
 					img {
-						width: 41%;
+						width: 40%;
 						margin: 0 1em 0 0;
 					}
 					span.holidayprice {
@@ -2084,7 +2109,7 @@ body {
 							line-height: 1.7em;
 						}
 						a {
-							width: 48%;
+							width: 50%;
 							font-size: 0.8em;
 							padding: 2% 3%;
 							margin: 0;
@@ -2152,24 +2177,30 @@ body {
 
 @media only screen and (max-width: 1024px) {
 	#wrapper {
-		width: 80%;
+		width: 82.5%;
 		header {
 			height: 117px;
 			figure#logo {
 				height: 77px;
-				width: 27.012%;
+				width: 230px;
 				margin: 0px;
 			}
 			aside.contact {
-				width: 130px;
+				width: 141px;
 				span.tele {
-					padding: 2%;
-					width: 14%;
+					padding: 0;
+					img{ 
+						width:12%; 
+						padding-left: 0.2em;
+					}
+					
+					a#contact-number {
+						width: 82%;
+						line-height: 30px;
+						font-size: 0.9em;
+					}
 				}
-				a#contact-number {
-					font-size: 0.85em;
-					width: 82%;
-				}
+				
 				span#opening-time {
 					line-height: 20px;
 					font-size: 0.75em;
@@ -2186,10 +2217,15 @@ body {
 						height: 40px;
 						a {
 							font-size: 0.7em;
-							&:hover {}
-							&:visited {}
-							&:focus {}
-							&:active {}
+						}
+					}
+					li:nth-of-type(2){
+						padding-top:0;
+						a{
+							font-size: 0.7em;
+							line-height: 16px;
+							height: auto;
+							padding: 0.4em 0;
 						}
 					}
 				}
@@ -2350,17 +2386,28 @@ body {
 			figure {
 				margin: 0;
 				figcaption {
-					top: -472px;
+					
 					padding: 5%;
 					h1 {
-						text-indent: 0;
-						font-size: 1em;
-						margin: 25% 0;
-						line-height: 2em;
+						font-size: 1.1em;
+						margin-top: 25%;
+
 					}
+					
+					span{
+						margin-bottom:1em;
+						display:block;
+						img{
+							display:block;
+						
+						}
+						
+
+					}
+					
 					p {
-						font-size: 0.7em;
-						line-height: 1.6em;
+						color: $colorpw;
+						font-size: 0.8em;
 					}
 				}
 			}
@@ -2374,7 +2421,7 @@ body {
 			}
 			#banner {
 				width: 96%;
-				height: 350px;
+				height: auto;
 				img {
 					width: 100%;
 				}
@@ -2428,17 +2475,17 @@ body {
 				font-size: 1.2em;
 			}
 			h2 {
-				font-size: 1.05em;
+				font-size: 1em;
 			}
 			h3 {
-				font-size: 1em;
+				font-size: 0.9em;
 			}
 			p {
 				font-size: 0.75em;
 				margin: 0;
 			}
 			#contactform {
-				width: 100%;
+				
 				margin: auto;
 				ul {
 					list-style: none;
@@ -2451,12 +2498,12 @@ body {
 							font-size: 0.75em;
 						}
 						input {
-							width: 65%;
+							
 							height: 35px;
 							line-height: 35px;
 						}
 						textarea {
-							width: 65%;
+							
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -2526,7 +2573,7 @@ body {
 					width: 100%;
 					margin-right: 10px;
 					img {
-						width: 41%;
+						width: 40%;
 						margin: 0 1em 0 0;
 					}
 					span.holidayprice {
@@ -2545,7 +2592,7 @@ body {
 							line-height: 1.7em;
 						}
 						a {
-							width: 48%;
+							width: 55%;
 							font-size: 0.8em;
 							padding: 2% 3%;
 							margin: 0;
@@ -2618,18 +2665,23 @@ body {
 			height: 117px;
 			figure#logo {
 				height: 77px;
-				width: 28.012%;
+				width: 240px;
 			}
 			aside.contact {
-				width: 130px;
+				width: 141px;
 				span.tele {
-					padding: 2%;
-					width: 13.5%;
+					padding: 0;
+					
+					img{ 
+						width:12%; 
+						padding-left: 0.3em;
+					}
+					a#contact-number {
+						font-size: 0.9em;
+						width: 82%;
+					}
 				}
-				a#contact-number {
-					font-size: 0.9em;
-					width: 82%;
-				}
+				
 				span#opening-time {
 					line-height: 20px;
 				}
@@ -2644,8 +2696,17 @@ body {
 					li {
 						height: 40px;
 						a {
-							font-size: 0.7em;
-							&:hover {}
+							font-size: 0.6em;
+						}
+						
+					}
+					li:nth-of-type(2){
+						padding-top:0;
+						a{
+							font-size: 0.65em;
+							line-height: 16px;
+							height: auto;
+							padding: 0.4em 0;
 						}
 					}
 				}
@@ -2809,11 +2870,10 @@ body {
 					padding: 5%;
 					h1 {
 						font-size: 1em;
-						margin: 25% 0;
-						line-height: 2em;
+						
 					}
 					p {
-						font-size: 0.7em;
+						font-size: 0.75em;
 						line-height: 1.6em;
 					}
 				}
@@ -2828,7 +2888,7 @@ body {
 			}
 			#banner {
 				width: 96%;
-				height: 350px;
+				height: auto;
 				img {
 					width: 100%;
 				}
@@ -2842,7 +2902,7 @@ body {
 					letter-spacing: 0.05em;
 				}
 				div.offerbox {
-					width: 31%;
+					width: 30.5%;
 					figure {
 						margin: 2% 0;
 						img {
@@ -2878,20 +2938,20 @@ body {
 			padding: 1%;
 			line-height: 1.5em;
 			h1 {
-				font-size: 1.2em;
+				font-size: 1.1em;
 			}
 			h2 {
-				font-size: 1.05em;
+				font-size: 1em;
 			}
 			h3 {
-				font-size: 1em;
+				font-size: 0.9em;
 			}
 			p {
 				font-size: 0.75em;
 				margin: 0;
 			}
 			#contactform {
-				width: 100%;
+				
 				margin: auto;
 				ul {
 					list-style: none;
@@ -2899,13 +2959,13 @@ body {
 						margin: 5px 0 10px 0;
 						label {
 							width: 16%;
-							font-size: 0.8em;
+							font-size: 0.75em;
 						}
 						input {
-							width: 65%;
+							width: 75%;
 						}
 						textarea {
-							width: 65%;
+							
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -2926,11 +2986,11 @@ body {
 				h1 {
 					width: 70%;
 					line-height: 40px;
-					font-size: 1.05em;
+					font-size: 1em;
 				}
 				span.holidayprice {
-					font-size: 0.80em;
-					left: 11%;
+					font-size: 0.75em;
+					left: 10%;
 					.offerbox-price {
 						font-weight: bold;
 					}
@@ -2949,7 +3009,7 @@ body {
 							line-height: 1.6em;
 						}
 						a {
-							width: 20%;
+							width: 25%;
 							height: 25px;
 							font-size: 0.85em;
 							padding: 1% 2%;
@@ -2973,7 +3033,7 @@ body {
 					width: 100%;
 					margin-right: 10px;
 					img {
-						width: 41%;
+						width: 39%;
 						margin: 0 1em 0 0;
 					}
 					span.holidayprice {
@@ -2992,7 +3052,7 @@ body {
 							line-height: 1.7em;
 						}
 						a {
-							width: 55%;
+							width: 70%;
 							font-size: 0.8em;
 							padding: 2% 3%;
 							margin: 0;
@@ -3059,25 +3119,31 @@ body {
 
 @media only screen and (max-width: 800px) {
 	#wrapper {
-		width: 90%;
+		width: 92%;
 		header {
 			height: 107px;
 			figure#logo {
 				height: 67px;
-				width: 30.0120048%;
+				width: 240px;
 			}
 			aside.contact {
-				width: 120px;
+				width: 130px;
 				span.tele {
-					padding: 2%;
-					width: 12%;
-					line-height:19px;
+					padding: 0;
+					
+					
+					img{ 
+						width:12%; 
+						padding-left: 0.3em;
+					}
+					a#contact-number {
+						font-size: 0.8em;
+						line-height: 25px;
+						width: 82%;
+					}
+					
 				}
-				a#contact-number {
-					font-size: 0.8em;
-					line-height: 25px;
-					width: 82%;
-				}
+		
 				span#opening-time {
 					line-height: 20px;
 					font-size: 0.7em;
@@ -3094,10 +3160,15 @@ body {
 						height: 40px;
 						a {
 							font-size: 0.65em;
-							&:hover {}
-							&:visited {}
-							&:focus {}
-							&:active {}
+						}
+					}
+					li:nth-of-type(2){
+						padding-top:0.1em;
+						a{
+							font-size: 0.6em;
+							line-height: 16px;
+							height: auto;
+							padding: 0.3em 0;
 						}
 					}
 				}
@@ -3262,15 +3333,13 @@ body {
 			figure {
 				margin: 0;
 				figcaption {
-					top: -409px;
+					
 					padding: 5%;
 					h1 {
 						font-size: 0.9em;
-						margin: 22% 0;
-						line-height: 2em;
 					}
 					p {
-						font-size: 0.65em;
+						font-size: 0.7em;
 						line-height: 1.6em;
 					}
 				}
@@ -3285,7 +3354,7 @@ body {
 			}
 			#banner {
 				width: 96%;
-				height: 310px;
+				height: auto;
 				img {
 					width: 100%;
 				}
@@ -3338,17 +3407,17 @@ body {
 				font-size: 1.1em;
 			}
 			h2 {
-				font-size: 1.05em;
+				font-size: 1em;
 			}
 			h3 {
-				font-size: 1em;
+				font-size: 0.9em;
 			}
 			p {
 				font-size: 0.7em;
 				
 			}
 			#contactform {
-				width: 100%;
+				
 				margin: auto;
 				ul {
 					list-style: none;
@@ -3356,13 +3425,13 @@ body {
 						margin: 5px 0 10px 0;
 						label {
 							width: 16%;
-							font-size: 0.75em;
+							font-size: 0.7em;
 						}
 						input {
-							width: 65%;
+							width: 75%;
 						}
 						textarea {
-							width: 65%;
+							width: 75%;
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -3383,10 +3452,10 @@ body {
 				h1 {
 					width: 70%;
 					line-height: 40px;
-					font-size: 1.05em;
+					font-size: 1em;
 				}
 				span.holidayprice {
-					font-size: 0.80em;
+					font-size: 0.75em;
 					left: 10%;
 					.offerbox-price {
 						font-weight: bold;
@@ -3405,7 +3474,7 @@ body {
 							line-height: 1.6em;
 						}
 						a {
-							width: 25%;
+							width: 30%;
 							font-size: 0.85em;
 						}
 						a:hover {
@@ -3427,7 +3496,7 @@ body {
 					width: 100%;
 					margin-right: 10px;
 					img {
-						width: 43%;
+						width: 41%;
 						margin: 0 1em 0 0;
 					}
 					span.holidayprice {
@@ -3445,7 +3514,7 @@ body {
 						}
 						a {
 							width: 75%;
-							font-size: 0.8em;
+							font-size: 0.75em;
 							padding: 2% 3%;
 						}
 						a:hover {
@@ -3517,18 +3586,23 @@ body {
 			height: 107px;
 			figure#logo {
 				height: 67px;
-				width: 30.0120048%;
+				width: 200px;
 			}
 			aside.contact {
-				width: 120px;
+				width: 130px;
 				span.tele {
-					padding: 2%;
-					width: 13%;
-				}
-				a#contact-number {
-					font-size: 0.8em;
-					line-height: 25px;
-					width: 83%;
+					padding: 0;
+					
+					img{ 
+						width:12%; 
+						padding-left: 0.3em;
+					}
+				
+					a#contact-number {
+						font-size: 0.8em;
+						line-height: 25px;
+						width: 82%;
+					}
 				}
 				span#opening-time {
 					line-height: 20px;
@@ -3544,11 +3618,8 @@ body {
 						width: 16.71%;
 						height: 40px;
 						a {
-							font-size: 0.65em;
-							&:hover {}
-							&:visited {}
-							&:focus {}
-							&:active {}
+							font-size: 0.6em;
+	
 						}
 					}
 				}
@@ -3712,13 +3783,11 @@ body {
 			figure {
 				margin: 0;
 				figcaption {
-					top: -409px;
+					
 					padding: 5%;
 					h1 {
 						font-size: 0.9em;
-						margin: 22% 0;
-						line-height: 2em;
-					}
+						}
 					p {
 						font-size: 0.65em;
 						line-height: 1.6em;
@@ -3735,7 +3804,7 @@ body {
 			}
 			#banner {
 				width: 96%;
-				height: 310px;
+				height: auto;
 				img {
 					width: 100%;
 				}
@@ -3785,20 +3854,20 @@ body {
 			padding: 1%;
 			line-height: 1.5em;
 			h1 {
-				font-size: 1.2em;
-			}
-			h2 {
 				font-size: 1.1em;
 			}
-			h3 {
+			h2 {
 				font-size: 1em;
+			}
+			h3 {
+				font-size: 0.9em;
 			}
 			p {
 				font-size: 0.75em;
 				margin: 0;
 			}
 			#contactform {
-				width: 100%;
+				
 				margin: auto;
 				ul {
 					list-style: none;
@@ -3806,13 +3875,13 @@ body {
 						margin: 5px 0 10px 0;
 						label {
 							width: 16%;
-							font-size: 0.75em;
+							font-size: 0.7em;
 						}
 						input {
-							width: 65%;
+							width: 75%;
 						}
 						textarea {
-							width: 65%;
+							
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -3833,11 +3902,11 @@ body {
 				h1 {
 					width: 70%;
 					line-height: 40px;
-					font-size: 1em;
+					font-size: 0.95em;
 				}
 				span.holidayprice {
 					font-size: 0.75em;
-					left: 10%;
+					left: 9%;
 					.offerbox-price {
 						font-weight: bold;
 					}
@@ -3877,7 +3946,7 @@ body {
 					width: 100%;
 					margin-right: 10px;
 					img {
-						width: 43%;
+						width: 41%;
 						margin: 0 1em 0 0;
 					}
 					span.holidayprice {
@@ -3890,7 +3959,7 @@ body {
 						width: 50%;
 						margin-bottom: 2%;
 						p {
-							font-size: 0.65em;
+							font-size: 0.7em;
 							line-height: 1.6em;
 						}
 						a {
@@ -3966,18 +4035,23 @@ body {
 			height: 107px;
 			figure#logo {
 				height: 65px;
-				width: 35.012%;
+				width: 200px;
 			}
 			aside.contact {
-				width: 120px;
+				width: 130px;
 				span.tele {
-					padding: 2%;
-					width: 13%;
-				}
-				a#contact-number {
-					font-size: 0.85em;
-					line-height: 25px;
-					width: 83%;
+					padding: 0;
+					
+					img{ 
+						width:12%; 
+						padding-left: 0.3em;
+					}
+				
+					a#contact-number {
+						font-size: 0.85em;
+						line-height: 25px;
+						
+					}
 				}
 				span#opening-time {
 					line-height: 20px;
@@ -4034,9 +4108,12 @@ body {
 								line-height: 50px;
 								box-shadow: none;
 							}
-							&:visited {}
-							&:focus {}
-							&:active {}
+						 a:nth-of-type(2){
+							
+							line-height: 50px;
+						
+						}
+
 						}
 					}
 				}
@@ -4224,7 +4301,7 @@ body {
 			}
 			#banner {
 				width: 96%;
-				height: 360px;
+				height: auto;
 				img {
 					width: 100%;
 				}
@@ -4238,7 +4315,7 @@ body {
 					letter-spacing: 0.05em;
 				}
 				div.offerbox {
-					width: 30%;
+					width: 30.5%;
 					figure {
 						margin: 2% 0;
 						img {
@@ -4247,7 +4324,7 @@ body {
 						figcaption {
 							padding: 5% 0;
 							p {
-								font-size: 0.7em;
+								font-size: 0.6em;
 							}
 							p:nth-of-type(2) {
 								font-weight: bold;
@@ -4280,7 +4357,7 @@ body {
 				font-size: 1em;
 			}
 			h3 {
-				font-size: 0.95em;
+				font-size: 0.9em;
 			}
 			p {
 				font-size: 0.7em;
@@ -4288,7 +4365,7 @@ body {
 				letter-spacing: 0.01em;
 			}
 			#contactform {
-				width: 100%;
+				
 				margin: auto;
 				ul {
 					list-style: none;
@@ -4296,13 +4373,13 @@ body {
 						margin: 5px 0 10px 0;
 						label {
 							width: 16%;
-							font-size: 0.75em;
+							font-size: 0.8em;
 						}
 						input {
-							width: 65%;
+							width: 75%;
 						}
 						textarea {
-							width: 65%;
+							width: 75%;
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -4326,8 +4403,8 @@ body {
 					font-size: 1em;
 				}
 				span.holidayprice {
-					font-size: 0.8em;
-					left: 12%;
+					font-size: 0.75em;
+					left: 11%;
 					.offerbox-price {
 						font-weight: bold;
 					}
@@ -4341,7 +4418,7 @@ body {
 						width: 77%;
 						margin-bottom: 1%;
 						p {
-							font-size: 0.7em;
+							font-size: 0.75em;
 							line-height: 1.6em;
 						}
 						a {
@@ -4361,17 +4438,17 @@ body {
 				width: 45%;
 				margin: 0.5%;
 				h1 {
-					font-size: 0.8em;
+					font-size: 0.85em;
 				}
 				figure {
 					width: 100%;
 					margin-right: 10px;
 					img {
-						width: 41%;
+						width: 40%;
 						margin: 0 1em 0 0;
 					}
 					span.holidayprice {
-						font-size: 0.75em;
+						font-size: 0.7em;
 						.offerbox-price {
 							display: inline-block;
 						}
@@ -4385,7 +4462,7 @@ body {
 						}
 						a {
 							width: 70%;
-							font-size: 0.8em;
+							font-size: 0.75em;
 							padding: 2% 3%;
 						}
 						a:hover {
@@ -4454,17 +4531,22 @@ body {
 			height: 107px;
 			figure#logo {
 				height: 65px;
-				width: 35.012%;
+				width: 200px;
 			}
 			aside.contact {
-				width: 120px;
+				width: 130px;
 				span.tele {
-					padding: 2%;
-					width: 13%;
-				}
-				a#contact-number {
-					font-size: 0.85em;
-					line-height: 25px;
+					padding: 0;
+					
+					img{ 
+						width:12%; 
+						padding-left: 0.3em;
+					}
+				
+					a#contact-number {
+						font-size: 0.85em;
+						line-height: 25px;
+					}
 				}
 				span#opening-time {
 					line-height: 20px;
@@ -4681,7 +4763,7 @@ body {
 			}
 			#banner {
 				width: 96%;
-				height: 340px;
+				height: auto;
 				img {
 					width: 100%;
 				}
@@ -4745,7 +4827,7 @@ body {
 				letter-spacing: 0.01em;
 			}
 			#contactform {
-				width: 100%;
+				
 				margin: auto;
 				ul {
 					list-style: none;
@@ -4753,13 +4835,13 @@ body {
 						margin: 5px 0 10px 0;
 						label {
 							width: 16%;
-							font-size: 0.75em;
+							font-size: 0.8em;
 						}
 						input {
-							width: 65%;
+							width: 75%;
 						}
 						textarea {
-							width: 65%;
+							
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -4825,10 +4907,10 @@ body {
 					margin-right: 10px;
 					img {
 						width: 45%;
-						margin: 0 1em 0 0;
+						margin: 0 0.5em 0 0;
 					}
 					span.holidayprice {
-						font-size: 0.75em;
+						font-size: 0.7em;
 						.offerbox-price {
 							display: inline-block;
 						}
@@ -4911,17 +4993,22 @@ body {
 			height: 107px;
 			figure#logo {
 				height: 64px;
-				width: 34.012%;
+				width: 200px;
 			}
 			aside.contact {
-				width: 120px;
+				width: 125px;
 				span.tele {
-					width: 13%;
-				}
-				a#contact-number {
-					font-size: 0.8em;
-					line-height: 26px;
-					width: 82%;
+					width: 99%;
+					img{ 
+						width:12%; 
+						padding-left: 0.3em;
+					}
+				
+					a#contact-number {
+						font-size: 0.8em;
+						line-height: 25px;
+						width: 82%;
+					}
 				}
 				span#opening-time {
 					line-height: 20px;
@@ -5141,7 +5228,7 @@ body {
 			}
 			#banner {
 				width: 96%;
-				height: 340px;
+				height: auto;
 				img {
 					width: 100%;
 				}
@@ -5205,7 +5292,7 @@ body {
 				letter-spacing: 0.01em;
 			}
 			#contactform {
-				width: 100%;
+				
 				margin: auto;
 				ul {
 					list-style: none;
@@ -5216,10 +5303,10 @@ body {
 							font-size: 0.75em;
 						}
 						input {
-							width: 65%;
+							width: 75%;
 						}
 						textarea {
-							width: 65%;
+							
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -5244,7 +5331,7 @@ body {
 				}
 				span.holidayprice {
 					font-size: 0.75em;
-					left: 10%;
+					left: 9%;
 					.offerbox-price {
 						font-weight: bold;
 					}
@@ -5284,8 +5371,8 @@ body {
 					width: 100%;
 					margin-right: 0;
 					img {
-						width: 43%;
-						margin: 0 1em 0 0;
+						width: 42%;
+						margin: 0 0.5em 0 0;
 					}
 					span.holidayprice {
 						font-size: 0.75em;
@@ -5371,17 +5458,21 @@ body {
 			height: 107px;
 			figure#logo {
 				height: 63px;
-				width: 37.012%;
+				
 			}
 			aside.contact {
 				width: 120px;
 				span.tele {
-					width: 13%;
-				}
-				a#contact-number {
-					font-size: 0.8em;
-					line-height: 25px;
-					width: 83%;
+					width: 99%;
+					img{ 
+						width:12%; 
+						padding-left: 0.3em;
+					}
+				
+					a#contact-number {
+						font-size: 0.8em;
+	
+					}
 				}
 				span#opening-time {
 					line-height: 20px;
@@ -5602,7 +5693,7 @@ body {
 			}
 			#banner {
 				width: 96%;
-				height: 305px;
+				
 				img {
 					width: 100%;
 				}
@@ -5625,7 +5716,7 @@ body {
 						figcaption {
 							padding: 5% 0;
 							p {
-								font-size: 0.7em;
+								font-size: 0.65em;
 							}
 							p:nth-of-type(2) {
 								font-weight: bold;
@@ -5666,7 +5757,7 @@ body {
 				letter-spacing: 0.01em;
 			}
 			#contactform {
-				width: 100%;
+				
 				margin: auto;
 				ul {
 					list-style: none;
@@ -5674,13 +5765,13 @@ body {
 						margin: 5px 0 10px 0;
 						label {
 							width: 16%;
-							font-size: 0.75em;
+							font-size: 0.7em;
 						}
 						input {
-							width: 65%;
+							width: 75%;
 						}
 						textarea {
-							width: 65%;
+							
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -5705,7 +5796,7 @@ body {
 				}
 				span.holidayprice {
 					font-size: 0.75em;
-					left: 8%;
+					left: 6%;
 					top: -2px;
 					.offerbox-price {
 						font-weight: bold;
@@ -5747,10 +5838,10 @@ body {
 					margin-right: 0;
 					img {
 						width: 41%;
-						margin: 0 1em 0 0;
+						margin: 0 0.5em 0 0;
 					}
 					span.holidayprice {
-						font-size: 0.75em;
+						font-size: 0.7em;
 						.offerbox-price {
 							display: inline-block;
 						}
@@ -5759,7 +5850,7 @@ body {
 						width: 54%;
 						margin-bottom: 2%;
 						p {
-							font-size: 0.7em;
+							font-size: 0.65em;
 							line-height: 1.6em;
 						}
 						a {
@@ -5833,17 +5924,21 @@ body {
 			height: 107px;
 			figure#logo {
 				height: 65px;
-				width: 46.012%;
+				
 			}
 			aside.contact {
-				width: 110px;
+				width: 115px;
 				span.tele {
-					width: 14.5%;
-				}
-				a#contact-number {
-					font-size: 0.75em;
-					line-height: 25px;
-					width: 81%;
+					width: 99%;
+					img{ 
+						width:12%; 
+						padding-left: 0.3em;
+					}
+				
+					a#contact-number {
+						font-size: 0.75em;
+						width: 81%;
+					}
 				}
 				span#opening-time {
 					line-height: 20px;
@@ -6063,7 +6158,7 @@ body {
 			}
 			#banner {
 				width: 96%;
-				height: 270px;
+				
 				img {
 					width: 100%;
 				}
@@ -6109,7 +6204,7 @@ body {
 			text-align: 1.5em;
 		}
 		#content2 {
-			width: 100%;
+			width: 96%;
 			padding: 1%;
 			line-height: 1.5em;
 			h1 {
@@ -6135,13 +6230,13 @@ body {
 						margin: 5px 0 10px 0;
 						label {
 							width: 20%;
-							font-size: 0.75em;
+							font-size: 0.7em;
 						}
 						input {
-							width: 65%;
+							width: 75%;
 						}
 						textarea {
-							width: 65%;
+							
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -6166,7 +6261,7 @@ body {
 				}
 				span.holidayprice {
 					font-size: 0.7em;
-					left: 8%;
+					left: 4%;
 					.offerbox-price {
 						font-weight: bold;
 					}
@@ -6303,17 +6398,23 @@ body {
 			height: 107px;
 			figure#logo {
 				height: 65px;
-				width: 56.012%;
+				width:200px;
+				
 			}
 			aside.contact {
-				width: 110px;
+				width: 112px;
 				span.tele {
-					width: 14.5%;
-				}
-				a#contact-number {
-					font-size: 0.75em;
-					line-height: 25px;
-					width: 81%;
+					width: 99%;
+					img{ 
+						width:12%; 
+						padding-left: 0.3em;
+					}
+				
+					a#contact-number {
+						font-size: 0.75em;
+						line-height: 25px;
+						width: 81%;
+					}
 				}
 				span#opening-time {
 					line-height: 20px;
@@ -6533,7 +6634,7 @@ body {
 			}
 			#banner {
 				width: 96%;
-				height: 240px;
+				
 				img {
 					width: 100%;
 				}
@@ -6597,7 +6698,7 @@ body {
 				letter-spacing: 0.01em;
 			}
 			#contactform {
-				width: 100%;
+				width: 96%;
 				margin: auto;
 				ul {
 					list-style: none;
@@ -6605,13 +6706,13 @@ body {
 						margin: 5px 0 10px 0;
 						label {
 							width: 20%;
-							font-size: 0.75em;
+							font-size: 0.7em;
 						}
 						input {
-							width: 65%;
+							width: 75%;
 						}
 						textarea {
-							width: 65%;
+							width: 75%;
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -6636,7 +6737,7 @@ body {
 				}
 				span.holidayprice {
 					font-size: 0.7em;
-					left: 5%;
+					left: 2%;
 					.offerbox-price {
 						font-weight: bold;
 					}
@@ -6667,7 +6768,7 @@ body {
 			}
 			/*Holiday details packages page end*/
 			.holiday_details_small {
-				width: 70%;
+				width: 75%;
 				float: none;
 				display: block;
 				margin: 1em auto;
@@ -6772,18 +6873,24 @@ body {
 		header {
 			height: 107px;
 			figure#logo {
-				height: 67px;
-				width: 60.012%;
+				height: 62px;
+				width: 200px;
+				
 			}
 			aside.contact {
-				width: 110px;
+				width: 112px;
 				span.tele {
-					width: 14.5%;
-				}
-				a#contact-number {
-					font-size: 0.75em;
-					line-height: 25px;
-					width: 80%;
+					width: 99%;
+					img{ 
+						width:12%; 
+						padding-left: 0.3em;
+					}
+				
+					a#contact-number {
+						font-size: 0.75em;
+						line-height: 25px;
+						width: 80%;
+					}
 				}
 				span#opening-time {
 					line-height: 20px;
@@ -7004,7 +7111,7 @@ body {
 			}
 			#banner {
 				width: 96%;
-				height: 220px;
+				
 				img {
 					width: 100%;
 				}
@@ -7073,7 +7180,7 @@ body {
 				letter-spacing: 0.01em;
 			}
 			#contactform {
-				width: 100%;
+				
 				margin: auto;
 				ul {
 					list-style: none;
@@ -7084,10 +7191,10 @@ body {
 							font-size: 0.7em;
 						}
 						input {
-							width: 65%;
+							width: 70%;
 						}
 						textarea {
-							width: 65%;
+							width: 70%;
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -7250,18 +7357,23 @@ body {
 		header {
 			height: 97px;
 			figure#logo {
-				height: 57px;
-				width: 56.012%;
+				height: 54px;
+				width:180px;
+				
 			}
 			aside.contact {
-				width: 100px;
+				width: 105px;
 				span.tele {
-					width: 16%;
-				}
-				a#contact-number {
-					font-size: 0.7em;
-					line-height: 25px;
-					width: 80%;
+					width: 99%;
+					img{ 
+						width:12%; 
+						padding-left: 0.3em;
+					}
+				
+					a#contact-number {
+						font-size: 0.7em;
+						width: 80%;
+					}
 				}
 				span#opening-time {
 					line-height: 20px;
@@ -7480,7 +7592,7 @@ body {
 			}
 			#banner {
 				width: 96%;
-				height: 180px;
+				
 				img {
 					width: 100%;
 				}
@@ -7544,7 +7656,7 @@ body {
 				letter-spacing: 0.01em;
 			}
 			#contactform {
-				width: 100%;
+				
 				margin: auto;
 				ul {
 					list-style: none;
@@ -7555,10 +7667,10 @@ body {
 							font-size: 0.7em;
 						}
 						input {
-							width: 65%;
+							width: 70%;
 						}
 						textarea {
-							width: 65%;
+							width: 70%;
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -7577,13 +7689,13 @@ body {
 				padding: 1%;
 				width: 96%;
 				h1 {
-					width: 60%;
+					width: 61%;
 					line-height: 40px;
-					font-size: 0.85em;
+					font-size: 0.8em;
 				}
 				span.holidayprice {
 					font-size: 0.7em;
-					left: 9%;
+					left: 7%;
 					width: 28%;
 					.offerbox-price {
 						font-weight: bold;
@@ -7725,20 +7837,23 @@ body {
 		header {
 			height: 97px;
 			figure#logo {
-				height: 57px;
-				width: 56.012%;
+				height: 54px;
+				width:155px;
+				
 			}
 			aside.contact {
-				width: 100px;
+				width: 105px;
 				span.tele {
-					    width: 15%;
-    					margin-top: 1%;
-					
-				}
-				a#contact-number {
-					font-size: 0.65em;
-					line-height: 24px;
-					width: 80%;
+					width: 99%;
+    				
+					img{ 
+						width:12%; 
+						padding-left: 0.3em;
+					}
+					a#contact-number {
+						font-size: 0.65em;
+						width: 80%;
+					}
 				}
 				span#opening-time {
 					line-height: 20px;
@@ -7770,9 +7885,6 @@ body {
 								height: 50px;
 								line-height: 50px;
 							}
-							&:visited {}
-							&:focus {}
-							&:active {}
 						}
 					}
 				}
@@ -7959,7 +8071,7 @@ body {
 			}
 			#banner {
 				width: 96%;
-				height: 180px;
+				
 				img {
 					width: 100%;
 				}
@@ -8023,7 +8135,7 @@ body {
 				letter-spacing: 0.01em;
 			}
 			#contactform {
-				width: 100%;
+				
 				margin: auto;
 				ul {
 					list-style: none;
@@ -8034,10 +8146,10 @@ body {
 							font-size: 0.7em;
 						}
 						input {
-							width: 65%;
+							width: 70%;
 						}
 						textarea {
-							width: 65%;
+							width: 70%;
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -8054,13 +8166,13 @@ body {
 			.holiday_details {
 				width: 96%;
 				h1 {
-					width: 60%;
+					width: 61%;
 					line-height: 40px;
 					font-size: 0.75em;
 				}
 				span.holidayprice {
 					font-size: 0.65em;
-					left: 9%;
+					left: 7%;
 					width: 32%;
 					.offerbox-price {
 						font-weight: bold;
@@ -8188,29 +8300,4 @@ body {
 	}
 	/*footer end*/
 }
-
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-	/* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-(-o-min-device-pixel-ratio: 5/4),
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 120dpi) {
-	/* Style adjustments for high resolution devices */
-}
-
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
-
 
