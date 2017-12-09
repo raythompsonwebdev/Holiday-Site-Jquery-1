@@ -1,3 +1,15 @@
+/*li:nth-of-type(2){
+	padding-top:0;
+	a{
+		font-size: 0.7em;
+		line-height: 16px;
+		height: auto;
+		padding: 0.4em 0;
+	}
+}*/
+
+
+
 @import "partials/variables";
 //@import "partials/normalize";
 @import "partials/mixins";
@@ -150,7 +162,7 @@ img {
 }
 
 body {
-	background-image: url("../images/images/travel-agency-website-bg.png");
+	background-image: url("assets/images/images/travel-agency-website-bg.png");
 	background-repeat: no-repeat;
 	background-position: left bottom;
 	background-attachment: fixed;
@@ -168,17 +180,18 @@ body {
 
 @media only screen and (max-width: 1920px) {
 	#wrapper {
-		width: 70%;
+		width: 65%;
 		margin-left:auto;
 		margin-right:auto;
 		background-color: $color3;
 		padding: 0 2%;
 		font-family: $font-style1;
 		@include clearfix();
+		background-color: #fff;
 		header {
 			width: 100%;
 			height: 117px;
-			background-color: #f9f9f9;
+			background-color: #fff;
 			border-bottom: 1px solid $colorgry2;
 			margin-bottom: 0.5em;
 			figure#logo {
@@ -311,10 +324,10 @@ body {
 								height: 40px;
 								@include boxShadow (0px 0px 0px $colorgry2);
 								color: $colorblue1;
-								@include gradient($colorpw,
-								$colorpw);
+								@include gradient ($colorpw1,
+								$colorpw1a);
 								font-weight: bold;
-								background-color: $colorpw;
+								background-color: $colorpw1a;
 								border-top: 1px solid $colorgry2;
 							}
 							&:visited {
@@ -369,41 +382,41 @@ body {
 							border-top: solid 1px #e4e2e2;
 							border-bottom: solid 1px #e4e2e2;
 							border-left: none;
-							background-image: url("../images/United_Kingdom.jpg");
+							background-image: url("assets/images/United_Kingdom.jpg");
 							background-repeat: no-repeat;
 							background-position: 5% 50%;
 							option[value="United_States"] {
-								background-image: url("../images/USA.gif");
+								background-image: url("assets/images/USA.gif");
 								background-repeat: no-repeat;
 								background-position: 50% 50%;
 								padding: 0.5em 0;
 							}
 							option[value="United_Kingdom"] {
-								background-image: url(../images/United_Kingdom.jpg);
+								background-image: url(assets/images/United_Kingdom.jpg);
 								background-repeat: no-repeat;
 								background-position: 50% 50%;
 								padding: 0.5em 0;
 							}
 							option[value="France"] {
-								background-image: url(../images/France.jpg);
+								background-image: url(assets/images/France.jpg);
 								background-repeat: no-repeat;
 								background-position: 50% 50%;
 								padding: 0.5em 0;
 							}
 							option[value="Germany"] {
-								background-image: url("../images/Germany.jpg");
+								background-image: url("assets/images/Germany.jpg");
 								background-repeat: no-repeat;
 								background-position: 50% 50%;
 								padding: 0.5em 0;
 							}
 							option[value="Spain"] {
-								background-image: url("../images/Spain.jpg");
+								background-image: url("assets/images/Spain.jpg");
 								background-repeat: no-repeat;
 								background-position: 50% 50%;
 								padding: 0.5em 0;
 							}
 							option[value="Jamaica"] {
-								background-image: url("../images/Jamaica.jpg");
+								background-image: url("assets/images/Jamaica.jpg");
 								background-repeat: no-repeat;
 								background-position: 50% 50%;
 								padding: 0.5em 0;
@@ -551,7 +564,7 @@ body {
 					padding: 2.5%;
 					display: block;
 					figure {
-						margin-right: 2%;
+						margin: 0 2% 0 0;
 						width: 100%;
 						img {
 							width: 32%;
@@ -943,6 +956,7 @@ body {
 				}
 				figure {
 					width: 100%;
+					margin: 0 2% 0 0;
 					img {
 						width: 21%;
 						display: inline-block;
@@ -1010,7 +1024,7 @@ body {
 				}
 				figure {
 					width: 100%;
-					margin-right: 10px;
+					margin: 0 2% 0 0;
 					display: inline-block;
 					img {
 						width: 41%;
@@ -1169,7 +1183,7 @@ body {
 
 @media only screen and (max-width: 1440px) {
 	#wrapper {
-		width: 75%;
+		width: 70%;
 		padding: 0 2%;
 		header {
 			height: 117px;
@@ -1364,21 +1378,22 @@ body {
 			width: 20%;
 			margin: 1% 1% 0 0;
 			#contact-details {
-				width: 96%;
+
 				padding: 10% 0;
 				list-style: none;
 				font-size: 0.70em;
+
 				li {
 					line-height: 20px;
-					height: 80px;
+
 					font-size: 0.95em;
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
-						width: 18%;
+						width: 15%;
 						img {
-							width: 41%;
+							width: 45%;
 							margin: 10% auto;
 						}
 					}
@@ -1683,7 +1698,7 @@ body {
 
 @media only screen and (max-width: 1280px) {
 	#wrapper {
-		width: 82.5%;
+		width: 78.5%;
 		header {
 			height: 117px;
 			figure#logo {
@@ -1728,7 +1743,7 @@ body {
 					li:nth-of-type(2){
 
 						a{
-							font-size: 0.65em;
+							font-size: 0.7em;
 						}
 					}
 				}
@@ -1764,7 +1779,7 @@ body {
 					}
 				}
 				h2 {
-					font-size: 1.1em;
+					font-size: 1.05em;
 					text-indent: 2%;
 				}
 				#search_form {
@@ -1876,15 +1891,15 @@ body {
 				font-size: 0.70em;
 				li {
 					line-height: 20px;
-					height: 80px;
+
 					font-size: 0.9em;
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
-						width: 18%;
+						width: 15%;
 						img {
-							width: 41%;
+							width: 45%;
 							margin: 10% auto;
 						}
 					}
@@ -2225,10 +2240,8 @@ body {
 					li:nth-of-type(2){
 						padding-top:0;
 						a{
-							font-size: 0.7em;
-							line-height: 16px;
+							font-size: 0.65em;
 							height: auto;
-							padding: 0.4em 0;
 						}
 					}
 				}
@@ -2263,7 +2276,7 @@ body {
 					}
 				}
 				h2 {
-					font-size: 1.05em;
+					font-size: 1em;
 					text-indent: 2%;
 				}
 				#search_form {
@@ -2369,12 +2382,12 @@ body {
 				font-size: 0.65em;
 				li {
 					line-height: 20px;
-					height: 80px;
+
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
-						width: 18%;
+						width: 15%;
 						img {
 							width: 48%;
 							margin: 10% auto;
@@ -2671,7 +2684,7 @@ body {
 				width: 240px;
 			}
 			aside.contact {
-				width: 141px;
+				width: 131px;
 				span.tele {
 					padding: 0;
 
@@ -2681,7 +2694,7 @@ body {
 					}
 					a#contact-number {
 						font-size: 0.9em;
-						width: 82%;
+						width: 78%;
 					}
 				}
 
@@ -2706,10 +2719,7 @@ body {
 					li:nth-of-type(2){
 						padding-top:0;
 						a{
-							font-size: 0.65em;
-							line-height: 16px;
-							height: auto;
-							padding: 0.4em 0;
+							font-size: 0.6em;
 						}
 					}
 				}
@@ -2849,12 +2859,12 @@ body {
 				font-size: 0.65em;
 				li {
 					line-height: 20px;
-					height: 80px;
+
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
-						width: 18%;
+						width: 15%;
 						img {
 							width: 48%;
 							margin: 10% auto;
@@ -3127,10 +3137,10 @@ body {
 			height: 107px;
 			figure#logo {
 				height: 67px;
-				width: 240px;
+				width: 220px;
 			}
 			aside.contact {
-				width: 130px;
+				width: 125px;
 				span.tele {
 					padding: 0;
 
@@ -3142,7 +3152,7 @@ body {
 					a#contact-number {
 						font-size: 0.8em;
 						line-height: 25px;
-						width: 82%;
+						width: 75%;
 					}
 
 				}
@@ -3166,12 +3176,10 @@ body {
 						}
 					}
 					li:nth-of-type(2){
-						padding-top:0.1em;
+
 						a{
-							font-size: 0.6em;
-							line-height: 16px;
+							font-size: 0.55em;
 							height: auto;
-							padding: 0.3em 0;
 						}
 					}
 				}
@@ -3315,15 +3323,15 @@ body {
 				font-size: 0.65em;
 				li {
 					line-height: 20px;
-					height: 80px;
+
 					font-size: 0.8em;
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
-						width: 18%;
+						width: 15%;
 						img {
-							width: 48%;
+							width: 60%;
 							margin: 10% auto;
 						}
 					}
@@ -3592,7 +3600,7 @@ body {
 				width: 200px;
 			}
 			aside.contact {
-				width: 130px;
+				width: 125px;
 				span.tele {
 					padding: 0;
 
@@ -3604,7 +3612,7 @@ body {
 					a#contact-number {
 						font-size: 0.8em;
 						line-height: 25px;
-						width: 82%;
+						width: 75%;
 					}
 				}
 				span#opening-time {
@@ -3623,6 +3631,14 @@ body {
 						a {
 							font-size: 0.6em;
 
+						}
+					}
+					li:nth-of-type(2){
+
+						a{
+							font-size: 0.5em;
+
+							height: auto;
 						}
 					}
 				}
@@ -3766,14 +3782,14 @@ body {
 				font-size: 0.65em;
 				li {
 					line-height: 20px;
-					height: 80px;
+
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
-						width: 18%;
+						width: 15%;
 						img {
-							width: 48%;
+							width: 60%;
 							margin: 10% auto;
 						}
 					}
@@ -4053,6 +4069,7 @@ body {
 					a#contact-number {
 						font-size: 0.85em;
 						line-height: 25px;
+						width: 79%;
 
 					}
 				}
@@ -4261,12 +4278,12 @@ body {
 				font-size: 0.65em;
 				li {
 					line-height: 20px;
-					height: 80px;
+
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
-						width: 18%;
+						width: 15%;
 						img {
 							width: 48%;
 							margin: 10% auto;
@@ -4723,12 +4740,12 @@ body {
 				font-size: 0.65em;
 				li {
 					line-height: 20px;
-					height: 80px;
+
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
-						width: 18%;
+						width: 15%;
 						img {
 							width: 48%;
 							margin: 10% auto;
@@ -5010,7 +5027,7 @@ body {
 					a#contact-number {
 						font-size: 0.8em;
 						line-height: 25px;
-						width: 82%;
+
 					}
 				}
 				span#opening-time {
@@ -5049,12 +5066,12 @@ body {
 					}
 				}
 				aside#language-box {
-					width: 23%;
+					width: 24%;
 					margin-left: 0%;
 					form {
 						span {
 							width: 58%;
-							font-size: 0.75em;
+							font-size: 0.7em;
 						}
 						select {
 							font-size: 0.65em;
@@ -5188,12 +5205,12 @@ body {
 				font-size: 0.65em;
 				li {
 					line-height: 20px;
-					height: 80px;
+
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
-						width: 18%;
+						width: 15%;
 						img {
 							width: 48%;
 							margin: 10% auto;
@@ -5514,7 +5531,7 @@ body {
 					}
 				}
 				aside#language-box {
-					width: 23%;
+					width: 26%;
 					margin-left: 0%;
 					form {
 						label {
@@ -5653,12 +5670,12 @@ body {
 				font-size: 0.65em;
 				li {
 					line-height: 20px;
-					height: 80px;
+
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
-						width: 18%;
+						width: 15%;
 						img {
 							width: 48%;
 							margin: 10% auto;
@@ -5927,7 +5944,7 @@ body {
 			height: 107px;
 			figure#logo {
 				height: 65px;
-
+				width: 190px;
 			}
 			aside.contact {
 				width: 115px;
@@ -5940,7 +5957,7 @@ body {
 
 					a#contact-number {
 						font-size: 0.75em;
-						width: 81%;
+						width: 78%;
 					}
 				}
 				span#opening-time {
@@ -6118,12 +6135,12 @@ body {
 				font-size: 0.65em;
 				li {
 					line-height: 20px;
-					height: 80px;
+
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
-						width: 18%;
+						width: 15%;
 						img {
 							width: 48%;
 							margin: 10% auto;
@@ -6401,7 +6418,7 @@ body {
 			height: 107px;
 			figure#logo {
 				height: 65px;
-				width:200px;
+				width:180px;
 
 			}
 			aside.contact {
@@ -6416,7 +6433,7 @@ body {
 					a#contact-number {
 						font-size: 0.75em;
 						line-height: 25px;
-						width: 81%;
+						width: 79%;
 					}
 				}
 				span#opening-time {
@@ -6455,7 +6472,7 @@ body {
 					}
 				}
 				aside#language-box {
-					width: 29%;
+					width: 31%;
 					margin-left: 0%;
 					form {
 						span {
@@ -6594,12 +6611,12 @@ body {
 				font-size: 0.65em;
 				li {
 					line-height: 20px;
-					height: 80px;
+
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
-						width: 18%;
+						width: 15%;
 						img {
 							width: 48%;
 							margin: 10% auto;
@@ -6877,7 +6894,7 @@ body {
 			height: 107px;
 			figure#logo {
 				height: 62px;
-				width: 200px;
+				width: 170px;
 
 			}
 			aside.contact {
@@ -6892,7 +6909,7 @@ body {
 					a#contact-number {
 						font-size: 0.75em;
 						line-height: 25px;
-						width: 80%;
+						width: 79%;
 					}
 				}
 				span#opening-time {
@@ -6932,7 +6949,7 @@ body {
 					}
 				}
 				aside#language-box {
-					width: 31%;
+					width: 35%;
 					margin-left: 0%;
 					form {
 						label {
@@ -7071,12 +7088,12 @@ body {
 				font-size: 0.65em;
 				li {
 					line-height: 20px;
-					height: 80px;
+
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
-						width: 18%;
+						width: 15%;
 						img {
 							width: 48%;
 							margin: 10% auto;
@@ -7140,7 +7157,7 @@ body {
 						figcaption {
 							padding: 5% 0;
 							p {
-								font-size: 0.85em;
+								font-size: 0.75em;
 							}
 							p:nth-of-type(2) {
 								font-weight: bold;
@@ -7361,7 +7378,7 @@ body {
 			height: 97px;
 			figure#logo {
 				height: 54px;
-				width:180px;
+				width:160px;
 
 			}
 			aside.contact {
@@ -7413,7 +7430,7 @@ body {
 					}
 				}
 				aside#language-box {
-					width: 33%;
+					width: 35%;
 					margin-left: 0%;
 					form {
 						label {
@@ -7552,12 +7569,12 @@ body {
 				font-size: 0.65em;
 				li {
 					line-height: 20px;
-					height: 80px;
+
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
-						width: 18%;
+						width: 15%;
 						img {
 							width: 48%;
 							margin: 10% auto;
@@ -7607,6 +7624,7 @@ body {
 				h2 {
 					font-size: 1em;
 					letter-spacing: 0.05em;
+					font-weight:bold;
 				}
 				div.offerbox {
 					width: 70%;
@@ -7618,7 +7636,7 @@ body {
 						figcaption {
 							padding: 5% 0;
 							p {
-								font-size: 0.85em;
+								font-size: 0.75em;
 							}
 							p:nth-of-type(2) {
 								font-weight: bold;
@@ -7892,7 +7910,7 @@ body {
 					}
 				}
 				aside#language-box {
-					width: 33%;
+					width: 38%;
 					margin-left: 0%;
 					form {
 						label {
@@ -8031,12 +8049,12 @@ body {
 				font-size: 0.65em;
 				li {
 					line-height: 20px;
-					height: 80px;
+
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
-						width: 18%;
+						width: 15%;
 						img {
 							width: 48%;
 							margin: 10% auto;
@@ -8097,7 +8115,7 @@ body {
 						figcaption {
 							padding: 5% 0;
 							p {
-								font-size: 0.80em;
+								font-size: 0.7em;
 							}
 							p:nth-of-type(2) {
 								font-weight: bold;
