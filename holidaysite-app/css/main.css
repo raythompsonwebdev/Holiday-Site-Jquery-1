@@ -291,7 +291,7 @@ body {
               /* Saf4+, Chrome */
               background-image: linear-gradient(top, #4aa8f0, #1180c5);
               filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-              /* IE6â��IE9 */
+              /* IE6├ó´┐¢´┐¢IE9 */
               -webkit-transition: all 0.1s linear;
               -moz-transition: all 0.1s linear;
               -o-transition: all 0.1s linear;
@@ -317,7 +317,7 @@ body {
                 /* Saf4+, Chrome */
                 background-image: linear-gradient(top, #ffffff, #ffffff);
                 filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-                /* IE6â��IE9 */
+                /* IE6├ó´┐¢´┐¢IE9 */
                 font-weight: bold;
                 background-color: #ffffff;
                 border-top: 1px solid #9e9e9e; }
@@ -329,7 +329,7 @@ body {
                 /* Saf4+, Chrome */
                 background-image: linear-gradient(top, #ffffff, #ffffff);
                 filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-                /* IE6â��IE9 */
+                /* IE6├ó´┐¢´┐¢IE9 */
                 color: #4aa8f0;
                 background-color: #ffffff;
                 -webkit-box-shadow: 0px 0px 0px #9e9e9e;
@@ -344,7 +344,7 @@ body {
                 /* Saf4+, Chrome */
                 background-image: linear-gradient(top, #ffffff, #ffffff);
                 filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-                /* IE6â��IE9 */
+                /* IE6├ó´┐¢´┐¢IE9 */
                 color: #4aa8f0;
                 background-color: #ffffff;
                 -webkit-box-shadow: 0px 0px 0px #9e9e9e;
@@ -359,7 +359,7 @@ body {
                 /* Saf4+, Chrome */
                 background-image: linear-gradient(top, #ffffff, #ffffff);
                 filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-                /* IE6â��IE9 */
+                /* IE6├ó´┐¢´┐¢IE9 */
                 color: #4aa8f0;
                 background-color: #ffffff;
                 -webkit-box-shadow: 0px 0px 0px #9e9e9e;
@@ -425,10 +425,6 @@ body {
               background-repeat: no-repeat;
               background-position: 50% 50%;
               padding: 0.5em 0; }
-    #wrapper #side-bar-btn {
-      display: none; }
-    #wrapper #contact-bar-btn {
-      display: none; }
     #wrapper #leftside {
       width: 30%;
       height: auto;
@@ -539,7 +535,7 @@ body {
             /* Saf4+, Chrome */
             background-image: linear-gradient(top, #f4810a, #f99f3e);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-            /* IE6â��IE9 */
+            /* IE6├ó´┐¢´┐¢IE9 */
             -webkit-transition: all 0.2s linear ease-in-out;
             -moz-transition: all 0.2s linear ease-in-out;
             -o-transition: all 0.2s linear ease-in-out;
@@ -566,7 +562,7 @@ body {
               /* Saf4+, Chrome */
               background-image: linear-gradient(top, #f99f3e, #f4810a);
               filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-              /* IE6â��IE9 */
+              /* IE6├ó´┐¢´┐¢IE9 */
               font-weight: bold; }
         #wrapper #leftside .leftsidebox div.destinations {
           width: 91%;
@@ -645,7 +641,7 @@ body {
             /* Saf4+, Chrome */
             background-image: linear-gradient(top, #fafafa, #ededeb);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-            /* IE6â��IE9 */
+            /* IE6├ó´┐¢´┐¢IE9 */
             line-height: 25px;
             color: #1485c9;
             letter-spacing: 0.02em; }
@@ -663,7 +659,7 @@ body {
               /* Saf4+, Chrome */
               background-image: linear-gradient(top, #ededeb, #fafafa);
               filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-              /* IE6â��IE9 */
+              /* IE6├ó´┐¢´┐¢IE9 */
               line-height: 25px; }
     #wrapper #leftside3 {
       width: 20%;
@@ -803,9 +799,13 @@ body {
                   color: #ff6600; }
     #wrapper label.error {
       font-size: 1em;
-      border: 1px solid #CCC;
+      position: absolute;
+      background-color: #c90;
+      left: 1000px;
+      index: 2;
+      border: 1px solid black;
       padding: 1%;
-      text-align: center; }
+      text-align: 1.5em; }
     #wrapper #content2 {
       width: 77%;
       height: auto;
@@ -813,6 +813,7 @@ body {
       margin-bottom: 10px;
       background-color: #ffffff;
       padding: 1%;
+      line-height: 1.5em;
       /*end of contact form*/
       /*Holiday details packages page end*/
       /*Holiday details Best deals page end*/ }
@@ -848,14 +849,7 @@ body {
         display: block; }
       #wrapper #content2 p {
         font-size: 0.85em;
-        margin: 0 0 0.5em 0;
-        line-height: 1.65em; }
-      #wrapper #content2 #summary {
-        width: 80%;
-        margin: 0 auto;
-        display: block;
-        height: 50px;
-        line-height: 1.5em; }
+        margin: 0; }
       #wrapper #content2 #contactform {
         width: 90%;
         margin: auto;
@@ -865,7 +859,7 @@ body {
           list-style: none;
           padding: 0; }
           #wrapper #content2 #contactform ul li {
-            margin: 0 0 1em 0; }
+            margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               float: left;
               width: 16%;
@@ -873,9 +867,7 @@ body {
               font-weight: bold;
               line-height: 35px;
               font-size: 0.9em; }
-            #wrapper #content2 #contactform ul li input[type="text"],
-            #wrapper #content2 #contactform ul li input[type="tel"],
-            #wrapper #content2 #contactform ul li input[type="email"] {
+            #wrapper #content2 #contactform ul li input {
               width: 75%;
               height: 35px;
               padding: 0;
@@ -902,7 +894,7 @@ body {
               /* Saf4+, Chrome */
               background-image: linear-gradient(top, #f58115, #faa544);
               filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-              /* IE6â��IE9 */
+              /* IE6├ó´┐¢´┐¢IE9 */
               border: 0; }
             #wrapper #content2 #contactform ul li #contactbtn:hover {
               color: #ffffff;
@@ -914,26 +906,7 @@ body {
               /* Saf4+, Chrome */
               background-image: linear-gradient(top, #faa544, #f58115);
               filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-              /* IE6â��IE9 */ }
-        #wrapper #content2 #contactform label.error,
-        #wrapper #content2 #contactform label.notice,
-        #wrapper #content2 #contactform label.success {
-          width: 50%;
-          float: none;
-          margin: 0.5em auto;
-          display: block;
-          border: 1px solid #3b3b3b; }
-        #wrapper #content2 #contactform label.error {
-          color: #000;
-          border-color: red; }
-        #wrapper #content2 #contactform .notice {
-          background: #FFF6BF;
-          color: #514721;
-          border-color: #FFD324; }
-        #wrapper #content2 #contactform .success {
-          background: #E6EFC2;
-          color: #264409;
-          border-color: #C6D880; }
+              /* IE6├ó´┐¢´┐¢IE9 */ }
       #wrapper #content2 .holiday_details {
         border: 4px #eaeaec solid;
         margin: 1% 0 0 0;
@@ -975,7 +948,7 @@ body {
             margin-bottom: 1%;
             display: inline-block; }
             #wrapper #content2 .holiday_details figure figcaption p {
-              font-size: 0.85em;
+              font-size: 0.9em;
               margin: 0 0 2% 0;
               line-height: 1.6em;
               color: #9e9e9e; }
@@ -1002,7 +975,7 @@ body {
               /* Saf4+, Chrome */
               background-image: linear-gradient(top, #f58115, #faa544);
               filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-              /* IE6â��IE9 */
+              /* IE6├ó´┐¢´┐¢IE9 */
               display: block;
               margin: 0.5em 0 0 0; }
             #wrapper #content2 .holiday_details figure figcaption a:hover {
@@ -1017,7 +990,7 @@ body {
               /* Saf4+, Chrome */
               background-image: linear-gradient(top, #faa544, #f58115);
               filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-              /* IE6â��IE9 */ }
+              /* IE6├ó´┐¢´┐¢IE9 */ }
       #wrapper #content2 .holiday_details_small {
         width: 45%;
         border: 4px #ebece7 solid;
@@ -1082,7 +1055,7 @@ body {
               /* Saf4+, Chrome */
               background-image: linear-gradient(top, #f58115, #faa544);
               filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-              /* IE6â��IE9 */ }
+              /* IE6├ó´┐¢´┐¢IE9 */ }
             #wrapper #content2 .holiday_details_small figure figcaption a:hover {
               color: #ffffff;
               text-align: center;
@@ -1094,7 +1067,7 @@ body {
               /* Saf4+, Chrome */
               background-image: linear-gradient(top, #faa544, #f58115);
               filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-              /* IE6â��IE9 */ }
+              /* IE6├ó´┐¢´┐¢IE9 */ }
       #wrapper #content2 .servicebox {
         width: 31%;
         height: auto;
@@ -1437,15 +1410,13 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 0 0 1em 0; }
+            margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               height: 35px;
               line-height: 35px;
               font-size: 0.85em; }
-            #wrapper #content2 #contactform ul li input[type="text"],
-            #wrapper #content2 #contactform ul li input[type="tel"],
-            #wrapper #content2 #contactform ul li input[type="email"] {
+            #wrapper #content2 #contactform ul li input {
               height: 35px;
               line-height: 35px; }
             #wrapper #content2 #contactform ul li textarea {
@@ -1799,15 +1770,13 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 0 0 1em 0; }
+            margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               height: 35px;
               line-height: 35px;
               font-size: 0.8em; }
-            #wrapper #content2 #contactform ul li input[type="text"],
-            #wrapper #content2 #contactform ul li input[type="tel"],
-            #wrapper #content2 #contactform ul li input[type="email"] {
+            #wrapper #content2 #contactform ul li input {
               height: 35px;
               line-height: 35px; }
             #wrapper #content2 #contactform ul li textarea {
@@ -2144,15 +2113,13 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 0 0 1em 0; }
+            margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               height: 35px;
               line-height: 35px;
               font-size: 0.75em; }
-            #wrapper #content2 #contactform ul li input[type="text"],
-            #wrapper #content2 #contactform ul li input[type="tel"],
-            #wrapper #content2 #contactform ul li input[type="email"] {
+            #wrapper #content2 #contactform ul li input {
               height: 35px;
               line-height: 35px; }
             #wrapper #content2 #contactform ul li textarea {
@@ -2479,13 +2446,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 0 0 1em 0; }
+            margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.75em; }
-            #wrapper #content2 #contactform ul li input[type="text"],
-            #wrapper #content2 #contactform ul li input[type="tel"],
-            #wrapper #content2 #contactform ul li input[type="email"] {
+            #wrapper #content2 #contactform ul li input {
               width: 75%; }
             #wrapper #content2 #contactform ul li textarea {
               line-height: 1.5em; }
@@ -2813,13 +2778,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 0 0 1em 0; }
+            margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.7em; }
-            #wrapper #content2 #contactform ul li input[type="text"],
-            #wrapper #content2 #contactform ul li input[type="tel"],
-            #wrapper #content2 #contactform ul li input[type="email"] {
+            #wrapper #content2 #contactform ul li input {
               width: 75%; }
             #wrapper #content2 #contactform ul li textarea {
               width: 75%;
@@ -3138,13 +3101,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 0 0 1em 0; }
+            margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.7em; }
-            #wrapper #content2 #contactform ul li input[type="text"],
-            #wrapper #content2 #contactform ul li input[type="tel"],
-            #wrapper #content2 #contactform ul li input[type="email"] {
+            #wrapper #content2 #contactform ul li input {
               width: 75%; }
             #wrapper #content2 #contactform ul li textarea {
               line-height: 1.5em; }
@@ -3541,13 +3502,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 0 0 1em 0; }
+            margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.8em; }
-            #wrapper #content2 #contactform ul li input[type="text"],
-            #wrapper #content2 #contactform ul li input[type="tel"],
-            #wrapper #content2 #contactform ul li input[type="email"] {
+            #wrapper #content2 #contactform ul li input {
               width: 75%; }
             #wrapper #content2 #contactform ul li textarea {
               width: 75%;
@@ -3875,13 +3834,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 0 0 1em 0; }
+            margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.8em; }
-            #wrapper #content2 #contactform ul li input[type="text"],
-            #wrapper #content2 #contactform ul li input[type="tel"],
-            #wrapper #content2 #contactform ul li input[type="email"] {
+            #wrapper #content2 #contactform ul li input {
               width: 75%; }
             #wrapper #content2 #contactform ul li textarea {
               line-height: 1.5em; }
@@ -4213,13 +4170,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 0 0 1em 0; }
+            margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.75em; }
-            #wrapper #content2 #contactform ul li input[type="text"],
-            #wrapper #content2 #contactform ul li input[type="tel"],
-            #wrapper #content2 #contactform ul li input[type="email"] {
+            #wrapper #content2 #contactform ul li input {
               width: 75%; }
             #wrapper #content2 #contactform ul li textarea {
               line-height: 1.5em; }
@@ -4544,13 +4499,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 0 0 1em 0; }
+            margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.7em; }
-            #wrapper #content2 #contactform ul li input[type="text"],
-            #wrapper #content2 #contactform ul li input[type="tel"],
-            #wrapper #content2 #contactform ul li input[type="email"] {
+            #wrapper #content2 #contactform ul li input {
               width: 75%; }
             #wrapper #content2 #contactform ul li textarea {
               line-height: 1.5em; }
@@ -4883,13 +4836,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 0 0 1em 0; }
+            margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 20%;
               font-size: 0.7em; }
-            #wrapper #content2 #contactform ul li input[type="text"],
-            #wrapper #content2 #contactform ul li input[type="tel"],
-            #wrapper #content2 #contactform ul li input[type="email"] {
+            #wrapper #content2 #contactform ul li input {
               width: 75%; }
             #wrapper #content2 #contactform ul li textarea {
               line-height: 1.5em; }
@@ -5223,13 +5174,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 0 0 1em 0; }
+            margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 20%;
               font-size: 0.7em; }
-            #wrapper #content2 #contactform ul li input[type="text"],
-            #wrapper #content2 #contactform ul li input[type="tel"],
-            #wrapper #content2 #contactform ul li input[type="email"] {
+            #wrapper #content2 #contactform ul li input {
               width: 75%; }
             #wrapper #content2 #contactform ul li textarea {
               width: 75%;
@@ -5577,13 +5526,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 0 0 1em 0; }
+            margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 25%;
               font-size: 0.7em; }
-            #wrapper #content2 #contactform ul li input[type="text"],
-            #wrapper #content2 #contactform ul li input[type="tel"],
-            #wrapper #content2 #contactform ul li input[type="email"] {
+            #wrapper #content2 #contactform ul li input {
               width: 70%; }
             #wrapper #content2 #contactform ul li textarea {
               width: 70%;
@@ -5921,13 +5868,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 0 0 1em 0; }
+            margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 25%;
               font-size: 0.7em; }
-            #wrapper #content2 #contactform ul li input[type="text"],
-            #wrapper #content2 #contactform ul li input[type="tel"],
-            #wrapper #content2 #contactform ul li input[type="email"] {
+            #wrapper #content2 #contactform ul li input {
               width: 70%; }
             #wrapper #content2 #contactform ul li textarea {
               width: 70%;
@@ -6271,13 +6216,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 0 0 1em 0; }
+            margin: 5px 0 10px 0; }
             #wrapper #content2 #contactform ul li label {
               width: 25%;
               font-size: 0.7em; }
-            #wrapper #content2 #contactform ul li input[type="text"],
-            #wrapper #content2 #contactform ul li input[type="tel"],
-            #wrapper #content2 #contactform ul li input[type="email"] {
+            #wrapper #content2 #contactform ul li input {
               width: 70%; }
             #wrapper #content2 #contactform ul li textarea {
               width: 70%;

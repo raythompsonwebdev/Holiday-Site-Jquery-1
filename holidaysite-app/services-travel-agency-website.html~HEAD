@@ -4,14 +4,10 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="minimum-scale=0">
-<meta name="viewport" content="user-scalable=yes">
-<meta name="viewport" content="target-densitydpi=device-dpi">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content="">
-<meta name="author" content="RayThompWeb" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="raythompsonwebdev.co.uk" />
 <meta name="copyright" content="&copy;raymondthompson" />
 <meta name="robots" content="noindex,nofollow">
 <!--favicon-->
@@ -54,7 +50,7 @@
 
 <!---contact number-->
 <aside class="contact">
-<span class="tele"><img src="images/images/Telephone.png" alt="Travel Agency Contact Number"></span><a href="tel:0208-000-1452" id="contact-number">0208-365-1452</a>
+<span class="tele"><img src="images/images/Telephone.png" alt="Travel Agency Contact Number"><a href="tel:0208-000-1452" id="contact-number">0208-365-1452</a></span>
 <span id="opening-time">Everyday 8am - 9pm</span>
 </aside>
     
@@ -64,7 +60,7 @@
 <img src="images/travel-agency-website-logo.png" alt="travel-agency-website-logo"/>
 </figure>
 
-<!---Logo end-->
+
 <!---primary navigation-->
 <nav>
         <button id="toggle-menu">Menu</button>
@@ -93,21 +89,26 @@
 </aside> 
     
 </nav>
-<!---primary navigation end-->
-</header>
-<!--header end-->
 
+</header>
+
+<button id="side-bar-btn">SIDE</button>
 <!---Leftside-->
 <aside id="leftside3">
 
-<figure><img src="images/travel-agency-website-sidebar-banner-image.jpg" alt="travel-agency-website-sidebar-banner-image">
+<figure>
 <figcaption>
 	<h1>Lorem ipsum dolor sit amet</h1>
+	
+	<span><img src="images/travel-agency-website-sidebar-banner-image-label.jpg" alt=""></span>
 	
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 	<p> Maxime minima magnam iure libero, laboriosam. Vitae magnam earum, quae</p>
 	<p> rillo cupiditate deleniti expedita. Maxime minima magnam iure libero</p>
 </figcaption>
+
+<img src="images/travel-agency-website-sidebar-banner-image-small.jpg" alt="travel-agency-website-sidebar-banner-image">
+
 </figure>
 
 </aside>
@@ -116,9 +117,7 @@
 
 <h1>Lorem ipsum dolor sit amet, consectetur</h1>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit dolor sequi voluptatem esse doloribus libero commodi ea debitis id nostrum odio velit impedit vitae tenetur voluptates vero beatae excepturi.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit dolor sequi voluptatem esse doloribus libero commodi ea debitis id nostrum odio velit impedit vitae tenetur voluptates vero beatae excepturi.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit dolor sequi voluptatem esse doloribus libero commodi ea debitis id nostrum odio velit impedit vitae tenetur voluptates vero beatae excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit dolor sequi voluptatem esse doloribus libero commodi ea debitis id nostrum odio velit impedit vitae tenetur voluptates vero beatae excepturi.</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit dolor sequi voluptatem esse doloribus libero commodi ea debitis id nostrum odio velit impedit vitae tenetur voluptates vero beatae excepturi.</p>
 <br/>
 <div class="servicebox">
@@ -158,16 +157,15 @@
 <div class="clearfix"></div>
 <br/>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit dolor sequi voluptatem esse doloribus libero commodi ea debitis id nostrum odio velit impedit vitae tenetur voluptates vero beatae excepturi.</p>
-<br/>
+
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit dolor sequi voluptatem esse doloribus libero commodi ea debitis id nostrum odio velit impedit vitae tenetur voluptates vero beatae excepturi.</p>
-<br/>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit dolor sequi voluptatem esse doloribus libero commodi ea debitis id nostrum odio velit impedit vitae tenetur voluptates vero beatae excepturi.</p>
-<br/>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit dolor sequi voluptatem esse doloribus libero commodi ea debitis id nostrum odio velit impedit vitae tenetur voluptates vero beatae excepturi.</p>
-<br/>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit dolor sequi voluptatem esse doloribus libero commodi ea debitis id nostrum odio velit impedit vitae tenetur voluptates vero beatae excepturi.</p>
-<br/>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit dolor sequi voluptatem esse doloribus libero commodi ea debitis id nostrum odio velit impedit vitae tenetur voluptates vero beatae excepturi.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit dolor sequi voluptatem esse doloribus libero commodi ea debitis id nostrum odio velit impedit vitae tenetur voluptates vero beatae excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit dolor sequi voluptatem esse doloribus libero commodi ea debitis id nostrum odio velit impedit vitae tenetur voluptates vero beatae excepturi.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit dolor sequi voluptatem esse doloribus libero commodi ea debitis id nostrum odio velit impedit vitae tenetur voluptates vero beatae excepturi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit dolor sequi voluptatem esse doloribus libero commodi ea debitis id nostrum odio velit impedit vitae tenetur voluptates vero beatae excepturi.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit dolor sequi voluptatem esse doloribus libero commodi ea debitis id nostrum odio velit impedit vitae tenetur voluptates vero beatae excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit dolor sequi voluptatem esse doloribus libero commodi ea debitis id nostrum odio velit impedit vitae tenetur voluptates vero beatae excepturi.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit dolor sequi voluptatem esse doloribus libero commodi ea debitis id nostrum odio velit impedit vitae tenetur voluptates vero beatae excepturi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit dolor sequi voluptatem esse doloribus libero commodi ea debitis id nostrum odio velit impedit vitae tenetur voluptates vero beatae excepturi.</p>
 <br/>
 </main>
 
