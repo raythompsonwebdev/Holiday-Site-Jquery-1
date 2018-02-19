@@ -294,7 +294,7 @@ body {
               /* Saf4+, Chrome */
               background-image: linear-gradient(top, #4aa8f0, #1180c5);
               filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-              /* IE6├ó´┐¢´┐¢IE9 */
+              /* IE6â��IE9 */
               -webkit-transition: all 0.1s linear;
               -moz-transition: all 0.1s linear;
               -o-transition: all 0.1s linear;
@@ -320,7 +320,7 @@ body {
                 /* Saf4+, Chrome */
                 background-image: linear-gradient(top, #ffffff, #ffffff);
                 filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-                /* IE6├ó´┐¢´┐¢IE9 */
+                /* IE6â��IE9 */
                 font-weight: bold;
                 background-color: #ffffff;
                 border-top: 1px solid #9e9e9e; }
@@ -332,7 +332,7 @@ body {
                 /* Saf4+, Chrome */
                 background-image: linear-gradient(top, #ffffff, #ffffff);
                 filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-                /* IE6├ó´┐¢´┐¢IE9 */
+                /* IE6â��IE9 */
                 color: #4aa8f0;
                 background-color: #ffffff;
                 -webkit-box-shadow: 0px 0px 0px #9e9e9e;
@@ -347,7 +347,7 @@ body {
                 /* Saf4+, Chrome */
                 background-image: linear-gradient(top, #ffffff, #ffffff);
                 filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-                /* IE6├ó´┐¢´┐¢IE9 */
+                /* IE6â��IE9 */
                 color: #4aa8f0;
                 background-color: #ffffff;
                 -webkit-box-shadow: 0px 0px 0px #9e9e9e;
@@ -362,7 +362,7 @@ body {
                 /* Saf4+, Chrome */
                 background-image: linear-gradient(top, #ffffff, #ffffff);
                 filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-                /* IE6├ó´┐¢´┐¢IE9 */
+                /* IE6â��IE9 */
                 color: #4aa8f0;
                 background-color: #ffffff;
                 -webkit-box-shadow: 0px 0px 0px #9e9e9e;
@@ -404,7 +404,18 @@ body {
             #wrapper header nav aside#language-box form select option[value="Germany"],
             #wrapper header nav aside#language-box form select option[value="Spain"],
             #wrapper header nav aside#language-box form select option[value="Jamaica"] {
+<<<<<<< HEAD
               padding: 1em; }
+=======
+              background-image: url("../images/Jamaica.jpg");
+              background-repeat: no-repeat;
+              background-position: 50% 50%;
+              padding: 0.5em 0; }
+    #wrapper #side-bar-btn {
+      display: none; }
+    #wrapper #contact-bar-btn {
+      display: none; }
+>>>>>>> c88af02404d1550aff33e9957029acb9a8664eb1
     #wrapper #leftside {
       width: 30%;
       height: auto;
@@ -515,7 +526,7 @@ body {
             /* Saf4+, Chrome */
             background-image: linear-gradient(top, #f4810a, #f99f3e);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-            /* IE6├ó´┐¢´┐¢IE9 */
+            /* IE6â��IE9 */
             -webkit-transition: all 0.2s linear ease-in-out;
             -moz-transition: all 0.2s linear ease-in-out;
             -o-transition: all 0.2s linear ease-in-out;
@@ -542,7 +553,7 @@ body {
               /* Saf4+, Chrome */
               background-image: linear-gradient(top, #f99f3e, #f4810a);
               filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-              /* IE6├ó´┐¢´┐¢IE9 */
+              /* IE6â��IE9 */
               font-weight: bold; }
         #wrapper #leftside .leftsidebox div.destinations {
           width: 91%;
@@ -621,7 +632,7 @@ body {
             /* Saf4+, Chrome */
             background-image: linear-gradient(top, #fafafa, #ededeb);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-            /* IE6├ó´┐¢´┐¢IE9 */
+            /* IE6â��IE9 */
             line-height: 25px;
             color: #1485c9;
             letter-spacing: 0.02em; }
@@ -639,7 +650,7 @@ body {
               /* Saf4+, Chrome */
               background-image: linear-gradient(top, #ededeb, #fafafa);
               filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-              /* IE6├ó´┐¢´┐¢IE9 */
+              /* IE6â��IE9 */
               line-height: 25px; }
     #wrapper #leftside3 {
       width: 20%;
@@ -779,13 +790,9 @@ body {
                   color: #ff6600; }
     #wrapper label.error {
       font-size: 1em;
-      position: absolute;
-      background-color: #c90;
-      left: 1000px;
-      index: 2;
-      border: 1px solid black;
+      border: 1px solid #CCC;
       padding: 1%;
-      text-align: 1.5em; }
+      text-align: center; }
     #wrapper #content2 {
       width: 77%;
       height: auto;
@@ -793,7 +800,6 @@ body {
       margin-bottom: 10px;
       background-color: #ffffff;
       padding: 1%;
-      line-height: 1.5em;
       /*end of contact form*/
       /*Holiday details packages page end*/
       /*Holiday details Best deals page end*/ }
@@ -829,7 +835,14 @@ body {
         display: block; }
       #wrapper #content2 p {
         font-size: 0.85em;
-        margin: 0; }
+        margin: 0 0 0.5em 0;
+        line-height: 1.65em; }
+      #wrapper #content2 #summary {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        height: 50px;
+        line-height: 1.5em; }
       #wrapper #content2 #contactform {
         width: 90%;
         margin: auto;
@@ -839,7 +852,11 @@ body {
           list-style: none;
           padding: 0; }
           #wrapper #content2 #contactform ul li {
+<<<<<<< HEAD
             margin: 0.5em 0 1em 0; }
+=======
+            margin: 0 0 1em 0; }
+>>>>>>> c88af02404d1550aff33e9957029acb9a8664eb1
             #wrapper #content2 #contactform ul li label {
               float: left;
               width: 16%;
@@ -880,8 +897,9 @@ body {
               /* Saf4+, Chrome */
               background-image: linear-gradient(top, #f58115, #faa544);
               filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-              /* IE6├ó´┐¢´┐¢IE9 */
+              /* IE6â��IE9 */
               border: 0; }
+<<<<<<< HEAD
               #wrapper #content2 #contactform ul li #contactbtn:hover {
                 color: #ffffff;
                 border: 0;
@@ -893,6 +911,38 @@ body {
                 background-image: linear-gradient(top, #faa544, #f58115);
                 filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
                 /* IE6├ó´┐¢´┐¢IE9 */ }
+=======
+            #wrapper #content2 #contactform ul li #contactbtn:hover {
+              color: #ffffff;
+              border: 0;
+              background-color: #faa544;
+              background-image: -moz-linear-gradient(top, #faa544, #f58115);
+              /* FF3.6 */
+              background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #faa544), color-stop(1, #f58115));
+              /* Saf4+, Chrome */
+              background-image: linear-gradient(top, #faa544, #f58115);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+              /* IE6â��IE9 */ }
+        #wrapper #content2 #contactform label.error,
+        #wrapper #content2 #contactform label.notice,
+        #wrapper #content2 #contactform label.success {
+          width: 50%;
+          float: none;
+          margin: 0.5em auto;
+          display: block;
+          border: 1px solid #3b3b3b; }
+        #wrapper #content2 #contactform label.error {
+          color: #000;
+          border-color: red; }
+        #wrapper #content2 #contactform .notice {
+          background: #FFF6BF;
+          color: #514721;
+          border-color: #FFD324; }
+        #wrapper #content2 #contactform .success {
+          background: #E6EFC2;
+          color: #264409;
+          border-color: #C6D880; }
+>>>>>>> c88af02404d1550aff33e9957029acb9a8664eb1
       #wrapper #content2 .holiday_details {
         border: 4px #eaeaec solid;
         margin: 1% 0 0 0;
@@ -934,7 +984,7 @@ body {
             margin-bottom: 1%;
             display: inline-block; }
             #wrapper #content2 .holiday_details figure figcaption p {
-              font-size: 0.9em;
+              font-size: 0.85em;
               margin: 0 0 2% 0;
               line-height: 1.6em;
               color: #9e9e9e; }
@@ -961,7 +1011,7 @@ body {
               /* Saf4+, Chrome */
               background-image: linear-gradient(top, #f58115, #faa544);
               filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-              /* IE6├ó´┐¢´┐¢IE9 */
+              /* IE6â��IE9 */
               display: block;
               margin: 0.5em 0 0 0; }
             #wrapper #content2 .holiday_details figure figcaption a:hover {
@@ -976,7 +1026,7 @@ body {
               /* Saf4+, Chrome */
               background-image: linear-gradient(top, #faa544, #f58115);
               filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-              /* IE6├ó´┐¢´┐¢IE9 */ }
+              /* IE6â��IE9 */ }
       #wrapper #content2 .holiday_details_small {
         width: 45%;
         border: 4px #ebece7 solid;
@@ -1041,7 +1091,7 @@ body {
               /* Saf4+, Chrome */
               background-image: linear-gradient(top, #f58115, #faa544);
               filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-              /* IE6├ó´┐¢´┐¢IE9 */ }
+              /* IE6â��IE9 */ }
             #wrapper #content2 .holiday_details_small figure figcaption a:hover {
               color: #ffffff;
               text-align: center;
@@ -1053,7 +1103,7 @@ body {
               /* Saf4+, Chrome */
               background-image: linear-gradient(top, #faa544, #f58115);
               filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-              /* IE6├ó´┐¢´┐¢IE9 */ }
+              /* IE6â��IE9 */ }
       #wrapper #content2 .servicebox {
         width: 31%;
         height: auto;
@@ -1394,7 +1444,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
+<<<<<<< HEAD
             margin: 0.5em 0 1em 0; }
+=======
+            margin: 0 0 1em 0; }
+>>>>>>> c88af02404d1550aff33e9957029acb9a8664eb1
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               height: 35px;
@@ -1754,7 +1808,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
+<<<<<<< HEAD
             margin: 0.5em 0 1em 0; }
+=======
+            margin: 0 0 1em 0; }
+>>>>>>> c88af02404d1550aff33e9957029acb9a8664eb1
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               height: 35px;
@@ -2097,7 +2155,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
+<<<<<<< HEAD
             margin: 0.5em 0 1em 0; }
+=======
+            margin: 0 0 1em 0; }
+>>>>>>> c88af02404d1550aff33e9957029acb9a8664eb1
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               height: 35px;
@@ -2431,7 +2493,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
+<<<<<<< HEAD
             margin: 0.5em 0 1em 0; }
+=======
+            margin: 0 0 1em 0; }
+>>>>>>> c88af02404d1550aff33e9957029acb9a8664eb1
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.75em; }
@@ -2764,7 +2830,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
+<<<<<<< HEAD
             margin: 0.5em 0 1em 0; }
+=======
+            margin: 0 0 1em 0; }
+>>>>>>> c88af02404d1550aff33e9957029acb9a8664eb1
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.7em; }
@@ -3088,7 +3158,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
+<<<<<<< HEAD
             margin: 0.5em 0 1em 0; }
+=======
+            margin: 0 0 1em 0; }
+>>>>>>> c88af02404d1550aff33e9957029acb9a8664eb1
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.7em; }
@@ -3492,7 +3566,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
+<<<<<<< HEAD
             margin: 0.5em 0 1em 0; }
+=======
+            margin: 0 0 1em 0; }
+>>>>>>> c88af02404d1550aff33e9957029acb9a8664eb1
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.8em; }
@@ -3821,7 +3899,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
+<<<<<<< HEAD
             margin: 0.5em 0 1em 0; }
+=======
+            margin: 0 0 1em 0; }
+>>>>>>> c88af02404d1550aff33e9957029acb9a8664eb1
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.8em; }
@@ -4152,7 +4234,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
+<<<<<<< HEAD
             margin: 0.5em 0 1em 0; }
+=======
+            margin: 0 0 1em 0; }
+>>>>>>> c88af02404d1550aff33e9957029acb9a8664eb1
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.75em; }
@@ -4475,7 +4561,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
+<<<<<<< HEAD
             margin: 0.5em 0 1em 0; }
+=======
+            margin: 0 0 1em 0; }
+>>>>>>> c88af02404d1550aff33e9957029acb9a8664eb1
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.7em; }
@@ -4810,7 +4900,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
+<<<<<<< HEAD
             margin: 0.5em 0 1em 0; }
+=======
+            margin: 0 0 1em 0; }
+>>>>>>> c88af02404d1550aff33e9957029acb9a8664eb1
             #wrapper #content2 #contactform ul li label {
               width: 20%;
               font-size: 0.7em; }
@@ -5148,7 +5242,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
+<<<<<<< HEAD
             margin: 0.5em 0 1em 0; }
+=======
+            margin: 0 0 1em 0; }
+>>>>>>> c88af02404d1550aff33e9957029acb9a8664eb1
             #wrapper #content2 #contactform ul li label {
               width: 20%;
               font-size: 0.7em; }
@@ -5497,7 +5595,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
+<<<<<<< HEAD
             margin: 0.5em 0 1em 0; }
+=======
+            margin: 0 0 1em 0; }
+>>>>>>> c88af02404d1550aff33e9957029acb9a8664eb1
             #wrapper #content2 #contactform ul li label {
               width: 25%;
               font-size: 0.7em; }
@@ -5832,7 +5934,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
+<<<<<<< HEAD
             margin: 0.5em 0 1em 0; }
+=======
+            margin: 0 0 1em 0; }
+>>>>>>> c88af02404d1550aff33e9957029acb9a8664eb1
             #wrapper #content2 #contactform ul li label {
               width: 25%;
               font-size: 0.7em; }
@@ -6174,7 +6280,11 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
+<<<<<<< HEAD
             margin: 0.5em 0 1em 0; }
+=======
+            margin: 0 0 1em 0; }
+>>>>>>> c88af02404d1550aff33e9957029acb9a8664eb1
             #wrapper #content2 #contactform ul li label {
               width: 25%;
               font-size: 0.7em; }
