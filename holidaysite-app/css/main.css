@@ -133,7 +133,7 @@ img {
   height: 100%; }
 
 body {
-  background-image: url("../images/images/travel-agency-website-bg.png");
+  background-image: url("../images/travel-agency-website-bg.png");
   background-repeat: no-repeat;
   background-position: left bottom;
   background-attachment: fixed;
@@ -171,6 +171,9 @@ body {
       display: table; }
     #wrapper:after {
       clear: both; }
+    #wrapper button#side-bar-btn,
+    #wrapper button#contact-bar-btn {
+      display: none; }
     #wrapper header {
       width: 100%;
       height: 117px;
@@ -180,8 +183,8 @@ body {
       /*contact end*/
       /*nav end*/ }
       #wrapper header figure#logo {
-        height: 77px;
-        width: 230px;
+        height: auto;
+        width: 245px;
         margin: 0px;
         text-indent: -9999px;
         background-repeat: no-repeat;
@@ -385,46 +388,23 @@ body {
           #wrapper header nav aside#language-box form select {
             height: 30px;
             line-height: 30px;
-            font-size: 0.85em;
+            font-size: 0.8em;
             width: 40%;
             display: inline-block;
             border-right: solid 1px #e4e2e2;
             border-top: solid 1px #e4e2e2;
             border-bottom: solid 1px #e4e2e2;
             border-left: none;
-            background-image: url("../images/United_Kingdom.jpg");
             background-repeat: no-repeat;
-            background-position: 5% 50%; }
-            #wrapper header nav aside#language-box form select option[value="United_States"] {
-              background-image: url("../images/USA.gif");
-              background-repeat: no-repeat;
-              background-position: 50% 50%;
-              padding: 0.5em 0; }
-            #wrapper header nav aside#language-box form select option[value="United_Kingdom"] {
-              background-image: url(../images/United_Kingdom.jpg);
-              background-repeat: no-repeat;
-              background-position: 50% 50%;
-              padding: 0.5em 0; }
-            #wrapper header nav aside#language-box form select option[value="France"] {
-              background-image: url(../images/France.jpg);
-              background-repeat: no-repeat;
-              background-position: 50% 50%;
-              padding: 0.5em 0; }
-            #wrapper header nav aside#language-box form select option[value="Germany"] {
-              background-image: url("../images/Germany.jpg");
-              background-repeat: no-repeat;
-              background-position: 50% 50%;
-              padding: 0.5em 0; }
-            #wrapper header nav aside#language-box form select option[value="Spain"] {
-              background-image: url("../images/Spain.jpg");
-              background-repeat: no-repeat;
-              background-position: 50% 50%;
-              padding: 0.5em 0; }
+            background-position: 5% 50%;
+            color: #000; }
+            #wrapper header nav aside#language-box form select option[value="UnitedStates"],
+            #wrapper header nav aside#language-box form select option[value="UnitedKingdom"],
+            #wrapper header nav aside#language-box form select option[value="France"],
+            #wrapper header nav aside#language-box form select option[value="Germany"],
+            #wrapper header nav aside#language-box form select option[value="Spain"],
             #wrapper header nav aside#language-box form select option[value="Jamaica"] {
-              background-image: url("../images/Jamaica.jpg");
-              background-repeat: no-repeat;
-              background-position: 50% 50%;
-              padding: 0.5em 0; }
+              padding: 1em; }
     #wrapper #leftside {
       width: 30%;
       height: auto;
@@ -859,7 +839,7 @@ body {
           list-style: none;
           padding: 0; }
           #wrapper #content2 #contactform ul li {
-            margin: 5px 0 10px 0; }
+            margin: 0.5em 0 1em 0; }
             #wrapper #content2 #contactform ul li label {
               float: left;
               width: 16%;
@@ -867,13 +847,19 @@ body {
               font-weight: bold;
               line-height: 35px;
               font-size: 0.9em; }
-            #wrapper #content2 #contactform ul li input {
+            #wrapper #content2 #contactform ul li input[type="text"],
+            #wrapper #content2 #contactform ul li input[type="tel"],
+            #wrapper #content2 #contactform ul li input[type="email"] {
               width: 75%;
               height: 35px;
               padding: 0;
               margin: 0;
               line-height: 35px;
               border: 1px solid #9e9e9e; }
+              #wrapper #content2 #contactform ul li input[type="text"]:focus,
+              #wrapper #content2 #contactform ul li input[type="tel"]:focus,
+              #wrapper #content2 #contactform ul li input[type="email"]:focus {
+                border: 1px solid #1e4b6c; }
             #wrapper #content2 #contactform ul li textarea {
               width: 75%;
               line-height: 1.5em;
@@ -896,17 +882,17 @@ body {
               filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
               /* IE6├ó´┐¢´┐¢IE9 */
               border: 0; }
-            #wrapper #content2 #contactform ul li #contactbtn:hover {
-              color: #ffffff;
-              border: 0;
-              background-color: #faa544;
-              background-image: -moz-linear-gradient(top, #faa544, #f58115);
-              /* FF3.6 */
-              background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #faa544), color-stop(1, #f58115));
-              /* Saf4+, Chrome */
-              background-image: linear-gradient(top, #faa544, #f58115);
-              filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
-              /* IE6├ó´┐¢´┐¢IE9 */ }
+              #wrapper #content2 #contactform ul li #contactbtn:hover {
+                color: #ffffff;
+                border: 0;
+                background-color: #faa544;
+                background-image: -moz-linear-gradient(top, #faa544, #f58115);
+                /* FF3.6 */
+                background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #faa544), color-stop(1, #f58115));
+                /* Saf4+, Chrome */
+                background-image: linear-gradient(top, #faa544, #f58115);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+                /* IE6├ó´┐¢´┐¢IE9 */ }
       #wrapper #content2 .holiday_details {
         border: 4px #eaeaec solid;
         margin: 1% 0 0 0;
@@ -1163,9 +1149,7 @@ body {
       /*contact end*/
       /*nav end*/ }
       #wrapper header figure#logo {
-        height: 77px;
-        width: 230px;
-        margin: 0px; }
+        margin: 0; }
       #wrapper header aside.contact {
         width: 145px; }
         #wrapper header aside.contact span.tele {
@@ -1410,13 +1394,15 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 5px 0 10px 0; }
+            margin: 0.5em 0 1em 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               height: 35px;
               line-height: 35px;
               font-size: 0.85em; }
-            #wrapper #content2 #contactform ul li input {
+            #wrapper #content2 #contactform ul li input[type="text"],
+            #wrapper #content2 #contactform ul li input[type="tel"],
+            #wrapper #content2 #contactform ul li input[type="email"] {
               height: 35px;
               line-height: 35px; }
             #wrapper #content2 #contactform ul li textarea {
@@ -1545,9 +1531,7 @@ body {
       /*contact end*/
       /*nav end*/ }
       #wrapper header figure#logo {
-        height: 77px;
-        width: 230px;
-        margin: 0px; }
+        margin: 0; }
       #wrapper header aside.contact {
         width: 144px; }
         #wrapper header aside.contact span.tele {
@@ -1770,13 +1754,15 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 5px 0 10px 0; }
+            margin: 0.5em 0 1em 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               height: 35px;
               line-height: 35px;
               font-size: 0.8em; }
-            #wrapper #content2 #contactform ul li input {
+            #wrapper #content2 #contactform ul li input[type="text"],
+            #wrapper #content2 #contactform ul li input[type="tel"],
+            #wrapper #content2 #contactform ul li input[type="email"] {
               height: 35px;
               line-height: 35px; }
             #wrapper #content2 #contactform ul li textarea {
@@ -1897,9 +1883,7 @@ body {
       /*contact end*/
       /*nav end*/ }
       #wrapper header figure#logo {
-        height: 77px;
-        width: 230px;
-        margin: 0px; }
+        margin: 0; }
       #wrapper header aside.contact {
         width: 141px; }
         #wrapper header aside.contact span.tele {
@@ -2113,13 +2097,15 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 5px 0 10px 0; }
+            margin: 0.5em 0 1em 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               height: 35px;
               line-height: 35px;
               font-size: 0.75em; }
-            #wrapper #content2 #contactform ul li input {
+            #wrapper #content2 #contactform ul li input[type="text"],
+            #wrapper #content2 #contactform ul li input[type="tel"],
+            #wrapper #content2 #contactform ul li input[type="email"] {
               height: 35px;
               line-height: 35px; }
             #wrapper #content2 #contactform ul li textarea {
@@ -2240,8 +2226,7 @@ body {
       /*contact end*/
       /*nav end*/ }
       #wrapper header figure#logo {
-        height: 77px;
-        width: 240px; }
+        width: 245px; }
       #wrapper header aside.contact {
         width: 141px; }
         #wrapper header aside.contact span.tele {
@@ -2446,11 +2431,13 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 5px 0 10px 0; }
+            margin: 0.5em 0 1em 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.75em; }
-            #wrapper #content2 #contactform ul li input {
+            #wrapper #content2 #contactform ul li input[type="text"],
+            #wrapper #content2 #contactform ul li input[type="tel"],
+            #wrapper #content2 #contactform ul li input[type="email"] {
               width: 75%; }
             #wrapper #content2 #contactform ul li textarea {
               line-height: 1.5em; }
@@ -2567,8 +2554,7 @@ body {
       /*contact end*/
       /*nav end*/ }
       #wrapper header figure#logo {
-        height: 67px;
-        width: 240px; }
+        width: 215px; }
       #wrapper header aside.contact {
         width: 130px; }
         #wrapper header aside.contact span.tele {
@@ -2778,11 +2764,13 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 5px 0 10px 0; }
+            margin: 0.5em 0 1em 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.7em; }
-            #wrapper #content2 #contactform ul li input {
+            #wrapper #content2 #contactform ul li input[type="text"],
+            #wrapper #content2 #contactform ul li input[type="tel"],
+            #wrapper #content2 #contactform ul li input[type="email"] {
               width: 75%; }
             #wrapper #content2 #contactform ul li textarea {
               width: 75%;
@@ -2897,8 +2885,7 @@ body {
       /*contact end*/
       /*nav end*/ }
       #wrapper header figure#logo {
-        height: 67px;
-        width: 200px; }
+        margin: 0; }
       #wrapper header aside.contact {
         width: 130px; }
         #wrapper header aside.contact span.tele {
@@ -3101,11 +3088,13 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 5px 0 10px 0; }
+            margin: 0.5em 0 1em 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.7em; }
-            #wrapper #content2 #contactform ul li input {
+            #wrapper #content2 #contactform ul li input[type="text"],
+            #wrapper #content2 #contactform ul li input[type="tel"],
+            #wrapper #content2 #contactform ul li input[type="email"] {
               width: 75%; }
             #wrapper #content2 #contactform ul li textarea {
               line-height: 1.5em; }
@@ -3216,7 +3205,6 @@ body {
       /*contact end*/
       /*nav end*/ }
       #wrapper header figure#logo {
-        height: 65px;
         width: 200px; }
       #wrapper header aside.contact {
         width: 130px; }
@@ -3264,8 +3252,8 @@ body {
           flex-flow: column; }
           #wrapper header nav ul li {
             width: 100%;
-            height: 50px;
-            line-height: 50px;
+            height: 45px;
+            line-height: 45px;
             float: none;
             display: block;
             margin-bottom: 0.2em;
@@ -3275,20 +3263,22 @@ body {
             border-radius: 0px 0px 0px 0px; }
             #wrapper header nav ul li a {
               font-size: 1em;
-              height: 50px;
-              line-height: 50px; }
+              height: 100%;
+              line-height: 45px; }
               #wrapper header nav ul li a:hover {
-                height: 50px;
-                line-height: 50px;
+                height: 45px;
+                line-height: 45px;
                 box-shadow: none; }
           #wrapper header nav ul li:nth-of-type(2) {
+            padding: 0;
             margin-bottom: 0.2em; }
             #wrapper header nav ul li:nth-of-type(2) a {
+              padding: 0;
               font-size: 1em;
-              line-height: 40px; }
+              line-height: 45px; }
               #wrapper header nav ul li:nth-of-type(2) a:hover {
-                height: 40px;
-                line-height: 40px;
+                height: 45px;
+                line-height: 45px;
                 box-shadow: none; }
         #wrapper header nav aside#language-box {
           width: 21%;
@@ -3300,7 +3290,7 @@ body {
           #wrapper header nav aside#language-box form select {
             font-size: 0.65em;
             width: 40%; }
-    #wrapper #side-bar-btn {
+    #wrapper button#side-bar-btn {
       position: fixed;
       display: block;
       background-color: #175480;
@@ -3312,7 +3302,7 @@ body {
       top: 50vh;
       border: none;
       outline: none; }
-    #wrapper #contact-bar-btn {
+    #wrapper button#contact-bar-btn {
       position: fixed;
       display: block;
       background-color: #175480;
@@ -3395,7 +3385,7 @@ body {
       margin-top: 1%; }
       #wrapper #leftside2 h1 {
         text-indent: 2%;
-        font-size: 0.65em; }
+        font-size: 0.8em; }
       #wrapper #leftside2 ul {
         width: 90%;
         padding: 2%; }
@@ -3418,13 +3408,13 @@ body {
       #wrapper #leftside3 #contact-details li {
         line-height: 20px;
         height: 80px;
-        font-size: 0.9em; }
+        font-size: 1em; }
         #wrapper #leftside3 #contact-details li:first-line {
           font-weight: bold; }
         #wrapper #leftside3 #contact-details li span {
           width: 30%; }
           #wrapper #leftside3 #contact-details li span img {
-            width: 18%;
+            width: 20%;
             margin: 4% auto; }
         #wrapper #leftside3 #contact-details li a {
           line-height: 20px;
@@ -3502,11 +3492,13 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 5px 0 10px 0; }
+            margin: 0.5em 0 1em 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.8em; }
-            #wrapper #content2 #contactform ul li input {
+            #wrapper #content2 #contactform ul li input[type="text"],
+            #wrapper #content2 #contactform ul li input[type="tel"],
+            #wrapper #content2 #contactform ul li input[type="email"] {
               width: 75%; }
             #wrapper #content2 #contactform ul li textarea {
               width: 75%;
@@ -3618,7 +3610,6 @@ body {
       /*contact end*/
       /*nav end*/ }
       #wrapper header figure#logo {
-        height: 65px;
         width: 200px; }
       #wrapper header aside.contact {
         width: 130px; }
@@ -3645,15 +3636,11 @@ body {
           width: 92%; }
           #wrapper header nav ul li {
             width: 100%;
-            height: 50px;
-            line-height: 50px; }
+            height: 45px; }
             #wrapper header nav ul li a {
-              font-size: 1em;
-              height: 50px;
-              line-height: 50px; }
+              font-size: 1em; }
               #wrapper header nav ul li a:hover {
-                height: 50px;
-                line-height: 50px; }
+                font-weight: bold; }
         #wrapper header nav aside#language-box {
           width: 22%;
           margin-left: 0%; }
@@ -3734,7 +3721,7 @@ body {
       width: 200px; }
       #wrapper #leftside2 h1 {
         text-indent: 2%;
-        font-size: 0.65em; }
+        font-size: 0.8em; }
       #wrapper #leftside2 ul {
         width: 90%;
         padding: 2%; }
@@ -3752,13 +3739,13 @@ body {
       top: 20em;
       width: 50%; }
       #wrapper #leftside3 #contact-details li {
-        font-size: 0.9em; }
+        font-size: 1em; }
         #wrapper #leftside3 #contact-details li:first-line {
           font-weight: bold; }
         #wrapper #leftside3 #contact-details li span {
           width: 30%; }
           #wrapper #leftside3 #contact-details li span img {
-            width: 19%; }
+            width: 20%; }
         #wrapper #leftside3 #contact-details li a {
           line-height: 20px; }
       #wrapper #leftside3 figure {
@@ -3834,11 +3821,13 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 5px 0 10px 0; }
+            margin: 0.5em 0 1em 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.8em; }
-            #wrapper #content2 #contactform ul li input {
+            #wrapper #content2 #contactform ul li input[type="text"],
+            #wrapper #content2 #contactform ul li input[type="tel"],
+            #wrapper #content2 #contactform ul li input[type="email"] {
               width: 75%; }
             #wrapper #content2 #contactform ul li textarea {
               line-height: 1.5em; }
@@ -3949,7 +3938,6 @@ body {
       /*contact end*/
       /*nav end*/ }
       #wrapper header figure#logo {
-        height: 64px;
         width: 200px; }
       #wrapper header aside.contact {
         width: 125px; }
@@ -3976,16 +3964,11 @@ body {
           top: 108px;
           width: 92%; }
           #wrapper header nav ul li {
-            width: 100%;
-            height: 50px;
-            line-height: 50px; }
+            width: 100%; }
             #wrapper header nav ul li a {
-              font-size: 0.9em;
-              height: 50px;
-              line-height: 50px; }
+              font-size: 0.9em; }
               #wrapper header nav ul li a:hover {
-                height: 50px;
-                line-height: 50px; }
+                font-weight: bold; }
           #wrapper header nav ul li:nth-of-type(2) {
             margin-bottom: 0.2em; }
             #wrapper header nav ul li:nth-of-type(2) a {
@@ -3999,9 +3982,9 @@ body {
           #wrapper header nav aside#language-box form select {
             font-size: 0.65em;
             width: 40%; }
-    #wrapper #side-bar-btn {
+    #wrapper button#side-bar-btn {
       left: 89vw; }
-    #wrapper #contact-bar-btn {
+    #wrapper button#contact-bar-btn {
       font-size: 0.7em; }
     #wrapper #leftside {
       width: 30%;
@@ -4069,8 +4052,7 @@ body {
     #wrapper #leftside2 {
       width: 200px; }
       #wrapper #leftside2 h1 {
-        text-indent: 2%;
-        font-size: 0.65em; }
+        text-indent: 2%; }
       #wrapper #leftside2 ul {
         width: 90%;
         padding: 2%; }
@@ -4088,7 +4070,7 @@ body {
       top: 20em;
       width: 50%; }
       #wrapper #leftside3 #contact-details li {
-        font-size: 0.85em; }
+        font-size: 1em; }
         #wrapper #leftside3 #contact-details li:first-line {
           font-weight: bold; }
         #wrapper #leftside3 #contact-details li span {
@@ -4170,11 +4152,13 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 5px 0 10px 0; }
+            margin: 0.5em 0 1em 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.75em; }
-            #wrapper #content2 #contactform ul li input {
+            #wrapper #content2 #contactform ul li input[type="text"],
+            #wrapper #content2 #contactform ul li input[type="tel"],
+            #wrapper #content2 #contactform ul li input[type="email"] {
               width: 75%; }
             #wrapper #content2 #contactform ul li textarea {
               line-height: 1.5em; }
@@ -4285,7 +4269,7 @@ body {
       /*contact end*/
       /*nav end*/ }
       #wrapper header figure#logo {
-        height: 63px; }
+        margin: 0; }
       #wrapper header aside.contact {
         width: 120px; }
         #wrapper header aside.contact span.tele {
@@ -4310,18 +4294,11 @@ body {
           top: 108px;
           width: 92%; }
           #wrapper header nav ul li {
-            width: 100%;
-            height: 50px;
-            line-height: 50px; }
+            width: 100%; }
             #wrapper header nav ul li a {
-              font-size: 0.9em;
-              height: 50px;
-              line-height: 50px; }
-              #wrapper header nav ul li a:hover {
-                height: 50px;
-                line-height: 50px; }
+              font-size: 0.9em; }
         #wrapper header nav aside#language-box {
-          width: 23%;
+          width: 26%;
           margin-left: 0%; }
           #wrapper header nav aside#language-box form label {
             width: 58%;
@@ -4329,9 +4306,9 @@ body {
           #wrapper header nav aside#language-box form select {
             font-size: 0.65em;
             width: 40%; }
-    #wrapper #side-bar-btn {
+    #wrapper button#side-bar-btn {
       left: 88vw; }
-    #wrapper #contact-bar-btn {
+    #wrapper button#contact-bar-btn {
       font-size: 0.65em; }
     #wrapper #leftside {
       width: 30%;
@@ -4399,8 +4376,7 @@ body {
     #wrapper #leftside2 {
       width: 200px; }
       #wrapper #leftside2 h1 {
-        text-indent: 2%;
-        font-size: 0.65em; }
+        text-indent: 2%; }
       #wrapper #leftside2 ul {
         width: 90%;
         padding: 2%; }
@@ -4418,7 +4394,7 @@ body {
       top: 20em;
       width: 50%; }
       #wrapper #leftside3 #contact-details li {
-        font-size: 0.85em; }
+        font-size: 0.9em; }
         #wrapper #leftside3 #contact-details li:first-line {
           font-weight: bold; }
         #wrapper #leftside3 #contact-details li span {
@@ -4499,11 +4475,13 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 5px 0 10px 0; }
+            margin: 0.5em 0 1em 0; }
             #wrapper #content2 #contactform ul li label {
               width: 16%;
               font-size: 0.7em; }
-            #wrapper #content2 #contactform ul li input {
+            #wrapper #content2 #contactform ul li input[type="text"],
+            #wrapper #content2 #contactform ul li input[type="tel"],
+            #wrapper #content2 #contactform ul li input[type="email"] {
               width: 75%; }
             #wrapper #content2 #contactform ul li textarea {
               line-height: 1.5em; }
@@ -4604,8 +4582,8 @@ body {
 
   /*footer end*/ }
 @media only screen and (max-width: 515px) {
-  #wrapper #contact-bar-btn {
-    left: 77vw; } }
+  #wrapper button#contact-bar-btn {
+    left: 78vw; } }
 @media only screen and (max-width: 480px) {
   #wrapper {
     width: 94%;
@@ -4618,7 +4596,7 @@ body {
       /*contact end*/
       /*nav end*/ }
       #wrapper header figure#logo {
-        height: 65px; }
+        width: 200px; }
       #wrapper header aside.contact {
         width: 115px; }
         #wrapper header aside.contact span.tele {
@@ -4643,18 +4621,15 @@ body {
           left: 3%;
           top: 108px; }
           #wrapper header nav ul li {
-            line-height: 50px; }
+            line-height: 45px; }
             #wrapper header nav ul li a {
-              font-size: 0.9em;
-              line-height: 50px; }
-              #wrapper header nav ul li a:hover {
-                line-height: 50px; }
+              font-size: 0.9em; }
           #wrapper header nav ul li:nth-of-type(2) {
             margin-bottom: 0.2em; }
             #wrapper header nav ul li:nth-of-type(2) a {
               font-size: 0.9em; }
         #wrapper header nav aside#language-box {
-          width: 27%;
+          width: 30%;
           margin-left: 0%; }
           #wrapper header nav aside#language-box form span {
             width: 58%;
@@ -4662,11 +4637,11 @@ body {
           #wrapper header nav aside#language-box form select {
             font-size: 0.65em;
             width: 40%; }
-    #wrapper #side-bar-btn {
-      left: 84vw; }
-    #wrapper #contact-bar-btn {
-      font-size: 0.75em;
+    #wrapper button#side-bar-btn {
       left: 86vw; }
+    #wrapper button#contact-bar-btn {
+      font-size: 0.75em;
+      left: 79vw; }
     #wrapper #leftside {
       width: 30%;
       padding-top: 1%;
@@ -4734,8 +4709,7 @@ body {
       width: 200px;
       left: -210px; }
       #wrapper #leftside2 h1 {
-        text-indent: 2%;
-        font-size: 0.65em; }
+        text-indent: 2%; }
       #wrapper #leftside2 ul {
         width: 90%;
         padding: 2%; }
@@ -4754,13 +4728,13 @@ body {
       left: -61%;
       width: 60%; }
       #wrapper #leftside3 #contact-details li {
-        font-size: 0.8em; }
+        font-size: 0.9em; }
         #wrapper #leftside3 #contact-details li:first-line {
           font-weight: bold; }
         #wrapper #leftside3 #contact-details li span {
           width: 30%; }
           #wrapper #leftside3 #contact-details li span img {
-            width: 15%; }
+            width: 20%; }
         #wrapper #leftside3 #contact-details li a {
           line-height: 20px; }
       #wrapper #leftside3 figure {
@@ -4836,11 +4810,13 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 5px 0 10px 0; }
+            margin: 0.5em 0 1em 0; }
             #wrapper #content2 #contactform ul li label {
               width: 20%;
               font-size: 0.7em; }
-            #wrapper #content2 #contactform ul li input {
+            #wrapper #content2 #contactform ul li input[type="text"],
+            #wrapper #content2 #contactform ul li input[type="tel"],
+            #wrapper #content2 #contactform ul li input[type="email"] {
               width: 75%; }
             #wrapper #content2 #contactform ul li textarea {
               line-height: 1.5em; }
@@ -4958,7 +4934,6 @@ body {
       /*contact end*/
       /*nav end*/ }
       #wrapper header figure#logo {
-        height: 65px;
         width: 200px; }
       #wrapper header aside.contact {
         width: 112px; }
@@ -4985,18 +4960,17 @@ body {
           left: 3%;
           top: 108px; }
           #wrapper header nav ul li {
-            line-height: 50px; }
+            line-height: 45px; }
             #wrapper header nav ul li a {
-              font-size: 0.9em;
-              line-height: 50px; }
+              font-size: 0.9em; }
               #wrapper header nav ul li a:hover {
-                line-height: 50px; }
+                line-height: 45px; }
           #wrapper header nav ul li:nth-of-type(2) {
             margin-bottom: 0.2em; }
             #wrapper header nav ul li:nth-of-type(2) a {
               font-size: 0.9em; }
         #wrapper header nav aside#language-box {
-          width: 29%;
+          width: 33%;
           margin-left: 0%; }
           #wrapper header nav aside#language-box form span {
             width: 58%;
@@ -5004,10 +4978,10 @@ body {
           #wrapper header nav aside#language-box form select {
             font-size: 0.65em;
             width: 40%; }
-    #wrapper #side-bar-btn {
-      left: 86vw; }
-    #wrapper #contact-bar-btn {
-      left: 85vw; }
+    #wrapper button#side-bar-btn {
+      left: 84vw; }
+    #wrapper button#contact-bar-btn {
+      left: 72vw; }
     #wrapper #leftside {
       width: 30%;
       padding-top: 1%;
@@ -5075,7 +5049,7 @@ body {
       width: 200px; }
       #wrapper #leftside2 h1 {
         text-indent: 2%;
-        font-size: 0.65em; }
+        font-size: 0.75em; }
       #wrapper #leftside2 ul {
         width: 90%;
         padding: 2%; }
@@ -5092,13 +5066,13 @@ body {
       top: 20em;
       width: 60%; }
       #wrapper #leftside3 #contact-details li {
-        font-size: 0.75em; }
+        font-size: 0.85em; }
         #wrapper #leftside3 #contact-details li:first-line {
           font-weight: bold; }
         #wrapper #leftside3 #contact-details li span {
           width: 30%; }
           #wrapper #leftside3 #contact-details li span img {
-            width: 15%; }
+            width: 20%; }
         #wrapper #leftside3 #contact-details li a {
           line-height: 20px; }
       #wrapper #leftside3 figure {
@@ -5174,11 +5148,13 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 5px 0 10px 0; }
+            margin: 0.5em 0 1em 0; }
             #wrapper #content2 #contactform ul li label {
               width: 20%;
               font-size: 0.7em; }
-            #wrapper #content2 #contactform ul li input {
+            #wrapper #content2 #contactform ul li input[type="text"],
+            #wrapper #content2 #contactform ul li input[type="tel"],
+            #wrapper #content2 #contactform ul li input[type="email"] {
               width: 75%; }
             #wrapper #content2 #contactform ul li textarea {
               width: 75%;
@@ -5302,8 +5278,7 @@ body {
       /*contact end*/
       /*nav end*/ }
       #wrapper header figure#logo {
-        height: 62px;
-        width: 200px; }
+        width: 190px; }
       #wrapper header aside.contact {
         width: 112px; }
         #wrapper header aside.contact span.tele {
@@ -5330,19 +5305,16 @@ body {
           top: 108px;
           width: 92%; }
           #wrapper header nav ul li {
-            height: 50px;
-            line-height: 50px; }
+            height: 45px;
+            line-height: 45px; }
             #wrapper header nav ul li a {
-              font-size: 0.9em;
-              line-height: 50px; }
-              #wrapper header nav ul li a:hover {
-                line-height: 50px; }
+              font-size: 0.9em; }
           #wrapper header nav ul li:nth-of-type(2) {
             margin-bottom: 0.2em; }
             #wrapper header nav ul li:nth-of-type(2) a {
               font-size: 0.9em; }
         #wrapper header nav aside#language-box {
-          width: 31%;
+          width: 35%;
           margin-left: 0%; }
           #wrapper header nav aside#language-box form label {
             width: 58%;
@@ -5350,9 +5322,9 @@ body {
           #wrapper header nav aside#language-box form select {
             font-size: 0.65em;
             width: 40%; }
-    #wrapper #side-bar-btn {
-      left: 84vw; }
-    #wrapper #contact-bar-btn {
+    #wrapper button#side-bar-btn {
+      left: 82vw; }
+    #wrapper button#contact-bar-btn {
       top: 11vh;
       left: 81vw; }
     #wrapper #leftside {
@@ -5421,8 +5393,7 @@ body {
     #wrapper #leftside2 {
       width: 200px; }
       #wrapper #leftside2 h1 {
-        text-indent: 2%;
-        font-size: 0.65em; }
+        text-indent: 2%; }
       #wrapper #leftside2 ul {
         width: 90%;
         padding: 2%; }
@@ -5446,7 +5417,7 @@ body {
         #wrapper #leftside3 #contact-details li span {
           width: 30%; }
           #wrapper #leftside3 #contact-details li span img {
-            width: 15%; }
+            width: 20%; }
         #wrapper #leftside3 #contact-details li a {
           line-height: 20px; }
       #wrapper #leftside3 figure {
@@ -5526,11 +5497,13 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 5px 0 10px 0; }
+            margin: 0.5em 0 1em 0; }
             #wrapper #content2 #contactform ul li label {
               width: 25%;
               font-size: 0.7em; }
-            #wrapper #content2 #contactform ul li input {
+            #wrapper #content2 #contactform ul li input[type="text"],
+            #wrapper #content2 #contactform ul li input[type="tel"],
+            #wrapper #content2 #contactform ul li input[type="email"] {
               width: 70%; }
             #wrapper #content2 #contactform ul li textarea {
               width: 70%;
@@ -5653,7 +5626,6 @@ body {
       /*contact end*/
       /*nav end*/ }
       #wrapper header figure#logo {
-        height: 54px;
         width: 180px; }
       #wrapper header aside.contact {
         width: 105px; }
@@ -5680,18 +5652,11 @@ body {
           top: 98px;
           width: 92%; }
           #wrapper header nav ul li {
-            width: 100%;
-            height: 50px;
-            line-height: 50px; }
+            width: 100%; }
             #wrapper header nav ul li a {
-              font-size: 0.9em;
-              height: 50px;
-              line-height: 50px; }
-              #wrapper header nav ul li a:hover {
-                height: 50px;
-                line-height: 50px; }
+              font-size: 0.9em; }
         #wrapper header nav aside#language-box {
-          width: 33%;
+          width: 40%;
           margin-left: 0%; }
           #wrapper header nav aside#language-box form label {
             width: 58%;
@@ -5699,9 +5664,9 @@ body {
           #wrapper header nav aside#language-box form select {
             font-size: 0.65em;
             width: 40%; }
-    #wrapper #side-bar-btn {
-      left: 80vw; }
-    #wrapper #contact-bar-btn {
+    #wrapper button#side-bar-btn {
+      left: 82vw; }
+    #wrapper button#contact-bar-btn {
       top: 10vh;
       left: 80vw; }
     #wrapper #leftside {
@@ -5770,8 +5735,7 @@ body {
     #wrapper #leftside2 {
       width: 200px; }
       #wrapper #leftside2 h1 {
-        text-indent: 2%;
-        font-size: 0.65em; }
+        text-indent: 2%; }
       #wrapper #leftside2 ul {
         width: 90%;
         padding: 2%; }
@@ -5794,7 +5758,7 @@ body {
         #wrapper #leftside3 #contact-details li span {
           width: 30%; }
           #wrapper #leftside3 #contact-details li span img {
-            width: 15%; }
+            width: 20%; }
         #wrapper #leftside3 #contact-details li a {
           line-height: 20px; }
       #wrapper #leftside3 figure {
@@ -5868,11 +5832,13 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 5px 0 10px 0; }
+            margin: 0.5em 0 1em 0; }
             #wrapper #content2 #contactform ul li label {
               width: 25%;
               font-size: 0.7em; }
-            #wrapper #content2 #contactform ul li input {
+            #wrapper #content2 #contactform ul li input[type="text"],
+            #wrapper #content2 #contactform ul li input[type="tel"],
+            #wrapper #content2 #contactform ul li input[type="email"] {
               width: 70%; }
             #wrapper #content2 #contactform ul li textarea {
               width: 70%;
@@ -5999,7 +5965,6 @@ body {
       /*contact end*/
       /*nav end*/ }
       #wrapper header figure#logo {
-        height: 54px;
         width: 155px; }
       #wrapper header aside.contact {
         width: 105px; }
@@ -6025,21 +5990,14 @@ body {
           left: 3%;
           top: 98px;
           width: 92%; }
-          #wrapper header nav ul li {
-            height: 50px;
-            line-height: 50px; }
-            #wrapper header nav ul li a {
-              font-size: 0.9em;
-              line-height: 50px; }
-              #wrapper header nav ul li a:hover {
-                height: 50px;
-                line-height: 50px; }
+          #wrapper header nav ul li a {
+            font-size: 0.9em; }
           #wrapper header nav ul li:nth-of-type(2) {
             margin-bottom: 0.2em; }
             #wrapper header nav ul li:nth-of-type(2) a {
               font-size: 0.9em; }
         #wrapper header nav aside#language-box {
-          width: 33%;
+          width: 40%;
           margin-left: 0%; }
           #wrapper header nav aside#language-box form label {
             width: 58%;
@@ -6047,9 +6005,9 @@ body {
           #wrapper header nav aside#language-box form select {
             font-size: 0.65em;
             width: 40%; }
-    #wrapper #side-bar-btn {
-      left: 80vw; }
-    #wrapper #contact-bar-btn {
+    #wrapper button#side-bar-btn {
+      left: 79vw; }
+    #wrapper button#contact-bar-btn {
       top: 10vh;
       left: 79vw;
       font-size: 0.7em; }
@@ -6119,7 +6077,7 @@ body {
     #wrapper #leftside2 {
       width: 200px; }
       #wrapper #leftside2 h1 {
-        font-size: 0.65em; }
+        font-size: 0.75em; }
       #wrapper #leftside2 ul {
         width: 90%;
         padding: 2%; }
@@ -6142,7 +6100,7 @@ body {
         #wrapper #leftside3 #contact-details li span {
           width: 30%; }
           #wrapper #leftside3 #contact-details li span img {
-            width: 15%; }
+            width: 20%; }
         #wrapper #leftside3 #contact-details li a {
           line-height: 20px; }
       #wrapper #leftside3 figure {
@@ -6216,11 +6174,13 @@ body {
         #wrapper #content2 #contactform ul {
           list-style: none; }
           #wrapper #content2 #contactform ul li {
-            margin: 5px 0 10px 0; }
+            margin: 0.5em 0 1em 0; }
             #wrapper #content2 #contactform ul li label {
               width: 25%;
               font-size: 0.7em; }
-            #wrapper #content2 #contactform ul li input {
+            #wrapper #content2 #contactform ul li input[type="text"],
+            #wrapper #content2 #contactform ul li input[type="tel"],
+            #wrapper #content2 #contactform ul li input[type="email"] {
               width: 70%; }
             #wrapper #content2 #contactform ul li textarea {
               width: 70%;

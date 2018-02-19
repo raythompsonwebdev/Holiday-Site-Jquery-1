@@ -1,18 +1,19 @@
-
 @import "partials/base";
 @import "partials/variables";
 @import "partials/mixins";
-
-
 @media only screen and (max-width: 1920px) {
 	#wrapper {
 		width: 70%;
-		margin-left:auto;
-		margin-right:auto;
+		margin-left: auto;
+		margin-right: auto;
 		background-color: $color3;
 		padding: 0 2%;
 		font-family: $font-style1;
 		@include clearfix();
+		button#side-bar-btn,
+		button#contact-bar-btn {
+			display: none;
+		}
 		header {
 			width: 100%;
 			height: 117px;
@@ -20,12 +21,10 @@
 			border-bottom: 1px solid $colorgry2;
 			margin-bottom: 0.5em;
 			figure#logo {
-				height: 77px;
-				width: 230px;
+				height: auto;
+				width: 245px;
 				margin: 0px;
-				text-indent: -9999px;
-				//background:url('../images/travel-agency-website-logo.png');
-
+				text-indent: -9999px; //background:url('../images/travel-agency-website-logo.png');
 				background-repeat: no-repeat;
 				background-position: 50% 50%;
 				img {
@@ -45,36 +44,32 @@
 					padding: 0;
 					width: 99%;
 					float: left;
-					display: block;
-
-					//background:url('../images/phoneicon_05.gif');
+					display: block; //background:url('../images/phoneicon_05.gif');
 					background-color: $colorbg;
 					background-repeat: no-repeat;
 					background-position: 50% 50%;
-
-					img{
-						width:12%;
-						display:inline-block;
+					img {
+						width: 12%;
+						display: inline-block;
 						padding-left: 0.2em;
 					}
-
 					a#contact-number {
-					width: 83%;
-					background-color: $colorbg;
-					padding: 0;
-					display: inline-block;
-					line-height: 30px;
-					letter-spacing: 0.01em;
-					font-weight: bold;
-					font-size: 1em;
-					text-align: center;
-					text-shadow: 1px 1px 1px #000;
-					text-decoration: none;
-					color: $color3;
-					&:active {
-						color: #fff;
+						width: 83%;
+						background-color: $colorbg;
+						padding: 0;
+						display: inline-block;
+						line-height: 30px;
+						letter-spacing: 0.01em;
+						font-weight: bold;
+						font-size: 1em;
+						text-align: center;
+						text-shadow: 1px 1px 1px #000;
+						text-decoration: none;
+						color: $color3;
+						&:active {
+							color: #fff;
+						}
 					}
-				}
 				}
 				span#opening-time {
 					display: block;
@@ -86,7 +81,6 @@
 					text-indent: 0;
 					color: $colorgry;
 					clear: both;
-
 				}
 			}
 			/*contact end*/
@@ -127,7 +121,7 @@
 						flex: 0 1 auto;
 						a {
 							text-decoration: none;
-							text-transform:uppercase;
+							text-transform: uppercase;
 							width: 100%;
 							font-size: 0.75em;
 							text-align: center;
@@ -135,8 +129,7 @@
 							height: 40px;
 							line-height: 40px;
 							color: #fff;
-							@include gradient($colorblue1,
-							$colorpw1);
+							@include gradient($colorblue1, $colorpw1);
 							@include TranSition( all 0.1s linear);
 							display: block;
 							font-weight: bold;
@@ -149,29 +142,25 @@
 								height: 40px;
 								@include boxShadow (0px 0px 0px $colorgry2);
 								color: $colorblue1;
-								@include gradient($colorpw,
-								$colorpw);
+								@include gradient($colorpw, $colorpw);
 								font-weight: bold;
 								background-color: $colorpw;
 								border-top: 1px solid $colorgry2;
 							}
 							&:visited {
-								@include gradient($colorpw,
-								$colorpw);
+								@include gradient($colorpw, $colorpw);
 								color: $colorblue1;
 								background-color: $colorpw;
 								@include boxShadow (0px 0px 0px $colorgry2);
 							}
 							&:focus {
-								@include gradient($colorpw,
-								$colorpw);
+								@include gradient($colorpw, $colorpw);
 								color: $colorblue1;
 								background-color: $colorpw;
 								@include boxShadow (0px 0px 0px $colorgry2);
 							}
 							&:active {
-								@include gradient($colorpw,
-								$colorpw);
+								@include gradient($colorpw, $colorpw);
 								color: $colorblue1;
 								background-color: $colorpw;
 								@include boxShadow (0px 0px 0px $colorgry2);
@@ -200,51 +189,24 @@
 						select {
 							height: 30px;
 							line-height: 30px;
-							font-size: 0.85em;
+							font-size: 0.8em;
 							width: 40%;
 							display: inline-block;
 							border-right: solid 1px #e4e2e2;
 							border-top: solid 1px #e4e2e2;
 							border-bottom: solid 1px #e4e2e2;
 							border-left: none;
-							background-image: url("../images/United_Kingdom.jpg");
+						//	background-image: url("../images/UnitedKingdom.jpg");
 							background-repeat: no-repeat;
 							background-position: 5% 50%;
-							option[value="United_States"] {
-								background-image: url("../images/USA.gif");
-								background-repeat: no-repeat;
-								background-position: 50% 50%;
-								padding: 0.5em 0;
-							}
-							option[value="United_Kingdom"] {
-								background-image: url(../images/United_Kingdom.jpg);
-								background-repeat: no-repeat;
-								background-position: 50% 50%;
-								padding: 0.5em 0;
-							}
-							option[value="France"] {
-								background-image: url(../images/France.jpg);
-								background-repeat: no-repeat;
-								background-position: 50% 50%;
-								padding: 0.5em 0;
-							}
-							option[value="Germany"] {
-								background-image: url("../images/Germany.jpg");
-								background-repeat: no-repeat;
-								background-position: 50% 50%;
-								padding: 0.5em 0;
-							}
-							option[value="Spain"] {
-								background-image: url("../images/Spain.jpg");
-								background-repeat: no-repeat;
-								background-position: 50% 50%;
-								padding: 0.5em 0;
-							}
+							color: #000;
+							option[value="UnitedStates"],
+							option[value="UnitedKingdom"],
+							option[value="France"],
+							option[value="Germany"],
+							option[value="Spain"],
 							option[value="Jamaica"] {
-								background-image: url("../images/Jamaica.jpg");
-								background-repeat: no-repeat;
-								background-position: 50% 50%;
-								padding: 0.5em 0;
+								padding: 1em;
 							}
 						}
 					}
@@ -486,7 +448,7 @@
 			height: auto;
 			float: left;
 			margin: 1% 1% 0 0;
-			background-color:#014188;
+			background-color: #014188;
 			#contact-details {
 				background-color: #ffffff;
 				display: block;
@@ -504,7 +466,6 @@
 					height: 80px;
 					color: $colorgry;
 					padding-right: 0.5em;
-
 					&:first-line {
 						color: $sideboxcolor1a;
 						font-weight: bold;
@@ -531,10 +492,10 @@
 			}
 			figure {
 				margin: 0;
-				padding:0;
+				padding: 0;
 				figcaption {
-					display:block;
-					margin:0;
+					display: block;
+					margin: 0;
 					padding: 5%;
 					h1 {
 						text-indent: 0;
@@ -545,21 +506,16 @@
 						margin-top: 25%;
 						text-transform: uppercase;
 						line-height: 1.5em;
-						letter-spacing:0.02em;
+						letter-spacing: 0.02em;
 					}
-
-					span{
-						margin-bottom:1em;
-						display:block;
-						img{
-							display:block;
-							border:none;
-
+					span {
+						margin-bottom: 1em;
+						display: block;
+						img {
+							display: block;
+							border: none;
 						}
-
-
 					}
-
 					p {
 						color: $colorpw;
 						font-size: 0.9em;
@@ -581,7 +537,7 @@
 			}
 			#banner {
 				width: 96%;
-				height:auto;
+				height: auto;
 				margin: 0 auto;
 				display: block;
 				img {
@@ -662,7 +618,6 @@
 			background-color: $colorpw;
 			padding: 1%;
 			line-height: 1.5em;
-
 			h1 {
 				font-size: 1.3em;
 				color: $sideboxcolor1;
@@ -703,13 +658,13 @@
 			#contactform {
 				width: 90%;
 				margin: auto;
-				display:block;
+				display: block;
 				list-style: none;
 				ul {
 					list-style: none;
 					padding: 0;
 					li {
-						margin: 5px 0 10px 0;
+						margin: 0.5em 0 1em 0;
 						label {
 							float: left;
 							width: 16%;
@@ -718,13 +673,18 @@
 							line-height: 35px;
 							font-size: 0.9em;
 						}
-						input {
+						input[type="text"],
+						input[type="tel"],
+						input[type="email"] {
 							width: 75%;
 							height: 35px;
 							padding: 0;
 							margin: 0;
 							line-height: 35px;
 							border: 1px solid $colorgry2;
+							&:focus {
+								border: 1px solid $colorbgvar;
+							}
 						}
 						textarea {
 							width: 75%;
@@ -740,12 +700,12 @@
 							@include gradient($colorbtn2,
 							$colorbtn3);
 							border: 0;
-						}
-						#contactbtn:hover {
-							color: $colorpw;
-							border: 0;
-							@include gradient($colorbtn3,
-							$colorbtn2);
+							&:hover {
+								color: $colorpw;
+								border: 0;
+								@include gradient($colorbtn3,
+								$colorbtn2);
+							}
 						}
 					}
 				}
@@ -923,11 +883,10 @@
 				figure {
 					width: 90%;
 					margin: 1% auto;
-					img.service-box-img{
-						width:100%;
-
+					img.service-box-img {
+						width: 100%;
 					}
-				    figcaption {
+					figcaption {
 						p {
 							font-size: 0.75em;
 							margin: 2%;
@@ -945,9 +904,7 @@
 							}
 						}
 					}
-
 				}
-
 			}
 		}
 		/*content2 end*/
@@ -1011,20 +968,16 @@
 		header {
 			height: 117px;
 			figure#logo {
-				height: 77px;
-				width: 230px;
-				margin: 0px;
+				margin: 0;
 			}
 			aside.contact {
 				width: 145px;
 				span.tele {
 					padding: 0;
-
-					img{
-						width:12%;
+					img {
+						width: 12%;
 						padding-left: 0.2em;
 					}
-
 					a#contact-number {
 						width: 83%;
 						line-height: 30px;
@@ -1067,12 +1020,11 @@
 			/*nav end*/
 		}
 		/*header end*/
-		#side-bar-btn{
-			display:none;
+		#side-bar-btn {
+			display: none;
 		}
-		#contact-bar-btn{
-			display:none;
-			
+		#contact-bar-btn {
+			display: none;
 		}
 		#leftside {
 			width: 30%;
@@ -1211,7 +1163,6 @@
 				width: 96%;
 				padding: 10% 0;
 				list-style: none;
-				
 				li {
 					line-height: 20px;
 					height: 80px;
@@ -1235,25 +1186,18 @@
 			figure {
 				margin: 0;
 				figcaption {
-
 					padding: 5%;
 					h1 {
 						font-size: 1.28em;
 						margin-top: 25%;
-
 					}
-
-					span{
-						margin-bottom:1em;
-						display:block;
-						img{
-							display:block;
-
+					span {
+						margin-bottom: 1em;
+						display: block;
+						img {
+							display: block;
 						}
-
-
 					}
-
 					p {
 						color: $colorpw;
 						font-size: 0.9em;
@@ -1346,25 +1290,24 @@
 				margin: 0;
 			}
 			#contactform {
-
 				margin: auto;
 				ul {
 					list-style: none;
 					li {
-						margin: 5px 0 10px 0;
+						margin: 0.5em 0 1em 0;
 						label {
 							width: 16%;
 							height: 35px;
 							line-height: 35px;
 							font-size: 0.85em;
 						}
-						input {
-
+						input[type="text"],
+						input[type="tel"],
+						input[type="email"] {
 							height: 35px;
 							line-height: 35px;
 						}
 						textarea {
-
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -1492,7 +1435,6 @@
 							}
 						}
 					}
-
 				}
 			}
 		}
@@ -1531,28 +1473,22 @@
 		header {
 			height: 117px;
 			figure#logo {
-				height: 77px;
-				width: 230px;
-				margin: 0px;
+				margin: 0;
 			}
 			aside.contact {
 				width: 144px;
 				span.tele {
 					padding: 0;
 					width: 99%;
-
-					img{
-						width:12%;
+					img {
+						width: 12%;
 						padding-left: 0.2em;
 					}
-
 					a#contact-number {
-
 						line-height: 30px;
 						font-size: 0.9em;
 					}
 				}
-
 				span#opening-time {
 					line-height: 25px;
 				}
@@ -1569,9 +1505,8 @@
 							font-size: 0.7em;
 						}
 					}
-					li:nth-of-type(2){
-
-						a{
+					li:nth-of-type(2) {
+						a {
 							font-size: 0.65em;
 						}
 					}
@@ -1717,7 +1652,6 @@
 			#contact-details {
 				width: 98%;
 				padding: 10% 0;
-				
 				li {
 					line-height: 20px;
 					height: 80px;
@@ -1734,34 +1668,25 @@
 					}
 					a {
 						line-height: 20px;
-						
 					}
 				}
 			}
 			figure {
 				margin: 0;
 				figcaption {
-
 					padding: 5%;
 					h1 {
 						font-size: 1.1em;
 						margin-top: 25%;
-
 					}
-
-					span{
-						margin-bottom:1em;
-						display:block;
-						img{
-							display:block;
-
+					span {
+						margin-bottom: 1em;
+						display: block;
+						img {
+							display: block;
 						}
-
-
 					}
-
 					p {
-
 						font-size: 0.8em;
 					}
 				}
@@ -1849,25 +1774,24 @@
 				margin: 0;
 			}
 			#contactform {
-
 				margin: auto;
 				ul {
 					list-style: none;
 					li {
-						margin: 5px 0 10px 0;
+						margin: 0.5em 0 1em 0;
 						label {
 							width: 16%;
 							height: 35px;
 							line-height: 35px;
 							font-size: 0.8em;
 						}
-						input {
-
+						input[type="text"],
+						input[type="tel"],
+						input[type="email"] {
 							height: 35px;
 							line-height: 35px;
 						}
 						textarea {
-
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -1973,7 +1897,6 @@
 				margin: 5px 0 0 5px;
 				h1 {
 					font-size: 0.75em;
-
 				}
 				figure {
 					width: 90%;
@@ -1992,9 +1915,7 @@
 							}
 						}
 					}
-
 				}
-
 			}
 		}
 		/*content2 end*/
@@ -2028,26 +1949,22 @@
 		header {
 			height: 117px;
 			figure#logo {
-				height: 77px;
-				width: 230px;
-				margin: 0px;
+				margin: 0;
 			}
 			aside.contact {
 				width: 141px;
 				span.tele {
 					padding: 0;
-					img{
-						width:12%;
+					img {
+						width: 12%;
 						padding-left: 0.2em;
 					}
-
 					a#contact-number {
 						width: 82%;
 						line-height: 30px;
 						font-size: 0.9em;
 					}
 				}
-
 				span#opening-time {
 					line-height: 20px;
 					font-size: 0.75em;
@@ -2066,9 +1983,9 @@
 							font-size: 0.7em;
 						}
 					}
-					li:nth-of-type(2){
-						padding-top:0;
-						a{
+					li:nth-of-type(2) {
+						padding-top: 0;
+						a {
 							font-size: 0.7em;
 							line-height: 16px;
 							height: auto;
@@ -2210,7 +2127,6 @@
 			width: 20%;
 			margin: 1% 1% 0 0;
 			#contact-details {
-				
 				li {
 					font-size: 0.85em;
 					line-height: 20px;
@@ -2227,32 +2143,24 @@
 					}
 					a {
 						line-height: 20px;
-						
 					}
 				}
 			}
 			figure {
 				margin: 0;
 				figcaption {
-
 					padding: 5%;
 					h1 {
 						font-size: 1.1em;
 						margin-top: 25%;
-
 					}
-
-					span{
-						margin-bottom:1em;
-						display:block;
-						img{
-							display:block;
-
+					span {
+						margin-bottom: 1em;
+						display: block;
+						img {
+							display: block;
 						}
-
-
 					}
-
 					p {
 						color: $colorpw;
 						font-size: 0.8em;
@@ -2333,25 +2241,24 @@
 				margin: 0;
 			}
 			#contactform {
-
 				margin: auto;
 				ul {
 					list-style: none;
 					li {
-						margin: 5px 0 10px 0;
+						margin: 0.5em 0 1em 0;
 						label {
 							width: 16%;
 							height: 35px;
 							line-height: 35px;
 							font-size: 0.75em;
 						}
-						input {
-
+						input[type="text"],
+						input[type="tel"],
+						input[type="email"] {
 							height: 35px;
 							line-height: 35px;
 						}
 						textarea {
-
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -2457,7 +2364,6 @@
 				margin: 5px 0 0 5px;
 				h1 {
 					font-size: 0.75em;
-
 				}
 				figure {
 					width: 90%;
@@ -2476,9 +2382,7 @@
 							}
 						}
 					}
-
 				}
-
 			}
 		}
 		/*content2 end*/
@@ -2512,16 +2416,14 @@
 		header {
 			height: 117px;
 			figure#logo {
-				height: 77px;
-				width: 240px;
+				width: 245px;
 			}
 			aside.contact {
 				width: 141px;
 				span.tele {
 					padding: 0;
-
-					img{
-						width:12%;
+					img {
+						width: 12%;
 						padding-left: 0.3em;
 					}
 					a#contact-number {
@@ -2529,7 +2431,6 @@
 						width: 82%;
 					}
 				}
-
 				span#opening-time {
 					line-height: 20px;
 				}
@@ -2546,11 +2447,10 @@
 						a {
 							font-size: 0.6em;
 						}
-
 					}
-					li:nth-of-type(2){
-						padding-top:0;
-						a{
+					li:nth-of-type(2) {
+						padding-top: 0;
+						a {
 							font-size: 0.65em;
 							line-height: 16px;
 							height: auto;
@@ -2560,7 +2460,6 @@
 				}
 				aside#language-box {
 					width: 15%;
-
 					form {
 						label {
 							width: 58%;
@@ -2691,7 +2590,6 @@
 			width: 20%;
 			margin: 1% 1% 0 0;
 			#contact-details {
-				
 				li {
 					font-size: 0.8em;
 					line-height: 20px;
@@ -2719,7 +2617,6 @@
 					padding: 5%;
 					h1 {
 						font-size: 1em;
-
 					}
 					p {
 						font-size: 0.75em;
@@ -2800,21 +2697,21 @@
 				margin: 0;
 			}
 			#contactform {
-
 				margin: auto;
 				ul {
 					list-style: none;
 					li {
-						margin: 5px 0 10px 0;
+						margin: 0.5em 0 1em 0;
 						label {
 							width: 16%;
 							font-size: 0.75em;
 						}
-						input {
+						input[type="text"],
+						input[type="tel"],
+						input[type="email"] {
 							width: 75%;
 						}
 						textarea {
-
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -2918,7 +2815,6 @@
 				margin: 5px 0 0 5px;
 				h1 {
 					font-size: 0.75em;
-
 				}
 				figure {
 					width: 90%;
@@ -2937,9 +2833,7 @@
 							}
 						}
 					}
-
 				}
-
 			}
 		}
 		/*content2 end*/
@@ -2972,17 +2866,14 @@
 		header {
 			height: 107px;
 			figure#logo {
-				height: 67px;
-				width: 240px;
+				width: 215px;
 			}
 			aside.contact {
 				width: 130px;
 				span.tele {
 					padding: 0;
-
-
-					img{
-						width:12%;
+					img {
+						width: 12%;
 						padding-left: 0.3em;
 					}
 					a#contact-number {
@@ -2990,9 +2881,7 @@
 						line-height: 25px;
 						width: 82%;
 					}
-
 				}
-
 				span#opening-time {
 					line-height: 20px;
 					font-size: 0.7em;
@@ -3011,9 +2900,9 @@
 							font-size: 0.65em;
 						}
 					}
-					li:nth-of-type(2){
-						padding-top:0.1em;
-						a{
+					li:nth-of-type(2) {
+						padding-top: 0.1em;
+						a {
 							font-size: 0.6em;
 							line-height: 16px;
 							height: auto;
@@ -3158,7 +3047,6 @@
 			width: 20%;
 			margin: 1% 1% 0 0;
 			#contact-details {
-				
 				li {
 					line-height: 20px;
 					height: 80px;
@@ -3182,7 +3070,6 @@
 			figure {
 				margin: 0;
 				figcaption {
-
 					padding: 5%;
 					h1 {
 						font-size: 0.9em;
@@ -3263,20 +3150,20 @@
 			}
 			p {
 				font-size: 0.7em;
-
 			}
 			#contactform {
-
 				margin: auto;
 				ul {
 					list-style: none;
 					li {
-						margin: 5px 0 10px 0;
+						margin: 0.5em 0 1em 0;
 						label {
 							width: 16%;
 							font-size: 0.7em;
 						}
-						input {
+						input[type="text"],
+						input[type="tel"],
+						input[type="email"] {
 							width: 75%;
 						}
 						textarea {
@@ -3399,9 +3286,7 @@
 							}
 						}
 					}
-
 				}
-
 			}
 		}
 		/*content2 end*/
@@ -3434,19 +3319,16 @@
 		header {
 			height: 107px;
 			figure#logo {
-				height: 67px;
-				width: 200px;
+				margin: 0;
 			}
 			aside.contact {
 				width: 130px;
 				span.tele {
 					padding: 0;
-
-					img{
-						width:12%;
+					img {
+						width: 12%;
 						padding-left: 0.3em;
 					}
-
 					a#contact-number {
 						font-size: 0.8em;
 						line-height: 25px;
@@ -3468,7 +3350,6 @@
 						height: 40px;
 						a {
 							font-size: 0.6em;
-
 						}
 					}
 				}
@@ -3609,7 +3490,6 @@
 			width: 20%;
 			margin: 1% 1% 0 0;
 			#contact-details {
-				
 				li {
 					font-size: 0.75em;
 					line-height: 20px;
@@ -3633,11 +3513,10 @@
 			figure {
 				margin: 0;
 				figcaption {
-
 					padding: 5%;
 					h1 {
 						font-size: 0.9em;
-						}
+					}
 					p {
 						font-size: 0.65em;
 						line-height: 1.6em;
@@ -3717,21 +3596,21 @@
 				margin: 0;
 			}
 			#contactform {
-
 				margin: auto;
 				ul {
 					list-style: none;
 					li {
-						margin: 5px 0 10px 0;
+						margin: 0.5em 0 1em 0;
 						label {
 							width: 16%;
 							font-size: 0.7em;
 						}
-						input {
+						input[type="text"],
+						input[type="tel"],
+						input[type="email"] {
 							width: 75%;
 						}
 						textarea {
-
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -3829,7 +3708,6 @@
 				margin: 5px 0 0 5px;
 				h1 {
 					font-size: 0.7em;
-
 				}
 				figure {
 					width: 90%;
@@ -3848,9 +3726,7 @@
 							}
 						}
 					}
-
 				}
-
 			}
 		}
 		/*content2 end*/
@@ -3884,23 +3760,19 @@
 		header {
 			height: 107px;
 			figure#logo {
-				height: 65px;
 				width: 200px;
 			}
 			aside.contact {
 				width: 130px;
 				span.tele {
 					padding: 0;
-
-					img{
-						width:12%;
+					img {
+						width: 12%;
 						padding-left: 0.3em;
 					}
-
 					a#contact-number {
 						font-size: 0.85em;
 						line-height: 25px;
-
 					}
 				}
 				span#opening-time {
@@ -3943,37 +3815,36 @@
 					flex-flow: column;
 					li {
 						width: 100%;
-						height: 50px;
-						line-height: 50px;
+						height: 45px;
+						line-height: 45px;
 						float: none;
 						display: block;
 						margin-bottom: 0.2em;
 						@include borderRaduis(0px 0px 0px 0px);
 						a {
 							font-size: 1em;
-							height: 50px;
-							line-height: 50px;
+							height: 100%;
+							line-height: 45px;
 							&:hover {
-								height: 50px;
-								line-height: 50px;
+								height: 45px;
+								line-height: 45px;
 								box-shadow: none;
 							}
 						}
 					}
-
-					li:nth-of-type(2){
-						
+					li:nth-of-type(2) {
+						padding: 0;
 						margin-bottom: 0.2em;
-						a{
-							font-size:1em;
-							line-height: 40px;
-							&:hover{
-								height:40px;
-								line-height: 40px;
+						a {
+							padding: 0;
+							font-size: 1em;
+							line-height: 45px;
+							&:hover {
+								height: 45px;
+								line-height: 45px;
 								box-shadow: none;
 							}
 						}
-
 					}
 				}
 				aside#language-box {
@@ -3995,32 +3866,31 @@
 			/*nav end*/
 		}
 		/*header end*/
-		#side-bar-btn{
+		button#side-bar-btn {
 			position: fixed;
-			display:block;
+			display: block;
 			background-color: $colorbg;
 			color: #fff;
-			z-index:100;
-			height:160px;
-			width:50px;
-			left:90vw;
-			top:50vh;
-			border:none;
-			outline:none;
+			z-index: 100;
+			height: 160px;
+			width: 50px;
+			left: 90vw;
+			top: 50vh;
+			border: none;
+			outline: none;
 		}
-		#contact-bar-btn{
+		button#contact-bar-btn {
 			position: fixed;
-			display:block;
+			display: block;
 			background-color: $colorbg;
 			color: #fff;
 			z-index: 100;
 			height: 50px;
 			left: 82vw;
 			top: 11vh;
-			border:none;
-			outline:none;
-			font-size:0.8em;
-			
+			border: none;
+			outline: none;
+			font-size: 0.8em;
 		}
 		#leftside {
 			width: 30%;
@@ -4110,14 +3980,14 @@
 		}
 		/*#leftside end*/
 		#leftside2 {
-			position:fixed;
-			z-index:100;
-			left:-210px;
+			position: fixed;
+			z-index: 100;
+			left: -210px;
 			width: 200px;
 			margin-top: 1%;
 			h1 {
 				text-indent: 2%;
-				font-size: 0.65em;
+				font-size: 0.8em;
 			}
 			ul {
 				width: 90%;
@@ -4142,22 +4012,20 @@
 			position: absolute;
 			top: 20em;
 			left: -51%;
-			width:50%;
-			margin: 0 ;
-			
+			width: 50%;
+			margin: 0;
 			#contact-details {
-				
 				li {
 					line-height: 20px;
 					height: 80px;
-					font-size: 0.9em;
+					font-size: 1em;
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
 						width: 30%;
 						img {
-							width: 18%;
+							width: 20%;
 							margin: 4% auto;
 						}
 					}
@@ -4257,17 +4125,18 @@
 				letter-spacing: 0.01em;
 			}
 			#contactform {
-
 				margin: auto;
 				ul {
 					list-style: none;
 					li {
-						margin: 5px 0 10px 0;
+						margin: 0.5em 0 1em 0;
 						label {
 							width: 16%;
 							font-size: 0.8em;
 						}
-						input {
+						input[type="text"],
+						input[type="tel"],
+						input[type="email"] {
 							width: 75%;
 						}
 						textarea {
@@ -4387,9 +4256,7 @@
 							}
 						}
 					}
-
 				}
-
 			}
 		}
 		/*content2 end*/
@@ -4422,19 +4289,16 @@
 		header {
 			height: 107px;
 			figure#logo {
-				height: 65px;
 				width: 200px;
 			}
 			aside.contact {
 				width: 130px;
 				span.tele {
 					padding: 0;
-
-					img{
-						width:12%;
+					img {
+						width: 12%;
 						padding-left: 0.3em;
 					}
-
 					a#contact-number {
 						font-size: 0.85em;
 						line-height: 25px;
@@ -4459,15 +4323,11 @@
 					width: 92%;
 					li {
 						width: 100%;
-						height: 50px;
-						line-height: 50px;
+						height: 45px;
 						a {
 							font-size: 1em;
-							height: 50px;
-							line-height: 50px;
 							&:hover {
-								height: 50px;
-								line-height: 50px;
+								font-weight: bold;
 							}
 						}
 					}
@@ -4490,14 +4350,11 @@
 			/*nav end*/
 		}
 		/*header end*/
-		#side-bar-btn{
-			left:90vw;
-
+		#side-bar-btn {
+			left: 90vw;
 		}
-		#contact-bar-btn{
+		#contact-bar-btn {
 			font-size: 0.75em;
-
-			
 		}
 		#leftside {
 			width: 30%;
@@ -4590,7 +4447,7 @@
 			width: 200px;
 			h1 {
 				text-indent: 2%;
-				font-size: 0.65em;
+				font-size: 0.8em;
 			}
 			ul {
 				width: 90%;
@@ -4613,19 +4470,17 @@
 		}
 		#leftside3 {
 			top: 20em;
-
-			width:50%;
+			width: 50%;
 			#contact-details {
-				
 				li {
-					font-size: 0.9em;
+					font-size: 1em;
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
 						width: 30%;
 						img {
-							width: 19%;
+							width: 20%;
 						}
 					}
 					a {
@@ -4723,21 +4578,21 @@
 				letter-spacing: 0.01em;
 			}
 			#contactform {
-
 				margin: auto;
 				ul {
 					list-style: none;
 					li {
-						margin: 5px 0 10px 0;
+						margin: 0.5em 0 1em 0;
 						label {
 							width: 16%;
 							font-size: 0.8em;
 						}
-						input {
+						input[type="text"],
+						input[type="tel"],
+						input[type="email"] {
 							width: 75%;
 						}
 						textarea {
-
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -4853,9 +4708,7 @@
 							}
 						}
 					}
-
 				}
-
 			}
 		}
 		/*content2 end*/
@@ -4888,18 +4741,16 @@
 		header {
 			height: 107px;
 			figure#logo {
-				height: 64px;
 				width: 200px;
 			}
 			aside.contact {
 				width: 125px;
 				span.tele {
 					width: 99%;
-					img{
-						width:12%;
+					img {
+						width: 12%;
 						padding-left: 0.3em;
 					}
-
 					a#contact-number {
 						font-size: 0.8em;
 						line-height: 25px;
@@ -4925,23 +4776,17 @@
 					width: 92%;
 					li {
 						width: 100%;
-						height: 50px;
-						line-height: 50px;
 						a {
 							font-size: 0.9em;
-							height: 50px;
-							line-height: 50px;
 							&:hover {
-								height: 50px;
-								line-height: 50px;
+								font-weight: bold;
 							}
 						}
 					}
-					li:nth-of-type(2){
+					li:nth-of-type(2) {
 						margin-bottom: 0.2em;
-						a{
-							font-size:0.9em;
-							
+						a {
+							font-size: 0.9em;
 						}
 					}
 				}
@@ -4963,14 +4808,11 @@
 			/*nav end*/
 		}
 		/*header end*/
-
-		#side-bar-btn{
-			left:89vw;
-
+		button#side-bar-btn {
+			left: 89vw;
 		}
-		#contact-bar-btn{
-			font-size:0.7em;
-			
+		button#contact-bar-btn {
+			font-size: 0.7em;
 		}
 		#leftside {
 			width: 30%;
@@ -5061,10 +4903,8 @@
 		/*#leftside end*/
 		#leftside2 {
 			width: 200px;
-
 			h1 {
 				text-indent: 2%;
-				font-size: 0.65em;
 			}
 			ul {
 				width: 90%;
@@ -5087,11 +4927,10 @@
 		}
 		#leftside3 {
 			top: 20em;
-			width:50%;
+			width: 50%;
 			#contact-details {
-				
 				li {
-					font-size: 0.85em;
+					font-size: 1em;
 					&:first-line {
 						font-weight: bold;
 					}
@@ -5196,21 +5035,21 @@
 				letter-spacing: 0.01em;
 			}
 			#contactform {
-
 				margin: auto;
 				ul {
 					list-style: none;
 					li {
-						margin: 5px 0 10px 0;
+						margin: 0.5em 0 1em 0;
 						label {
 							width: 16%;
 							font-size: 0.75em;
 						}
-						input {
+						input[type="text"],
+						input[type="tel"],
+						input[type="email"] {
 							width: 75%;
 						}
 						textarea {
-
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -5326,9 +5165,7 @@
 							}
 						}
 					}
-
 				}
-
 			}
 		}
 		/*content2 end*/
@@ -5361,21 +5198,18 @@
 		header {
 			height: 107px;
 			figure#logo {
-				height: 63px;
-
+				margin: 0;
 			}
 			aside.contact {
 				width: 120px;
 				span.tele {
 					width: 99%;
-					img{
-						width:12%;
+					img {
+						width: 12%;
 						padding-left: 0.3em;
 					}
-
 					a#contact-number {
 						font-size: 0.8em;
-
 					}
 				}
 				span#opening-time {
@@ -5398,24 +5232,13 @@
 					width: 92%;
 					li {
 						width: 100%;
-						height: 50px;
-						line-height: 50px;
 						a {
 							font-size: 0.9em;
-							height: 50px;
-							line-height: 50px;
-							&:hover {
-								height: 50px;
-								line-height: 50px;
-							}
-							&:visited {}
-							&:focus {}
-							&:active {}
 						}
 					}
 				}
 				aside#language-box {
-					width: 23%;
+					width: 26%;
 					margin-left: 0%;
 					form {
 						label {
@@ -5432,12 +5255,10 @@
 			/*nav end*/
 		}
 		/*header end*/
-
-		#side-bar-btn{
-			left:88vw;
-
+		button#side-bar-btn {
+			left: 88vw;
 		}
-		#contact-bar-btn{
+		button#contact-bar-btn {
 			font-size: 0.65em;
 		}
 		#leftside {
@@ -5529,10 +5350,8 @@
 		/*#leftside end*/
 		#leftside2 {
 			width: 200px;
-
 			h1 {
 				text-indent: 2%;
-				font-size: 0.65em;
 			}
 			ul {
 				width: 90%;
@@ -5555,11 +5374,10 @@
 		}
 		#leftside3 {
 			top: 20em;
-			width:50%;
+			width: 50%;
 			#contact-details {
-				
 				li {
-					font-size: 0.85em;
+					font-size: 0.9em;
 					&:first-line {
 						font-weight: bold;
 					}
@@ -5600,7 +5418,6 @@
 			}
 			#banner {
 				width: 96%;
-
 				img {
 					width: 100%;
 				}
@@ -5664,21 +5481,21 @@
 				letter-spacing: 0.01em;
 			}
 			#contactform {
-
 				margin: auto;
 				ul {
 					list-style: none;
 					li {
-						margin: 5px 0 10px 0;
+						margin: 0.5em 0 1em 0;
 						label {
 							width: 16%;
 							font-size: 0.7em;
 						}
-						input {
+						input[type="text"],
+						input[type="tel"],
+						input[type="email"] {
 							width: 75%;
 						}
 						textarea {
-
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -5795,9 +5612,7 @@
 							}
 						}
 					}
-
 				}
-
 			}
 		}
 		/*content2 end*/
@@ -5825,14 +5640,12 @@
 }
 
 @media only screen and (max-width: 515px) {
-
-	#wrapper{
-		#contact-bar-btn{
-			left: 77vw;
+	#wrapper {
+		button#contact-bar-btn {
+			left: 78vw;
 		}
 	}
 }
-
 
 @media only screen and (max-width: 480px) {
 	#wrapper {
@@ -5840,18 +5653,16 @@
 		header {
 			height: 107px;
 			figure#logo {
-				height: 65px;
-
+				width: 200px;
 			}
 			aside.contact {
 				width: 115px;
 				span.tele {
 					width: 99%;
-					img{
-						width:12%;
+					img {
+						width: 12%;
 						padding-left: 0.3em;
 					}
-
 					a#contact-number {
 						font-size: 0.75em;
 						width: 81%;
@@ -5875,25 +5686,20 @@
 					left: 3%;
 					top: 108px;
 					li {
-						line-height: 50px;
+						line-height: 45px;
 						a {
 							font-size: 0.9em;
-							line-height: 50px;
-							&:hover {
-								line-height: 50px;
-							}
 						}
 					}
-					li:nth-of-type(2){
+					li:nth-of-type(2) {
 						margin-bottom: 0.2em;
-						a{
-							font-size:0.9em;
-							
+						a {
+							font-size: 0.9em;
 						}
 					}
 				}
 				aside#language-box {
-					width: 27%;
+					width: 30%;
 					margin-left: 0%;
 					form {
 						span {
@@ -5910,14 +5716,12 @@
 			/*nav end*/
 		}
 		/*header end*/
-		#side-bar-btn{
-			left:84vw;
-
-		}
-		#contact-bar-btn{
-			font-size: 0.75em;
+		button#side-bar-btn {
 			left: 86vw;
-			
+		}
+		button#contact-bar-btn {
+			font-size: 0.75em;
+			left: 79vw;
 		}
 		#leftside {
 			width: 30%;
@@ -6008,11 +5812,9 @@
 		/*#leftside end*/
 		#leftside2 {
 			width: 200px;
-			left:-210px;
-
+			left: -210px;
 			h1 {
 				text-indent: 2%;
-				font-size: 0.65em;
 			}
 			ul {
 				width: 90%;
@@ -6021,14 +5823,13 @@
 					margin: 0 0 2% 0;
 					a {
 						font-size: 0.7em;
-						line-height:30px;
+						line-height: 30px;
 						&::before {
 							content: "<   ";
 						}
 						&:hover {
 							font-size: 0.75em;
-							line-height:30px;
-							
+							line-height: 30px;
 						}
 					}
 				}
@@ -6037,18 +5838,17 @@
 		#leftside3 {
 			top: 20em;
 			left: -61%;
-			width:60%;
+			width: 60%;
 			#contact-details {
-				
 				li {
-					font-size: 0.8em;
+					font-size: 0.9em;
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
 						width: 30%;
 						img {
-							width: 15%;
+							width: 20%;
 						}
 					}
 					a {
@@ -6082,7 +5882,6 @@
 			}
 			#banner {
 				width: 96%;
-
 				img {
 					width: 100%;
 				}
@@ -6151,16 +5950,17 @@
 				ul {
 					list-style: none;
 					li {
-						margin: 5px 0 10px 0;
+						margin: 0.5em 0 1em 0;
 						label {
 							width: 20%;
 							font-size: 0.7em;
 						}
-						input {
+						input[type="text"],
+						input[type="tel"],
+						input[type="email"] {
 							width: 75%;
 						}
 						textarea {
-
 							line-height: 1.5em;
 						}
 						#contactbtn {
@@ -6260,17 +6060,15 @@
 				margin: 5px 0 0 5px;
 				h1 {
 					font-size: 0.9em;
-					text-align:center;
+					text-align: center;
 				}
 				figure {
 					width: 90%;
 					margin: 1% auto;
-					img.service-box-img{
-
-						width:46%;
-						display:block;
-						margin:auto;
-
+					img.service-box-img {
+						width: 46%;
+						display: block;
+						margin: auto;
 					}
 					figcaption {
 						p {
@@ -6286,9 +6084,7 @@
 							}
 						}
 					}
-
 				}
-
 			}
 		}
 		/*content2 end*/
@@ -6321,19 +6117,16 @@
 		header {
 			height: 107px;
 			figure#logo {
-				height: 65px;
-				width:200px;
-
+				width: 200px;
 			}
 			aside.contact {
 				width: 112px;
 				span.tele {
 					width: 99%;
-					img{
-						width:12%;
+					img {
+						width: 12%;
 						padding-left: 0.3em;
 					}
-
 					a#contact-number {
 						font-size: 0.75em;
 						line-height: 25px;
@@ -6358,26 +6151,23 @@
 					left: 3%;
 					top: 108px;
 					li {
-
-						line-height: 50px;
+						line-height: 45px;
 						a {
 							font-size: 0.9em;
-							line-height: 50px;
 							&:hover {
-								line-height: 50px;
+								line-height: 45px;
 							}
 						}
 					}
-					li:nth-of-type(2){
+					li:nth-of-type(2) {
 						margin-bottom: 0.2em;
-						a{
-							font-size:0.9em;
-							
+						a {
+							font-size: 0.9em;
 						}
 					}
 				}
 				aside#language-box {
-					width: 29%;
+					width: 33%;
 					margin-left: 0%;
 					form {
 						span {
@@ -6394,13 +6184,11 @@
 			/*nav end*/
 		}
 		/*header end*/
-		#side-bar-btn{
-			left:86vw;
-
+		button#side-bar-btn {
+			left: 84vw;
 		}
-		#contact-bar-btn{
-			left: 85vw;
-			
+		button#contact-bar-btn {
+			left: 72vw;
 		}
 		#leftside {
 			width: 30%;
@@ -6493,7 +6281,7 @@
 			width: 200px;
 			h1 {
 				text-indent: 2%;
-				font-size: 0.65em;
+				font-size: 0.75em;
 			}
 			ul {
 				width: 90%;
@@ -6508,7 +6296,6 @@
 						}
 						&:hover {
 							font-size: 0.8em;
-							
 						}
 					}
 				}
@@ -6516,18 +6303,17 @@
 		}
 		#leftside3 {
 			top: 20em;
-			width:60%;
+			width: 60%;
 			#contact-details {
-				
 				li {
-					font-size: 0.75em;
+					font-size: 0.85em;
 					&:first-line {
 						font-weight: bold;
 					}
 					span {
 						width: 30%;
 						img {
-							width: 15%;
+							width: 20%;
 						}
 					}
 					a {
@@ -6561,7 +6347,6 @@
 			}
 			#banner {
 				width: 96%;
-
 				img {
 					width: 100%;
 				}
@@ -6630,12 +6415,14 @@
 				ul {
 					list-style: none;
 					li {
-						margin: 5px 0 10px 0;
+						margin: 0.5em 0 1em 0;
 						label {
 							width: 20%;
 							font-size: 0.7em;
 						}
-						input {
+						input[type="text"],
+						input[type="tel"],
+						input[type="email"] {
 							width: 75%;
 						}
 						textarea {
@@ -6743,8 +6530,8 @@
 				figure {
 					width: 90%;
 					margin: 1% auto;
-					img.service-box-img{
-						width:55%;
+					img.service-box-img {
+						width: 55%;
 					}
 					figcaption {
 						p {
@@ -6760,9 +6547,7 @@
 							}
 						}
 					}
-
 				}
-
 			}
 		}
 		/*content2 end*/
@@ -6777,16 +6562,15 @@
 				width: 16.571%;
 				a {
 					font-size: 0.55em;
-					line-height:15px;
+					line-height: 15px;
 					&:hover {
 						font-size: 0.55em;
-						line-height:15px;
+						line-height: 15px;
 					}
 					&:active {
 						font-size: 0.55em;
 					}
 				}
-
 			}
 		}
 	}
@@ -6800,19 +6584,16 @@
 		header {
 			height: 107px;
 			figure#logo {
-				height: 62px;
-				width: 200px;
-
+				width: 190px;
 			}
 			aside.contact {
 				width: 112px;
 				span.tele {
 					width: 99%;
-					img{
-						width:12%;
+					img {
+						width: 12%;
 						padding-left: 0.3em;
 					}
-
 					a#contact-number {
 						font-size: 0.75em;
 						line-height: 25px;
@@ -6838,29 +6619,21 @@
 					top: 108px;
 					width: 92%;
 					li {
-						height: 50px;
-						line-height: 50px;
+						height: 45px;
+						line-height: 45px;
 						a {
 							font-size: 0.9em;
-							line-height: 50px;
-							&:hover {
-								line-height: 50px;
-							}
-							&:visited {}
-							&:focus {}
-							&:active {}
 						}
 					}
-					li:nth-of-type(2){
+					li:nth-of-type(2) {
 						margin-bottom: 0.2em;
-						a{
-							font-size:0.9em;
-							
+						a {
+							font-size: 0.9em;
 						}
 					}
 				}
 				aside#language-box {
-					width: 31%;
+					width: 35%;
 					margin-left: 0%;
 					form {
 						label {
@@ -6877,14 +6650,12 @@
 			/*nav end*/
 		}
 		/*header end*/
-		#side-bar-btn{
-			left:84vw;
-
+		button#side-bar-btn {
+			left: 82vw;
 		}
-		#contact-bar-btn{
+		button#contact-bar-btn {
 			top: 11vh;
 			left: 81vw;
-			
 		}
 		#leftside {
 			width: 30%;
@@ -6975,10 +6746,8 @@
 		/*#leftside end*/
 		#leftside2 {
 			width: 200px;
-
 			h1 {
 				text-indent: 2%;
-				font-size: 0.65em;
 			}
 			ul {
 				width: 90%;
@@ -7001,9 +6770,8 @@
 		#leftside3 {
 			top: 20em;
 			left: -66%;
-			width:65%;
+			width: 65%;
 			#contact-details {
-				
 				li {
 					font-size: 0.85em;
 					&:first-line {
@@ -7012,7 +6780,7 @@
 					span {
 						width: 30%;
 						img {
-							width: 15%;
+							width: 20%;
 						}
 					}
 					a {
@@ -7046,7 +6814,6 @@
 			}
 			#banner {
 				width: 96%;
-
 				img {
 					width: 100%;
 				}
@@ -7061,9 +6828,9 @@
 				}
 				div.offerbox {
 					width: 60%;
-					display:block;
-					float:none;
-					margin:0.5em auto;
+					display: block;
+					float: none;
+					margin: 0.5em auto;
 					figure {
 						margin: 2% 0;
 						img {
@@ -7115,17 +6882,18 @@
 				letter-spacing: 0.01em;
 			}
 			#contactform {
-
 				margin: auto;
 				ul {
 					list-style: none;
 					li {
-						margin: 5px 0 10px 0;
+						margin: 0.5em 0 1em 0;
 						label {
 							width: 25%;
 							font-size: 0.7em;
 						}
-						input {
+						input[type="text"],
+						input[type="tel"],
+						input[type="email"] {
 							width: 70%;
 						}
 						textarea {
@@ -7226,7 +6994,6 @@
 			}
 			/*Holiday details Best deals page end*/
 			.servicebox {
-
 				margin: 5px 0 0 5px;
 				h1 {
 					font-size: 0.85em;
@@ -7248,9 +7015,7 @@
 							}
 						}
 					}
-
 				}
-
 			}
 		}
 		/*content2 end*/
@@ -7292,19 +7057,16 @@
 		header {
 			height: 97px;
 			figure#logo {
-				height: 54px;
-				width:180px;
-
+				width: 180px;
 			}
 			aside.contact {
 				width: 105px;
 				span.tele {
 					width: 99%;
-					img{
-						width:12%;
+					img {
+						width: 12%;
 						padding-left: 0.3em;
 					}
-
 					a#contact-number {
 						font-size: 0.7em;
 						width: 80%;
@@ -7330,22 +7092,13 @@
 					width: 92%;
 					li {
 						width: 100%;
-						height: 50px;
-						line-height: 50px;
 						a {
 							font-size: 0.9em;
-							height: 50px;
-							line-height: 50px;
-							&:hover {
-								height: 50px;
-								line-height: 50px;
-							}
-
 						}
 					}
 				}
 				aside#language-box {
-					width: 33%;
+					width: 40%;
 					margin-left: 0%;
 					form {
 						label {
@@ -7362,14 +7115,12 @@
 			/*nav end*/
 		}
 		/*header end*/
-		#side-bar-btn{
-			left:80vw;
-
+		button#side-bar-btn {
+			left: 82vw;
 		}
-		#contact-bar-btn{
+		button#contact-bar-btn {
 			top: 10vh;
 			left: 80vw;
-			
 		}
 		#leftside {
 			width: 30%;
@@ -7460,10 +7211,8 @@
 		/*#leftside end*/
 		#leftside2 {
 			width: 200px;
-			
 			h1 {
 				text-indent: 2%;
-				font-size: 0.65em;
 			}
 			ul {
 				width: 90%;
@@ -7485,9 +7234,8 @@
 		}
 		#leftside3 {
 			top: 20em;
-			width:65%;
+			width: 65%;
 			#contact-details {
-				
 				li {
 					font-size: 0.85em;
 					&:first-line {
@@ -7496,7 +7244,7 @@
 					span {
 						width: 30%;
 						img {
-							width: 15%;
+							width: 20%;
 						}
 					}
 					a {
@@ -7530,7 +7278,6 @@
 			}
 			#banner {
 				width: 96%;
-
 				img {
 					width: 100%;
 				}
@@ -7538,7 +7285,6 @@
 			/*banner end*/
 			#offers {
 				width: 100%;
-
 				h2 {
 					font-size: 1em;
 					letter-spacing: 0.05em;
@@ -7594,17 +7340,18 @@
 				letter-spacing: 0.01em;
 			}
 			#contactform {
-
 				margin: auto;
 				ul {
 					list-style: none;
 					li {
-						margin: 5px 0 10px 0;
+						margin: 0.5em 0 1em 0;
 						label {
 							width: 25%;
 							font-size: 0.7em;
 						}
-						input {
+						input[type="text"],
+						input[type="tel"],
+						input[type="email"] {
 							width: 70%;
 						}
 						textarea {
@@ -7705,7 +7452,6 @@
 			}
 			/*Holiday details Best deals page end*/
 			.servicebox {
-
 				margin: 5px 0 0 5px;
 				h1 {
 					font-size: 0.85em;
@@ -7727,9 +7473,7 @@
 							}
 						}
 					}
-
 				}
-
 			}
 		}
 		/*content2 end*/
@@ -7775,17 +7519,14 @@
 		header {
 			height: 97px;
 			figure#logo {
-				height: 54px;
-				width:155px;
-
+				width: 155px;
 			}
 			aside.contact {
 				width: 105px;
 				span.tele {
 					width: 99%;
-
-					img{
-						width:12%;
+					img {
+						width: 12%;
 						padding-left: 0.3em;
 					}
 					a#contact-number {
@@ -7812,27 +7553,19 @@
 					top: 98px;
 					width: 92%;
 					li {
-						height: 50px;
-						line-height: 50px;
 						a {
 							font-size: 0.9em;
-							line-height: 50px;
-							&:hover {
-								height: 50px;
-								line-height: 50px;
-							}
 						}
 					}
-					li:nth-of-type(2){
+					li:nth-of-type(2) {
 						margin-bottom: 0.2em;
-						a{
-							font-size:0.9em;
-							
+						a {
+							font-size: 0.9em;
 						}
 					}
 				}
 				aside#language-box {
-					width: 33%;
+					width: 40%;
 					margin-left: 0%;
 					form {
 						label {
@@ -7849,15 +7582,13 @@
 			/*nav end*/
 		}
 		/*header end*/
-		#side-bar-btn{
-			left:80vw;
-
+		button#side-bar-btn {
+			left: 79vw;
 		}
-		#contact-bar-btn{
+		button#contact-bar-btn {
 			top: 10vh;
 			left: 79vw;
-			font-size:0.7em;
-			
+			font-size: 0.7em;
 		}
 		#leftside {
 			width: 30%;
@@ -7949,7 +7680,7 @@
 		#leftside2 {
 			width: 200px;
 			h1 {
-				font-size: 0.65em;
+				font-size: 0.75em;
 			}
 			ul {
 				width: 90%;
@@ -7971,9 +7702,8 @@
 		}
 		#leftside3 {
 			top: 20em;
-			width:65%;
+			width: 65%;
 			#contact-details {
-				
 				li {
 					font-size: 0.85em;
 					&:first-line {
@@ -7982,7 +7712,7 @@
 					span {
 						width: 30%;
 						img {
-							width: 15%;
+							width: 20%;
 						}
 					}
 					a {
@@ -8016,7 +7746,6 @@
 			}
 			#banner {
 				width: 96%;
-
 				img {
 					width: 100%;
 				}
@@ -8024,7 +7753,6 @@
 			/*banner end*/
 			#offers {
 				width: 100%;
-
 				h2 {
 					font-size: 1em;
 					letter-spacing: 0.05em;
@@ -8080,17 +7808,18 @@
 				letter-spacing: 0.01em;
 			}
 			#contactform {
-
 				margin: auto;
 				ul {
 					list-style: none;
 					li {
-						margin: 5px 0 10px 0;
+						margin: 0.5em 0 1em 0;
 						label {
 							width: 25%;
 							font-size: 0.7em;
 						}
-						input {
+						input[type="text"],
+						input[type="tel"],
+						input[type="email"] {
 							width: 70%;
 						}
 						textarea {
@@ -8190,11 +7919,9 @@
 			}
 			/*Holiday details Best deals page end*/
 			.servicebox {
-
 				margin: 5px 0 0 5px;
 				h1 {
 					font-size: 0.8em;
-
 				}
 				figure {
 					width: 90%;
@@ -8213,9 +7940,7 @@
 							}
 						}
 					}
-
 				}
-
 			}
 		}
 		/*content2 end*/

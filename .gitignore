@@ -26,7 +26,7 @@ holidaysite-app/errors/
 holidaysite-app/doc/
 holidaysite-app/Files/
 
-
+holidaysite-app/js/old-browser-scripts/
 holidaysite-app/js/vendor/
 holidaysite-app/js/plugins.js
 holidaysite-app/js/html5shiv.min.js
