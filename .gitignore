@@ -26,7 +26,7 @@ holidaysite-app/errors/
 holidaysite-app/doc/
 holidaysite-app/Files/
 
-
+holidaysite-app/js/old-browser-scripts/
 holidaysite-app/js/vendor/
 holidaysite-app/js/plugins.js
 holidaysite-app/js/html5shiv.min.js
@@ -34,6 +34,7 @@ holidaysite-app/js/jquery-1.10.2.min.js
 holidaysite-app/js/jquery.mixitup.min.js
 holidaysite-app/js/jquery.nicescroll.min.js
 holidaysite-app/js/jquery.validate.min.js
+holidaysite-app/js/templatemo_custom.js
 
 holidaysite-app/css/main.css.map
 
