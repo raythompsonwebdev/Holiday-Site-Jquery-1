@@ -49,3 +49,5 @@ holidaysite-app/icons/
 holidaysite-app/images/
 holidaysite-app/vue-router-dev/
 holidaysite-app/vue/
+
+.sass-cache/
